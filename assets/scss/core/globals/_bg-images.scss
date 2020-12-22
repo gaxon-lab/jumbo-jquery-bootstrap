@@ -1,0 +1,32 @@
+/*------------------------------------
+  Background images classes
+------------------------------------*/
+.bg {
+  &-image-v1 {
+    @include background-img('#{$image_path}/bg-image.jpg', center center);
+  }
+
+  &-image-v2 {
+    @include background-img('#{$image_path}/bg-image-1.jpg', center center);
+  }
+
+  &-image-v3 {
+    @include background-img('#{$image_path}/bg-image-2.jpg', center center);
+  }
+
+  &-image-v4 {
+    @include background-img('#{$image_path}/bg-image-3.jpg', center center);
+  }
+
+  &-image-v5 {
+    @include background-img('#{$image_path}/bg-image-4.jpg', center center);
+  }
+
+  &-image-v6 {
+    @include background-img('#{$image_path}/bg-image-5.jpg', center center);
+  }
+
+  &-image-v7 {
+    @include background-img('#{$image_path}/bg-image-6.jpg', center center);
+  }
+}

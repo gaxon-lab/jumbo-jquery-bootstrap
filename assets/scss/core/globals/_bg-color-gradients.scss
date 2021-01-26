@@ -5,7 +5,7 @@
 //Gradient classes
 .bg-gradient-blue,
 .bg-gradient-blue--after:after {
-  @include gradient-directional(#25228a, #24a484, 135deg);
+  @include gradient-directional(#179EBC, #2100EE, 288deg);
 }
 
 .bg-gradient-purple,
@@ -16,4 +16,10 @@
 .bg-gradient-orange,
 .bg-gradient-orange--after:after {
   @include gradient-directional(#c01111, #eac519, 90deg);
+}
+
+.bg-gradient-primary-secondary,
+.bg-gradient-primary-secondary--after:after {
+  @include gradient-y($secondary, $primary, -18.96%, 108.17%);
+  background-color: $primary;
 }

@@ -1,0 +1,88 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the timeline component.
+// -----------------------------------------------------------------------------
+
+.#{$class-prefix}-timeline {
+  position: relative;
+
+  &-hover {
+	& .#{$class-prefix}-timeline__item {
+	  @include hover {
+		.#{$class-prefix}-timeline__badge {
+		  @include scale(1.2);
+		}
+	  }
+	}
+  }
+
+  &__item {
+	position: relative;
+	display: flex;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+
+	.p-0 &, .px-0 & {
+	  padding-left: $dt-card-padding-x;
+	  padding-right: $dt-card-padding-x;
+	}
+
+	&:before {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  display: block;
+	  width: 2px;
+	  border-left: 1px solid $border-color-dark;
+	}
+
+	&:first-child:before {
+	  top: 1.2rem;
+	}
+
+	&:last-child:before {
+	  bottom: 1.2rem;
+	}
+  }
+
+  &.left-align {
+	& .#{$class-prefix}-timeline__item {
+	  padding-left: calc(#{$dt-card-padding-x} + 6rem);
+
+	  &:before {
+		left: calc(#{$dt-card-padding-x} + 2rem);
+	  }
+	}
+
+	& .#{$class-prefix}-timeline__badge {
+	  left: $dt-card-padding-x;
+	  right: auto;
+	}
+  }
+
+  &.right-align {
+	& .#{$class-prefix}-timeline__item {
+	  padding-right: calc(#{$dt-card-padding-x} + 6rem);
+
+	  &:before {
+		right: calc(#{$dt-card-padding-x} + 2rem);
+	  }
+	}
+
+	& .#{$class-prefix}-timeline__badge {
+	  right: $dt-card-padding-x;
+	  left: auto;
+	}
+  }
+
+  &__badge {
+	position: absolute;
+	top: 1.2rem;
+	z-index: 1;
+	@include transition(all 0.2s ease);
+  }
+
+  &__content {
+	flex: 1 1 0;
+  }
+}

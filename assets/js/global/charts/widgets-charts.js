@@ -585,4 +585,51 @@
             fill: {color: '#59c100'}
         });
     }
+
+	// Chart widget
+	if ($('#order-chart').length) {
+		var widgetAreaChart1 = new Chartist.Line('#order-chart', {
+			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',],
+			series: [[200, 300, 550, 500, 700, 450, 770, 900]]
+		}, {
+			axisX: {
+				showGrid: false,
+				showLabel: false,
+				offset: 0,
+			},
+			axisY: {
+				showGrid: false,
+				showLabel: false,
+				offset: 0,
+			},
+			lineSmooth: Chartist.Interpolation.cardinal({
+				tension: 1
+			}),
+			showPoint: false,
+			fullWidth: true,
+			showLine: false,
+			showArea: true,
+			chartPadding: 0,
+		});
+
+		widgetAreaChart1.on('created', function (data) {
+			var defs = data.svg.elem('defs');
+			defs.elem('linearGradient', {
+				id: 'gradient-primary-secondary',
+				x1: 0,
+				y1: 0,
+				x2: 1,
+				y2: 0
+			}).elem('stop', {
+				offset: "17.67%",
+				'stop-opacity': '1',
+				'stop-color': '#6200EE'
+			}).parent().elem('stop', {
+				offset: "87.18%",
+				'stop-opacity': '1',
+				'stop-color': '#B819D2'
+			});
+		});
+	}
+	// Chart widget Ends
 })(jQuery);

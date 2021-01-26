@@ -12,11 +12,13 @@
 <!-- /site favicon -->
 
 <!-- Font Icon Styles -->
-<link rel="stylesheet" href="<?php echo assets_url('fonts/noir-pro/styles.css'); ?>">
+<link rel="stylesheet" href="<?php echo assets_url('fonts/normal/styles.css'); ?>">
 <?php if ($this->data['classic_version']): ?>
 <link rel="stylesheet" href="<?php echo base_url('plugins/flag-icon-css/css/flag-icon.min.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('plugins/material-design-icons/iconfont/material-icons.css'); ?>">
 <?php else: ?>
 <link rel="stylesheet" href="<?php echo base_url('node_modules/flag-icon-css/css/flag-icon.min.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('node_modules/material-design-icons/iconfont/material-icons.css'); ?>">
 <?php endif; ?>
 <link rel="stylesheet" href="<?php echo assets_url('vendor/gaxon-icon/styles.css'); ?>">
 <!-- /font icon Styles -->
@@ -31,7 +33,7 @@
 
 <?php echo $this->files['css_header']; ?>
 
-<link rel="stylesheet" href="<?php echo assets_url('css/' . $this->data['theme'] . '/theme-semidark' . ($this->data['rtl_enable'] ? '-rtl' : '') . '.min.css'); ?>">
+<link rel="stylesheet" href="<?php echo assets_url('css/' . $this->data['theme'] . '/theme-light' . ($this->data['rtl_enable'] ? '-rtl' : '') . '.min.css'); ?>">
 
 <script>
     var rtlEnable = '<?php echo $this->data['rtl_enable']; ?>';

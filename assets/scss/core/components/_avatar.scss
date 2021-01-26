@@ -5,12 +5,51 @@
 .#{$class-prefix}-avatar {
   @extend %circle-shape;
   & > img {
-    width: 100%;
+    max-width: 100%;
   }
 
   &__outline {
     @extend %circle-shape;
     border: $dt-border;
+  }
+
+  &__fill-border {
+	&:after {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 1;
+	  @include border-radius($border-radius-circle);
+	  @include rotate(45deg);
+	  border: 4px solid #D8D8D8;
+	  background-color: transparent;
+	  height: inherit;
+	  width: inherit;
+	}
+	&.fill-0_25 {
+	  &:after {
+		border-top-color: $warning;
+	  }
+	}
+	&.fill-0_50 {
+	  &:after {
+		border-top-color: $warning;
+		border-right-color: $warning;
+	  }
+	}
+	&.fill-0_75 {
+	  &:after {
+		border-top-color: $warning;
+		border-right-color: $warning;
+		border-bottom-color: $warning;
+	  }
+	}
+	&.fill-1 {
+	  &:after {
+		border-color: $warning;
+	  }
+	}
   }
 
   &__shadow {
@@ -41,10 +80,16 @@
 
   &-status & {
     & + .dot-shape {
-      position: absolute;
-      bottom: 0;
-      right: 0;
       border: 2px solid $white;
+    }
+
+    & + .dot-shape,
+	& + .#{$class-prefix}-avatar__badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+	  transform: scale(1) translate(50%, -50%);
+	  transform-origin: 100% 0%;
     }
   }
 }

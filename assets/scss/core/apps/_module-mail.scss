@@ -54,7 +54,7 @@
 
   &__header {
     @include border-top-radius($border-radius);
-    background-color: $text-color-dark;
+    background-color: $text-color-primary;
     color: $white;
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +84,7 @@
     border-bottom: $dt-border;
 
     &:focus {
-      border-color: $text-color-dark;
+      border-color: $text-color-primary;
     }
   }
 

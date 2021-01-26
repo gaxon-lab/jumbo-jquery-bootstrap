@@ -5,6 +5,7 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+  letter-spacing: 0.25px;
   @include transition($transition-base);
 
   @include media-breakpoint-down(xs) {

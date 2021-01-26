@@ -232,7 +232,7 @@
                 <!-- Media -->
                 <div class="media">
                     <!-- Avatar -->
-                    <img class="dt-avatar dt-avatar__shadow size-50 mr-2"
+                    <img class="dt-avatar size-50 mr-2"
                          src="<?php echo assets_url('images/user-avatar/zakie-chain.jpg');?>"
                          alt="Chelsea Jones">
                     <!-- /avatar -->
@@ -278,7 +278,7 @@
                 <!-- Avatar Wrapper -->
                 <div class="dt-avatar-wrapper mb-3">
                     <!-- Avatar -->
-                    <img class="dt-avatar dt-avatar__shadow size-50"
+                    <img class="dt-avatar size-50"
                          src="<?php echo assets_url('images/user-avatar/nikki.jpg');?>"
                          alt="Kayli Brown">
                     <!-- /avatar -->
@@ -358,7 +358,7 @@
                 <!-- Media -->
                 <div class="media px-5 mb-3">
                     <!-- Avatar -->
-                    <img class="dt-avatar dt-avatar__shadow size-35 mr-2"
+                    <img class="dt-avatar size-35 mr-2"
                          src="<?php echo assets_url('images/user-avatar/steve-smith.jpg');?>"
                          alt="Steve Smith">
                     <!-- /avatar -->
@@ -417,7 +417,7 @@
                 <!-- Media -->
                 <div class="media px-5">
                     <!-- Avatar -->
-                    <img class="dt-avatar dt-avatar__shadow size-35 mr-2"
+                    <img class="dt-avatar size-35 mr-2"
                          src="<?php echo assets_url('images/user-avatar/zakie-chain.jpg');?>"
                          alt="Zakie Chain">
                     <!-- /avatar -->
@@ -448,7 +448,7 @@
                 <!-- Avatar Wrapper -->
                 <div class="dt-avatar-wrapper mb-3">
                     <!-- Avatar -->
-                    <img class="dt-avatar dt-avatar__shadow size-50"
+                    <img class="dt-avatar size-50"
                          src="<?php echo assets_url('images/user-avatar/amay.jpg');?>"
                          alt="Reece Jacklin">
                     <!-- /avatar -->

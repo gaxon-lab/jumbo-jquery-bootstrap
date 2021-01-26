@@ -20,102 +20,48 @@ var layouts = [
             {
                 srcFileName: 'main-dark',
                 destFileName: 'theme-dark',
-                rtl: true
+                rtl: false
             },
             {
                 srcFileName: 'main-light',
                 destFileName: 'theme-light',
-                rtl: true
+                rtl: false
             },
             {
                 srcFileName: 'main-light',
                 destFileName: 'theme-light-style',
-                rtl: true,
+                rtl: false,
                 colors: [
-                    {
-                        primary: '#2ac174',
-                        secondary: '#189fde'
-                    },
-                    {
-                        primary: '#f06f11',
-                        secondary: '#0683e5'
-                    },
-                    {
-                        primary: '#d61f1f',
-                        secondary: '#f7b528'
-                    },
-                    {
-                        primary: '#7b18f6',
-                        secondary: '#56b5d8'
-                    },
-                    {
-                        primary: '#2f46bc',
-                        secondary: '#cbb444'
-                    },
-                    {
-                        primary: '#e5281a',
-                        secondary: '#36272d'
-                    },
-                    {
-                        primary: '#40528c',
-                        secondary: '#eda722'
-                    },
-                    {
-                        primary: '#0857ad',
-                        secondary: '#f95738'
-                    },
-                    {
-                        primary: '#0085c1',
-                        secondary: '#72bef0'
-                    }
+					{ primary: '#1C61CA', secondary: '#E56B6F' },
+					{ primary: '#2EC4B6', secondary: '#FF9F1C' },
+					{ primary: '#EF8354', secondary: '#4F5D75' },
+					{ primary: '#D71371', secondary: '#5AB77F' },
+					{ primary: '#072AC8', secondary: '#FFC600' },
+					{ primary: '#7530FF', secondary: '#369FFF' },
+					{ primary: '#F26419', secondary: '#F9C80E' },
+					{ primary: '#2BA444', secondary: '#0A2E36' },
+					{ primary: '#33658A', secondary: '#55DDE0' },
                 ]
             },
             {
                 srcFileName: 'main-semidark',
                 destFileName: 'theme-semidark',
-                rtl: true
+                rtl: false
             },
             {
                 srcFileName: 'main-semidark',
                 destFileName: 'theme-semidark-style',
                 rtl: true,
                 colors: [
-                    {
-                        primary: '#2ac174',
-                        secondary: '#189fde'
-                    },
-                    {
-                        primary: '#f06f11',
-                        secondary: '#0683e5'
-                    },
-                    {
-                        primary: '#d61f1f',
-                        secondary: '#f7b528'
-                    },
-                    {
-                        primary: '#7b18f6',
-                        secondary: '#56b5d8'
-                    },
-                    {
-                        primary: '#2f46bc',
-                        secondary: '#cbb444'
-                    },
-                    {
-                        primary: '#e5281a',
-                        secondary: '#36272d'
-                    },
-                    {
-                        primary: '#40528c',
-                        secondary: '#eda722'
-                    },
-                    {
-                        primary: '#0857ad',
-                        secondary: '#f95738'
-                    },
-                    {
-                        primary: '#0085c1',
-                        secondary: '#72bef0'
-                    }
+					{ primary: '#1C61CA', secondary: '#E56B6F' },
+					{ primary: '#2EC4B6', secondary: '#FF9F1C' },
+					{ primary: '#EF8354', secondary: '#4F5D75' },
+					{ primary: '#D71371', secondary: '#5AB77F' },
+					{ primary: '#072AC8', secondary: '#FFC600' },
+					{ primary: '#7530FF', secondary: '#369FFF' },
+					{ primary: '#F26419', secondary: '#F9C80E' },
+					{ primary: '#2BA444', secondary: '#0A2E36' },
+					{ primary: '#33658A', secondary: '#55DDE0' },
                 ]
             }
         ]
@@ -365,7 +311,7 @@ layouts.forEach(function (layout) {
 
 var versions = ['production', 'production-rtl', 'classic', 'classic-rtl'];
 var versionTasks = [];
-versions.forEach(function (version) {    
+versions.forEach(function (version) {
     if(version != 'classic' && version != 'classic-rtl') {
         var taskScss = version + '-scss';
         versionTasks.push(taskScss);
@@ -385,7 +331,7 @@ versions.forEach(function (version) {
             cb();
         });
     }
-    
+
     var taskCss = version + '-css';
     versionTasks.push(taskCss);
 
@@ -402,8 +348,8 @@ versions.forEach(function (version) {
                 .pipe(gulp.dest(version + '/assets/css'));
         cb();
     });
-    
-    
+
+
     var taskJs = version + '-js';
     versionTasks.push(taskJs);
 

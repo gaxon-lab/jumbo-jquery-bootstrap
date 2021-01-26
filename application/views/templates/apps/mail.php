@@ -501,7 +501,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Chris Harris</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Graphic Design / Logo Design / UI &amp; UX</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -576,7 +576,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Alia Joseph</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">UI/UI Expert</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -648,7 +648,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Mathew</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">React Developer</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -726,7 +726,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Joshua Brian</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Data Analyst</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -793,7 +793,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Kemroon White</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Data Scientist</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -854,7 +854,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Chris Harris</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Graphics designer</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -926,7 +926,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Nikki Johnson</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">React Developer</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -999,7 +999,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Garry Sobars</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">iOS Developer</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">Cicero famously
@@ -1058,7 +1058,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Jimmy Jo</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Data Analyst</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">Cicero famously
@@ -1117,7 +1117,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Domnic Brown</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Android Developer</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">Cicero famously
@@ -1176,7 +1176,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Selena</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Web designer</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -1247,7 +1247,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Ron Brown</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Web designer</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -1316,7 +1316,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Mathew</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">React Developer</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -1395,7 +1395,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Joshua Brian</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Data Analyst</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">
@@ -1464,7 +1464,7 @@
                                      data-location="<?php echo site_url('apps/mail-detail'); ?>">
                                     <div class="user-detail">
                                         <span class="user-name">Kemroon White</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Data Scientist</span>
                                     </div>
                                     <p class="mb-0 text-light-gray text-truncate">

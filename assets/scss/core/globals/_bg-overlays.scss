@@ -30,6 +30,13 @@
   }
 }
 
+.card-img {
+  &-top.bg-overlay:before,
+  &-top.bg-overlay:after {
+    @include border-top-radius($card-inner-border-radius);
+  }
+}
+
 // Overlay background color
 .bg-overlay {
   &-white:after {
@@ -37,5 +44,15 @@
   }
   &-black:after {
     background-color: $black;
+  }
+  &-primary:after {
+    background-color: $primary;
+  }
+  &-primary-dark:after {
+	background-color: darken($primary, 30%);
+  }
+
+  &-gradient-white {
+	@include gradient-y(rgba($white,0.3), rgba($black,0.3), 0%, 100%);
   }
 }

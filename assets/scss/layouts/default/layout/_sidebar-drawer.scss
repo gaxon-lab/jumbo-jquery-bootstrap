@@ -50,7 +50,7 @@
   }
 
   &.#{$class-prefix}-sidebar {
-    width: calc(#{$sidebar-width + 50px});
+    width: $sidebar-width;
     background-color: $sidebar-bg;
     
     & .#{$class-prefix}-sidebar__container {

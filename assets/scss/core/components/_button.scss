@@ -7,60 +7,66 @@
 //
 
 .btn {
-  @include box-shadow(none);
-
-  &:focus,
-  &.focus {
-    @include box-shadow(none);
+  text: {
+	transform: uppercase;
   }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-
-    @include box-shadow(none);
-
-    &:focus {
-      @include box-shadow(none);
-    }
-  }
+  @include transition(background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms);
 
   &-shadow {
-    @include box-shadow($box-shadow-lg);
-    @include hover-focus {
-      @include box-shadow($box-shadow-lg);
-    }
+	@include box-shadow(0px 3px 1px -2px rgba($black, 0.2), 0px 2px 2px 0px rgba($black, 0.14), 0px 1px 5px 0px rgba($black, 0.12));
+	@include hover-focus {
+	  @include box-shadow(0px 2px 4px -1px rgba($black, 0.2), 0px 4px 5px 0px rgba($black, 0.14), 0px 1px 10px 0px rgba($black, 0.12));
+	}
 
-    &:active {
-      @include box-shadow($box-shadow-sm !important);
-    }
+	&:active {
+	  @include box-shadow(0px 5px 5px -3px rgba($black, 0.2), 0px 8px 10px 1px rgba($black, 0.14), 0px 3px 14px 2px rgba($black, 0.12) !important);
+	}
+  }
+
+  &-link {
+	font: {
+	  weight: $btn-font-weight;
+	}
   }
 
   &-rounded {
-    @include border-radius(50px);
+	@include border-radius(50px);
   }
 
   &-default {
-    background-color: $white;
-    color: $primary;
+	background-color: $white;
+	color: $primary;
 
-    @include hover-focus-active {
-      background-color: darken($white, 1%);
-      color: darken($primary, 5%);
-    }
+	@include hover-focus-active {
+	  background-color: darken($white, 1%);
+	  color: darken($primary, 5%);
+	}
+  }
+
+  &-outline-default {
+	background-color: $white;
+	color: $text-color-primary;
+	border: 1px solid rgba($black,0.23);
+
+	@include hover-focus-active {
+	  background-color: darken($white, 5%);
+	  color: $text-color-primary;
+	}
   }
 
   &-group &-default {
-    background-color: $white;
-    color: $primary;
-    &.active {
-      background-color: $primary;
-      color: $white;
-    }
+	background-color: $white;
+	color: $primary;
+
+	&.active {
+	  background-color: $primary;
+	  color: $white;
+	}
   }
 
   &-xs {
-    padding: 4px 8px;
-    font-size: 12px;
+	padding: 4px 8px;
+	font-size: 12px;
   }
 }
 

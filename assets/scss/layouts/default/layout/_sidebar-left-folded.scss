@@ -24,7 +24,7 @@
     }
 
     & .#{$class-prefix}-content-wrapper,
-    & .#{$class-prefix}-header__toolbar {
+    & .#{$class-prefix}-header {
       width: calc(100% - #{$folded-sidebar-width});
     }
 
@@ -64,9 +64,11 @@
 
   &.#{$class-prefix}-sidebar--fixed {
     & .#{$class-prefix}-content-wrapper,
-    & .#{$class-prefix}-header__toolbar {
-      margin-left: $folded-sidebar-width;
+    & .#{$class-prefix}-header {
       width: calc(100% - #{$folded-sidebar-width});
+    }
+    & .#{$class-prefix}-content-wrapper {
+      margin-left: $folded-sidebar-width;
     }
 
     &:not(.#{$class-prefix}-header--fixed):not(.theme-semidark):not(.theme-dark) {

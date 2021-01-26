@@ -9,125 +9,148 @@
 
 .ct-label {
   font: {
-    family: $font-family-base;
-    weight: 500;
-    size: 1rem;
+	family: $font-family-base;
+	weight: 500;
+	size: 1rem;
   }
 
   .theme-dark & {
-    color: $body-color;
+	color: $body-color;
   }
 }
 
 //Stroke Width
 .stroke {
+  &-w-0 {
+	& .ct-line {
+	  stroke-width: 0;
+	}
+  }
+
   &-w-1 {
-    & .ct-line {
-      stroke-width: 1px;
-    }
+	& .ct-line {
+	  stroke-width: 1px;
+	}
   }
+
   &-w-2 {
-    & .ct-line {
-      stroke-width: 2px;
-    }
+	& .ct-line {
+	  stroke-width: 2px;
+	}
   }
+
   &-w-3 {
-    & .ct-line {
-      stroke-width: 3px;
-    }
+	& .ct-line {
+	  stroke-width: 3px;
+	}
   }
 }
 
 // Stroke dasharray
 .stroke-dasharray {
   &-0 {
-    & .ct-grid {
-      stroke-dasharray: 0;
-    }
+	& .ct-grid {
+	  stroke-dasharray: 0;
+	}
   }
+
   &-1 {
-    & .ct-grid {
-      stroke-dasharray: 1px;
-    }
+	& .ct-grid {
+	  stroke-dasharray: 1px;
+	}
   }
+
   &-2 {
-    & .ct-grid {
-      stroke-dasharray: 2px;
-    }
+	& .ct-grid {
+	  stroke-dasharray: 2px;
+	}
   }
+
   &-3 {
-    & .ct-grid {
-      stroke-dasharray: 3px;
-    }
+	& .ct-grid {
+	  stroke-dasharray: 3px;
+	}
   }
+
   &-4 {
-    & .ct-grid {
-      stroke-dasharray: 4px;
-    }
+	& .ct-grid {
+	  stroke-dasharray: 4px;
+	}
   }
+
   &-5 {
-    & .ct-grid {
-      stroke-dasharray: 5px;
-    }
+	& .ct-grid {
+	  stroke-dasharray: 5px;
+	}
   }
 }
 
 // Fill Opacity
 .fill-opacity {
   &-0 {
-    & .ct-area {
-      fill-opacity: 0;
-    }
+	& .ct-area {
+	  fill-opacity: 0;
+	}
   }
+
   &-0_1 {
-    & .ct-area {
-      fill-opacity: 0.1;
-    }
+	& .ct-area {
+	  fill-opacity: 0.1;
+	}
   }
+
   &-0_2 {
-    & .ct-area {
-      fill-opacity: 0.2;
-    }
+	& .ct-area {
+	  fill-opacity: 0.2;
+	}
   }
+
   &-0_3 {
-    & .ct-area {
-      fill-opacity: 0.3;
-    }
+	& .ct-area {
+	  fill-opacity: 0.3;
+	}
   }
+
   &-0_4 {
-    & .ct-area {
-      fill-opacity: 0.4;
-    }
+	& .ct-area {
+	  fill-opacity: 0.4;
+	}
   }
+
   &-0_5 {
-    & .ct-area {
-      fill-opacity: 0.5;
-    }
+	& .ct-area {
+	  fill-opacity: 0.5;
+	}
   }
+
   &-0_6 {
-    & .ct-area {
-      fill-opacity: 0.6;
-    }
+	& .ct-area {
+	  fill-opacity: 0.6;
+	}
   }
+
   &-0_7 {
-    & .ct-area {
-      fill-opacity: 0.7;
-    }
+	& .ct-area {
+	  fill-opacity: 0.7;
+	}
   }
+
   &-0_8 {
-    & .ct-area {
-      fill-opacity: 0.8;
-    }
+	& .ct-area {
+	  fill-opacity: 0.8;
+	}
   }
+
   &-0_9 {
-    & .ct-area {
-      fill-opacity: 0.9;
-    }
+	& .ct-area {
+	  fill-opacity: 0.9;
+	}
   }
+
   &-1 {
-    & .ct-area {
-      fill-opacity: 1;
-    }
+	& .ct-area {
+	  fill-opacity: 1;
+	}
   }
 }
 
@@ -138,91 +161,170 @@
 
 .stroke {
   &-primary {
-    .ct-series-a .ct-line {
-      stroke: $primary;
-    }
+	.ct-series-a .ct-line {
+	  stroke: $primary;
+	}
   }
+
   &-secondary {
-    .ct-series-a .ct-line {
-      stroke: $secondary;
-    }
+	.ct-series-a .ct-line {
+	  stroke: $secondary;
+	}
   }
+
   &-success {
-    .ct-series-a .ct-line {
-      stroke: $success;
-    }
+	.ct-series-a .ct-line {
+	  stroke: $success;
+	}
   }
+
   &-danger {
-    .ct-series-a .ct-line {
-      stroke: $danger;
-    }
+	.ct-series-a .ct-line {
+	  stroke: $danger;
+	}
   }
+
   &-warning {
-    .ct-series-a .ct-line {
-      stroke: $warning;
-    }
+	.ct-series-a .ct-line {
+	  stroke: $warning;
+	}
   }
+
   &-info {
-    .ct-series-a .ct-line {
-      stroke: $info;
-    }
+	.ct-series-a .ct-line {
+	  stroke: $info;
+	}
+  }
+
+  &-white-25 {
+	.ct-series-a .ct-line {
+	  stroke: rgba($white, 0.25) !important;
+	}
   }
 }
 
 .ct-line-chart {
   & .ct-series {
-    &-a .ct-line {
-      stroke: $primary;
-    }
+	&-a .ct-line {
+	  stroke: $primary;
+	}
 
-    &-a .ct-area {
-      fill: url(#gradient2) !important;
-    }
+	&-a .ct-area {
+	  fill: url(#gradient2) !important;
+	}
 
-    &-b .ct-line {
-      stroke: $secondary;
-    }
+	&-b .ct-line {
+	  stroke: $secondary;
+	}
 
-    &-b .ct-area {
-      fill: url(#gradient3) !important;
-    }
+	&-b .ct-area {
+	  fill: url(#gradient3) !important;
+	}
   }
 }
 
 .chart-area-work {
   & .ct-series {
-    &-a .ct-line {
-      stroke: $primary;
-    }
+	&-a .ct-line {
+	  stroke: $primary;
+	}
 
-    &-a .ct-area {
-      fill: url(#ws-gradient3) !important;
-    }
+	&-a .ct-area {
+	  fill: url(#ws-gradient3) !important;
+	}
   }
 }
 
+// Crypto Dashboard Chart Style
 .chart-area-balance {
   & .ct-series {
-    &-a .ct-line {
-      stroke: $secondary;
-    }
+	&-a .ct-line {
+	  stroke: $secondary;
+	}
 
-    &-a .ct-area {
-      fill: url(#gradient3) !important;
-    }
+	&-a .ct-area {
+	  fill: url(#gradient3) !important;
+	}
   }
 
   .ct-label {
-    padding-top: 5px;
-    border-top: $dt-border;
-    font: {
-      weight: 400;
-      size: $font-size-base;
-    }
+	padding-top: 5px;
+	border-top: $dt-border;
+	font: {
+	  weight: 400;
+	  size: $font-size-base;
+	}
 
-    &.ct-horizontal.ct-end {
-      justify-content: center;
-      text-align: center;
-    }
+	&.ct-horizontal.ct-end {
+	  justify-content: center;
+	  text-align: center;
+	}
+  }
+}
+
+#ct-widget-area {
+  &-chart1 .ct-series {
+	&-a .ct-area {
+	  fill: url(#gradient-color1);
+	}
+  }
+
+  &-chart2 .ct-series {
+	&-a .ct-area {
+	  fill: url(#gradient-color2);
+	}
+
+	&-a .ct-line {
+	  stroke: #E59D1E;
+	  stroke-width: 2;
+	}
+  }
+
+  &-chart3 .ct-series {
+	&-a .ct-area {
+	  fill: url(#gradient-color3);
+	}
+  }
+
+  &-chart4 .ct-series {
+	&-a .ct-area {
+	  fill: url(#gradient-color4);
+	}
+
+	&-a .ct-line {
+	  stroke: #19A6D2;
+	  stroke-width: 2;
+	}
+  }
+}
+
+#site-visitor {
+  &-chart .ct-series {
+	&-a .ct-area {
+	  fill: url(#gradient-color1);
+	}
+
+	&-a .ct-line {
+	  stroke: #D72934;
+	}
+  }
+}
+
+#user-statistics {
+  &-chart .ct-series {
+	&-a .ct-area {
+	  fill: url(#gradient-color1);
+	}
+	&-b .ct-area {
+	  fill: url(#gradient-color2);
+	}
+  }
+}
+
+#order {
+  &-chart .ct-series {
+	&-a .ct-area {
+	  fill: url(#gradient-primary-secondary);
+	}
   }
 }

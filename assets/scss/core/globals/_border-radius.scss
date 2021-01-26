@@ -14,5 +14,8 @@
 .rounded {
   &-xl {
     @include border-radius($border-radius-xl !important);
+	&-top{
+	  @include border-top-radius($border-radius-xl !important);
+	}
   }
 }

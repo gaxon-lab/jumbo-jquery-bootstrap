@@ -367,7 +367,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Chris Harris</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Graphic Design / Logo Design / UI &amp; UX</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -445,7 +445,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Alia Joseph</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">UI/UI Expert</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -522,7 +522,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Mathew</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">React Developer</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -600,7 +600,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Joshua Brian</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Data Analyst</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -678,7 +678,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Kemroon White</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Data Scientist</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -755,7 +755,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Selena</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Web designer</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -832,7 +832,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Nikki Johnson</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">React Developer</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -910,7 +910,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Domnic Brown</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Android Developer</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -986,7 +986,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Kadir</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">HR Manager</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -1064,7 +1064,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Jones</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">CFO</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -1142,7 +1142,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Anisha</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">PHP Developer</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -1220,7 +1220,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Jimmy Jo</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">iOS Developer</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -1296,7 +1296,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Stella Brown</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">React Developer</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -1372,7 +1372,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Amay Mathur</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Python Developer</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -1450,7 +1450,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Noah Owens</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">CFO</span>
                                     </div>
                                     <div class="text-light-gray">
@@ -1528,7 +1528,7 @@
                                 <div class="dt-module__list-item-content">
                                     <div class="user-detail">
                                         <span class="user-name">Ellen Manning</span>
-                                        <span class="dt-separator-v">&nbsp;</span>
+                                        <hr class="dt-separator-v">
                                         <span class="designation">Designer</span>
                                     </div>
                                     <div class="text-light-gray">

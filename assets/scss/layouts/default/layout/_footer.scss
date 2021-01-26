@@ -2,12 +2,24 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .#{$class-prefix}-footer {
+  @include box-shadow($footer-shadow);
   background-color: $footer-bg;
   color: $footer-color;
-  padding: 1.2rem 3.2rem;
   display: flex;
   align-items: center;
   min-height: $footer-height;
   max-height: $footer-height;
   margin-top: auto;
+  padding: 2rem 1.6rem;
+  @include media-breakpoint-only(xl) {
+	padding: 3.2rem 8.8rem;
+  }
+  @include media-breakpoint-only(lg) {
+	padding-left: 6.5rem;
+	padding-right: 6.5rem;
+  }
+  @include media-breakpoint-only(md) {
+	padding-left: 5rem;
+	padding-right: 5rem;
+  }
 }

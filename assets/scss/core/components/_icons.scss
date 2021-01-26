@@ -5,19 +5,25 @@
 //Flag Icon Style
 .flag-icon {
   &-lg {
-    font-size: 1.8rem;
+	font-size: 1.8rem;
   }
 
   &-xl {
-    font-size: 2.5rem;
+	font-size: 2.5rem;
   }
 
   &-rounded {
-    @include border-radius($border-radius-sm);
+	@include border-radius($border-radius-sm);
   }
 
   &-circle {
-    @include border-radius($border-radius-circle);
+	@include border-radius($border-radius-circle);
+	background-size: cover;
+
+	&:not([class*="size-"]) {
+	  height: 30px;
+	  width: 30px
+	}
   }
 }
 
@@ -34,45 +40,52 @@
   -moz-osx-font-smoothing: grayscale;
 
   &-fw {
-    width: 1.28571429em;
-    text-align: center;
+	width: 1.28571429em;
+	text-align: center;
   }
 
   &-sm {
-    font-size: 1.4rem;
+	font-size: 1.4rem;
   }
 
   &-lg {
-    font-size: 1.6rem;
+	font-size: 1.6rem;
   }
+
   &-xl {
-    font-size: 2rem;
+	font-size: 2rem;
   }
 
   &-1x {
-    font-size: 2.2rem;
+	font-size: 2.2rem;
   }
+
   &-2x {
-    font-size: 2.5rem;
+	font-size: 2.5rem;
   }
+
   &-3x {
-    font-size: 3rem;
+	font-size: 3rem;
   }
+
   &-4x {
-    font-size: 4rem;
+	font-size: 4rem;
   }
+
   &-5x {
-    font-size: 4.5rem;
+	font-size: 4.5rem;
   }
+
   &-6x {
-    font-size: 5.5rem;
+	font-size: 5.5rem;
   }
+
   &-7x {
-    font-size: 7rem;
+	font-size: 7rem;
   }
 
   &-rotate--25 {
-    @include rotate(-25deg);
+	@include rotate(-25deg);
   }
 }
 
@@ -81,24 +94,24 @@
   font-size: 4.2rem;
 
   &:before {
-    position: relative;
-    z-index: 2;
-    background-color: $dt-card-bg;
-    display: block;
+	position: relative;
+	z-index: 2;
+	background-color: $dt-card-bg;
+	display: block;
   }
 
   &:after {
-    content: '';
-    display: inline-block;
-    width: 4.2rem;
-    height: 4.2rem;
-    @include border-radius($border-radius-circle);
-    background: inherit;
-    opacity: 0.2;
-    position: absolute;
-    top: 0.4rem;
-    left: 0.1rem;
-    z-index: 2;
+	content: '';
+	display: inline-block;
+	width: 4.2rem;
+	height: 4.2rem;
+	@include border-radius($border-radius-circle);
+	background: inherit;
+	opacity: 0.2;
+	position: absolute;
+	top: 0.4rem;
+	left: 0.1rem;
+	z-index: 2;
   }
 }
 
@@ -106,24 +119,28 @@
   position: relative;
 
   &:after {
-    position: absolute;
-    content: "";
-    right: 4px;
-    top: 1px;
-    z-index: 10;
-    width: 6px;
-    height: 6px;
-    background-color: $danger;
-    @include border-radius($border-radius-circle);
-    @include pulse-effect($danger);
+	position: absolute;
+	content: "";
+	right: 4px;
+	top: 1px;
+	z-index: 10;
+	width: 6px;
+	height: 6px;
+	background-color: $danger;
+	@include border-radius($border-radius-circle);
+	@include pulse-effect($danger);
   }
 }
 
 .draggable-icon {
-  cursor: all-scroll;
+  cursor: grab;
 
-  @include hover-focus-active {
-    cursor: all-scroll;
+  @include hover {
+	cursor: grab;
+  }
+
+  &:focus, &:active {
+	cursor: grabbing;
   }
 }
 
@@ -145,33 +162,33 @@
 // Spin
 @keyframes icon-spin {
   0% {
-    transform: rotate(0deg);
+	transform: rotate(0deg);
   }
   100% {
-    transform: rotate(359deg);
+	transform: rotate(359deg);
   }
 }
 
 // Spin Reverse
 @keyframes icon-spin-reverse {
   0% {
-    transform: rotate(0deg);
+	transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-359deg);
+	transform: rotate(-359deg);
   }
 }
 
 // Spin Reverse
 @keyframes animation-customizer {
   0% {
-    transform: rotate(0deg);
+	transform: rotate(0deg);
   }
   50% {
-    transform: rotate(45deg);
+	transform: rotate(45deg);
   }
   100% {
-    transform: rotate(0deg);
+	transform: rotate(0deg);
   }
 }
 

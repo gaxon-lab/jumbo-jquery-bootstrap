@@ -82,7 +82,7 @@
   }
 
   &-header {
-    @include box-shadow(0 2px 2px 0 rgba($text-color, 0.05));
+    @include box-shadow(0 2px 2px 0 rgba($text-color-secondary, 0.05));
 
     & .title {
       font-size: 15px;
@@ -95,6 +95,6 @@
   }
 
   &-footer {
-    @include box-shadow(0 -2px 2px 0 rgba($text-color, 0.05));
+    @include box-shadow(0 -2px 2px 0 rgba($text-color-secondary, 0.05));
   }
 }

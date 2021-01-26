@@ -97,7 +97,7 @@ $theme-colors: map-merge((
 //Custom Color system
 $text-color: #757575 !default;
 $text-color-dark: #212121 !default;
-$primary-light: lighten($primary, 40%) !default;
+$light-primary: lighten($primary, 40%) !default;
 $light-green: #1dce8e !default;
 $dark-green: #3d6003 !default;
 $light-blue: #5797fc !default;
@@ -112,7 +112,7 @@ $light-teal: #1b8abe !default;
 $dt-colors: ();
 $dt-colors: map-merge((
     "light-gray": #9f9f9f,
-    "light-primary": $primary-light,
+    "light-primary": $light-primary,
     "light-green": $light-green,
     "dark-green": $dark-green,
     "light-blue": $light-blue,

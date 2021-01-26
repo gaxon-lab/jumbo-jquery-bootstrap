@@ -3,6 +3,12 @@
 // -----------------------------------------------------------------------------
 
 .height {
+  &-50 {
+    height: 50px;
+  }
+  &-55 {
+    height: 55px;
+  }
   &-75 {
     height: 75px;
   }
@@ -22,6 +28,18 @@
 
 //Max height
 .max-h {
+  &-200 {
+    max-height: 200px;
+  }
+  &-250 {
+    max-height: 250px;
+  }
+  &-280 {
+    max-height: 280px;
+  }
+  &-300 {
+    max-height: 300px;
+  }
   &-350 {
     max-height: 350px;
   }

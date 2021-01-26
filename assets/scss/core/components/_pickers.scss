@@ -103,7 +103,7 @@
   padding: .8rem;
   border-color: $border-color;
   background: $gray-100;
-  color: $text-color;
+  color: $text-color-secondary;
   vertical-align: middle;
   @include border-radius($border-radius);
 
@@ -111,7 +111,7 @@
   &.sp-active {
     background: $gray-200;
     border-color: darken($border-color, 5%);
-    color: $text-color-dark;
+    color: $text-color-primary;
   }
 }
 

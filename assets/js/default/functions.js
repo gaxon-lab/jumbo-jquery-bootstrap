@@ -169,7 +169,7 @@ var drift = {
                     top: (offset.top - 100),
                     width: 135,
                     height: 90,
-                    zIndex: 2
+                    zIndex: 100
                 });
                 $this.thumbCard.fadeIn();
             }
@@ -510,7 +510,7 @@ function changeTheme($theme, $style, $themeStylesheet, $init) {
 
     $('#theme-style-chooser').show();
     if ($theme === 'light') {
-        $logo.attr('src', $mediaUrl + 'assets/images/logo.png');
+        $logo.attr('src', $mediaUrl + 'assets/images/logo-white.png');
         $body.find('.dt-login__content-inner .dt-brand__logo-img').attr('src', $mediaUrl + 'assets/images/logo.png');
         $body.removeClass('theme-dark').removeClass('theme-semidark');
         $themeStylesheet.href = $baseUrl + 'assets/css/default/theme-' + $theme + stylePath + rtlString + '.min.css';
@@ -609,7 +609,7 @@ var $themeStylesheet;
 var $dtTheme = getCookie('dt-theme');
 var $dtLayout = getCookie('dt-layout');
 var $dtStyle = getCookie('dt-style');
-var $currentTheme = ($dtTheme) ? $dtTheme : 'semidark';
+var $currentTheme = ($dtTheme) ? $dtTheme : 'light';
 var $currentLayout = ($dtLayout) ? $dtLayout : 'full-width';
 var $currentThemeStyle = ($dtStyle) ? $dtStyle : '';
 

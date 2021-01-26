@@ -4,3 +4,31 @@
 @each $color, $value in $dt-colors {
   @include text-emphasis-variant(".text-#{$color}", $value);
 }
+
+$text-colors: ();
+$text-colors: map-merge((
+	"primary": $text-color-primary,
+	"secondary": $text-color-secondary,
+	"disabled": $text-color-disabled,
+	"hint": $text-color-hint,
+), $text-colors);
+
+@each $color, $value in $text-colors {
+  @include text-emphasis-variant(".text-#{$color}", $value);
+}
+
+.text-inherit {
+  color: inherit;
+
+  @include hover-focus {
+	color: inherit;
+  }
+}
+
+.text-link {
+  color: $link-hover-color !important;
+
+  @include hover-focus {
+	color: $link-hover-color;
+  }
+}

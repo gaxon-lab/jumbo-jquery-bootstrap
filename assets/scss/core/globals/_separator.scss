@@ -18,11 +18,12 @@
   }
 
   &-v {
-    border-left: $dt-border;
+    border: 0 none;
     display: inline-block;
-    height: 100%;
+    height: auto;
     width: 1px;
-    margin-left: 1.4rem;
-    margin-right: 1.4rem;
+    margin: 0 1rem;
+	align-self: stretch;;
+	background-color: $border-color-dark;
   }
 }

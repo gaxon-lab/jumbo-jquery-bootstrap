@@ -29,4 +29,16 @@
   &-image-v7 {
     @include background-img('#{$image_path}/bg-image-6.jpg', center center);
   }
+
+  &-image-v8 {
+    @include background-img('#{$image_path}/bg-image-7.jpg', center center);
+  }
+
+  &-image-v9 {
+    @include background-img('#{$image_path}/bg-image-8.jpg', center center);
+  }
+
+  &-image-v10 {
+    @include background-img('#{$image_path}/horizon-city.jpg', center center);
+  }
 }

@@ -13,7 +13,6 @@
     <!-- Root -->
     <div class="dt-root">
         <div class="dt-root__inner">
-            <?php include view_path('partials/header.php'); ?>
 
             <!-- Site Main -->
             <main class="dt-main">
@@ -21,6 +20,7 @@
 
                 <!-- Site Content Wrapper -->
                 <div class="dt-content-wrapper">
+					<?php include view_path('partials/header.php'); ?>
 
                     <!-- Site Content -->
                     <div class="dt-content">

@@ -31,7 +31,7 @@
     padding-left: $dt-card-padding-x;
     padding-right: $dt-card-padding-x;
     margin-bottom: 4px;
-    color: lighten($text-color, 14%);
+    color: lighten($text-color-secondary, 14%);
   }
 
   &__item {
@@ -84,7 +84,7 @@
   }
 
   &__subtitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
 
     @include media-breakpoint-down(xs) {
@@ -209,9 +209,12 @@
   &-bg {
     & .#{$class-prefix}-widget__item {
       @extend %widget-hover;
+	  @include transition(all 0.2s);
 
       @include hover {
-        background-color: rgba($primary, 0.06);
+		@include translateY(-4px);
+		@include box-shadow(0 3px 10px 0 rgba(2, 2, 2, 0.2));
+		background-color: fade-out($primary, 0.9);
       }
 
       @include media-breakpoint-up(sm) {
@@ -235,7 +238,7 @@
 .theme-dark .#{$class-prefix}-widget-hover {
   &-bg .#{$class-prefix}-widget__item {
     @include hover {
-      background-color: rgba($primary, 0.2);
+	  background-color: fade-out($primary, 0.8);
     }
   }
 }

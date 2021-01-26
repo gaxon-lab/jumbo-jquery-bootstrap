@@ -50,7 +50,7 @@
     & .#{$class-prefix}-chat__message {
       background-color: $white;
       border-color: $border-color;
-      color: $text-color;
+      color: $text-color-secondary;
 
       &:last-child {
         @include border-radius(12px 12px 0 12px);

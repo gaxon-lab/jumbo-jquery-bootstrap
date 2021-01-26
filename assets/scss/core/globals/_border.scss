@@ -53,6 +53,10 @@
   }
 }
 
+.border-white {
+  border-color: $white !important;
+}
+
 .border-black-transparent {
   border-color: rgba($black, 0.15) !important;
 }

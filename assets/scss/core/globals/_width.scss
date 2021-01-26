@@ -5,21 +5,34 @@
 // Minimum Width
 @each $prop, $abbrev in (min-width: min-w) {
   @each $size, $length in $min-sizes {
-    .#{$abbrev}-#{$size} {
-      #{$prop}: $length
-    }
+	.#{$abbrev}-#{$size} {
+	  #{$prop}: $length
+	}
   }
 }
 
 //Max Width
 .max-w {
+  &-40 {
+	max-width: 4rem;
+  }
+
   &-90 {
-    max-width: 9rem;
+	max-width: 9rem;
   }
+
   &-105 {
-    max-width: 10.5rem;
+	max-width: 10.5rem;
   }
+
   &-250 {
-    max-width: 25rem !important;
+	max-width: 25rem !important;
+  }
+}
+
+// Width
+.w {
+  &-220 {
+	width: 22rem;
   }
 }

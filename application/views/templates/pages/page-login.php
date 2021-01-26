@@ -1,132 +1,122 @@
 <div class="dt-login--container">
 
-    <!-- Login Content -->
-    <div class="dt-login__content-wrapper">
+	<!-- Login Content -->
+	<div class="dt-login__content-wrapper">
 
-        <!-- Login Background Section -->
-        <div class="dt-login__bg-section">
+		<!-- Login Background Section -->
+		<div class="dt-login__bg-section">
+			<img src="<?php echo assets_url('images/auth/img-login.png'); ?>" alt="...">
+		</div>
+		<!-- /login background section -->
 
-            <div class="dt-login__bg-content">
-                <!-- Login Title -->
-                <h1 class="dt-login__title">Login</h1>
-                <!-- /login title -->
+		<!-- Login Content Section -->
+		<div class="dt-login__content">
+			<!-- Login Content Header -->
+			<div class="dt-login__content-header">
+				<!-- Brand logo -->
+				<div class="dt-login__logo">
+					<a class="dt-brand__logo-link" href="<?php echo site_url(); ?>">
+						<img class="dt-brand__logo-img" src="<?php echo assets_url('images/logo.png'); ?>" alt="Drift">
+					</a>
+				</div>
+				<!-- /brand logo -->
 
-                <p class="f-16">Sign in and explore in-built apps of Drift.</p>
-            </div>
+				<!-- Login Title -->
+				<h1 class="dt-login__title">Login</h1>
+				<!-- /login title -->
+			</div>
+			<!-- /login content header -->
 
+			<!-- Login Content Inner -->
+			<div class="dt-login__content-inner">
 
-            <!-- Brand logo -->
-            <div class="dt-login__logo">
-                <a class="dt-brand__logo-link" href="<?php echo site_url();?>">
-                    <img class="dt-brand__logo-img" src="<?php echo assets_url('images/logo-white.png');?>" alt="Drift">
-                </a>
-            </div>
-            <!-- /brand logo -->
+				<!-- Form -->
+				<form action="<?php echo site_url(); ?>">
 
-        </div>
-        <!-- /login background section -->
+					<!-- Form Group -->
+					<div class="form-group">
+						<label class="sr-only" for="email-1">Email address</label>
+						<input type="email" class="form-control" id="email-1" aria-describedby="email-1"
+							   placeholder="Enter email">
+					</div>
+					<!-- /form group -->
 
-        <!-- Login Content Section -->
-        <div class="dt-login__content">
+					<!-- Form Group -->
+					<div class="form-group">
+						<label class="sr-only" for="password-1">Password</label>
+						<input type="password" class="form-control" id="password-1" placeholder="Password">
+					</div>
+					<!-- /form group -->
 
-            <!-- Login Content Inner -->
-            <div class="dt-login__content-inner">
+					<!-- Form Group -->
+					<div class="d-flex align-items-center justify-content-between mb-8">
+						<div class="dt-checkbox">
+							<input type="checkbox" id="checkbox-1">
+							<label class="dt-checkbox-content" for="checkbox-1">Remember me</label>
+						</div>
+						<a href="<?php echo site_url('pages/forgot-password'); ?>" class="text-secondary">Forgot Password?</a>
+					</div>
+					<!-- /form group -->
 
-                <!-- Form -->
-                <form action="<?php echo site_url();?>">
+					<!-- Form Group -->
+					<div class="form-group d-flex align-items-center justify-content-between">
+						<button type="submit" class="btn btn-primary text-uppercase">Sign In</button>
+						<a class="d-inline-block ml-3" href="<?php echo site_url('pages/signup'); ?>">Create New Account</a>
+					</div>
+					<!-- /form group -->
 
-                    <!-- Form Group -->
-                    <div class="form-group">
-                        <label class="sr-only" for="email-1">Email address</label>
-                        <input type="email" class="form-control" id="email-1" aria-describedby="email-1"
-                               placeholder="Enter email">
-                    </div>
-                    <!-- /form group -->
+					<!-- Form Group -->
+					<div class="d-flex flex-wrap align-items-center">
+						<span class="d-inline-block mr-2">Or Login with</span>
 
-                    <!-- Form Group -->
-                    <div class="form-group">
-                        <label class="sr-only" for="password-1">Password</label>
-                        <input type="password" class="form-control" id="password-1" placeholder="Password">
-                    </div>
-                    <!-- /form group -->
+						<!-- List -->
+						<ul class="dt-list dt-list-sm dt-list-cm-0 ml-auto">
+							<li class="dt-list__item">
+								<!-- Fab Button -->
+								<a href="javascript:void(0)" class="btn dt-fab-btn size-30">
+									<i class="icon icon-facebook icon-1x"></i>
+								</a>
+								<!-- /fab button -->
+							</li>
 
-                    <!-- Form Group -->
-                    <div class="dt-checkbox d-block mb-6">
-                        <input type="checkbox" id="checkbox-1">
-                        <label class="dt-checkbox-content" for="checkbox-1">
-                            Keep me login on this device
-                        </label>
-                    </div>
-                    <!-- /form group -->
+							<li class="dt-list__item">
+								<!-- Fab Button -->
+								<a href="javascript:void(0)" class="btn dt-fab-btn size-30">
+									<i class="icon icon-google-plus icon-1x"></i>
+								</a>
+								<!-- /fab button -->
+							</li>
 
-                    <!-- Form Group -->
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary text-uppercase">Login</button>
-                        <span class="d-inline-block ml-4">Or
-                            <a class="d-inline-block font-weight-500 ml-3" href="<?php echo site_url('pages/signup'); ?>">Create New Account</a>
-                        </span>
-                    </div>
-                    <!-- /form group -->
+							<li class="dt-list__item">
+								<!-- Fab Button -->
+								<a href="javascript:void(0)" class="btn dt-fab-btn size-30">
+									<i class="icon icon-github icon-1x"></i>
+								</a>
+								<!-- /fab button -->
+							</li>
 
-                    <!-- Form Group -->
-                    <div class="d-flex flex-wrap align-items-center">
-                        <span class="d-inline-block mr-2">Or connect with</span>
+							<li class="dt-list__item">
+								<!-- Fab Button -->
+								<a href="javascript:void(0)" class="btn dt-fab-btn size-30">
+									<i class="icon icon-twitter icon-1x"></i>
+								</a>
+								<!-- /fab button -->
+							</li>
+						</ul>
+						<!-- /list -->
+					</div>
+					<!-- /form group -->
 
-                        <!-- List -->
-                        <ul class="dt-list dt-list-sm dt-list-cm-0 ml-auto">
-                            <li class="dt-list__item">
-                                <!-- Fab Button -->
-                                <a href="javascript:void(0)" class="btn btn-outline-primary dt-fab-btn size-30">
-                                    <i class="icon icon-facebook icon-xl"></i>
-                                </a>
-                                <!-- /fab button -->
-                            </li>
+				</form>
+				<!-- /form -->
 
-                            <li class="dt-list__item">
-                                <!-- Fab Button -->
-                                <a href="javascript:void(0)" class="btn btn-outline-primary dt-fab-btn size-30">
-                                    <i class="icon icon-google-plus icon-xl"></i>
-                                </a>
-                                <!-- /fab button -->
-                            </li>
+			</div>
+			<!-- /login content inner -->
 
-                            <li class="dt-list__item">
-                                <!-- Fab Button -->
-                                <a href="javascript:void(0)" class="btn btn-outline-primary dt-fab-btn size-30">
-                                    <i class="icon icon-github icon-xl"></i>
-                                </a>
-                                <!-- /fab button -->
-                            </li>
+		</div>
+		<!-- /login content section -->
 
-                            <li class="dt-list__item">
-                                <!-- Fab Button -->
-                                <a href="javascript:void(0)" class="btn btn-outline-primary dt-fab-btn size-30">
-                                    <i class="icon icon-twitter icon-xl"></i>
-                                </a>
-                                <!-- /fab button -->
-                            </li>
-                        </ul>
-                        <!-- /list -->
-                    </div>
-                    <!-- /form group -->
-
-
-                </form>
-                <!-- /form -->
-
-            </div>
-            <!-- /login content inner -->
-
-            <!-- Login Content Footer -->
-            <div class="dt-login__content-footer">
-                <a href="<?php echo site_url('pages/forgot-password');?>">Can’t access your account?</a>
-            </div>
-            <!-- /login content footer -->
-
-        </div>
-        <!-- /login content section -->
-
-    </div>
-    <!-- /login content -->
+	</div>
+	<!-- /login content -->
 
 </div>

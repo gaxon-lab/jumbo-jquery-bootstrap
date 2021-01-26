@@ -597,6 +597,3 @@
 
 </div>
 <!-- /grid -->
-
-</div>
-<!-- /site content -->

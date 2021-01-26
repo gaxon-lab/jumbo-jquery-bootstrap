@@ -15,7 +15,7 @@
 
   & .#{$class-prefix}-contact {
     @include hover-focus {
-      background-color: lighten($primary-light, 10%);
+      background-color: lighten($light-primary, 10%);
       cursor: pointer;
 
       & .#{$class-prefix}-contact__title {
@@ -41,7 +41,7 @@
     padding-left: 2.6rem;
     padding-right: 2.6rem;
     margin-bottom: 4px;
-    color: $text-color;
+    color: $text-color-secondary;
   }
 
   &__info {
@@ -73,7 +73,7 @@
 .contact-modal {
   & .modal-header {
     @include border-top-radius($border-radius - 0.1rem);
-    background-color: $text-color-dark;
+    background-color: $text-color-primary;
     padding: 6px 16px;
 
     & .close,
@@ -111,7 +111,7 @@
     border-bottom: $dt-border;
 
     &:focus {
-      border-color: $text-color-dark;
+      border-color: $text-color-primary;
     }
   }
 }

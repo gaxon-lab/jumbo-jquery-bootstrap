@@ -28,7 +28,7 @@
                     <div class="flex-1 overflow-hidden mb-6 mb-sm-0 pr-sm-3">
                         <div class="user-detail mb-3">
                             <span class="user-name">Joshua Brian</span>
-                            <span class="dt-separator-v">&nbsp;</span>
+                            <hr class="dt-separator-v">
                             <span class="designation">Data Analyst</span>
                         </div>
                         <p class="text-truncate">Cicero famously orated against his political
@@ -93,7 +93,7 @@
                     <div class="flex-1 overflow-hidden mb-6 mb-sm-0 pr-sm-3">
                         <div class="user-detail mb-3">
                             <span class="user-name">Alia Joseph</span>
-                            <span class="dt-separator-v">&nbsp;</span>
+                            <hr class="dt-separator-v">
                             <span class="designation">UX/UI Expert</span>
                         </div>
                         <p class="text-truncate">Cicero famously orated against his political
@@ -158,7 +158,7 @@
                     <div class="flex-1 overflow-hidden mb-6 mb-sm-0 pr-sm-3">
                         <div class="user-detail mb-3">
                             <span class="user-name">Kemroon White</span>
-                            <span class="dt-separator-v">&nbsp;</span>
+                            <hr class="dt-separator-v">
                             <span class="designation">Data Scientist</span>
                         </div>
                         <p class="text-truncate">Cicero famously orated against his political
@@ -224,7 +224,7 @@
                     <div class="flex-1 overflow-hidden mb-6 mb-sm-0 pr-sm-3">
                         <div class="user-detail mb-3">
                             <span class="user-name">Selena</span>
-                            <span class="dt-separator-v">&nbsp;</span>
+                            <hr class="dt-separator-v">
                             <span class="designation">Web Designer / UI &amp; UX Expert</span>
                         </div>
                         <p class="text-truncate">Cicero famously orated against his political
@@ -289,7 +289,7 @@
                     <div class="flex-1 overflow-hidden mb-6 mb-sm-0 pr-sm-3">
                         <div class="user-detail mb-3">
                             <span class="user-name">Jeson Born</span>
-                            <span class="dt-separator-v">&nbsp;</span>
+                            <hr class="dt-separator-v">
                             <span class="designation">Web Developer</span>
                         </div>
                         <p class="text-truncate">Cicero famously orated against his political
@@ -355,7 +355,7 @@
                     <div class="flex-1 overflow-hidden mb-6 mb-sm-0 pr-sm-3">
                         <div class="user-detail mb-3">
                             <span class="user-name">Nikki Johnson</span>
-                            <span class="dt-separator-v">&nbsp;</span>
+                            <hr class="dt-separator-v">
                             <span class="designation">React Developer</span>
                         </div>
                         <p class="text-truncate">Cicero famously orated against his political
@@ -421,7 +421,7 @@
                     <div class="flex-1 overflow-hidden mb-6 mb-sm-0 pr-sm-3">
                         <div class="user-detail mb-3">
                             <span class="user-name">Chris Harris</span>
-                            <span class="dt-separator-v">&nbsp;</span>
+                            <hr class="dt-separator-v">
                             <span class="designation">Graphic Design / Logo Design / UI &amp; UX</span>
                         </div>
                         <p class="text-truncate">Cicero famously orated against his political

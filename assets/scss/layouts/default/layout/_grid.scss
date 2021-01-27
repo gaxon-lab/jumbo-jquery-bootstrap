@@ -82,9 +82,9 @@
   &__title {
     margin-bottom: 0;
     font: {
-      size: 16px;
+      size: 18px;
     }
     text-transform: capitalize;
-    color: $text-muted;
+	color: $text-color-primary;
   }
 }

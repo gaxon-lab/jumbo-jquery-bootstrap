@@ -7,14 +7,15 @@
 
 .bg-focus {
   background-color: transparent;
+
   &:focus {
-    background-color: $gray-100;
+	background-color: $gray-100;
   }
 
   .theme-dark & {
-    &:focus {
-      background-color: $body-bg;
-    }
+	&:focus {
+	  background-color: $body-bg;
+	}
   }
 }
 
@@ -25,23 +26,26 @@
   cursor: pointer;
 
   & .show {
-    display: block;
+	display: block;
   }
+
   & .hide {
-    display: none;
+	display: none;
   }
 
   &.active {
-    & .show {
-      display: none;
-    }
-    & .hide {
-      display: block;
-    }
+	& .show {
+	  display: none;
+	}
+
+	& .hide {
+	  display: block;
+	}
   }
 }
 
 // Cursor pointer
+.cursor-pointer,
 [data-toggle='mdrawer'],
 [data-switch='mdrawer'],
 [data-dismiss='mdrawer'],
@@ -54,11 +58,12 @@
 
 .flex {
   &-1 {
-    flex: 1;
-    -ms-flex: 1 1 auto;
+	flex: 1;
+	-ms-flex: 1 1 auto;
   }
+
   &-initial {
-    flex: initial !important;
+	flex: initial !important;
   }
 }
 
@@ -67,32 +72,38 @@
   overflow: hidden;
 
   & > .count-number {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    @include translate(-50%, -50%);
-    color: $white;
-    z-index: 2;
-    display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include translate(-50%, -50%);
+	color: $white;
+	z-index: 2;
+	display: inline-block;
   }
 
   &:after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    display: block;
-    background-color: rgba($black, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    @include transition(all 0.5s ease);
+	content: '';
+	height: 100%;
+	width: 100%;
+	display: block;
+	background-color: rgba($black, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	@include transition(all 0.5s ease);
+  }
+
+  &.rounded-circle {
+	&:after {
+	  @include border-radius($border-radius-circle);
+	}
   }
 
   @include hover {
-    &:after {
-      background-color: rgba($black, 0.65);
-    }
+	&:after {
+	  background-color: rgba($black, 0.65);
+	}
   }
 }
 
@@ -100,13 +111,13 @@
   @extend %dot-shape;
 
   &.dot-shape-lg {
-    width: 10px;
-    height: 10px;
+	width: 10px;
+	height: 10px;
   }
 
   &.dot-shape-xl {
-    width: 12px;
-    height: 12px;
+	width: 12px;
+	height: 12px;
   }
 }
 

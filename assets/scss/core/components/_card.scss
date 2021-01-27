@@ -596,3 +596,57 @@
 	@include translate(-50%, -50%);
   }
 }
+
+//User Background card
+.user-bg-card {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:not([class*="size-"]) {
+	width: 100%;
+  }
+
+  &:before {
+	content: "";
+	display: block;
+	padding-top: 90%;
+	@include gradient-y(rgba($black, 0), $black, 66.67%, 100%);
+  }
+
+  &.rounded-circle {
+	overflow: visible;
+
+	&:before {
+	  @include border-radius($border-radius-circle);
+	  padding-top: 100%;
+	}
+  }
+
+  & .#{$class-prefix}-status {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+  }
+
+  & &__info {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	width: 100%;
+	padding: 10px;
+	color: $white;
+
+	.#{$class-prefix}-avatar-name {
+	  @include text-truncate;
+	}
+  }
+}

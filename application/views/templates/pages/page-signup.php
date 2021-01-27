@@ -58,7 +58,7 @@
 
 					<!-- Form Group -->
 					<div class="form-group mb-5">
-						<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+						<button type="submit" class="btn btn-primary btn-shadow btn-lg btn-block">Register</button>
 					</div>
 					<!-- /form group -->
 

@@ -5,120 +5,138 @@
 //Profile Style
 .profile {
   &__banner {
-    position: relative;
-    margin: -4.4rem -3.2rem -5.5rem;
-    padding: 4.4rem 3.2rem 8rem;
-    background-color: rgba(darken($primary, 15%), 0.9);
-    color: $white;
+	position: relative;
+	margin: -2rem -1.6rem;
+	padding: 4rem 1.6rem;
+	@include background-img('#{$image_path}/profile-img.jpg', center center);
+	color: $white;
 
-    @include media-breakpoint-down(md) {
-      .#{$class-prefix}-layout--modern &,
-      .#{$class-prefix}-layout--back-office &,
-      .#{$class-prefix}-layout--back-office-mini & {
-        margin-top: 0;
-      }
-    }
+	&:before {
+	  content: '';
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba($primary, 0.5);
+	}
 
-    .#{$class-prefix}-layout--intranet & {
-      background-color: darken($primary, 15%);
-      @include media-breakpoint-up(lg) {
-        @include border-top-radius($border-radius);
-      }
-    }
+	@include media-breakpoint-only(xl) {
+	  padding: 5.6rem 8.8rem 7.8rem;
+	  margin: -3.2rem -8.8rem -5.2rem;
+	}
+	@include media-breakpoint-only(lg) {
+	  padding-left: 6.5rem;
+	  padding-right: 6.5rem;
+	  margin-left: -6.5rem;
+	  margin-right: -6.5rem;
+	}
+	@include media-breakpoint-only(md) {
+	  padding-left: 5rem;
+	  padding-right: 5rem;
+	  margin-left: -5rem;
+	  margin-right: -5rem;
+	}
 
-    @include media-breakpoint-down(xs) {
-      margin-bottom: 3.2rem;
-      padding-bottom: 3.2rem;
-    }
+	@include media-breakpoint-down(md) {
+	  .#{$class-prefix}-layout--modern &,
+	  .#{$class-prefix}-layout--back-office &,
+	  .#{$class-prefix}-layout--back-office-mini & {
+		margin-top: 0;
+	  }
+	}
 
-    &-detail {
-      position: relative;
-      z-index: 2;
+	.#{$class-prefix}-layout--intranet & {
+	  background-color: darken($primary, 15%);
+	  @include media-breakpoint-up(lg) {
+		@include border-top-radius($border-radius);
+	  }
+	}
 
-      @include media-breakpoint-up(sm) {
-        display: flex;
-        align-items: center;
-      }
-    }
+	&-detail {
+	  position: relative;
+	  z-index: 2;
 
-    &-navigation {
-      position: relative;
-      z-index: 2;
-      display: flex;
-    }
+	  &:not(:last-child) {
+		margin-bottom: 2rem;
+	  }
 
-    &-detail {
-      @include media-breakpoint-down(xs) {
-        & .#{$class-prefix}-avatar-wrapper {
-          flex-direction: column;
-          margin-bottom: 4rem;
+	  @include media-breakpoint-up(sm) {
+		display: flex;
+		align-items: center;
+	  }
+	  @include media-breakpoint-down(xs) {
+		& .#{$class-prefix}-avatar-wrapper {
+		  flex-direction: column;
+		  margin-bottom: 4rem;
 
-          & .#{$class-prefix}-avatar-info {
-            text-align: center;
-            margin-top: 2rem;
-          }
-        }
-      }
+		  & .#{$class-prefix}-avatar-info {
+			text-align: center;
+			margin-top: 2rem;
+		  }
+		}
+	  }
+	}
 
-      &:not(:last-child) {
-        margin-bottom: 9rem;
+	&-navigation {
+	  position: relative;
+	  z-index: 2;
+	  display: flex;
+	  justify-content: flex-end;
+	}
 
-        @include media-breakpoint-down(xs) {
-          margin-bottom: 5rem;
-        }
-      }
-    }
+	& .#{$class-prefix}-list {
+	  margin-left: -2.6rem;
+	  margin-right: -2.6rem;
+	}
 
-    & .#{$class-prefix}-list {
-      margin-left: -2.6rem;
-      margin-right: -2.6rem;
-    }
-
-    & .#{$class-prefix}-list__item {
-      padding-left: 2.6rem;
-      padding-right: 2.6rem;
-    }
+	& .#{$class-prefix}-list__item {
+	  padding-left: 2.6rem;
+	  padding-right: 2.6rem;
+	}
   }
 
   &-content {
-    & .#{$class-prefix}-list-col-4 .#{$class-prefix}-list__item {
-      margin-bottom: 4rem;
+	& .#{$class-prefix}-list-col-4 .#{$class-prefix}-list__item {
+	  margin-bottom: 4rem;
 
-      @include media-breakpoint-down(md) {
-        width: 50%;
-      }
+	  @include media-breakpoint-down(md) {
+		width: 50%;
+	  }
 
-      @include media-breakpoint-down(xs) {
-        width: 100%;
-      }
-    }
+	  @include media-breakpoint-down(xs) {
+		width: 100%;
+	  }
+	}
   }
 }
 
 .profile__banner {
   & .navbar-nav {
-    flex-flow: row wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+	flex-flow: row wrap;
+	margin-left: -5px;
+	margin-right: -5px;
   }
 
   & .nav-link {
-    padding-left: 8px;
-    padding-right: 8px;
+	padding: 6px 4px;
+	border-bottom: 2px solid transparent;
+	color: rgba($white, 0.74);
 
-    color: rgba($white, 0.85);
-
-    @include hover-focus-active {
-      color: rgba($white, 1);
-    }
+	@include hover-focus-active {
+	  color: rgba($white, 1);
+	  border-bottom-color: rgba($white, 0.74);
+	}
   }
 
   & .nav-item {
-    padding-left: 10px;
-    padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 
-    &.active .nav-link {
-      color: rgba($white, 1);
-    }
+	&.active .nav-link {
+	  color: rgba($white, 1);
+	  border-bottom-color: rgba($white, 0.74);
+	}
   }
 }

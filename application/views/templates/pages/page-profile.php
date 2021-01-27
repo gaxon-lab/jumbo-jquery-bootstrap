@@ -8,14 +8,14 @@
             <!-- Avatar Wrapper -->
             <div class="dt-avatar-wrapper">
                 <!-- Avatar -->
-                <img class="dt-avatar dt-avatar__shadow size-90 mr-sm-4"
-                     src="<?php echo assets_url('images/user-avatar/amay.jpg');?>" alt="Reece Jacklin">
+                <img class="dt-avatar size-80 mr-sm-4"
+                     src="<?php echo assets_url('images/user-avatar/noah-owens.jpg');?>" alt="Reece Jacklin">
                 <!-- /avatar -->
 
                 <!-- Info -->
                 <div class="dt-avatar-info">
-                    <span class="dt-avatar-name display-4 mb-2 font-weight-light">Reece Jacklin</span>
-                    <span class="f-16">Florida, USA</span>
+                    <span class="dt-avatar-name display-5 mb-2">Reece Jacklin</span>
+                    <span class="f-16 text-transparent-50">Florida, USA</span>
                 </div>
                 <!-- /info -->
             </div>
@@ -23,7 +23,7 @@
 
             <div class="ml-sm-auto">
                 <!-- List -->
-                <ul class="dt-list dt-list-bordered dt-list-col-4">
+                <ul class="dt-list dt-list-bordered-white dt-list-col-4">
                     <!-- List Item -->
                     <li class="dt-list__item text-center">
                         <span class="h4 font-weight-500 mb-0 text-white">2k+</span>
@@ -55,13 +55,13 @@
             <ul class="navbar-nav">
 
                 <!-- Nav Item -->
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link " href="javascript:void(0)">Timeline</a>
                 </li>
                 <!-- /nav item -->
 
                 <!-- Nav Item -->
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="javascript:void(0)">About</a>
                 </li>
                 <!-- /nav item -->
@@ -74,9 +74,7 @@
 
                 <!-- Nav Item -->
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Friends
-                        <small class="text-light-gray">287</small>
-                    </a>
+                    <a class="nav-link" href="javascript:void(0)">Friends 287</a>
                 </li>
                 <!-- /nav item -->
 
@@ -88,30 +86,6 @@
 
             </ul>
             <!-- /navbar -->
-
-            <!-- Dropdown -->
-            <div class="dropdown pl-3 mt-2 ml-auto">
-
-                <!-- Dropdown Button -->
-                <a href="#" class="dropdown-toggle no-arrow text-white" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    <i class="icon icon-settings icon-xl mr-2"></i><span
-                        class="d-none d-sm-inline-block">Settings</span>
-                </a>
-                <!-- /dropdown button -->
-
-                <!-- Dropdown Menu -->
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
-                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
-                </div>
-                <!-- /dropdown menu -->
-
-            </div>
-            <!-- /dropdown -->
 
         </div>
         <!-- /profile banner bottom -->
@@ -126,7 +100,7 @@
         <div class="row">
 
             <!-- Grid Item -->
-            <div class="col-xl-4 order-xl-2">
+            <div class="col-xl-4">
 
 
                 <!-- Grid -->
@@ -342,7 +316,7 @@
             <!-- /grid item -->
 
             <!-- Grid Item -->
-            <div class="col-xl-8 order-xl-1">
+            <div class="col-xl-8">
 
                 <!-- Card -->
                 <div class="card">

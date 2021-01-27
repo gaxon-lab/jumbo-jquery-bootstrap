@@ -314,7 +314,7 @@
 			<div class="dt-card__body">
 
 				<!-- Media -->
-				<div class="media">
+				<div class="media mb-2">
 					<!-- Avatar -->
 					<img class="dt-avatar size-50 mr-2"
 						 src="<?php echo assets_url('images/user-avatar/zakie-chain.jpg'); ?>"
@@ -325,7 +325,7 @@
 					<div class="media-body">
 
 						<!-- Text Area -->
-						<textarea class="form-control border-0 shadow-none bg-focus" rows="3"
+						<textarea class="form-control border-0 shadow-none bg-focus" rows="2"
 								  placeholder="Whats in your mind?"></textarea>
 						<!-- /text area -->
 
@@ -333,10 +333,6 @@
 					<!-- /media body -->
 				</div>
 				<!-- /media -->
-
-				<!-- Separator -->
-				<hr>
-				<!-- /separator -->
 
 				<div class="d-flex align-items-center">
 					<div class="dt-attachment-btn border-0 d-inline-flex align-items-center overflow-hidden">

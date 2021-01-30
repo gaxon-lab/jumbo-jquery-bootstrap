@@ -35,11 +35,11 @@
 
   &-default {
 	background-color: $white;
-	color: $primary;
+	color: $text-color-secondary;
 
 	@include hover-focus-active {
 	  background-color: darken($white, 1%);
-	  color: darken($primary, 5%);
+	  color: darken($text-color-secondary, 5%);
 	}
   }
 

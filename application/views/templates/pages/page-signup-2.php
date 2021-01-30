@@ -3,12 +3,6 @@
 	<!-- Login Content -->
 	<div class="dt-login__content-wrapper">
 
-		<!-- Login Background Section -->
-		<div class="dt-login__bg-section">
-			<img src="<?php echo assets_url('images/auth/img-login.png'); ?>" alt="...">
-		</div>
-		<!-- /login background section -->
-
 		<!-- Login Content Section -->
 		<div class="dt-login__content">
 			<!-- Login Content Header -->
@@ -22,7 +16,7 @@
 				<!-- /brand logo -->
 
 				<!-- Login Title -->
-				<h1 class="dt-login__title">Login</h1>
+				<h1 class="dt-login__title">Create an account</h1>
 				<!-- /login title -->
 			</div>
 			<!-- /login content header -->
@@ -32,6 +26,14 @@
 
 				<!-- Form -->
 				<form action="<?php echo site_url(); ?>">
+
+					<!-- Form Group -->
+					<div class="form-group">
+						<label class="sr-only" for="user-name">Name</label>
+						<input type="text" class="form-control" id="user-name" aria-describedby="user-name"
+							   placeholder="User Name">
+					</div>
+					<!-- /form group -->
 
 					<!-- Form Group -->
 					<div class="form-group">
@@ -49,25 +51,14 @@
 					<!-- /form group -->
 
 					<!-- Form Group -->
-					<div class="d-flex align-items-center justify-content-between mb-8">
-						<div class="dt-checkbox">
-							<input type="checkbox" id="checkbox-1">
-							<label class="dt-checkbox-content" for="checkbox-1">Remember me</label>
-						</div>
-						<a href="<?php echo site_url('pages/forgot-password'); ?>" class="text-secondary">Forgot Password?</a>
-					</div>
-					<!-- /form group -->
-
-					<!-- Form Group -->
-					<div class="form-group d-flex align-items-center justify-content-between">
-						<button type="submit" class="btn btn-primary btn-shadow">Sign In</button>
-						<a class="d-inline-block ml-3" href="<?php echo site_url('pages/signup'); ?>">Create New Account</a>
+					<div class="form-group mb-5">
+						<button type="submit" class="btn btn-primary btn-shadow btn-lg btn-block">Register</button>
 					</div>
 					<!-- /form group -->
 
 					<!-- Form Group -->
 					<div class="d-flex flex-wrap align-items-center">
-						<span class="d-inline-block mr-2">Or Login with</span>
+						<span class="d-inline-block mr-2">Or Sign Up With</span>
 
 						<!-- List -->
 						<ul class="dt-list dt-list-sm dt-list-cm-0 ml-auto">
@@ -107,12 +98,18 @@
 					</div>
 					<!-- /form group -->
 
+					<!-- Form Group -->
+					<div class="text-center mt-6">
+						Have an account? <a href="<?php echo site_url('pages/login'); ?>">Sign In</a>
+					</div>
+					<!-- /form group -->
+
+
 				</form>
 				<!-- /form -->
 
 			</div>
 			<!-- /login content inner -->
-
 		</div>
 		<!-- /login content section -->
 

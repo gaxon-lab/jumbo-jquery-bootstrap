@@ -900,7 +900,7 @@
 								<div class="dt-avatar-wrapper">
 									<!-- Avatar -->
 									<img class="dt-avatar"
-										 src="<?php echo assets_url('images/user-avatar/men-3.jpg');?>"
+										 src="<?php echo assets_url('images/user-avatar/man-3.jpg');?>"
 										 alt="Jane Cooper">
 									<!-- /avatar -->
 
@@ -1140,7 +1140,7 @@
 								<div class="dt-avatar-wrapper">
 									<!-- Avatar -->
 									<img class="dt-avatar"
-										 src="<?php echo assets_url('images/user-avatar/men-3.jpg');?>"
+										 src="<?php echo assets_url('images/user-avatar/man-3.jpg');?>"
 										 alt="Jane Cooper">
 									<!-- /avatar -->
 

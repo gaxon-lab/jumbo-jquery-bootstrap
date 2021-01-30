@@ -641,19 +641,37 @@
 			<li class="dt-side-nav__item">
 				<a href="<?php echo site_url('pages/login'); ?>" class="dt-side-nav__link"> <i
 							class="icon icon-login-page icon-fw"></i>
-					<span class="dt-side-nav__text">Login Page</span>
+					<span class="dt-side-nav__text">Login Page 1</span>
+				</a>
+			</li>
+			<li class="dt-side-nav__item">
+				<a href="<?php echo site_url('pages/login-2'); ?>" class="dt-side-nav__link"> <i
+							class="icon icon-login-page icon-fw"></i>
+					<span class="dt-side-nav__text">Login Page 2</span>
 				</a>
 			</li>
 			<li class="dt-side-nav__item">
 				<a href="<?php echo site_url('pages/signup'); ?>" class="dt-side-nav__link">
 					<i class="icon icon-signup-page icon-fw"></i>
-					<span class="dt-side-nav__text">Sign Up Page</span>
+					<span class="dt-side-nav__text">Sign Up Page 1</span>
+				</a>
+			</li>
+			<li class="dt-side-nav__item">
+				<a href="<?php echo site_url('pages/signup-2'); ?>" class="dt-side-nav__link">
+					<i class="icon icon-signup-page icon-fw"></i>
+					<span class="dt-side-nav__text">Sign Up Page 2</span>
 				</a>
 			</li>
 			<li class="dt-side-nav__item">
 				<a href="<?php echo site_url('pages/forgot-password'); ?>" class="dt-side-nav__link">
 					<i class="icon icon-forgot-pass icon-fw"></i>
-					<span class="dt-side-nav__text">Forgot Password</span>
+					<span class="dt-side-nav__text">Forgot Password 1</span>
+				</a>
+			</li>
+			<li class="dt-side-nav__item">
+				<a href="<?php echo site_url('pages/forgot-password-2'); ?>" class="dt-side-nav__link">
+					<i class="icon icon-forgot-pass icon-fw"></i>
+					<span class="dt-side-nav__text">Forgot Password 2</span>
 				</a>
 			</li>
 			<li class="dt-side-nav__item">

@@ -182,20 +182,30 @@ class Main extends Base_Controller {
 	/*
 	 * Metrics
 	 */
-	function metrics($metrics = 'metricsClassic') {
-		$this->$metrics();
+	function metrics($metrics = 'Classic') {
+		$function_name = $metrics . '_metrics';
+		$this->$function_name();
 	}
 
-    /*
-     * Metrics Classic
-     */
-    function metricsClassic() {
-        $this->addjs(base_url("node_modules/chart.js/dist/Chart.min.js"), TRUE);
-        $this->addjs(base_url("node_modules/echarts/dist/echarts.min.js"), TRUE);
-        $this->addjs(base_url("node_modules/echarts-liquidfill/dist/echarts-liquidfill.min.js"), TRUE);
-        $this->addjs(assets_url("js/global/charts/metrics-charts.js"), TRUE);
+	/*
+	 * Metrics Classic
+	 */
+	function classic_metrics() {
+		$this->addjs(base_url("node_modules/chart.js/dist/Chart.min.js"), TRUE);
+		$this->addjs(base_url("node_modules/echarts/dist/echarts.min.js"), TRUE);
+		$this->addjs(base_url("node_modules/echarts-liquidfill/dist/echarts-liquidfill.min.js"), TRUE);
+		$this->addjs(assets_url("js/global/charts/metrics-charts.js"), TRUE);
 
-        $this->bulid_layout("templates/main/metrics/classic");
-    }
+		$this->bulid_layout("templates/main/metrics/classic");
+	}
+
+	function modern_metrics() {
+		$this->addjs(base_url("node_modules/chart.js/dist/Chart.min.js"), TRUE);
+		$this->addjs(base_url("node_modules/echarts/dist/echarts.min.js"), TRUE);
+		$this->addjs(base_url("node_modules/echarts-liquidfill/dist/echarts-liquidfill.min.js"), TRUE);
+		$this->addjs(assets_url("js/global/charts/metrics-charts.js"), TRUE);
+
+		$this->bulid_layout("templates/main/metrics/classic");
+	}
 
 }

@@ -3,12 +3,6 @@
 	<!-- Login Content -->
 	<div class="dt-login__content-wrapper">
 
-		<!-- Login Background Section -->
-		<div class="dt-login__bg-section">
-			<img src="<?php echo assets_url('images/auth/img-login.png'); ?>" alt="...">
-		</div>
-		<!-- /login background section -->
-
 		<!-- Login Content Section -->
 		<div class="dt-login__content">
 			<!-- Login Content Header -->

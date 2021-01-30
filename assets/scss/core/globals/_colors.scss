@@ -11,6 +11,7 @@ $text-colors: map-merge((
 	"secondary": $text-color-secondary,
 	"disabled": $text-color-disabled,
 	"hint": $text-color-hint,
+	"transparent-50": rgba($white, 0.50),
 ), $text-colors);
 
 @each $color, $value in $text-colors {

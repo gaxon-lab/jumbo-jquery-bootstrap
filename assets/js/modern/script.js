@@ -104,7 +104,7 @@
     //changeTheme($currentTheme, $currentThemeStyle, $themeStylesheet, true);
     changeLayout($currentLayout, true);
     activeFixedStyle();
-    init_indecator();
+    init_indicator();
 
     $('.dt-brand__tool, .dt-drawer-handle').on('click', function () {
         if (drift.sidebar.drawerRef.hasClass('dt-drawer')) {

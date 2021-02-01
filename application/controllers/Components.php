@@ -15,6 +15,8 @@ class Components extends Base_Controller {
      * Basic Components
      */
     public function basic($component = 'alerts') {
+        $this->addcss(assets_url("js/global/prismjs/prism.css"));
+        $this->addjs(assets_url("js/global/prismjs/prism.js"), true);
         $this->bulid_layout("templates/components/basic/" . $component);
     }
 

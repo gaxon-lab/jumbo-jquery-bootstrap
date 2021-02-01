@@ -52,6 +52,7 @@
   max-width: 400px;
   width: 100%;
 
+  & input[type="text"],
   & input[type="search"] {
 	padding-left: 50px;
   }
@@ -63,6 +64,7 @@
 	left: 18px;
 	top: 50%;
 	z-index: 4;
+	cursor: pointer;
 	@include translateY(-50%);
   }
 
@@ -118,6 +120,13 @@
   & .search-icon {
 	left: auto;
 	right: 15px;
+  }
+}
+
+// Search bar Animated
+.search-box-animated {
+  & .search-icon {
+	z-index: unset;
   }
 }
 

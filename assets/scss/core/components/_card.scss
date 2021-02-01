@@ -628,6 +628,12 @@
 	}
   }
 
+  &[class*="size-"] {
+	&:before {
+	  padding-top: 100%;
+	}
+  }
+
   & .#{$class-prefix}-status {
 	position: absolute;
 	top: 10px;

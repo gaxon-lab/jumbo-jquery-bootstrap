@@ -8,9 +8,9 @@
   min-height: 100vh;
 
   &__inner {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
   }
 }
 
@@ -31,6 +31,7 @@
 
 .#{$class-prefix}-content {
   padding: 2rem 1.6rem;
+  flex: 1;
   @include media-breakpoint-only(xl) {
 	padding: 3.2rem 8.8rem;
   }
@@ -46,45 +47,45 @@
 
 .#{$class-prefix}-page {
   &__header {
-    position: relative;
-    margin-bottom: 3.2rem;
+	position: relative;
+	margin-bottom: 3.2rem;
   }
 
   &__title {
-    font-weight: 700;
+	font-weight: 700;
   }
 }
 
 .#{$class-prefix}-entry {
 
   &__header {
-    position: relative;
-    margin-bottom: 3rem;
-    padding-bottom: 1.6rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: $dt-border;
+	position: relative;
+	margin-bottom: 3rem;
+	padding-bottom: 1.6rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: $dt-border;
 
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      height: 3px;
-      width: 45px;
-      background-color: $primary;
-      @include border-radius(10px);
-    }
+	&:after {
+	  content: '';
+	  position: absolute;
+	  bottom: -2px;
+	  left: 0;
+	  height: 3px;
+	  width: 45px;
+	  background-color: $primary;
+	  @include border-radius(10px);
+	}
   }
 
   &__title {
-    margin-bottom: 0;
-    font: {
-      size: 18px;
-    }
-    text-transform: capitalize;
+	margin-bottom: 0;
+	font: {
+	  size: 18px;
+	}
+	text-transform: capitalize;
 	color: $text-color-primary;
   }
 }

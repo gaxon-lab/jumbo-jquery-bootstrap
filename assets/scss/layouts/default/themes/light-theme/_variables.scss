@@ -75,7 +75,7 @@ $app-secondary: #03DAC5 !default;
 $primary: $app-primary;
 $light-primary: fade-out($primary, 0.9) !default;
 $secondary: $app-secondary;
-$light-secondary: fade-out($secondary, 0.9) !default;
+$light-secondary: fade-out($secondary, 0.8) !default;
 $success: #8DCD03;
 $light-success: #D7F5B1 !default;
 $info: #0795F4;

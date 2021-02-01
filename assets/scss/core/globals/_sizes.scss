@@ -5,7 +5,7 @@
 // Initial Number
 $num: 20;
 
-@while $num <= 120 {
+@while $num <= 130 {
   .size-#{$num} {
     width: #{$num}px;
     height: #{$num}px;

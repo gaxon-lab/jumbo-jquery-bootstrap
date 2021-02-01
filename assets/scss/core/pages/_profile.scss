@@ -99,7 +99,7 @@
 
   &-content {
 	& .#{$class-prefix}-list-col-4 .#{$class-prefix}-list__item {
-	  margin-bottom: 4rem;
+	  margin-bottom: 2rem;
 
 	  @include media-breakpoint-down(md) {
 		width: 50%;

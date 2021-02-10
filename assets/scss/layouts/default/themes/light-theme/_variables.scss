@@ -1268,10 +1268,13 @@ $min-sizes: map-merge((
 ), $min-sizes);
 
 //Modules Variables
-$module-sidebar-width: 230px !default;
+$module-sidebar-width: 256px !default;
 $module-sidebar-bg: $white !default;
-$module-sidebar-color: $text-color-primary !default;
-$module-sidebar-color-hover: $secondary !default;
+$module-sidebar-menu-bg-active: $sidebar-active-bg !default;
+$module-sidebar-menu-bg-hover: $sidebar-menu-hover-bg !default;
+$module-sidebar-color: $sidebar-color !default;
+$module-sidebar-color-hover: $sidebar-color-hover !default;
+$module-sidebar-color-active: $sidebar-active-color !default;
 
 //Image path
 $image-path: '../../images/bg-images' !default;

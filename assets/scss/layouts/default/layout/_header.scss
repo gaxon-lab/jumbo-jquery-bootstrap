@@ -306,7 +306,7 @@
 	background-color: darken($dt-card-bg, 2%);
   }
 
-  .#{$class-prefix}-module__container & .dropdown-menu {
+  .#{$class-prefix}-module__header-toolbar & .dropdown-menu {
 	width: 300px;
 
 	&-body {

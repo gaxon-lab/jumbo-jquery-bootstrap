@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Module Sidebar
+// -----------------------------------------------------------------------------
+
+//Module Sidebar Style
+.#{$class-prefix}-module__sidebar {
+  position: relative;
+  z-index: 2;
+  @include media-breakpoint-up(md) {
+	max-width: $module-sidebar-width;
+	flex: 0 0 $module-sidebar-width;
+	-ms-flex: 0 0 $module-sidebar-width;
+	display: flex;
+	flex-direction: column;
+	border-right: $dt-border;
+	min-height: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+	border-right: 0 none;
+	@include box-shadow($header-shadow);
+  }
+
+  &-header {
+	@include media-breakpoint-up(md) {
+	  min-height: 7rem;
+	  padding: 1.4rem 1.4rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+	  padding: 0 2.6rem;
+	  border-color: transparent !important;
+	}
+  }
+
+  &-header .quick-menu-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	font-size: 0;
+	margin-left: -9px;
+	margin-right: -9px;
+
+	@include media-breakpoint-up(md) {
+	  justify-content: space-between;
+	}
+
+	@include media-breakpoint-down(sm) {
+	  & .search-box {
+		padding: 1.2rem 0;
+		margin-right: auto;
+		width: 280px;
+	  }
+	}
+
+	@include media-breakpoint-down(xs) {
+	  & .search-box {
+		width: 150px;
+	  }
+	}
+
+	& .quick-menu {
+	  display: block;
+	  font-size: 2.2rem;
+	  padding-left: 9px;
+	  padding-right: 9px;
+
+	  @include media-breakpoint-down(sm) {
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+
+		&.active {
+		  background-color: $module-sidebar-color-hover;
+		  color: $white;
+
+		  & .icon-menu:before {
+			content: "\e08a";
+			font-weight: bold !important;
+		  }
+
+		  a {
+			color: $white;
+		  }
+		}
+	  }
+	}
+  }
+
+  &-content {
+	&-header {
+	  padding: 2.4rem 2.6rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+	  display: none;
+	}
+  }
+}
+
+.#{$class-prefix}-module-side-nav {
+  @extend %list-style-none;
+
+  &__header {
+	position: relative;
+	padding: 0.8rem 2.6rem;
+	text-transform: uppercase;
+	line-height: 1;
+	font-size: 10px;
+	color: $text-color-disabled;
+  }
+
+  &__item {
+	&.active .#{$class-prefix}-module-side-nav__link {
+	  background-color: $module-sidebar-menu-bg-active;
+	  color: $module-sidebar-color-active;
+	}
+
+	& + .#{$class-prefix}-module-side-nav__header {
+	  margin-top: 2rem;
+	}
+  }
+
+  & + .#{$class-prefix}-contacts {
+	margin-top: 2rem;
+
+	& .#{$class-prefix}-contact__heading {
+	  padding: 0.8rem 2.6rem;
+	  font-size: 10px;
+	  color: $text-color-disabled;
+	}
+  }
+
+  &__more {
+	padding: 1rem 2.6rem;
+  }
+
+  &__link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 1.2rem 2.6rem;
+	margin-right: 1.6rem;
+	line-height: 1;
+	text-transform: capitalize;
+	white-space: nowrap;
+	color: $module-sidebar-color;
+	@include border-right-radius(50px);
+	@include transition(border-radius .15s cubic-bezier(0.4, 0.0, 0.2, 1), margin .15s cubic-bezier(0.4, 0.0, 0.2, 1), width .15s cubic-bezier(0.4, 0.0, 0.2, 1));
+
+	& .icon,
+	& i {
+	  margin-right: 12px;
+	}
+
+	@include hover-focus-active {
+	  background-color: $module-sidebar-menu-bg-hover;
+	  color: $module-sidebar-color-hover;
+	}
+  }
+
+  &__text {
+	display: inline-block;
+	flex: 1;
+  }
+}

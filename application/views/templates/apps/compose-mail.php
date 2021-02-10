@@ -6,15 +6,16 @@
         <!-- Compose Mail Header -->
         <div class="compose-mail-box__header" data-toggle="minimize">
             <div class="title">
-                <i class="icon icon-editors icon-fw icon-xl mr-2"></i>Compose New Message
+                <i class="material-icons icon-fw mr-3">create</i>Compose New Message
             </div>
 
             <div class="action-area ml-auto">
-                <a class="text-white mr-3" href="javascript:void(0)"> <i
-                        class="icon icon-chevrolet-down icon-xl"></i> </a>
-                <a class="text-white" href="javascript:void(0)" data-dismiss="compose"> <i
-                        class="icon icon-remove icon-xl"></i>
-                </a>
+                <button class="btn dt-fab-btn size-30 text-white">
+					<i class="material-icons">remove</i>
+				</button>
+				<button class="btn dt-fab-btn size-30 text-white" data-dismiss="compose">
+					<i class="material-icons">close</i>
+				</button>
             </div>
         </div>
         <!-- /compose mail header -->

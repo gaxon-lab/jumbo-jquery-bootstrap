@@ -707,7 +707,7 @@ $toggle_state = '
 		<ul class="dt-list">
 			<!-- List Item -->
 			<li class="dt-list__item">
-				<a class="dt-list__link" href="#default-button">Default Buttons</a>
+				<a class="dt-list__link" href="#default-buttons">Default Buttons</a>
 			</li>
 			<!-- /list item -->
 			<!-- List Item -->

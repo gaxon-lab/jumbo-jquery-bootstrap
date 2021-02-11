@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to Prism
+// -----------------------------------------------------------------------------
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: $card-spacer-y $card-spacer-x;
+  margin: 0 auto;
+}
+
+.prism-container {
+  position: relative;
+  max-height: min(68vh);
+}

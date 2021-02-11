@@ -300,7 +300,7 @@ $component-active-bg: theme-color("primary");
 
 //$transition-base:             all .2s ease-in-out !default;
 //$transition-fade:             opacity .15s linear !default;
-//$transition-collapse:         height .35s ease !default;
+$transition-collapse:         height 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
 //$embed-responsive-aspect-ratios: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default

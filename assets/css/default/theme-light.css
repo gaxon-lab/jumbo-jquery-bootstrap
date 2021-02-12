@@ -13275,7 +13275,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   flex-wrap: wrap;
   -ms-flex-align: center;
   align-items: center;
-  padding: 18px 26px;
+  padding: 17px 26px;
   transition: all 0.2s; }
   @media (prefers-reduced-motion: reduce) {
     .dt-module__list-item {

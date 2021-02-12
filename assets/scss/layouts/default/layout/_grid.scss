@@ -31,7 +31,7 @@
 
 .#{$class-prefix}-content {
   padding: 2rem 1.6rem;
-  flex: 1;
+  flex: 1 1 auto;
   @include media-breakpoint-only(xl) {
 	padding: 3.2rem 8.8rem;
   }

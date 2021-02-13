@@ -15,18 +15,14 @@ $default_buttons = '
 <button type="button" class="btn btn-light mr-2 mb-2">Light</button>
 <button type="button" class="btn btn-dark mr-2 mb-2">Dark</button>
 <button type="button" class="btn btn-link mb-2">Link</button>';
-?>
 
-<?php
 $button_tag = '
 <a class="btn btn-primary mr-2 mb-2" href="javascript:void(0)" role="button">Link</a>
 <button class="btn btn-primary mr-2 mb-2" type="submit">Button</button>
 <input class="btn btn-primary mr-2 mb-2" type="button" value="Input">
 <input class="btn btn-primary mr-2 mb-2" type="submit" value="Submit">
 <input class="btn btn-primary mb-2" type="reset" value="Reset">';
-?>
 
-<?php
 $outline_buttons = '
 <button type="button" class="btn btn-outline-primary mr-2 mb-2">Primary</button>
 <button type="button" class="btn btn-outline-secondary mr-2 mb-2">Secondary</button>
@@ -36,9 +32,7 @@ $outline_buttons = '
 <button type="button" class="btn btn-outline-info mr-2 mb-2">Info</button>
 <button type="button" class="btn btn-outline-light mr-2 mb-2">Light</button>
 <button type="button" class="btn btn-outline-dark mb-2">Dark</button>';
-?>
 
-<?php
 $sizes_buttons = '
 <div>
 	<button type="button" class="btn btn-primary btn-lg mr-2 mb-2">Large button
@@ -57,31 +51,23 @@ $sizes_buttons = '
 	<button type="button" class="btn btn-secondary btn-sm mb-2">small button
 	</button>
 </div>';
-?>
 
-<?php
 $block_buttons = '
 <button type="button" class="btn btn-primary btn-block">Block level button</button>
 <button type="button" class="btn btn-secondary btn-block">Block level button</button>';
-?>
 
-<?php
 $active_state_buttons = '
 <button type="button" class="btn btn-primary active mr-2 mb-2">Primary button</button>
 <button type="button" class="btn btn-secondary active mr-2 mb-2">Button</button>
 <a href="javascript:void(0)" class="btn btn-primary active mr-2 mb-2" role="button" aria-pressed="true">Primary link</a>
 <a href="javascript:void(0)" class="btn btn-secondary active mb-2" role="button" aria-pressed="true">Link</a>';
-?>
 
-<?php
 $disable_state_buttons = '
 <button type="button" class="btn btn-primary mr-2 mb-2" disabled>Primary button</button>
 <button type="button" class="btn btn-secondary mr-2 mb-2" disabled>Button</button>
 <a href="javascript:void(0)" class="btn btn-primary mr-2 mb-2 disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
 <a href="javascript:void(0)" class="btn btn-secondary mb-2 disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>';
-?>
 
-<?php
 $checkbox_buttons = '
 <span class="btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary mr-2 mb-2 active">
@@ -94,9 +80,7 @@ $checkbox_buttons = '
 	<input type="checkbox"> Unchecked
   </label>
 </span>';
-?>
 
-<?php
 $radio_buttons = '
 <div class="btn-group btn-group-toggle mr-2 mb-2" data-toggle="buttons">
 	<label class="btn btn-primary">
@@ -121,9 +105,7 @@ $radio_buttons = '
 		<input type="radio" name="options" id="option6"> Radio
 	</label>
 </div>';
-?>
 
-<?php
 $toggle_state = '
 <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="button" aria-pressed="false">Single toggle</button>
 <button type="button" class="btn btn-outline-secondary mb-2" data-toggle="button" aria-pressed="false">Single toggle</button>';

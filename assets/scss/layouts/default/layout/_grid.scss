@@ -16,14 +16,13 @@
 
 .#{$class-prefix}-main {
   display: flex;
-  flex-wrap: wrap;
   flex: 1;
   -ms-flex: 1;
 }
 
 .#{$class-prefix}-content-wrapper {
+  position: relative;
   flex: 1 1 auto;
-  width: calc(100% - #{$sidebar-width});
   display: flex;
   flex-direction: column;
   @include transition(all 0.2s ease);

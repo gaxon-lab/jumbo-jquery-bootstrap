@@ -1165,7 +1165,9 @@ $footer-bg: $white !default;
 $footer-color: $text-color-disabled !default;
 
 //Sidebar Variables
+$sidebar-width-sm: 280px !default;
 $sidebar-width: 304px !default;
+$sidebar-width-lg: 330px !default;
 $sidebar-shadow: 0px 3px 4px rgba($black, 0.14), 0px 3px 3px rgba($black, 0.12), 0px 1px 8px rgba($black, 0.2) !default;
 $sidebar-bg: $white !default;
 $sidebar-color: $text-color-secondary !default;
@@ -1176,7 +1178,7 @@ $sidebar-active-color: $primary !default;
 $sidebar-submenu-color: $text-color-secondary !default;
 $sidebar-header-color: $text-color-disabled !default;
 $sidebar-separator: #EDEDED !default;
-$folded-sidebar-width: 70px !default;
+$folded-sidebar-width: 80px !default;
 
 //Custom Drawer Variables
 $dt-drawer-bg: $white !default;

@@ -756,7 +756,7 @@ class Export extends Base_Controller {
             mkdir($assetsDir . '/images/dashboard', 0777, TRUE);
             mkdir($assetsDir . '/images/widget', 0777, TRUE);
 
-            directory_copy('assets/images/customizer-icons', $assetsDir . '/images/customizer-icons');
+            directory_copy('assets/images/customizer', $assetsDir . '/images/customizer');
             directory_copy('assets/images/demo-images', $assetsDir . '/images/demo-images');
             directory_copy('assets/images/icon', $assetsDir . '/images/icon');
             directory_copy('assets/images/patterns', $assetsDir . '/images/patterns');

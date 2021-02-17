@@ -32,8 +32,8 @@
 
 			<!-- Search box -->
 			<form class="search-box d-none d-lg-block">
-				<input class="form-control form-control-lg rounded-pill" placeholder="Search in app..." value="" type="search">
-				<span class="search-icon"><i class="icon icon-search icon-lg"></i></span>
+				<input type="search" class="form-control rounded-pill" placeholder="Search in app..." value="Search here...">
+				<span class="search-icon"><i class="material-icons">search</i></span>
 			</form>
 			<!-- /search box -->
 
@@ -483,7 +483,7 @@
 						<!-- /dropdown link -->
 
 						<!-- Dropdown Option -->
-						<div class="dropdown-menu">
+						<div class="dropdown-menu dropdown-menu-right">
 							<a class="dropdown-item" href="javascript:void(0)">
 								<span class="d-flex align-items-center">
 								<i class="flag-icon flag-icon-in flag-icon-circle mr-3"></i><span>Hi-In</span>

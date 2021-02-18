@@ -102,4 +102,15 @@ class Extra_components extends Base_Controller {
         
         $this->bulid_layout("templates/extra-components/drag-drop");
     }
+
+	/**
+	 * Dropzone
+	 */
+    function dropzone() {
+		$this->addcss(base_url("node_modules/dropzone/dist/min/dropzone.min.css"));
+		$this->addjs(base_url("node_modules/dropzone/dist/min/dropzone.min.js"), true);
+		$this->addjs(assets_url("js/global/dropzone.js"), true);
+
+		$this->bulid_layout("templates/extra-components/dropzone");
+	}
 }

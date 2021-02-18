@@ -13,7 +13,7 @@
       var showShadow = ($(ctx.canvas).data('shadow')) ? $(ctx.canvas).data('shadow') : 'no';
       var chartType = ($(ctx.canvas).data('type')) ? $(ctx.canvas).data('type') : 'area';
 
-      if (showShadow == 'yes' && chartType == 'area') {
+      if (showShadow === 'yes' && chartType === 'area') {
         var _fill = ctx.fill;
         ctx.fill = function () {
           ctx.save();
@@ -24,7 +24,7 @@
           _fill.apply(this, arguments);
           ctx.restore();
         }
-      } else if (showShadow == 'yes' && chartType == 'line') {
+      } else if (showShadow === 'yes' && chartType === 'line') {
         var _stroke = ctx.stroke;
         ctx.stroke = function () {
           ctx.save();
@@ -56,6 +56,30 @@
       }]
     }
   };
+
+  // Online Signups
+	var optsOnlineSignups = $.extend({}, defaultOptions);
+	var ctxOnlineSignups = document.getElementById('chart-online-signups').getContext('2d');
+
+	new Chart(ctxOnlineSignups, {
+		type: 'line',
+		data: {
+			labels: ["Page C", "Page D", "Page E", "Page F", "Page G"],
+			datasets: [{
+				label: 'Active users',
+				data: [163, 620, 390, 860, 230],
+				fill: false,
+				backgroundColor: '#fff',
+				borderColor: '#0062FF',
+				hoverBorderColor: '#fff',
+				pointBackgroundColor: '#f14631',
+				pointBorderColor: '#fff',
+				pointBorderWidth: 2,
+				pointHoverBorderWidth: 2,
+			}]
+		},
+		options: optsOnlineSignups
+	});
 
   // Active users
   var optsActiveUsers = $.extend({}, defaultOptions);

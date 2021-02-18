@@ -21,9 +21,9 @@
 			<!-- Search Box -->
 			<form class="search-box ml-n2">
 				<input class="form-control border-0 shadow-none bg-focus form-control-sm"
-					   placeholder="Search in app..." value=""
-					   type="search"> <span class="search-icon"><i
-							class="icon icon-search icon-lg"></i></span>
+							 placeholder="Search in app..." value=""
+							 type="search"> <span class="search-icon"><i
+						class="icon icon-search icon-lg"></i></span>
 			</form>
 			<!-- /search box -->
 
@@ -32,7 +32,7 @@
 
 				<!-- Dropdown Button -->
 				<a href="#" class="dropdown-toggle no-arrow btn dt-fab-btn" data-toggle="dropdown"
-				   aria-haspopup="true" aria-expanded="false">
+					 aria-haspopup="true" aria-expanded="false">
 					<i class="icon icon-notification2 icon-1x"></i>
 				</a>
 				<!-- /dropdown button -->
@@ -45,7 +45,7 @@
 
 						<div class="ml-auto action-area">
 							<a href="javascript:void(0)">Mark All Read</a> <a class="ml-2"
-																			  href="javascript:void(0)">
+																																href="javascript:void(0)">
 								<i class="icon icon-settings icon-lg text-light-gray"></i>
 							</a>
 						</div>
@@ -61,15 +61,15 @@
 
 								<!-- Avatar -->
 								<img class="dt-avatar mr-3"
-									 src="<?php echo assets_url('images/user-avatar/stella-johnson.jpg'); ?>"
-									 alt="User">
+										 src="<?php echo assets_url('images/user-avatar/stella-johnson.jpg'); ?>"
+										 alt="User">
 								<!-- avatar -->
 
 								<!-- Media Body -->
 								<span class="media-body">
                                             <span class="message">
                                                 <span class="user-name">Stella Johnson</span> and <span
-														class="user-name">Chris Harris</span>
+																								class="user-name">Chris Harris</span>
                                                 have birthdays today. Help them celebrate!
                                             </span>
                                             <span class="meta-date">8 hours ago</span>
@@ -84,8 +84,8 @@
 
 								<!-- Avatar -->
 								<img class="dt-avatar mr-3"
-									 src="<?php echo assets_url('images/user-avatar/jeson-born.jpg'); ?>"
-									 alt="User">
+										 src="<?php echo assets_url('images/user-avatar/jeson-born.jpg'); ?>"
+										 alt="User">
 								<!-- avatar -->
 
 								<!-- Media Body -->
@@ -105,8 +105,8 @@
 
 								<!-- Avatar -->
 								<img class="dt-avatar mr-3"
-									 src="<?php echo assets_url('images/user-avatar/selena.jpg'); ?>"
-									 alt="User">
+										 src="<?php echo assets_url('images/user-avatar/selena.jpg'); ?>"
+										 alt="User">
 								<!-- avatar -->
 
 								<!-- Media Body -->
@@ -129,8 +129,8 @@
 
 								<!-- Avatar -->
 								<img class="dt-avatar mr-3"
-									 src="<?php echo assets_url('images/user-avatar/alex-dolgove.jpg'); ?>"
-									 alt="User">
+										 src="<?php echo assets_url('images/user-avatar/alex-dolgove.jpg'); ?>"
+										 alt="User">
 								<!-- avatar -->
 
 								<!-- Media Body -->
@@ -229,7 +229,7 @@
 						<!-- Menu Item -->
 						<li class="dt-module-side-nav__item">
 							<a href="javascript:void(0)" class="dt-module-side-nav__link">
-								<i class="material-icons icon-fw">report</i>
+								<i class="material-icons-outlined icon-fw">report</i>
 								<span class="dt-module-side-nav__text">Spam</span>
 							</a>
 						</li>
@@ -263,7 +263,7 @@
 						<!-- Menu Item -->
 						<li class="dt-module-side-nav__item">
 							<a href="javascript:void(0)" class="dt-module-side-nav__link">
-								<i class="material-icons icon-fw">label</i>
+								<i class="material-icons icon-fw">label_important</i>
 								<span class="dt-module-side-nav__text">Important</span>
 							</a>
 						</li>
@@ -326,8 +326,8 @@
 
 							<!-- Avatar -->
 							<img class="dt-avatar"
-								 src="<?php echo assets_url('images/user-avatar/steve-smith.jpg'); ?>"
-								 alt="Steve Smith">
+									 src="<?php echo assets_url('images/user-avatar/steve-smith.jpg'); ?>"
+									 alt="Steve Smith">
 							<!-- /avatar -->
 
 							<!-- Contact Info -->
@@ -362,8 +362,8 @@
 
 							<!-- Avatar -->
 							<img class="dt-avatar"
-								 src="<?php echo assets_url('images/user-avatar/stella-johnson.jpg'); ?>"
-								 alt="Stella Johnson">
+									 src="<?php echo assets_url('images/user-avatar/stella-johnson.jpg'); ?>"
+									 alt="Stella Johnson">
 							<!-- /avatar -->
 
 							<!-- Contact Info -->
@@ -414,11 +414,11 @@
 					<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-3">
 						<input id="option-checkbox" type="checkbox">
 						<label class="dt-checkbox-content"
-							   for="option-checkbox">
+									 for="option-checkbox">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 							<span class="checked"><i
-										class="material-icons text-link">check_box</i></span>
+									class="material-icons text-link">check_box</i></span>
 						</label>
 					</div>
 					<!-- /checkbox -->
@@ -427,7 +427,7 @@
 
 						<!-- Dropdown Button -->
 						<a href="#" class="dropdown-toggle text-disabled f-16" data-toggle="dropdown"
-						   aria-haspopup="true" aria-expanded="false"> None </a>
+							 aria-haspopup="true" aria-expanded="false"> None </a>
 						<!-- /dropdown button -->
 
 						<!-- Dropdown Menu -->
@@ -481,8 +481,8 @@
 
 							<!-- Dropdown Button -->
 							<a href="#" class="dropdown-toggle no-arrow btn dt-fab-btn"
-							   data-toggle="dropdown"
-							   aria-haspopup="true" aria-expanded="false">
+								 data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
 								<i class="material-icons">more_horiz</i>
 							</a>
 							<!-- /dropdown button -->
@@ -518,24 +518,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-1" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-1">
+										 for="icon-checkbox-1">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/amay.jpg'); ?>"
-							 alt="Reece Jacklin">
+								 src="<?php echo assets_url('images/user-avatar/amay.jpg'); ?>"
+								 alt="Reece Jacklin">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Chris Harris</div>
 								<div class="mail-title">Fusce a libero pellentesque</div>
@@ -621,22 +621,22 @@
 							<input id="icon-checkbox-3" type="checkbox">
 							<label class="dt-checkbox-content" for="icon-checkbox-3">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/stella-johnson.jpg'); ?>"
-							 alt="Stella Johnson">
+								 src="<?php echo assets_url('images/user-avatar/stella-johnson.jpg'); ?>"
+								 alt="Stella Johnson">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Alia Joseph</div>
 								<div class="mail-title">Nullam id ex at augue pharetra vestibulum eget id
@@ -723,11 +723,11 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-5" type="checkbox" checked>
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-5">
+										 for="icon-checkbox-5">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
@@ -738,7 +738,7 @@
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Mathew</div>
 								<div class="mail-title">Vivamus venenatis tempus ipsum, id finibus libero
@@ -823,24 +823,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-7" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-7">
+										 for="icon-checkbox-7">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/steve-smith.jpg'); ?>"
-							 alt="Steve Smith">
+								 src="<?php echo assets_url('images/user-avatar/steve-smith.jpg'); ?>"
+								 alt="Steve Smith">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Joshua Brian</div>
 								<div class="mail-title">Donec ut ante tristique, gravida justo vitae</div>
@@ -920,11 +920,11 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-9" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-9">
+										 for="icon-checkbox-9">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
@@ -935,7 +935,7 @@
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Kemroon White</div>
 								<div class="mail-title">Ut tincidunt massa non elementum fermentum</div>
@@ -1014,23 +1014,23 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-11" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-11">
+										 for="icon-checkbox-11">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/man-3.jpg'); ?>" alt="Chris Harris">
+								 src="<?php echo assets_url('images/user-avatar/man-3.jpg'); ?>" alt="Chris Harris">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Chris Harris</div>
 								<div class="mail-title">The standard Lorem Ipsum passage</div>
@@ -1108,24 +1108,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-13" type="checkbox" checked>
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-13">
+										 for="icon-checkbox-13">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/nikki.jpg'); ?>"
-							 alt="Nikki Johnson">
+								 src="<?php echo assets_url('images/user-avatar/nikki.jpg'); ?>"
+								 alt="Nikki Johnson">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Nikki Johnson</div>
 								<div class="mail-title">Cras bibendum tortor tortor</div>
@@ -1202,24 +1202,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-15" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-15">
+										 for="icon-checkbox-15">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/garry-sobars.jpg'); ?>"
-							 alt="Garry Sobars">
+								 src="<?php echo assets_url('images/user-avatar/garry-sobars.jpg'); ?>"
+								 alt="Garry Sobars">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Garry Sobars</div>
 								<div class="mail-title">Contrary to popular belief</div>
@@ -1295,24 +1295,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-17" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-17">
+										 for="icon-checkbox-17">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/jimmy-jo.jpg'); ?>"
-							 alt="Jimmy Jo">
+								 src="<?php echo assets_url('images/user-avatar/jimmy-jo.jpg'); ?>"
+								 alt="Jimmy Jo">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Jimmy Jo</div>
 								<div class="mail-title">Fusce a libero pellentesque</div>
@@ -1389,24 +1389,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-19" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-19">
+										 for="icon-checkbox-19">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/domnic-brown.jpg'); ?>"
-							 alt="Domnic Brown">
+								 src="<?php echo assets_url('images/user-avatar/domnic-brown.jpg'); ?>"
+								 alt="Domnic Brown">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Domnic Brown</div>
 								<div class="mail-title">Fusce a libero pellentesque</div>
@@ -1476,24 +1476,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-21" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-21">
+										 for="icon-checkbox-21">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/selena.jpg'); ?>"
-							 alt="Selena">
+								 src="<?php echo assets_url('images/user-avatar/selena.jpg'); ?>"
+								 alt="Selena">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Selena</div>
 								<div class="mail-title">Fusce a libero pellentesque</div>
@@ -1571,11 +1571,11 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-23" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-23">
+										 for="icon-checkbox-23">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
@@ -1586,7 +1586,7 @@
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Ron Brown</div>
 								<div class="mail-title">Fusce a libero pellentesque</div>
@@ -1667,23 +1667,23 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-25" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-25">
+										 for="icon-checkbox-25">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/mathew.jpg'); ?>" alt="Mathew">
+								 src="<?php echo assets_url('images/user-avatar/mathew.jpg'); ?>" alt="Mathew">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Mathew</div>
 								<div class="mail-title">Fusce a libero pellentesque</div>
@@ -1772,24 +1772,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-27" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-27">
+										 for="icon-checkbox-27">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/steve-smith.jpg'); ?>"
-							 alt="Steve Smith">
+								 src="<?php echo assets_url('images/user-avatar/steve-smith.jpg'); ?>"
+								 alt="Steve Smith">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Joshua Brian</div>
 								<div class="mail-title">Fusce a libero pellentesque</div>
@@ -1869,24 +1869,24 @@
 						<div class="dt-checkbox dt-checkbox-icon dt-checkbox-only mr-6">
 							<input id="icon-checkbox-29" type="checkbox">
 							<label class="dt-checkbox-content"
-								   for="icon-checkbox-29">
+										 for="icon-checkbox-29">
                                         <span class="unchecked"><i
-													class="material-icons">check_box_outline_blank</i></span>
+																						class="material-icons">check_box_outline_blank</i></span>
 								<span class="checked"><i
-											class="material-icons text-link">check_box</i></span>
+										class="material-icons text-link">check_box</i></span>
 							</label>
 						</div>
 						<!-- /checkbox -->
 
 						<!-- Avatar -->
 						<img class="dt-avatar size-55 mr-5"
-							 src="<?php echo assets_url('images/user-avatar/kemroon-white.jpg'); ?>"
-							 alt="Kemroon White">
+								 src="<?php echo assets_url('images/user-avatar/kemroon-white.jpg'); ?>"
+								 alt="Kemroon White">
 						<!-- /avatar -->
 
 						<!-- Module Content -->
 						<div class="dt-module__list-item-content"
-							 data-location="<?php echo site_url('apps/mail-detail'); ?>">
+								 data-location="<?php echo site_url('apps/mail-detail'); ?>">
 							<div class="user-detail">
 								<div class="user-name">Kemroon White</div>
 								<div class="mail-title">Fusce a libero pellentesque</div>

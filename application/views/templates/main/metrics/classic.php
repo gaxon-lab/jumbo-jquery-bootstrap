@@ -1,8 +1,47 @@
 <!-- Page Header -->
 <div class="dt-page__header">
-	<h1 class="dt-page__title">Metrics</h1>
+	<h1 class="dt-page__title">Metrics Classic</h1>
 </div>
 <!-- /page header -->
+
+<!-- Grid -->
+<div class="row">
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6 order-md-1">
+
+		<!-- Card -->
+		<div class="dt-card dt-chart">
+
+			<!-- Card Body -->
+			<div class="dt-card__body pt-0">
+				<!-- Card Body -->
+				<div class="dt-chart__body">
+					<canvas height="155" id="chart-online-signups" data-shadow="yes"></canvas>
+				</div>
+				<!-- /Chart Body -->
+
+				<div class="d-flex align-items-center justify-content-between mb-2">
+					<div class="flex-1">
+						<h4 class="mb-1">10,254</h4>
+						<h5 class="f-12">Online Signups</h5>
+					</div>
+					<span class="d-inline-flex text-success">
+							1.5%<i class="icon icon-profit icon-fw"></i>
+					</span>
+				</div>
+
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+</div>
+<!-- /grid -->
 
 <!-- Grid -->
 <div class="row">
@@ -28,9 +67,9 @@
 					<!-- Dropdown -->
 					<div class="dropdown d-inline-block">
 						<a class="dropdown-toggle btn btn-default btn-xs bg-transparent border"
-						   href="#"
-						   data-toggle="dropdown"
-						   aria-haspopup="true" aria-expanded="false">
+							 href="#"
+							 data-toggle="dropdown"
+							 aria-haspopup="true" aria-expanded="false">
 							2019
 						</a>
 
@@ -100,9 +139,9 @@
 					<!-- Dropdown -->
 					<div class="dropdown d-inline-block">
 						<a class="dropdown-toggle btn btn-default btn-xs bg-transparent border"
-						   href="#"
-						   data-toggle="dropdown"
-						   aria-haspopup="true" aria-expanded="false">
+							 href="#"
+							 data-toggle="dropdown"
+							 aria-haspopup="true" aria-expanded="false">
 							Today
 						</a>
 
@@ -122,7 +161,7 @@
 
 			<!-- Card Body -->
 			<div class="dt-chart__body">
-				<canvas height="155" id="chart-statics" data-shadow="yes"></canvas>
+				<canvas height="155" id="chart-statics"></canvas>
 			</div>
 			<!-- /card body -->
 
@@ -157,7 +196,7 @@
 				</div>
 				<div class="chart-fluid">
 					<canvas height="70" id="chart-users-bars" data-shadow="yes"
-							data-type="line"></canvas>
+									data-type="line"></canvas>
 					<div class="d-flex justify-content-between align-items-center text-white p-1">
 						<span class="d-inline-block mr-1">12:00AM</span>
 						<span class="d-inline-block">1:00PM</span>
@@ -228,9 +267,9 @@
 					<!-- Dropdown -->
 					<div class="dropdown d-inline-block">
 						<a class="dropdown-toggle btn btn-default btn-xs bg-transparent border"
-						   href="#"
-						   data-toggle="dropdown"
-						   aria-haspopup="true" aria-expanded="false">
+							 href="#"
+							 data-toggle="dropdown"
+							 aria-haspopup="true" aria-expanded="false">
 							Unread
 						</a>
 
@@ -269,7 +308,7 @@
 							<li class="dt-indicator-item">
 								<p class="dt-indicator-title">Email</p>
 								<div class="dt-indicator-item__info" data-fill="45" data-max="100"
-									 data-percent="true">
+										 data-percent="true">
 									<div class="dt-indicator-item__bar">
 										<div class="dt-indicator-item__fill bg-primary"></div>
 									</div>
@@ -279,7 +318,7 @@
 							<li class="dt-indicator-item">
 								<p class="dt-indicator-title">Social</p>
 								<div class="dt-indicator-item__info" data-fill="35" data-max="100"
-									 data-percent="true">
+										 data-percent="true">
 									<div class="dt-indicator-item__bar">
 										<div class="dt-indicator-item__fill bg-warning"></div>
 									</div>
@@ -289,7 +328,7 @@
 							<li class="dt-indicator-item">
 								<p class="dt-indicator-title">Organic</p>
 								<div class="dt-indicator-item__info" data-fill="75" data-max="100"
-									 data-percent="true">
+										 data-percent="true">
 									<div class="dt-indicator-item__bar">
 										<div class="dt-indicator-item__fill bg-success"></div>
 									</div>
@@ -299,7 +338,7 @@
 							<li class="dt-indicator-item">
 								<p class="dt-indicator-title">Technical</p>
 								<div class="dt-indicator-item__info" data-fill="15" data-max="100"
-									 data-percent="true">
+										 data-percent="true">
 									<div class="dt-indicator-item__bar">
 										<div class="dt-indicator-item__fill bg-danger"></div>
 									</div>
@@ -548,7 +587,7 @@
 			<!-- Chart Body -->
 			<div class="dt-chart__body">
 				<canvas class="rounded-bottom" height="250" id="chart-growth-revenue"
-						data-shadow="yes"></canvas>
+								data-shadow="yes"></canvas>
 			</div>
 			<!-- /chart body -->
 
@@ -580,7 +619,7 @@
 			<!-- Chart Body -->
 			<div class="dt-chart__body">
 				<canvas class="rounded-bottom" height="250" id="chart-growth-traffic"
-						data-shadow="yes"></canvas>
+								data-shadow="yes"></canvas>
 			</div>
 			<!-- /chart body -->
 
@@ -612,7 +651,7 @@
 			<!-- Chart Body -->
 			<div class="dt-chart__body">
 				<canvas class="rounded-bottom" height="250" id="chart-less-revenue"
-						data-shadow="no"></canvas>
+								data-shadow="no"></canvas>
 			</div>
 			<!-- /chart body -->
 
@@ -648,7 +687,7 @@
 					<!-- Chart Body -->
 					<div class="dt-chart__body">
 						<canvas class="rounded-bottom" id="chart-active-users" height="80"
-								data-shadow="yes"></canvas>
+										data-shadow="yes"></canvas>
 					</div>
 					<!-- /chart body -->
 
@@ -681,7 +720,7 @@
 					<!-- Chart Body -->
 					<div class="dt-chart__body">
 						<canvas class="rounded-bottom" id="chart-extra-revenue" height="80"
-								data-shadow="yes"></canvas>
+										data-shadow="yes"></canvas>
 					</div>
 					<!-- /chart body -->
 
@@ -714,7 +753,7 @@
 					<!-- Chart Body -->
 					<div class="dt-chart__body">
 						<canvas class="rounded-bottom" id="chart-orders" height="80"
-								data-shadow="yes"></canvas>
+										data-shadow="yes"></canvas>
 					</div>
 					<!-- /chart body -->
 
@@ -747,8 +786,8 @@
 					<!-- Chart Body -->
 					<div class="dt-chart__body">
 						<canvas class="rounded-bottom" id="chart-traffic-raise" height="80"
-								data-shadow="no"
-								data-type="line"></canvas>
+										data-shadow="no"
+										data-type="line"></canvas>
 					</div>
 					<!-- /chart body -->
 
@@ -838,7 +877,7 @@
 						<!-- Chart Body -->
 						<div class="dt-chart__body mb-n5 mr-n5">
 							<canvas height="110" id="chart-total-income" data-shadow="yes"
-									data-type="line"></canvas>
+											data-type="line"></canvas>
 						</div>
 						<!-- /chart body -->
 
@@ -888,7 +927,7 @@
 						<!-- Chart Body -->
 						<div class="dt-chart__body">
 							<canvas height="120" id="chart-support-queries" data-shadow="yes"
-									data-type="line"></canvas>
+											data-type="line"></canvas>
 						</div>
 						<!-- /chart body -->
 

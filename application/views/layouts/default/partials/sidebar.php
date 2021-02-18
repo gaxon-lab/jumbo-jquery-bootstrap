@@ -1,3 +1,87 @@
+<?php
+$dashboards = array(
+	array(
+		'title' => 'Crypto',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url()
+	),
+	array(
+		'title' => 'Listing',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url('main/dashboard/listing')
+	),
+	array(
+		'title' => 'Crm',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url('main/dashboard/crm')
+	),
+	array(
+		'title' => 'Intranet',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url('main/dashboard/intranet')
+	),
+	array(
+		'title' => 'ECommerce',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url('main/dashboard/ecommerce')
+	),
+	array(
+		'title' => 'News',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url('main/dashboard/news')
+	),
+	array(
+		'title' => 'Misc',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url('main/dashboard/misc')
+	),
+);
+
+$widgets = array(
+	array(
+		'title' => 'Classic',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url('main/widget/classic')
+	),
+	array(
+		'title' => 'Modern',
+		'type' => 'item',
+		'icon' => 'crypto',
+		'url' => site_url('main/widget/modern')
+	)
+);
+
+$menus = array(
+	array(
+		'title' => 'Dashboards',
+		'icon' => '',
+		'type' => 'section',
+		'children' => $dashboards
+	),
+	array(
+		'title' => 'Components',
+		'icon' => '',
+		'type' => 'section',
+		'children' => array(
+			array(
+				'title' => 'Widgets',
+				'icon' => '',
+				'type' => 'collapse',
+				'children' => $widgets
+			)
+		)
+	)
+)
+?>
+
 <!-- Sidebar -->
 <aside class="dt-sidebar" data-bg-color="pure-violet">
 	<!-- Sidebar Container -->
@@ -6,11 +90,11 @@
 		<div class="dt-sidebar__header">
 			<div class="dt-avatar-wrapper flex-column align-items-start">
 				<img class="dt-avatar size-45" src="<?php echo assets_url('images/user-avatar/noah-owens.jpg'); ?>"
-					 alt="noah-owens">
+						 alt="noah-owens">
 				<div class="dt-sidebar__header-info dropdown">
 					<!-- Dropdown Link -->
 					<div class="dropdown-toggle cursor-pointer no-arrow"
-						 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<div class="dt-avatar-info d-flex">
 							<div class="dt-avatar-name mb-2">Robert Johnson</div>
 							<div class="d-flex align-items-center">
@@ -50,6 +134,8 @@
 		<!-- /sidebar header -->
 		<!-- Sidebar Container -->
 		<div id="main-sidebar-navigation" class="dt-sidebar__navigation">
+
+			<?php echo verticalNavigation($menus); ?>
 
 			<!-- Sidebar Navigation -->
 			<ul class="dt-side-nav">
@@ -150,7 +236,7 @@
 
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('components/basic/button-group'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-button-group icon-fw"></i>
 								<span class="dt-side-nav__text">Button Group</span>
 							</a>
@@ -287,7 +373,7 @@
 					<ul class="dt-side-nav__sub-menu">
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('main/widget/classic'); ?>" class="dt-side-nav__link"
-							   title="Classic">
+								 title="Classic">
 								<i class="icon icon-components icon-fw"></i>
 								<span class="dt-side-nav__text">Classic</span>
 							</a>
@@ -296,7 +382,7 @@
 
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('main/widget/modern'); ?>" class="dt-side-nav__link"
-							   title="Modern">
+								 title="Modern">
 								<i class="icon icon-datatable icon-fw"></i>
 								<span class="dt-side-nav__text">Modern</span>
 							</a>
@@ -314,7 +400,7 @@
 					<ul class="dt-side-nav__sub-menu">
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('main/metrics/classic'); ?>" class="dt-side-nav__link"
-							   title="Classic">
+								 title="Classic">
 								<i class="icon icon-components icon-fw"></i>
 								<span class="dt-side-nav__text">Classic</span>
 							</a>
@@ -323,7 +409,7 @@
 
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('main/metrics/modern'); ?>" class="dt-side-nav__link"
-							   title="Modern">
+								 title="Modern">
 								<i class="icon icon-datatable icon-fw"></i>
 								<span class="dt-side-nav__text">Modern</span>
 							</a>
@@ -381,7 +467,7 @@
 				<!-- Menu Item -->
 				<li class="dt-side-nav__item">
 					<a href="<?php echo site_url('pages/wall'); ?>" class="dt-side-nav__link"> <i
-								class="icon icon-wall icon-fw"></i>
+							class="icon icon-wall icon-fw"></i>
 						<span class="dt-side-nav__text">Wall Page</span>
 					</a>
 				</li>
@@ -431,14 +517,14 @@
 					<ul class="dt-side-nav__sub-menu">
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('extra-components/editors/summernote'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-editor-wysiwyg icon-fw"></i>
 								<span class="dt-side-nav__text">Summernote</span> </a>
 						</li>
 
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('extra-components/editors/code-editor'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-editor-code icon-fw"></i>
 								<span class="dt-side-nav__text">Code Editor</span> </a>
 						</li>
@@ -455,7 +541,7 @@
 					<ul class="dt-side-nav__sub-menu">
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('extra-components/pickers/datetime-picker'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-date-time-picker icon-fw"></i>
 								<span class="dt-side-nav__text">Date &amp; Time Picker</span>
 							</a>
@@ -463,7 +549,7 @@
 
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('extra-components/pickers/color-picker'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-color-picker icon-fw"></i>
 								<span class="dt-side-nav__text">Color Picker</span>
 							</a>
@@ -499,7 +585,7 @@
 					<ul class="dt-side-nav__sub-menu">
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('components/tables/basic-table'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-tables icon-fw"></i>
 								<span class="dt-side-nav__text">Basic Table</span>
 							</a>
@@ -532,7 +618,7 @@
 					<ul class="dt-side-nav__sub-menu">
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/charts/chartjs'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-charts icon-fw"></i>
 								<span class="dt-side-nav__text">ChartJs</span>
 							</a>
@@ -540,7 +626,7 @@
 
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/charts/amcharts'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-amchart icon-fw"></i>
 								<span class="dt-side-nav__text">Am Charts</span>
 							</a>
@@ -557,91 +643,91 @@
 					<ul class="dt-side-nav__sub-menu">
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/basic'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Simple map</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/events'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Events Map</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/markers'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Markers Maps</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/geolocation'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Geo Location Map</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/geocoding'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Geo Coding Map</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/overlay'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Overlay</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/overlay-polylines'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Overlay Polylines</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/overlay-polygons'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Overlay Polygons</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/geo-polygons'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">GeoJSON Polygons</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/route'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Map Routes</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/advance-route'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Advance Routes</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/data-maps'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Data Maps</span>
 							</a>
 						</li>
 						<li class="dt-side-nav__item">
 							<a href="<?php echo site_url('data-visualization/maps/am-maps'); ?>"
-							   class="dt-side-nav__link">
+								 class="dt-side-nav__link">
 								<i class="icon icon-maps icon-fw"></i>
 								<span class="dt-side-nav__text">Am Maps</span>
 							</a>
@@ -660,13 +746,13 @@
 				<!-- Menu Item -->
 				<li class="dt-side-nav__item">
 					<a href="<?php echo site_url('pages/login'); ?>" class="dt-side-nav__link"> <i
-								class="icon icon-login-page icon-fw"></i>
+							class="icon icon-login-page icon-fw"></i>
 						<span class="dt-side-nav__text">Login Page 1</span>
 					</a>
 				</li>
 				<li class="dt-side-nav__item">
 					<a href="<?php echo site_url('pages/login-2'); ?>" class="dt-side-nav__link"> <i
-								class="icon icon-login-page icon-fw"></i>
+							class="icon icon-login-page icon-fw"></i>
 						<span class="dt-side-nav__text">Login Page 2</span>
 					</a>
 				</li>
@@ -702,7 +788,7 @@
 				</li>
 				<li class="dt-side-nav__item">
 					<a href="<?php echo site_url('pages/blank'); ?>" class="dt-side-nav__link"> <i
-								class="icon icon-blankpage icon-fw"></i>
+							class="icon icon-blankpage icon-fw"></i>
 						<span class="dt-side-nav__text">Blank Page</span>
 					</a>
 				</li>
@@ -714,13 +800,13 @@
 				</li>
 				<li class="dt-side-nav__item">
 					<a href="<?php echo site_url('pages/404'); ?>" class="dt-side-nav__link"> <i
-								class="icon icon-error-404 icon-fw"></i>
+							class="icon icon-error-404 icon-fw"></i>
 						<span class="dt-side-nav__text">Error 404</span>
 					</a>
 				</li>
 				<li class="dt-side-nav__item">
 					<a href="<?php echo site_url('pages/500'); ?>" class="dt-side-nav__link"> <i
-								class="icon icon-error-500 icon-fw"></i>
+							class="icon icon-error-500 icon-fw"></i>
 						<span class="dt-side-nav__text">Error 500</span>
 					</a>
 				</li>
@@ -792,6 +878,6 @@
 	<!-- /sidebar container -->
 
 	<div class="dt-sidebar__background"
-		 style="background-image: url(<?php echo assets_url('images/customizer/sidebar-images/sidebar-1.jpg'); ?>);"></div>
+			 style="background-image: url(<?php echo assets_url('images/customizer/sidebar-images/sidebar-1.jpg'); ?>);"></div>
 </aside>
 <!-- /sidebar -->

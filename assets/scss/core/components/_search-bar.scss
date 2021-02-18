@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Searchbar component.
+// -----------------------------------------------------------------------------
+
+//Search Bar Style
+.search-box {
+  position: relative;
+  width: 100%;
+
+  & input[type="text"],
+  & input[type="search"] {
+	padding-left: 50px;
+  }
+
+  & .search-icon {
+	color: $text-color-secondary;
+	line-height: 1;
+	position: absolute;
+	left: 18px;
+	top: 50%;
+	z-index: 4;
+	cursor: pointer;
+	@include translateY(-50%);
+  }
+
+  & button.search-icon {
+	background-color: transparent;
+	border: 0 none;
+	padding: 0;
+
+	&:focus,
+	&:active {
+	  outline: 0;
+	}
+  }
+
+  &.right-side-icon {
+	& input[type="text"],
+	& input[type="search"] {
+	  padding-left: $input-btn-padding-x;
+	  padding-right: 40px;
+	}
+
+	& .search-icon {
+	  left: auto;
+	  right: 15px;
+	}
+  }
+
+  .#{$class-prefix}-header & {
+	max-width: 350px;
+
+	& .form-control {
+	  box-shadow: none;
+	  background-color: fade-out($black, 0.62);
+	  border-color: fade-out($black, 0.62);
+	  @include transition($transition-base);
+	  color: $white;
+
+	  &:focus {
+		background-color: fade-out($black, 0.42);
+		color: $white;
+	  }
+
+	  &::placeholder,
+	  &:-ms-input-placeholder {
+		color: $white !important;
+	  }
+	}
+
+	& .search-icon {
+	  color: $white;
+	}
+  }
+}
+
+// Search bar Animated
+.search-box-animated {
+  & .search-icon {
+	z-index: unset;
+  }
+}

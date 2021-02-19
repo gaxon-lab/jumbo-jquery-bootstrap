@@ -1,3 +1,16 @@
+<?php
+$sidebarBgImages = array(
+	array('thumb' => assets_url('images/customizer/sidebar-images/sidebar-1.png'), 'full' => 'assets/images/customizer/sidebar-images/full-images/sidebar-1.jpg'),
+	array('thumb' => assets_url('images/customizer/sidebar-images/sidebar-2.png'), 'full' => 'assets/images/customizer/sidebar-images/full-images/sidebar-2.jpg'),
+	array('thumb' => assets_url('images/customizer/sidebar-images/sidebar-3.png'), 'full' => 'assets/images/customizer/sidebar-images/full-images/sidebar-3.jpg'),
+	array('thumb' => assets_url('images/customizer/sidebar-images/sidebar-4.png'), 'full' => 'assets/images/customizer/sidebar-images/full-images/sidebar-4.jpg'),
+	array('thumb' => assets_url('images/customizer/sidebar-images/sidebar-5.png'), 'full' => 'assets/images/customizer/sidebar-images/full-images/sidebar-5.jpg'),
+	array('thumb' => assets_url('images/customizer/sidebar-images/sidebar-6.png'), 'full' => 'assets/images/customizer/sidebar-images/full-images/sidebar-6.jpg'),
+);
+
+$flatColors = array('pure-violet', 'moderate-red', 'vivid-cyan', 'light-blue', 'dark-lime-green', 'very-dark-violet');
+$gradientColors = array('bright-dark-violet', 'cyan-violet', 'vivid-dark-red', 'strong-cyan-dark-blue', 'dark-blue-strong-red', 'moderate-pink-dark-blue');
+?>
 <!-- Theme Chooser -->
 <div class="dt-customizer-toggle">
 	<a href="javascript:void(0)" data-toggle="customizer"> <i class="icon icon-customizer animation-customizer"></i> </a>
@@ -185,9 +198,9 @@
 				</section>
 				<!-- /section -->
 
-				<section class="d-none d-lg-block" id="sidebar-layout">
+				<section class="d-none d-lg-block" id="sidebar-bg-options">
 					<div class="d-flex align-items-center justify-content-between mb-n4">
-						<h4 class="mb-0">Sidebar size</h4>
+						<h4 class="mb-0">Sidebar Option</h4>
 						<button type="button" class="btn btn-light btn-sm text-uppercase">Reset</button>
 					</div>
 
@@ -196,24 +209,11 @@
 
 						<!-- List -->
 						<ul class="dt-list dt-list-sm dt-color-options">
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style=""></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-2"></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-3"></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-4"></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-5"></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-6"></span>
-							</li>
+							<?php foreach ($flatColors as $color): ?>
+								<li class="dt-list__item">
+									<span class="dt-color-option" data-flat-color="<?php echo $color;?>"></span>
+								</li>
+							<?php endforeach; ?>
 						</ul>
 						<!-- /list -->
 
@@ -224,24 +224,11 @@
 
 						<!-- List -->
 						<ul class="dt-list dt-list-sm dt-color-options">
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style=""></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-2"></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-3"></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-4"></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-5"></span>
-							</li>
-							<li class="dt-list__item">
-								<span class="dt-color-option" data-style="style-6"></span>
-							</li>
+							<?php foreach ($gradientColors as $color): ?>
+								<li class="dt-list__item">
+									<span class="dt-color-option" data-gradient-color="<?php echo $color;?>"></span>
+								</li>
+							<?php endforeach; ?>
 						</ul>
 						<!-- /list -->
 
@@ -253,65 +240,23 @@
 					</div>
 
 					<ul class="dt-list dt-list-sm">
-						<li class="dt-list__item">
-							<div class="choose-option">
-								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-1.png'); ?>"
-											 alt="Sidebar Image">
-								</a>
-							</div>
-						</li>
-
-						<li class="dt-list__item">
-							<div class="choose-option">
-								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-2.png'); ?>"
-											 alt="Sidebar Image">
-								</a>
-							</div>
-						</li>
-
-						<li class="dt-list__item">
-							<div class="choose-option">
-								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-3.png'); ?>"
-											 alt="Sidebar Image">
-								</a>
-							</div>
-						</li>
-
-						<li class="dt-list__item">
-							<div class="choose-option">
-								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-4.png'); ?>"
-											 alt="Sidebar Image">
-								</a>
-							</div>
-						</li>
-
-						<li class="dt-list__item">
-							<div class="choose-option">
-								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-5.png'); ?>"
-											 alt="Sidebar Image">
-								</a>
-							</div>
-						</li>
-
-						<li class="dt-list__item">
-							<div class="choose-option">
-								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-6.png'); ?>"
-											 alt="Sidebar Image">
-								</a>
-							</div>
-						</li>
+						<?php foreach ($sidebarBgImages as $bgImage): ?>
+							<li class="dt-list__item">
+								<div class="choose-option">
+									<a href="javascript:void(0)" class="choose-option__icon"
+										 data-bg-image="<?php echo $bgImage['full']; ?>">
+										<img src="<?php echo $bgImage['thumb']; ?>"
+												 alt="Sidebar Image">
+									</a>
+								</div>
+							</li>
+						<?php endforeach; ?>
 					</ul>
 
 				</section>
 				<!-- /section -->
 
-				<section class="d-none d-lg-block" id="sidebar-layout">
+				<section class="d-none d-lg-block">
 					<h4>Sidebar size</h4>
 
 					<!-- Radio Button -->

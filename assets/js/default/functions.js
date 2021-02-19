@@ -1,7 +1,9 @@
 "use strict";
 
+var docBody = $('body');
+
 var drift = {
-	docBody: $('body'),
+	docBody: docBody,
 	customStyle: null,
 	addClass: function (eleRef, eleID, className) {
 		jQuery(eleRef).parents(eleID).addClass(className);
@@ -11,7 +13,7 @@ var drift = {
 	},
 	sidebar: {
 		window: $(window),
-		docBody: $('body'),
+		docBody: docBody,
 		drawerRef: jQuery('.dt-sidebar'),
 		sidebarToggleHandle: $('[data-toggle=main-sidebar]'),
 		foldedHandle: $('[data-handle=folded]'),
@@ -126,7 +128,7 @@ var drift = {
 		}
 	},
 	hoverCard: {
-		docBody: $('body'),
+		docBody: docBody,
 		hoverHndle: $('[data-hover=thumb-card]'),
 		handleRef: null,
 		thumbCard: null,
@@ -422,9 +424,9 @@ var dtDrawer = {
 
 /**
  * Set new Cookie
- * @param {type} name
- * @param {type} value
- * @param {type} days
+ * @param {string} name
+ * @param {string} value
+ * @param {number} days
  * @returns {undefined}
  */
 function setCookie(name, value, days) {
@@ -611,7 +613,7 @@ function init_indicator() {
  * @returns {void}
  */
 function copyToClipboard(contentEleId) {
-  var targetId = "_hiddenCopyText_";
+	var targetId = "_hiddenCopyText_";
 
 	var element = document.getElementById(contentEleId);
 
@@ -654,15 +656,15 @@ function copyToClipboard(contentEleId) {
 
 /**
  * Set Sidebar size
- * @param size String
+ * @param {string} size
  */
 function setSidebarSize(size) {
 	var $body = jQuery('body');
 
-	if(size === 'small') {
+	if (size === 'small') {
 		$body.removeClass('sidebar-wide');
 		$body.addClass('sidebar-small');
-	} else if(size === 'wide') {
+	} else if (size === 'wide') {
 		$body.removeClass('sidebar-small');
 		$body.addClass('sidebar-wide');
 	} else {
@@ -672,15 +674,23 @@ function setSidebarSize(size) {
 	setCookie('dt-sidebar-size', size, 1);
 }
 
+function setSidebarLayout() {
+
+}
+
 var $themeStylesheet;
 var $dtTheme = getCookie('dt-theme');
 var $dtLayout = getCookie('dt-layout');
 var $dtStyle = getCookie('dt-style');
 var $dtSidebarSize = getCookie('dt-sidebar-size');
+var $dtSidebarBgColor = getCookie('dt-sidebar-bg-color');
+var $dtSidebarBgImage = getCookie('dt-sidebar-bg-image');
 var $currentTheme = ($dtTheme) ? $dtTheme : 'light';
 var $currentLayout = ($dtLayout) ? $dtLayout : 'full-width';
 var $currentThemeStyle = ($dtStyle) ? $dtStyle : '';
 var $currentSidebarSize = ($dtSidebarSize) ? $dtSidebarSize : 'default';
+var $currentSidebarBgColor = ($dtSidebarBgColor) ? $dtSidebarBgColor : '';
+var $currentSidebarBgImage = ($dtSidebarBgImage) ? $dtSidebarBgImage : '';
 
 (function ($) {
 	$themeStylesheet = document.createElement('link');

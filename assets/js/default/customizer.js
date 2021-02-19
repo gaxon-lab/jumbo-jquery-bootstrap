@@ -1,7 +1,6 @@
 "use strict";
 
 (function ($) {
-	var $body = $('body');
 	var $themeChooser = $('#theme-chooser').find('.choose-option__icon');
 	var $layoutChooser = $('#layout-chooser').find('.choose-option__icon');
 	var $themeStyleChooser = $('#theme-style-chooser').find('.dt-color-option');
@@ -46,9 +45,9 @@
 	$toggleFixedHeader.on('click', function () {
 		if ($(this).parent().hasClass('active')) {
 			$(this).parent().removeClass('active');
-			$body.removeClass('dt-header--fixed');
+			docBody.removeClass('dt-header--fixed');
 		} else {
-			$body.addClass('dt-header--fixed');
+			docBody.addClass('dt-header--fixed');
 			$(this).parent().addClass('active');
 		}
 	});
@@ -56,11 +55,11 @@
 	$toggleFixedSidebar.on('click', function () {
 		if ($(this).parent().hasClass('active')) {
 			$(this).parent().removeClass('active');
-			$body.removeClass('dt-sidebar--fixed');
+			docBody.removeClass('dt-sidebar--fixed');
 			$(document).trigger('sidebar-toggle-fixed');
 		} else {
 			$(this).parent().addClass('active');
-			$body.addClass('dt-sidebar--fixed');
+			docBody.addClass('dt-sidebar--fixed');
 			activeLayoutHandle('default');
 			drift.sidebar.enabledDrawer = false;
 			$('.dt-brand__tool').removeClass('active');
@@ -95,7 +94,7 @@
 		activeFixedStyle();
 	});
 
-	if ($body.hasClass('dt-sidebar--folded')) {
+	if (docBody.hasClass('dt-sidebar--folded')) {
 		$('[data-value=folded]').parent().addClass('active');
 	} else if (drift.sidebar.drawerRef.hasClass('dt-drawer')) {
 		$('[data-value=drawer]').parent().addClass('active');

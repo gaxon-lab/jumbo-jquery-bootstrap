@@ -8,8 +8,20 @@
   & .#{$class-prefix}-side-nav__text,
   & .#{$class-prefix}-side-nav__link,
   & .#{$class-prefix}-content-wrapper,
-  & .#{$class-prefix}-header__toolbar {
-	@include transition(all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0s);
+  & .#{$class-prefix}-header {
+	@include transition(all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1));
+  }
+
+  &.#{$class-prefix}-sidebar--fixed .#{$class-prefix}-sidebar {
+	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
+	  width: calc(100% - #{$folded-sidebar-width});
+	  margin-left: $folded-sidebar-width;
+	}
+  }
+
+  &.#{$class-prefix}-header--fixed .#{$class-prefix}-header {
+	left: $folded-sidebar-width;
+	width: calc(100% - #{$folded-sidebar-width});
   }
 
   &:not(.#{$class-prefix}-sidebar--expended) {
@@ -21,14 +33,11 @@
 
 	& .#{$class-prefix}-sidebar {
 	  width: $folded-sidebar-width;
+
 	  &__header-info {
 		display: none;
 		animation: show-hide 0.2s;
 	  }
-	}
-
-	& .#{$class-prefix}-content-wrapper {
-	  width: calc(100% - #{$folded-sidebar-width});
 	}
 
 	& .#{$class-prefix}-side-nav__link {
@@ -58,6 +67,8 @@
 	}
 
 	& .#{$class-prefix}-side-nav__header {
+	  padding-left: 0;
+	  padding-right: 0;
 
 	  & .#{$class-prefix}-side-nav__text {
 		display: none;
@@ -68,24 +79,9 @@
 	  }
 
 	  &:not(:first-child):before {
-		margin-bottom: 0;
+		width: calc(100% + 40px);
+		margin: 0 -20px 0;
 	  }
-	}
-  }
-
-  &.#{$class-prefix}-header--fixed {
-	& .#{$class-prefix}-header {
-	  width: calc(100% - #{$folded-sidebar-width});
-	}
-  }
-
-  &.#{$class-prefix}-sidebar--fixed {
-	& .#{$class-prefix}-content-wrapper {
-	  width: calc(100% - #{$folded-sidebar-width});
-	}
-
-	& .#{$class-prefix}-content-wrapper {
-	  margin-left: $folded-sidebar-width;
 	}
   }
 }

@@ -116,7 +116,7 @@
         height: 14px;
         width: 14px;
         display: inline-block;
-        @include background-img('../../images/customizer-icons/check.png', center center);
+        @include background-img('../../images/customizer/icon-check.png', center center);
       }
     }
 
@@ -159,7 +159,7 @@
         height: 14px;
         width: 14px;
         display: inline-block;
-        @include background-img('../../images/customizer-icons/check.png', center center);
+        @include background-img('../../images/customizer/icon-check.png', center center);
       }
     }
   }

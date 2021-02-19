@@ -16,12 +16,13 @@
 
 .#{$class-prefix}-main {
   display: flex;
-  flex: 1;
-  -ms-flex: 1;
+  flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
 }
 
 .#{$class-prefix}-content-wrapper {
   position: relative;
+  width: 100%;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -29,10 +30,11 @@
 }
 
 .#{$class-prefix}-content {
-  padding: 2rem 1.6rem;
+  padding: 3.2rem 1.6rem;
   flex: 1 1 auto;
   @include media-breakpoint-only(xl) {
-	padding: 3.2rem 8.8rem;
+	padding-left: 8.8rem;
+	padding-right: 8.8rem;
   }
   @include media-breakpoint-only(lg) {
 	padding-left: 6.5rem;

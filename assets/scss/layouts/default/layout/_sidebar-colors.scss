@@ -43,8 +43,8 @@
 	background-color: #6200EE;
   }
 
-  &[data-bg-color=moderate-red] &__background:after {
-	background-color: #B94343;
+  &[data-bg-color=strong-orange] &__background:after {
+	background-color: #CC701B;
   }
 
   &[data-bg-color=vivid-cyan] &__background:after {
@@ -94,7 +94,7 @@
   }
 
   &[data-bg-color=pure-violet],
-  &[data-bg-color=moderate-red],
+  &[data-bg-color=strong-orange],
   &[data-bg-color=vivid-cyan],
   &[data-bg-color=light-blue],
   &[data-bg-color=dark-lime-green],

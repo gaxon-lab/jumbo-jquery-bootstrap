@@ -2,42 +2,7 @@
 // This file contains all styles related to the sidebar of the site/application.
 // -----------------------------------------------------------------------------
 
-.#{$class-prefix}-sidebar--fixed {
-  & .#{$class-prefix}-sidebar {
-	position: fixed;
-	z-index: 1001;
-	height: 100vh;
-
-	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	  margin-left: $sidebar-width;
-
-	  & .#{$class-prefix}-header {
-		width: calc(100% - #{$sidebar-width});
-	  }
-	}
-  }
-
-  &.sidebar-sm .#{$class-prefix}-sidebar {
-	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	  margin-left: $sidebar-width-sm;
-
-	  & .#{$class-prefix}-header {
-		width: calc(100% - #{$sidebar-width-sm});
-	  }
-	}
-  }
-
-  &.sidebar-lg .#{$class-prefix}-sidebar {
-	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	  margin-left: $sidebar-width-lg;
-
-	  & .#{$class-prefix}-header {
-		width: calc(100% - #{$sidebar-width-lg});
-	  }
-	}
-  }
-}
-
+// Sidebar
 .#{$class-prefix}-sidebar {
   position: relative;
   width: $sidebar-width;
@@ -47,12 +12,24 @@
   @include box-shadow($sidebar-shadow);
   @include transition(all 0.2s ease);
 
+  &:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
+	width: calc(100% - #{$sidebar-width});
+  }
+
   .sidebar-sm & {
 	width: $sidebar-width-sm;
+
+	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
+	  width: calc(100% - #{$sidebar-width-sm});
+	}
   }
 
   .sidebar-lg & {
 	width: $sidebar-width-lg;
+
+	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
+	  width: calc(100% - #{$sidebar-width-lg});
+	}
   }
 
   &__header {
@@ -81,11 +58,36 @@
 	flex: 1 1 0;
   }
 
-
   &__navigation {
 	position: relative;
 	flex: 1 1 0;
 	padding: 10px 16px 24px 0;
+  }
+}
+
+.#{$class-prefix}-sidebar--fixed {
+  & .#{$class-prefix}-sidebar {
+	position: fixed;
+	z-index: 1001;
+	height: 100vh;
+  }
+
+  &:not(.#{$class-prefix}-sidebar--folded) .#{$class-prefix}-sidebar {
+	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
+	  margin-left: $sidebar-width;
+	}
+  }
+
+  &:not(.#{$class-prefix}-sidebar--folded).sidebar-sm .#{$class-prefix}-sidebar {
+	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
+	  margin-left: $sidebar-width-sm;
+	}
+  }
+
+  &:not(.#{$class-prefix}-sidebar--folded).sidebar-lg .#{$class-prefix}-sidebar {
+	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
+	  margin-left: $sidebar-width-lg;
+	}
   }
 }
 
@@ -215,175 +217,6 @@
 
 	@include hover-focus-active {
 	  color: $sidebar-color-hover;
-	}
-  }
-}
-
-//Sidebar Background
-.#{$class-prefix}-sidebar {
-  $sidebar-header-color: rgba($white, 0.8);
-  $sidebar-separator: rgba($white, 0.1);
-  $sidebar-color-hover: rgba($white, 1);
-  $sidebar-active-bg: $white;
-  $sidebar-active-color: $black;
-  $sidebar-color: rgba($white, 0.8);
-  $sidebar-menu-hover-bg: rgba($white, 0.3);
-  $sidebar-color-hover: rgba($white, 1);
-  $sidebar-submenu-color: rgba($white, 0.8);
-
-  & &__background {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	background-size: cover;
-	background-position: center center;
-
-	&:after {
-	  content: '';
-	  display: block;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  z-index: 1;
-	  height: 100%;
-	  width: 100%;
-	  background: repeat-x #FFF;
-	  opacity: .9;
-	}
-  }
-
-  &[data-bg-color=pure-violet] &__background:after {
-	background-color: #6200EE;
-  }
-
-  &[data-bg-color=moderate-red] &__background:after {
-	background-color: #B94343;
-  }
-
-  &[data-bg-color=vivid-cyan] &__background:after {
-	background-color: #03DAC5;
-  }
-
-  &[data-bg-color=light-blue] &__background:after {
-	background-color: #369FFF;
-  }
-
-  &[data-bg-color=dark-lime-green] &__background:after {
-	background-color: #2BA444;
-  }
-
-  &[data-bg-color=very-dark-violet] &__background:after {
-	background-color: #23036A;
-  }
-
-  &[data-bg-color=bright-dark-violet] &__background:after {
-	background-color: #8E2DE2;
-	@include gradient-y(#8E2DE2, #320097, 0%, 100%);
-  }
-
-  &[data-bg-color=cyan-violet] &__background:after {
-	background-color: #03DAC5;
-	@include gradient-y(#03DAC5, #6200EE, 0%, 100%);
-  }
-
-  &[data-bg-color=vivid-dark-red] &__background:after {
-	background-color: #EB4511;
-	@include gradient-y(#EB4511, #861C00, 0%, 100%);
-  }
-
-  &[data-bg-color=strong-cyan-dark-blue] &__background:after {
-	background-color: #00619A;
-	@include gradient-y(#03CE97, #00619A, 0%, 100%);
-  }
-
-  &[data-bg-color=dark-blue-strong-red] &__background:after {
-	background-color: #061161;
-	@include gradient-y(#061161, #C31432, 0%, 100%);
-  }
-
-  &[data-bg-color=moderate-pink-dark-blue] &__background:after {
-	background-color: #C33764;
-	@include gradient-y(#C33764, #1D2671, 0%, 100%);
-  }
-
-  &[data-bg-color=pure-violet],
-  &[data-bg-color=moderate-red],
-  &[data-bg-color=vivid-cyan],
-  &[data-bg-color=light-blue],
-  &[data-bg-color=dark-lime-green],
-  &[data-bg-color=very-dark-violet],
-  &[data-bg-color=bright-dark-violet],
-  &[data-bg-color=cyan-violet],
-  &[data-bg-color=vivid-dark-red],
-  &[data-bg-color=strong-cyan-dark-blue],
-  &[data-bg-color=dark-blue-strong-red],
-  &[data-bg-color=moderate-pink-dark-blue] {
-	& .#{$class-prefix}-sidebar__header {
-	  color: $sidebar-color;
-	}
-
-	& .#{$class-prefix}-side-nav {
-	  &__header {
-		color: $sidebar-header-color;
-
-		&:not(:first-child):before {
-		  background-color: $sidebar-separator;
-		}
-	  }
-
-	  & > .#{$class-prefix}-side-nav__item {
-		&.selected > .#{$class-prefix}-side-nav__link,
-		&.open > .#{$class-prefix}-side-nav__link {
-		  color: $sidebar-color-hover;
-
-		  &.active {
-			background-color: $sidebar-active-bg;
-			color: $sidebar-active-color;
-
-			& .icon,
-			& i {
-			  color: $sidebar-active-color;
-			}
-		  }
-
-		  & .icon,
-		  & i {
-			color: $sidebar-color;
-		  }
-		}
-	  }
-
-	  &__link {
-		color: $sidebar-color;
-
-		@include hover-focus-active {
-		  background-color: $sidebar-menu-hover-bg;
-		  color: $sidebar-color-hover;
-		}
-	  }
-
-	  &__sub-menu {
-		& .#{$class-prefix}-side-nav__link {
-		  color: $sidebar-submenu-color;
-
-		  &.active {
-			background-color: $sidebar-active-bg;
-			color: $sidebar-active-color;
-
-			@include hover {
-			  color: $sidebar-active-color;
-			}
-		  }
-
-		  @include hover-focus-active {
-			color: $sidebar-color-hover;
-		  }
-		}
-	  }
 	}
   }
 }

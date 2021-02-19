@@ -3,21 +3,8 @@
 // -----------------------------------------------------------------------------
 
 //Fx Header
-
-.#{$class-prefix}-header {
-  position: relative;
-  z-index: 99;
-  width: 100%;
-  height: $header-height;
-  background-color: $header-bg;
-  @include box-shadow($header-shadow);
-  @include transition(all 0.2s ease);
-
-  @include media-breakpoint-down(xs) {
-	height: 55px;
-  }
-
-  &--fixed & {
+.#{$class-prefix}-header--fixed {
+  & .#{$class-prefix}-header {
 	position: fixed;
 	right: 0;
 	z-index: 1000;
@@ -30,6 +17,37 @@
 		margin-top: 55px;
 	  }
 	}
+  }
+
+  &.#{$class-prefix}-sidebar--fixed:not(.#{$class-prefix}-sidebar--folded) {
+	& .#{$class-prefix}-header {
+	  left: $sidebar-width;
+	  width: calc(100% - #{$sidebar-width});
+	}
+
+	&.sidebar-sm .#{$class-prefix}-header {
+	  left: $sidebar-width-sm;
+	  width: calc(100% - #{$sidebar-width-sm});
+	}
+
+	&.sidebar-lg .#{$class-prefix}-header {
+	  left: $sidebar-width-lg;
+	  width: calc(100% - #{$sidebar-width-lg});
+	}
+  }
+}
+
+.#{$class-prefix}-header {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  height: $header-height;
+  background-color: $header-bg;
+  @include box-shadow($header-shadow);
+  @include transition(all 0.2s ease);
+
+  @include media-breakpoint-down(xs) {
+	height: 55px;
   }
 
   &__container {

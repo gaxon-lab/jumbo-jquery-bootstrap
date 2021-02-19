@@ -4,9 +4,9 @@
 	var $themeChooser = $('#theme-chooser').find('.choose-option__icon');
 	var $layoutChooser = $('#layout-chooser').find('.choose-option__icon');
 	var $themeStyleChooser = $('#theme-style-chooser').find('.dt-color-option');
-	var $sidebarBgFlatColorSelector = $('#sidebar-bg-options .dt-flat-options').find('.dt-color-option');
-	var $sidebarBgGradientColorSelector = $('#sidebar-bg-options .dt-gradient-options').find('.dt-color-option');
-	var $sidebarBgImageSelector = $('#sidebar-bg-options .dt-bg-image-options').find('.choose-option__icon');
+	var $sidebarBgFlatColorSelector = $('#sidebar-bg-options .flat-color-options').find('.dt-color-option-circle');
+	var $sidebarBgGradientColorSelector = $('#sidebar-bg-options .gradient-color-options').find('.dt-color-option-circle');
+	var $sidebarBgImageSelector = $('#sidebar-bg-options .bg-image-options').find('.choose-option__icon');
 
 	$('#theme-chooser').find('[data-theme=' + $currentTheme + ']').parent().addClass('active');
 	$('#layout-chooser').find('[data-layout=' + $currentLayout + ']').parent().addClass('active');

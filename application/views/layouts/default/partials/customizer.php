@@ -256,7 +256,8 @@
 						<li class="dt-list__item">
 							<div class="choose-option">
 								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-1.png'); ?>" alt="Sidebar Image">
+									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-1.png'); ?>"
+											 alt="Sidebar Image">
 								</a>
 							</div>
 						</li>
@@ -264,7 +265,8 @@
 						<li class="dt-list__item">
 							<div class="choose-option">
 								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-2.png'); ?>" alt="Sidebar Image">
+									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-2.png'); ?>"
+											 alt="Sidebar Image">
 								</a>
 							</div>
 						</li>
@@ -272,7 +274,8 @@
 						<li class="dt-list__item">
 							<div class="choose-option">
 								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-3.png'); ?>" alt="Sidebar Image">
+									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-3.png'); ?>"
+											 alt="Sidebar Image">
 								</a>
 							</div>
 						</li>
@@ -280,7 +283,8 @@
 						<li class="dt-list__item">
 							<div class="choose-option">
 								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-4.png'); ?>" alt="Sidebar Image">
+									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-4.png'); ?>"
+											 alt="Sidebar Image">
 								</a>
 							</div>
 						</li>
@@ -288,7 +292,8 @@
 						<li class="dt-list__item">
 							<div class="choose-option">
 								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-5.png'); ?>" alt="Sidebar Image">
+									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-5.png'); ?>"
+											 alt="Sidebar Image">
 								</a>
 							</div>
 						</li>
@@ -296,7 +301,8 @@
 						<li class="dt-list__item">
 							<div class="choose-option">
 								<a href="javascript:void(0)" class="choose-option__icon">
-									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-6.png'); ?>" alt="Sidebar Image">
+									<img src="<?php echo assets_url('images/customizer/sidebar-images/sidebar-6.png'); ?>"
+											 alt="Sidebar Image">
 								</a>
 							</div>
 						</li>
@@ -310,21 +316,22 @@
 
 					<!-- Radio Button -->
 					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="size-small" name="sidebar_size" class="custom-control-input" checked>
+						<input type="radio" id="size-small" name="sidebar_size" class="custom-control-input" value="small">
 						<label class="custom-control-label" for="size-small">Small</label>
 					</div>
 					<!-- /radio button -->
 
 					<!-- Radio Button -->
 					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="size-default" name="sidebar_size" class="custom-control-input">
+						<input type="radio" id="size-default" name="sidebar_size" class="custom-control-input" value="default"
+									 checked>
 						<label class="custom-control-label" for="size-default">Default</label>
 					</div>
 					<!-- /radio button -->
 
 					<!-- Radio Button -->
 					<div class="custom-control custom-radio custom-control-inline">
-						<input type="radio" id="size-wide" name="sidebar_size" class="custom-control-input">
+						<input type="radio" id="size-wide" name="sidebar_size" class="custom-control-input" value="wide">
 						<label class="custom-control-label" for="size-wide">Wide</label>
 					</div>
 					<!-- /radio button -->

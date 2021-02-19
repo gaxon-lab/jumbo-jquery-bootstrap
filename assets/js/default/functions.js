@@ -652,13 +652,35 @@ function copyToClipboard(contentEleId) {
 	}
 }
 
+/**
+ * Set Sidebar size
+ * @param size String
+ */
+function setSidebarSize(size) {
+	var $body = jQuery('body');
+
+	if(size === 'small') {
+		$body.removeClass('sidebar-wide');
+		$body.addClass('sidebar-small');
+	} else if(size === 'wide') {
+		$body.removeClass('sidebar-small');
+		$body.addClass('sidebar-wide');
+	} else {
+		$body.removeClass('sidebar-wide sidebar-small');
+	}
+
+	setCookie('dt-sidebar-size', size, 1);
+}
+
 var $themeStylesheet;
 var $dtTheme = getCookie('dt-theme');
 var $dtLayout = getCookie('dt-layout');
 var $dtStyle = getCookie('dt-style');
+var $dtSidebarSize = getCookie('dt-sidebar-size');
 var $currentTheme = ($dtTheme) ? $dtTheme : 'light';
 var $currentLayout = ($dtLayout) ? $dtLayout : 'full-width';
 var $currentThemeStyle = ($dtStyle) ? $dtStyle : '';
+var $currentSidebarSize = ($dtSidebarSize) ? $dtSidebarSize : 'default';
 
 (function ($) {
 	$themeStylesheet = document.createElement('link');

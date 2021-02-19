@@ -239,7 +239,7 @@ var drift = {
 			if (this.containerPanel.hasClass('open')) {
 				this.close();
 			} else {
-				this.open()
+				this.open();
 			}
 		},
 		open: function () {

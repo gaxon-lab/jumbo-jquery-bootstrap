@@ -79,16 +79,19 @@
 			drift.sidebar.destroy();
 			drift.sidebar.sidebarFolded();
 			$('.dt-brand__tool').addClass('active');
+			docBody.addClass('dt-sidebar--folded').removeClass('dt-sidebar--drawer');
 		} else if (layout === 'drawer') {
 			drift.sidebar.sidebarUnfolded();
 			drift.sidebar.enabledDrawer = true;
 			drift.sidebar.initDrawer();
 			$('.dt-brand__tool').removeClass('active');
+			docBody.addClass('dt-sidebar--drawer').removeClass('dt-sidebar--folded');
 		} else if (layout === 'default') {
 			drift.sidebar.enabledDrawer = false;
 			drift.sidebar.destroy();
 			drift.sidebar.sidebarUnfolded();
 			$('.dt-brand__tool').removeClass('active');
+			docBody.removeClass('dt-sidebar--folded dt-sidebar--drawer');
 		}
 
 		activeFixedStyle();

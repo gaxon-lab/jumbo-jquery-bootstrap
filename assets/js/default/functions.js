@@ -57,8 +57,7 @@ var drift = {
 				this.enabledFoldedSidebar = true;
 			}
 
-			this.docBody.removeClass('dt-sidebar--fixed');
-			this.docBody.removeClass('dt-sidebar--folded');
+			this.docBody.removeClass('dt-sidebar--fixed dt-sidebar--folded').addClass('dt-sidebar--drawer');
 
 			this.drawerRef.addClass('dt-drawer position-left');
 
@@ -77,6 +76,8 @@ var drift = {
 			if (this.enabledFoldedSidebar) {
 				this.docBody.addClass('dt-sidebar--folded');
 			}
+
+			this.docBody.removeClass('dt-sidebar--drawer');
 		},
 		toggleFolded: function () {
 			if (!this.drawerRef.hasClass('dt-drawer')) {

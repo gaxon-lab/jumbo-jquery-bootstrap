@@ -83,7 +83,7 @@ $menus = array(
 ?>
 
 <!-- Sidebar -->
-<aside class="dt-sidebar" data-bg-color="pure-violet">
+<aside class="dt-sidebar">
 	<!-- Sidebar Container -->
 	<div class="dt-sidebar__container">
 		<!-- Sidebar Header -->
@@ -876,8 +876,5 @@ $menus = array(
 
 	</div>
 	<!-- /sidebar container -->
-
-	<div class="dt-sidebar__background"
-			 style="background-image: url(<?php echo assets_url('images/customizer/sidebar-images/sidebar-1.jpg'); ?>);"></div>
 </aside>
 <!-- /sidebar -->

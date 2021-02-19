@@ -208,10 +208,10 @@ $gradientColors = array('bright-dark-violet', 'cyan-violet', 'vivid-dark-red', '
 						<h5>Flat Style</h5>
 
 						<!-- List -->
-						<ul class="dt-list dt-list-sm dt-color-options">
+						<ul class="dt-list dt-list-sm dt-flat-options">
 							<?php foreach ($flatColors as $color): ?>
 								<li class="dt-list__item">
-									<span class="dt-color-option" data-flat-color="<?php echo $color;?>"></span>
+									<span class="dt-color-option" data-bg-color="<?php echo $color;?>"></span>
 								</li>
 							<?php endforeach; ?>
 						</ul>
@@ -223,10 +223,10 @@ $gradientColors = array('bright-dark-violet', 'cyan-violet', 'vivid-dark-red', '
 						<h5>Gradient</h5>
 
 						<!-- List -->
-						<ul class="dt-list dt-list-sm dt-color-options">
+						<ul class="dt-list dt-list-sm dt-gradient-options">
 							<?php foreach ($gradientColors as $color): ?>
 								<li class="dt-list__item">
-									<span class="dt-color-option" data-gradient-color="<?php echo $color;?>"></span>
+									<span class="dt-color-option" data-bg-color="<?php echo $color;?>"></span>
 								</li>
 							<?php endforeach; ?>
 						</ul>
@@ -239,7 +239,7 @@ $gradientColors = array('bright-dark-violet', 'cyan-violet', 'vivid-dark-red', '
 						<button type="button" class="btn btn-light btn-sm text-uppercase">Reset</button>
 					</div>
 
-					<ul class="dt-list dt-list-sm">
+					<ul class="dt-list dt-list-sm dt-bg-image-options">
 						<?php foreach ($sidebarBgImages as $bgImage): ?>
 							<li class="dt-list__item">
 								<div class="choose-option">

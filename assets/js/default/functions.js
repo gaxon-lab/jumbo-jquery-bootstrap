@@ -18,6 +18,7 @@ var drift = {
 		sidebarToggleHandle: $('[data-toggle=main-sidebar]'),
 		foldedHandle: $('[data-handle=folded]'),
 		overlay: null,
+		bgOverlay: null,
 		enabledFixedSidebar: false,
 		enabledFoldedSidebar: false,
 		enabledDrawer: false,
@@ -47,6 +48,38 @@ var drift = {
 			this.sidebarToggleHandle.on('click', function () {
 				sidebar.toggleFolded();
 			});
+		},
+		setBackground: function () {
+
+		},
+		setBackgroundColor: function (color) {
+			this.displayBgOverlay();
+			this.drawerRef.attr('data-bg-color', color)
+		},
+		removeBackgroundColor: function () {
+			this.drawerRef.removeAttr('data-bg-color');
+			this.bgOverlay.remove();
+		},
+		setBackgroundImage: function (image) {
+			this.displayBgOverlay(image);
+		},
+		removeBackgroundImage: function () {
+			this.bgOverlay.style.backgroundImage = '';
+		},
+		displayBgOverlay: function (image) {
+			if (this.bgOverlay) {
+				if (image) {
+					this.bgOverlay.style.backgroundImage = 'url(' + $mediaUrl + image + ')';
+				}
+			} else {
+				this.bgOverlay = document.createElement('div');
+				this.bgOverlay.className = 'dt-sidebar__background';
+				if (image) {
+					this.bgOverlay.style.backgroundImage = 'url(' + $mediaUrl + image + ')';
+				}
+
+				this.drawerRef.append(this.bgOverlay);
+			}
 		},
 		initDrawer: function () {
 			if (this.docBody.hasClass('dt-sidebar--fixed')) {

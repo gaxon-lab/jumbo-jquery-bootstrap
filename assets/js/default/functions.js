@@ -663,13 +663,13 @@ function setSidebarSize(size) {
 	var $body = jQuery('body');
 
 	if (size === 'small') {
-		$body.removeClass('sidebar-wide');
-		$body.addClass('sidebar-small');
+		$body.removeClass('sidebar-lg');
+		$body.addClass('sidebar-sm');
 	} else if (size === 'wide') {
-		$body.removeClass('sidebar-small');
-		$body.addClass('sidebar-wide');
+		$body.removeClass('sidebar-sm');
+		$body.addClass('sidebar-lg');
 	} else {
-		$body.removeClass('sidebar-wide sidebar-small');
+		$body.removeClass('sidebar-lg sidebar-sm');
 	}
 
 	setCookie('dt-sidebar-size', size, 1);

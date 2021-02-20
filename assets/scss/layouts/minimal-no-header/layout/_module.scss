@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the main content of the Modules
+// -----------------------------------------------------------------------------
+
+//Module Style
+.#{$class-prefix}-module {
+  @extend %dt-card-style;
+  margin-bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - (#{$header-height} + #{$footer-height} + 6.4rem));
+
+  &__container {
+	position: relative;
+	z-index: 1;
+	min-height: 0;
+	flex: 1 1 0;
+	display: flex;
+  }
+
+  &__content {
+	display: flex;
+	flex-direction: column;
+	@include media-breakpoint-up(md) {
+	  max-width: calc(100% - #{$module-sidebar-width});
+	  flex: 1 0 auto;
+	  -ms-flex: 1 0 auto;
+	}
+
+	&-header {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  padding: 18px 26px;
+	  border-bottom: $dt-border;
+	}
+  }
+}
+
+//Module Header Style
+.#{$class-prefix}-module {
+  &__header {
+	display: flex;
+	border-bottom: $dt-border;
+	@include media-breakpoint-up(md) {
+	  min-height: 7rem;
+	}
+
+	&-logo {
+	  padding: 1.4rem 1.8rem;
+	  max-width: $module-sidebar-width;
+	  flex: 0 0 $module-sidebar-width;
+	  -ms-flex: 0 0 $module-sidebar-width;
+	}
+
+	&-toolbar {
+	  display: flex;
+	  align-items: center;
+	  flex: 1 0 auto;
+	  -ms-flex: 1 0 auto;
+	  max-width: calc(100% - #{$module-sidebar-width});
+	  padding: 1.4rem 1.8rem;
+	}
+  }
+}
+
+.#{$class-prefix}-module {
+  &:not(.#{$class-prefix}-module--chat) {
+	.#{$class-prefix}-module__sidebar-content-container {
+	  overflow-y: auto;
+	}
+  }
+}

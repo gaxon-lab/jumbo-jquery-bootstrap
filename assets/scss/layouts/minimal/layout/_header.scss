@@ -1,0 +1,417 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+//Fx Header
+.#{$class-prefix}-header--fixed {
+	& .#{$class-prefix}-header {
+		position: fixed;
+		right: 0;
+		z-index: 1000;
+	}
+
+	&:not(.#{$class-prefix}-layout--framed):not(.#{$class-prefix}-layout--boxed) .#{$class-prefix}-header ~ .#{$class-prefix}-content {
+		@include transition(all 0.2s ease);
+		margin-top: $header-height;
+	}
+
+	&:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) {
+		& .#{$class-prefix}-header {
+			width: calc(100% - #{$sidebar-width});
+			left: $sidebar-width;
+		}
+	}
+
+	&.sidebar-sm:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) {
+		& .#{$class-prefix}-header {
+			width: calc(100% - #{$sidebar-width-sm});
+			left: $sidebar-width-sm;
+		}
+	}
+
+	&.sidebar-lg:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) {
+		& .#{$class-prefix}-header {
+			width: calc(100% - #{$sidebar-width-lg});
+			left: $sidebar-width-lg;
+		}
+	}
+}
+
+.#{$class-prefix}-header {
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	height: $header-height;
+	background-color: $header-bg;
+	@include box-shadow($header-shadow);
+	@include transition(all 0.2s ease);
+
+	&__container {
+		display: flex;
+		height: 100%;
+	}
+
+	&__toolbar {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 3.2rem;
+		padding-left: 3.2rem;
+		flex: 1;
+
+		& .search-box {
+			margin-right: 4rem;
+			align-self: center;
+		}
+
+		& .#{$class-prefix}-nav__link > i {
+			font-size: 2.2rem;
+
+			&.icon-apps {
+				font-size: 1.8rem;
+			}
+
+			@include media-breakpoint-down(xs) {
+				font-size: 2.4rem;
+
+				&.icon-apps {
+					font-size: 2.2rem;
+				}
+			}
+		}
+	}
+}
+
+//Fx Brand
+
+.#{$class-prefix}-brand {
+	background-color: $dt-brand-bg;
+	padding: 0 2.4rem;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	overflow: hidden;
+
+	&__logo {
+		display: inline-block;
+
+		&-link,
+		&-symbol,
+		&-img {
+			display: inline-block;
+		}
+
+		&-img {
+			width: 140px;
+		}
+
+		&-symbol {
+			width: 24px;
+		}
+	}
+}
+
+// Navigation
+.#{$class-prefix}-nav-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.#{$class-prefix}-nav {
+	@extend %list-style-none;
+	margin: 0 -1.2rem;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 1.2rem;
+	}
+
+	&__link {
+		color: $header-color;
+		display: inline-block;
+
+		@include hover-focus-active {
+			color: $header-color-hover;
+			text-decoration: none;
+		}
+
+		& .icon + span,
+		& i + span {
+			margin-left: 8px;
+			display: inline-block;
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+	}
+
+	@at-root {
+		.#{$class-prefix}-header__toolbar {
+			& .#{$class-prefix}-nav:not(:last-child) {
+				margin-right: 4rem;
+
+				@media screen and (max-width: 1300px) {
+					margin-right: 3rem;
+				}
+
+				@include media-breakpoint-down(lg) {
+					margin-right: 0.5rem;
+				}
+			}
+
+			& .#{$class-prefix}-nav__link {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+//Hamburger Icon
+.#{$class-prefix}-brand__tool {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	cursor: pointer;
+	min-height: 22px;
+	min-width: 22px;
+
+	&:not(:last-child) {
+		margin-right: 2.4rem;
+
+		@include media-breakpoint-down(md) {
+			margin-right: 1rem;
+		}
+	}
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+	position: absolute;
+	width: 22px;
+	height: 3px;
+	transition-timing-function: ease;
+	transition-duration: .15s;
+	transition-property: transform;
+	border-radius: 3px;
+	background-color: $dt-brand-color;
+}
+
+.hamburger-inner {
+	top: 50%;
+	left: 0;
+	@include translateY(-50%);
+
+	&:after,
+	&:before {
+		display: block;
+		content: ""
+	}
+
+	&:before {
+		top: -6px
+	}
+
+	&:after {
+		bottom: -6px
+	}
+
+	.#{$class-prefix}-brand__tool & {
+		transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+		transition-duration: .22s
+	}
+
+	.#{$class-prefix}-brand__tool &:before {
+		transition: top .1s ease-in .25s, opacity .1s ease-in
+	}
+
+	.#{$class-prefix}-brand__tool &:after {
+		transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55, .055, .675, .19)
+	}
+
+	.#{$class-prefix}-brand__tool.active & {
+		transition-delay: .12s;
+		transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+		transform: rotate(225deg)
+	}
+
+	.#{$class-prefix}-brand__tool.active &:before {
+		top: 0;
+		transition: top .1s ease-out, opacity .1s ease-out .12s;
+		opacity: 0
+	}
+
+	.#{$class-prefix}-brand__tool.active &:after {
+		bottom: 0;
+		transition: bottom .1s ease-out, transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
+		transform: rotate(-90deg)
+	}
+}
+
+//Notification Drop down Menu Styles
+.#{$class-prefix}-notification {
+	&-app .dropdown-menu {
+		padding: 0;
+		width: 300px;
+		height: 250px;
+		overflow-y: auto;
+	}
+
+	&-search .dropdown-menu {
+		padding: 0;
+		width: 250px;
+		height: auto;
+
+		@include media-breakpoint-down(xs) {
+			width: 200px;
+		}
+	}
+
+	.#{$class-prefix}-header__toolbar & .dropdown-menu {
+		width: 380px;
+
+		&-body {
+			height: 208px;
+			overflow-y: auto;
+		}
+
+		@include media-breakpoint-down(xs) {
+			width: 280px;
+		}
+	}
+
+	.theme-dark .#{$class-prefix}-header__toolbar &-app .dropdown-menu,
+	.theme-dark .#{$class-prefix}-header__toolbar & .dropdown-menu {
+		background-color: darken($dt-card-bg, 2%);
+	}
+
+	.theme-dark .#{$class-prefix}-module__container & .dropdown-menu {
+		background-color: darken($dt-card-bg, 2%);
+	}
+
+	.#{$class-prefix}-module__header-toolbar & .dropdown-menu {
+		width: 300px;
+
+		&-body {
+			height: 180px;
+			overflow-y: auto;
+		}
+
+		@include media-breakpoint-down(xs) {
+			width: 280px;
+		}
+	}
+
+	& .media {
+		position: relative;
+		margin-bottom: 14px;
+
+		&:not(:last-child) {
+			padding-bottom: 14px;
+
+			&:after {
+				@include transition(all 0.5s ease);
+				content: '';
+				height: 1px;
+				background-color: $border-color;
+				width: calc(100% - 48px);
+				position: absolute;
+				left: auto;
+				right: 0;
+				bottom: 0;
+			}
+		}
+
+		@include hover-focus {
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+
+	& .media-body {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+	}
+
+	& .user-name {
+		font-size: 13px;
+		color: $headings-color;
+		font-weight: 500;
+
+		& + .message {
+			font-size: 12px;
+		}
+	}
+
+	& .meta-date {
+		display: block;
+		font-size: 12px;
+		color: lighten($text-color-secondary, 10%);
+	}
+
+	& .message {
+		font-size: 13px;
+		margin-bottom: 3px;
+		color: $headings-color;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include media-breakpoint-down(xs) {
+			font-size: 12px;
+		}
+	}
+}
+
+.#{$class-prefix}-app-list {
+	@include list-unstyled;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+
+	&__item {
+		flex: 0 0 33.3333333333%;
+		-ms-flex: 0 0 33.3333333333%;
+		max-width: 33.3333333333%;
+		text-align: center;
+	}
+
+	&__link,
+	&__text {
+		display: block;
+	}
+
+	&__link {
+		@include transition(all 0.3s ease);
+		padding: 10px;
+		@include border-radius($border-radius);
+		border: 1px solid transparent;
+		color: $headings-color;
+
+		@include hover-focus {
+			border-color: $gray-200;
+		}
+
+		& > img {
+			display: inline-block;
+		}
+	}
+
+	&__text:last-child {
+		margin-top: 10px;
+	}
+}

@@ -13337,6 +13337,12 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .dt-sidebar--folded .dt-header {
       transition: none; } }
 
+.dt-sidebar--folded.sidebar-sm .dt-sidebar + .dt-content-wrapper {
+  width: calc(100% - 280px); }
+
+.dt-sidebar--folded.sidebar-lg .dt-sidebar + .dt-content-wrapper {
+  width: calc(100% - 330px); }
+
 .dt-sidebar--folded.dt-sidebar--fixed .dt-sidebar + .dt-content-wrapper {
   margin-left: 80px; }
 

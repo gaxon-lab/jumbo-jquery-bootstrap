@@ -12,6 +12,14 @@
 		@include transition(all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1));
 	}
 
+	&.sidebar-sm .#{$class-prefix}-sidebar + .#{$class-prefix}-content-wrapper {
+		width: calc(100% - #{$sidebar-width-sm});
+	}
+
+	&.sidebar-lg .#{$class-prefix}-sidebar + .#{$class-prefix}-content-wrapper {
+		width: calc(100% - #{$sidebar-width-lg});
+	}
+
 	&.#{$class-prefix}-sidebar--fixed {
 		& .#{$class-prefix}-sidebar + .#{$class-prefix}-content-wrapper {
 			margin-left: $folded-sidebar-width;

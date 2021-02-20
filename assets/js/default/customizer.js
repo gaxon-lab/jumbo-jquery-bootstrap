@@ -112,18 +112,36 @@
 		setSidebarSize(this.value);
 	});
 
+	$('#reset-sidebar-background').on('click', function () {
+		drift.sidebar.removeBackground();
+		$sidebarBgFlatColorSelector.removeClass('active');
+		$sidebarBgGradientColorSelector.removeClass('active');
+		$sidebarBgImageSelector.removeClass('active');
+	});
+
 	$sidebarBgFlatColorSelector.on('click', function () {
 		$sidebarBgFlatColorSelector.removeClass('active');
+		$sidebarBgGradientColorSelector.removeClass('active');
 		$(this).addClass('active');
 		var bgColor = $(this).data('bg-color');
 		drift.sidebar.setBackgroundColor(bgColor);
 	});
 
 	$sidebarBgGradientColorSelector.on('click', function () {
+		$sidebarBgFlatColorSelector.removeClass('active');
 		$sidebarBgGradientColorSelector.removeClass('active');
 		$(this).addClass('active');
 		var bgColor = $(this).data('bg-color');
 		drift.sidebar.setBackgroundColor(bgColor);
+	});
+
+	var toggleDisplaySidebarBgImages = $('input[type=checkbox][name="toggleDisplaySidebarBgImages"]');
+	if (toggleDisplaySidebarBgImages.prop("checked") === true) {
+		$('#collapseSidebarBgImages').collapse('show');
+	}
+
+	toggleDisplaySidebarBgImages.change(function () {
+		$('#collapseSidebarBgImages').collapse('toggle');
 	});
 
 	$sidebarBgImageSelector.on('click', function () {

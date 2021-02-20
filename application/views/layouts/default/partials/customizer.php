@@ -419,7 +419,7 @@ $gradientColors = array('bright-dark-violet', 'cyan-violet', 'vivid-dark-red', '
 
 							<!-- Card Tools -->
 							<div class="dt-card__tools">
-								<button class="btn btn-default btn-sm">Reset</button>
+								<button class="btn btn-default btn-sm" id="reset-sidebar-background">Reset</button>
 							</div>
 							<!-- /card tools -->
 
@@ -459,22 +459,24 @@ $gradientColors = array('bright-dark-violet', 'cyan-violet', 'vivid-dark-red', '
 								<div class="d-flex align-items-center justify-content-between mb-4">
 									<div class="text-secondary">Show Sidebar Image</div>
 									<label class="switch switch-sm">
-										<input id="toggle-disabled" type="checkbox">
+										<input name="toggleDisplaySidebarBgImages" type="checkbox">
 										<span class="slider"></span>
 									</label>
 								</div>
 
-								<ul class="dt-list bg-image-options">
-									<?php foreach ($sidebarBgImages as $bgImage): ?>
-										<li class="dt-list__item">
-											<div class="choose-option">
-												<div class="choose-option__icon" data-bg-image="<?php echo $bgImage['full']; ?>">
-													<img class="img-fluid" src="<?php echo $bgImage['thumb']; ?>" alt="Sidebar Image">
+								<div class="collapse" id="collapseSidebarBgImages">
+									<ul class="dt-list bg-image-options">
+										<?php foreach ($sidebarBgImages as $bgImage): ?>
+											<li class="dt-list__item">
+												<div class="choose-option">
+													<div class="choose-option__icon" data-bg-image="<?php echo $bgImage['full']; ?>">
+														<img class="img-fluid" src="<?php echo $bgImage['thumb']; ?>" alt="Sidebar Image">
+													</div>
 												</div>
-											</div>
-										</li>
-									<?php endforeach; ?>
-								</ul>
+											</li>
+										<?php endforeach; ?>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<!-- /card body -->

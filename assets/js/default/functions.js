@@ -49,22 +49,16 @@ var drift = {
 				sidebar.toggleFolded();
 			});
 		},
-		setBackground: function () {
-
-		},
 		setBackgroundColor: function (color) {
 			this.displayBgOverlay();
 			this.drawerRef.attr('data-bg-color', color)
 		},
-		removeBackgroundColor: function () {
+		removeBackground: function () {
 			this.drawerRef.removeAttr('data-bg-color');
-			this.bgOverlay.remove();
+			this.destroyBgOverlay();
 		},
 		setBackgroundImage: function (image) {
 			this.displayBgOverlay(image);
-		},
-		removeBackgroundImage: function () {
-			this.bgOverlay.style.backgroundImage = '';
 		},
 		displayBgOverlay: function (image) {
 			if (this.bgOverlay) {
@@ -80,6 +74,10 @@ var drift = {
 
 				this.drawerRef.append(this.bgOverlay);
 			}
+		},
+		destroyBgOverlay: function () {
+			this.bgOverlay.remove();
+			this.bgOverlay = null;
 		},
 		initDrawer: function () {
 			if (this.docBody.hasClass('dt-sidebar--fixed')) {

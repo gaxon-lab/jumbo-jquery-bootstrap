@@ -12343,12 +12343,13 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   position: fixed;
   right: 0;
   z-index: 1000; }
-  .dt-header--fixed .dt-header ~ .dt-content {
-    transition: all 0.2s ease;
-    margin-top: 72px; }
-    @media (prefers-reduced-motion: reduce) {
-      .dt-header--fixed .dt-header ~ .dt-content {
-        transition: none; } }
+
+.dt-header--fixed:not(.dt-layout--framed):not(.dt-layout--boxed) .dt-header ~ .dt-content {
+  transition: all 0.2s ease;
+  margin-top: 72px; }
+  @media (prefers-reduced-motion: reduce) {
+    .dt-header--fixed:not(.dt-layout--framed):not(.dt-layout--boxed) .dt-header ~ .dt-content {
+      transition: none; } }
 
 .dt-header--fixed:not(.dt-sidebar--drawer):not(.dt-sidebar--folded) .dt-header {
   width: calc(100% - 304px);
@@ -13478,16 +13479,12 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 
 @media (min-width: 1280px) {
   .dt-layout--framed {
-    background-color: #6200EE;
-    padding: 2rem;
+    background-color: #380088;
+    padding: 5rem;
     overflow: hidden !important; }
-    .dt-layout--framed.theme-dark {
-      background-color: #e5e5ec; }
-    .dt-layout--framed.theme-semidark {
-      background-color: #380088; }
     .dt-layout--framed .dt-root {
-      height: calc(100vh - 2 * 2rem);
-      min-height: calc(100vh - 2 * 2rem);
+      height: calc(100vh - 2 * 5rem);
+      min-height: calc(100vh - 2 * 5rem);
       border-radius: 1.5rem;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
       overflow: hidden;
@@ -13496,22 +13493,18 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
         overflow: auto; }
     .dt-layout--framed .dt-header {
       min-height: 72px; }
-    .dt-layout--framed .dt-header__toolbar {
-      background-color: transparent; }
-    .dt-layout--framed .dt-sidebar {
-      border-bottom-left-radius: 1.5rem; }
-    .dt-layout--framed.dt-header--fixed .dt-main {
-      overflow: auto; }
-    .dt-layout--framed.dt-header--fixed .dt-header {
-      width: calc(100% - 2 * 2rem);
+    .dt-layout--framed .dt-sidebar,
+    .dt-layout--framed .dt-sidebar__background:after {
       border-top-left-radius: 1.5rem;
-      border-top-right-radius: 1.5rem; }
+      border-bottom-left-radius: 1.5rem; }
     .dt-layout--framed.dt-sidebar--fixed .dt-sidebar {
-      height: calc(100vh - (72px + 2 * 2rem)); }
-    .dt-layout--framed .dt-brand {
-      border-top-left-radius: 1.5rem; }
-    .dt-layout--framed .dt-header__toolbar {
-      border-top-right-radius: 1.5rem; }
+      height: calc(100vh - (2 * 5rem)); }
+    .dt-layout--framed.dt-header--fixed .dt-header {
+      width: 100% !important;
+      position: -webkit-sticky;
+      position: sticky;
+      left: 0 !important;
+      top: 0; }
     .dt-layout--framed .compose-mail-box,
     .dt-layout--framed .dt-customizer-toggle {
       position: absolute; }
@@ -13528,25 +13521,21 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 
 @media (min-width: 1300px) {
   .dt-layout--boxed {
-    max-width: 1280px; } }
+    max-width: 1300px; } }
 
-@media (min-width: 1600px) {
+@media (min-width: 1920px) {
   .dt-layout--boxed {
-    max-width: 1500px; } }
+    max-width: 1740px; } }
 
 @media (min-width: 1300px) {
   .dt-layout--boxed {
     position: relative;
-    background-color: #6200EE;
+    background-color: #380088;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
     overflow: hidden !important; }
-    .dt-layout--boxed.theme-dark {
-      background-color: #e5e5ec; }
-    .dt-layout--boxed.theme-semidark {
-      background-color: #380088; }
     .dt-layout--boxed .dt-root {
       overflow: hidden;
       background-color: #f4f4f7;
@@ -13556,9 +13545,11 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .dt-layout--boxed .dt-header {
       min-height: 72px; }
     .dt-layout--boxed.dt-header--fixed .dt-header {
-      position: absolute; }
-    .dt-layout--boxed.dt-header--fixed .dt-main {
-      overflow: auto; }
+      width: 100% !important;
+      position: -webkit-sticky;
+      position: sticky;
+      left: 0 !important;
+      top: 0; }
     .dt-layout--boxed .compose-mail-box,
     .dt-layout--boxed .dt-customizer-toggle {
       position: absolute; }

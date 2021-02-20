@@ -8,11 +8,11 @@
 		position: fixed;
 		right: 0;
 		z-index: 1000;
+	}
 
-		& ~ .#{$class-prefix}-content {
-			@include transition(all 0.2s ease);
-			margin-top: $header-height;
-		}
+	&:not(.#{$class-prefix}-layout--framed):not(.#{$class-prefix}-layout--boxed) .#{$class-prefix}-header ~ .#{$class-prefix}-content {
+		@include transition(all 0.2s ease);
+		margin-top: $header-height;
 	}
 
 	&:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) {

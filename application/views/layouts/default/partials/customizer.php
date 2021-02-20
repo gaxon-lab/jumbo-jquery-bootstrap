@@ -18,7 +18,7 @@ $gradientColors = array('bright-dark-violet', 'cyan-violet', 'vivid-dark-red', '
 <!-- /theme chooser -->
 
 <!-- Customizer Sidebar -->
-<aside class="dt-customizer dt-drawer position-right open">
+<aside class="dt-customizer dt-drawer position-right">
 	<div class="dt-customizer__inner">
 
 		<!-- Customizer Header -->

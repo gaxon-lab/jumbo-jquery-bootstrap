@@ -4,219 +4,199 @@
 
 // Sidebar
 .#{$class-prefix}-sidebar {
-  position: relative;
-  width: $sidebar-width;
-  display: flex;
-  flex-direction: column;
-  background-color: $sidebar-bg;
-  @include box-shadow($sidebar-shadow);
-  @include transition(all 0.2s ease);
-
-  &:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	width: calc(100% - #{$sidebar-width});
-  }
-
-  .sidebar-sm & {
-	width: $sidebar-width-sm;
-
-	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	  width: calc(100% - #{$sidebar-width-sm});
-	}
-  }
-
-  .sidebar-lg & {
-	width: $sidebar-width-lg;
-
-	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	  width: calc(100% - #{$sidebar-width-lg});
-	}
-  }
-
-  &__header {
-	padding: 28px 16px 12px;
-	border-bottom: 1px solid $sidebar-separator;
-
-	& .#{$class-prefix}-avatar-name {
-	  color: $text-color-primary;
-	}
-
-	&-info {
-	  width: 100%;
-	  animation: show-hide 0.2s;
-	}
-
-	& .#{$class-prefix}-avatar + &-info {
-	  padding-top: 24px;
-	}
-  }
-
-  &__container {
 	position: relative;
-	z-index: 4;
+	width: $sidebar-width;
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 0;
-  }
+	background-color: $sidebar-bg;
+	@include box-shadow($sidebar-shadow);
+	@include transition(all 0.2s ease);
 
-  &__navigation {
-	position: relative;
-	flex: 1 1 0;
-	padding: 10px 16px 24px 0;
-  }
-}
-
-.#{$class-prefix}-sidebar--fixed {
-  & .#{$class-prefix}-sidebar {
-	position: fixed;
-	z-index: 1001;
-	height: 100vh;
-  }
-
-  &:not(.#{$class-prefix}-sidebar--folded) .#{$class-prefix}-sidebar {
-	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	  margin-left: $sidebar-width;
+	.sidebar-sm & {
+		width: $sidebar-width-sm;
 	}
-  }
 
-  &:not(.#{$class-prefix}-sidebar--folded).sidebar-sm .#{$class-prefix}-sidebar {
-	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	  margin-left: $sidebar-width-sm;
+	.sidebar-lg & {
+		width: $sidebar-width-lg;
 	}
-  }
 
-  &:not(.#{$class-prefix}-sidebar--folded).sidebar-lg .#{$class-prefix}-sidebar {
-	&:not(.#{$class-prefix}-drawer) + .#{$class-prefix}-content-wrapper {
-	  margin-left: $sidebar-width-lg;
+	.sidebar-sm:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) & {
+		& + .#{$class-prefix}-content-wrapper {
+			width: calc(100% - #{$sidebar-width-sm});
+		}
 	}
-  }
+
+	.sidebar-lg:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) & {
+		& + .#{$class-prefix}-content-wrapper {
+			width: calc(100% - #{$sidebar-width-lg});
+		}
+	}
+
+	&--fixed & {
+		position: fixed;
+		z-index: 1001;
+		height: 100vh;
+	}
+
+	&__header {
+		padding: 28px 16px 12px;
+		border-bottom: 1px solid $sidebar-separator;
+
+		& .#{$class-prefix}-avatar-name {
+			color: $text-color-primary;
+		}
+
+		&-info {
+			width: 100%;
+			animation: show-hide 0.2s;
+		}
+
+		& .#{$class-prefix}-avatar + &-info {
+			padding-top: 24px;
+		}
+	}
+
+	&__container {
+		position: relative;
+		z-index: 4;
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 0;
+	}
+
+	&__navigation {
+		position: relative;
+		flex: 1 1 0;
+		padding: 10px 16px 24px 0;
+	}
 }
 
 // Sidebar Nav
 .#{$class-prefix}-side-nav {
-  @extend %list-style-none;
+	@extend %list-style-none;
 
-  &__header {
-	position: relative;
-	text-transform: uppercase;
-	padding: 15px 16px;
-	line-height: 1.2;
-	color: $sidebar-header-color;
-	font-size: 10px;
-	letter-spacing: 1.5px;
+	&__header {
+		position: relative;
+		text-transform: uppercase;
+		padding: 15px 16px;
+		line-height: 1.2;
+		color: $sidebar-header-color;
+		font-size: 10px;
+		letter-spacing: 1.5px;
 
-	&:not(:first-child) {
-	  padding-top: 20px;
+		&:not(:first-child) {
+			padding-top: 20px;
+		}
+
+		&:not(:first-child):before {
+			content: '';
+			display: block;
+			height: 1px;
+			width: calc(100% + 48px);
+			background-color: $sidebar-separator;
+			margin: 0 -16px 24px;
+		}
 	}
 
-	&:not(:first-child):before {
-	  content: '';
-	  display: block;
-	  height: 1px;
-	  width: calc(100% + 48px);
-	  background-color: $sidebar-separator;
-	  margin: 0 -16px 24px;
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+		white-space: nowrap;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		flex: 1;
+		-ms-flex: 1;
 	}
-  }
-
-  &__text {
-	display: inline-block;
-	vertical-align: middle;
-	white-space: nowrap;
-	-ms-text-overflow: ellipsis;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	flex: 1;
-	-ms-flex: 1;
-  }
 }
 
 .#{$class-prefix}-side-nav {
 
-  & > &__item {
-	&.selected > .#{$class-prefix}-side-nav__link,
-	&.open > .#{$class-prefix}-side-nav__link {
-	  color: $sidebar-color-hover;
+	& > &__item {
+		&.selected > .#{$class-prefix}-side-nav__link,
+		&.open > .#{$class-prefix}-side-nav__link {
+			color: $sidebar-color-hover;
 
-	  &.active {
-		background-color: $sidebar-active-bg;
-		color: $sidebar-active-color;
-	  }
+			&.active {
+				background-color: $sidebar-active-bg;
+				color: $sidebar-active-color;
+			}
 
-	  & .icon,
-	  & i {
-		color: $sidebar-active-color;
-	  }
+			& .icon,
+			& i {
+				color: $sidebar-active-color;
+			}
+		}
+
+		& > .#{$class-prefix}-side-nav__sub-menu {
+			display: none;
+		}
+
+		&.open > .#{$class-prefix}-side-nav__sub-menu {
+			display: block;
+		}
 	}
 
-	& > .#{$class-prefix}-side-nav__sub-menu {
-	  display: none;
+	&__link {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 10px 10px 10px 32px;
+		@include border-right-radius(50px);
+		line-height: 1.2;
+		text-transform: capitalize;
+		white-space: nowrap;
+		color: $sidebar-color;
+		font-size: 14px;
+		letter-spacing: 0.25px;
+		transition: all 0.3s ease;
+
+		& .icon,
+		& i {
+			font-size: 20px;
+			margin-right: 16px;
+		}
+
+		@include hover-focus-active {
+			background-color: $sidebar-menu-hover-bg;
+			color: $sidebar-color-hover;
+			text-decoration: none;
+		}
 	}
 
-	&.open > .#{$class-prefix}-side-nav__sub-menu {
-	  display: block;
-	}
-  }
-
-  &__link {
-	position: relative;
-	display: flex;
-	align-items: center;
-	padding: 10px 10px 10px 32px;
-	@include border-right-radius(50px);
-	line-height: 1.2;
-	text-transform: capitalize;
-	white-space: nowrap;
-	color: $sidebar-color;
-	font-size: 14px;
-	letter-spacing: 0.25px;
-	transition: all 0.3s ease;
-
-	& .icon,
-	& i {
-	  font-size: 20px;
-	  margin-right: 16px;
+	&__arrow:before {
+		content: '\30';
+		font-family: 'gaxondrift';
+		font-size: 14px;
+		color: inherit;
+		@include transition(all 100ms ease);
+		position: absolute;
+		left: 10px;
 	}
 
-	@include hover-focus-active {
-	  background-color: $sidebar-menu-hover-bg;
-	  color: $sidebar-color-hover;
-	  text-decoration: none;
+	&__item.open &__arrow:before {
+		@include rotate(180deg);
 	}
-  }
-
-  &__arrow:before {
-	content: '\30';
-	font-family: 'gaxondrift';
-	font-size: 14px;
-	color: inherit;
-	@include transition(all 100ms ease);
-	position: absolute;
-	left: 10px;
-  }
-
-  &__item.open &__arrow:before {
-	@include rotate(180deg);
-  }
 }
 
 .#{$class-prefix}-side-nav__sub-menu {
-  @extend %list-style-none;
+	@extend %list-style-none;
 
-  & .#{$class-prefix}-side-nav__link {
-	color: $sidebar-submenu-color;
-	padding-left: 50px;
+	& .#{$class-prefix}-side-nav__link {
+		color: $sidebar-submenu-color;
+		padding-left: 50px;
 
-	&.active {
-	  background-color: $sidebar-active-bg;
-	  color: $sidebar-active-color;
+		&.active {
+			background-color: $sidebar-active-bg;
+			color: $sidebar-active-color;
 
-	  @include hover {
-		color: $sidebar-active-color;
-	  }
+			@include hover {
+				color: $sidebar-active-color;
+			}
+		}
+
+		@include hover-focus-active {
+			color: $sidebar-color-hover;
+		}
 	}
-
-	@include hover-focus-active {
-	  color: $sidebar-color-hover;
-	}
-  }
 }

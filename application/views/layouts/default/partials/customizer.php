@@ -1,4 +1,15 @@
 <?php
+$templateLayouts = array(
+	array('title' => 'Default', 'active' => 'yes', 'slug' => 'default', 'thumb' => assets_url('images/customizer/layouts/layout1.png')),
+	array('title' => 'Minimal', 'active' => 'no', 'slug' => 'minimal', 'thumb' => assets_url('images/customizer/layouts/layout2.png')),
+	array('title' => 'Minimal No Header', 'active' => 'no', 'slug' => 'minimal-no-header', 'thumb' => assets_url('images/customizer/layouts/layout3.png')),
+	array('title' => 'Modern', 'active' => 'no', 'slug' => 'modern', 'thumb' => assets_url('images/customizer/layouts/layout8.png')),
+	array('title' => 'Horizontal Default', 'active' => 'no', 'slug' => 'horizontal', 'thumb' => assets_url('images/customizer/layouts/layout4.png')),
+	array('title' => 'Horizontal Dark Header', 'active' => 'no', 'slug' => 'horizontal-dark-header', 'thumb' => assets_url('images/customizer/layouts/layout5.png')),
+	array('title' => 'Horizontal Minimal', 'active' => 'no', 'slug' => 'horizontal-minimal', 'thumb' => assets_url('images/customizer/layouts/layout6.png')),
+	array('title' => 'Horizontal Top Bar', 'active' => 'no', 'slug' => 'horizontal-top-bar', 'thumb' => assets_url('images/customizer/layouts/layout7.png')),
+);
+
 $sidebarBgImages = array(
 	array('thumb' => assets_url('images/customizer/sidebar-images/sidebar-1.png'), 'full' => 'assets/images/customizer/sidebar-images/full-images/sidebar-1.jpg'),
 	array('thumb' => assets_url('images/customizer/sidebar-images/sidebar-2.png'), 'full' => 'assets/images/customizer/sidebar-images/full-images/sidebar-2.jpg'),
@@ -196,81 +207,18 @@ $gradientColors = array('bright-dark-violet', 'cyan-violet', 'vivid-dark-red', '
 						<div class="dt-card__body">
 							<!-- List -->
 							<ul class="dt-list dt-list-col-4">
-								<li class="dt-list__item">
-									<div class="choose-option active">
-										<a href="<?php echo DEMO_LIVE_URL; ?>default" target="_blank" class="choose-option__icon">
-											<img class="img-fluid" src="<?php echo assets_url('images/customizer/layouts/layout1.png'); ?>"
-													 alt="Layout Default">
-										</a>
-										<span class="choose-option__name">Default</span>
-									</div>
-								</li>
-								<li class="dt-list__item">
-									<div class="choose-option">
-										<a href="<?php echo DEMO_LIVE_URL; ?>minimal" target="_blank" class="choose-option__icon">
-											<img class="img-fluid" src="<?php echo assets_url('images/customizer/layouts/layout2.png'); ?>"
-													 alt="Layout SAAS">
-										</a>
-										<span class="choose-option__name">Minimal</span>
-									</div>
-								</li>
-								<li class="dt-list__item">
-									<div class="choose-option">
-										<a href="<?php echo DEMO_LIVE_URL; ?>minimal-no-header" target="_blank" class="choose-option__icon">
-											<img class="img-fluid" src="<?php echo assets_url('images/customizer/layouts/layout3.png'); ?>"
-													 alt="Layout listing">
-										</a>
-										<span class="choose-option__name">Minimal No Header</span>
-									</div>
-								</li>
-								<li class="dt-list__item">
-									<div class="choose-option">
-										<a href="<?php echo DEMO_LIVE_URL; ?>modern" target="_blank" class="choose-option__icon">
-											<img class="img-fluid" src="<?php echo assets_url('images/customizer/layouts/layout8.png'); ?>"
-													 alt="Layout Intranet">
-										</a>
-										<span class="choose-option__name">Modern</span>
-									</div>
-								</li>
-								<li class="dt-list__item">
-									<div class="choose-option">
-										<a href="<?php echo DEMO_LIVE_URL; ?>horizontal" target="_blank" class="choose-option__icon">
-											<img class="img-fluid" src="<?php echo assets_url('images/customizer/layouts/layout4.png'); ?>"
-													 alt="Layout Back Office">
-										</a>
-										<span class="choose-option__name">Horizontal Default</span>
-									</div>
-								</li>
-								<li class="dt-list__item">
-									<div class="choose-option">
-										<a href="<?php echo DEMO_LIVE_URL; ?>horizontal-dark-header" target="_blank"
-											 class="choose-option__icon">
-											<img class="img-fluid" src="<?php echo assets_url('images/customizer/layouts/layout5.png'); ?>"
-													 alt="Layout Back Office Minimal">
-										</a>
-										<span class="choose-option__name">Horizontal Dark Header</span>
-									</div>
-								</li>
-								<li class="dt-list__item">
-									<div class="choose-option">
-										<a href="<?php echo DEMO_LIVE_URL; ?>horizontal-minimal" target="_blank"
-											 class="choose-option__icon">
-											<img class="img-fluid" src="<?php echo assets_url('images/customizer/layouts/layout6.png'); ?>"
-													 alt="Layout Modern">
-										</a>
-										<span class="choose-option__name">Horizontal Minimal</span>
-									</div>
-								</li>
-								<li class="dt-list__item">
-									<div class="choose-option">
-										<a href="<?php echo DEMO_LIVE_URL; ?>horizontal-top-bar" target="_blank"
-											 class="choose-option__icon">
-											<img class="img-fluid" src="<?php echo assets_url('images/customizer/layouts/layout7.png'); ?>"
-													 alt="Layout CRM">
-										</a>
-										<span class="choose-option__name">Horizontal Top Bar</span>
-									</div>
-								</li>
+								<?php foreach ($templateLayouts as $layout): ?>
+									<li class="dt-list__item">
+										<div class="choose-option <?php if ($layout['active'] == 'yes') echo 'active'; ?>">
+											<a href="<?php echo DEMO_LIVE_URL . $layout['slug']; ?>" target="_blank"
+												 class="choose-option__icon">
+												<img class="img-fluid" src="<?php echo $layout['thumb']; ?>"
+														 alt="Layout Default">
+											</a>
+											<span class="choose-option__name"><?php echo $layout['title']; ?></span>
+										</div>
+									</li>
+								<?php endforeach; ?>
 							</ul>
 							<!-- /list -->
 						</div>

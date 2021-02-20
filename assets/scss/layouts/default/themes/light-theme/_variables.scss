@@ -1282,15 +1282,15 @@ $module-sidebar-color-active: $sidebar-active-color !default;
 $image-path: '../../images/bg-images' !default;
 
 //Framed Layout
-$framed-layout-base: 2rem;
+$framed-layout-base: 5rem;
 
 // Custom Boxed Variables
 $dt-boxed-breakpoints: (
 		xl: 1300px,
-		xxl: 1600px
+		xxl: 1920px
 ) !default;
 
 $dt-boxed-max-widths: (
-		xl: 1280px,
-		xxl: 1500px
+		xl: 1300px,
+		xxl: 1740px
 ) !default;

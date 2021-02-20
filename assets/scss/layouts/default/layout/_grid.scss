@@ -2,91 +2,107 @@
 // This file contains all styles related to the main content of the site/application.
 // -----------------------------------------------------------------------------
 .#{$class-prefix}-root {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  &__inner {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-  }
+	min-height: 100vh;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
 }
 
 .#{$class-prefix}-main {
-  display: flex;
-  flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
+	display: flex;
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
 }
 
 .#{$class-prefix}-content-wrapper {
-  position: relative;
-  width: 100%;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  @include transition(all 0.2s ease);
+	position: relative;
+	width: calc(100% - #{$sidebar-width});
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	@include transition(all 0.2s ease);
+
+	.#{$class-prefix}-sidebar--drawer & {
+		width: 100%;
+	}
+
+	.#{$class-prefix}-sidebar--fixed:not(.#{$class-prefix}-sidebar--folded):not(.#{$class-prefix}-sidebar--drawer):not(.sidebar-sm):not(.sidebar-lg) & {
+		margin-left: $sidebar-width;
+	}
+
+	.#{$class-prefix}-sidebar--fixed.sidebar-sm:not(.#{$class-prefix}-sidebar--folded):not(.#{$class-prefix}-sidebar--drawer):not(.sidebar-lg) & {
+		margin-left: $sidebar-width-sm;
+	}
+
+	.#{$class-prefix}-sidebar--fixed.sidebar-lg:not(.#{$class-prefix}-sidebar--folded):not(.#{$class-prefix}-sidebar--drawer):not(.sidebar-sm) & {
+		margin-left: $sidebar-width-lg;
+	}
 }
 
 .#{$class-prefix}-content {
-  padding: 3.2rem 1.6rem;
-  flex: 1 1 auto;
-  @include media-breakpoint-only(xl) {
-	padding-left: 8.8rem;
-	padding-right: 8.8rem;
-  }
-  @include media-breakpoint-only(lg) {
-	padding-left: 6.5rem;
-	padding-right: 6.5rem;
-  }
-  @include media-breakpoint-only(md) {
-	padding-left: 5rem;
-	padding-right: 5rem;
-  }
+	padding: 3.2rem 1.6rem;
+	flex: 1 1 auto;
+	@include media-breakpoint-only(xl) {
+		padding-left: 8.8rem;
+		padding-right: 8.8rem;
+	}
+	@include media-breakpoint-only(lg) {
+		padding-left: 6.5rem;
+		padding-right: 6.5rem;
+	}
+	@include media-breakpoint-only(md) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
 }
 
 .#{$class-prefix}-page {
-  &__header {
-	position: relative;
-	margin-bottom: 3.2rem;
-  }
+	&__header {
+		position: relative;
+		margin-bottom: 3.2rem;
+	}
 
-  &__title {
-	font-weight: 700;
-  }
+	&__title {
+		font-weight: 700;
+	}
 }
 
 .#{$class-prefix}-entry {
 
-  &__header {
-	position: relative;
-	margin-bottom: 3rem;
-	padding-bottom: 1.6rem;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: $dt-border;
+	&__header {
+		position: relative;
+		margin-bottom: 3rem;
+		padding-bottom: 1.6rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: $dt-border;
 
-	&:after {
-	  content: '';
-	  position: absolute;
-	  bottom: -2px;
-	  left: 0;
-	  height: 3px;
-	  width: 45px;
-	  background-color: $primary;
-	  @include border-radius(10px);
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			height: 3px;
+			width: 45px;
+			background-color: $primary;
+			@include border-radius(10px);
+		}
 	}
-  }
 
-  &__title {
-	margin-bottom: 0;
-	font: {
-	  size: 18px;
+	&__title {
+		margin-bottom: 0;
+		font: {
+			size: 18px;
+		}
+		text-transform: capitalize;
+		color: $text-color-primary;
 	}
-	text-transform: capitalize;
-	color: $text-color-primary;
-  }
 }

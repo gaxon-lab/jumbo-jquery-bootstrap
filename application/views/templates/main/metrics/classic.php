@@ -18,7 +18,7 @@
 			<div class="dt-card__body">
 				<!-- Card Body -->
 				<div class="dt-chart__body">
-					<canvas height="75" id="chart-online-signups" data-shadow="yes" data-type="line"></canvas>
+					<canvas height="85" id="chart-online-signups" data-shadow="yes" data-type="line"></canvas>
 				</div>
 				<!-- /Chart Body -->
 
@@ -52,7 +52,7 @@
 			<div class="dt-card__body">
 				<!-- Card Body -->
 				<div class="dt-chart__body">
-					<canvas height="75" id="chart-last-month-sale" data-shadow="yes" data-type="line"></canvas>
+					<canvas height="85" id="chart-last-month-sale" data-shadow="yes" data-type="line"></canvas>
 				</div>
 				<!-- /Chart Body -->
 
@@ -86,7 +86,7 @@
 			<div class="dt-card__body">
 				<!-- Card Body -->
 				<div class="dt-chart__body">
-					<canvas height="75" id="chart-total-revenue" data-shadow="yes" data-type="line"></canvas>
+					<canvas height="85" id="chart-total-revenue" data-shadow="yes" data-type="line"></canvas>
 				</div>
 				<!-- /Chart Body -->
 
@@ -120,7 +120,7 @@
 			<div class="dt-card__body">
 				<!-- Card Body -->
 				<div class="dt-chart__body">
-					<canvas height="75" id="chart-total-mail-sent"></canvas>
+					<canvas height="85" id="chart-total-mail-sent"></canvas>
 				</div>
 				<!-- /Chart Body -->
 

@@ -43,6 +43,27 @@
 	}
   }
 
+	.theme-dark & {
+		&-default {
+			background-color: transparent;
+			color: $text-color-secondary;
+
+			@include hover-focus-active {
+				background-color: rgba($white, 0.1);
+			}
+		}
+
+		&-outline-default {
+			background-color: transparent;
+			color: $text-color-primary;
+			border: 1px solid rgba($white,0.23);
+
+			@include hover-focus-active {
+				background-color: rgba($white, 0.1);
+			}
+		}
+	}
+
   &-outline-default {
 	background-color: $white;
 	color: $text-color-primary;

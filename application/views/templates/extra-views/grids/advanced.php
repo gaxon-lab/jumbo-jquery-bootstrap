@@ -64,8 +64,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -157,8 +157,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -252,8 +252,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -345,8 +345,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -440,8 +440,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -533,8 +533,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -626,8 +626,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -721,8 +721,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -816,8 +816,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -909,8 +909,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -1002,8 +1002,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 
@@ -1097,8 +1097,8 @@
 
                 <!-- Content Area -->
                 <div class="d-flex flex-wrap mb-4">
-                    <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                    <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                    <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                    <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                 </div>
                 <!-- /content area -->
 

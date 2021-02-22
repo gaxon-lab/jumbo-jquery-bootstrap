@@ -480,7 +480,7 @@
 
                     <!-- Dropdown -->
                     <div class="dropdown ml-auto">
-                        <a class="dropdown-toggle no-arrow text-dark" href="#"
+                        <a class="dropdown-toggle no-arrow text-primary" href="#"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false"> <i
                                 class="icon icon-horizontal-more icon-lg"></i>

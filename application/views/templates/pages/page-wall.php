@@ -832,7 +832,7 @@
 
 				<!-- Wall Post Content -->
 				<div class="wall-post">
-					<p class="text-dark">
+					<p class="text-primary">
 						Had the opportunity to meet Shally today. It was such an amazing
 						experience to talk to someone who is so close to you and shares
 						the same vibe.

@@ -208,7 +208,7 @@
                 <div class="dt-module__header">
 
                     <!-- Back -->
-                    <a href="<?php echo site_url('apps/task-manager'); ?>" class="text-dark"><i
+                    <a href="<?php echo site_url('apps/task-manager'); ?>" class="text-primary"><i
                             class="icon icon-arrow-left icon-fw icon-1x"></i><span
                             class="display-6 align-middle ml-1">Back</span></a>
                     <!-- /back -->
@@ -259,7 +259,7 @@
                             <!-- /dropdown -->
 
                             <!-- Calender -->
-                            <a href="javascript:void(0)" class="text-dark d-inline-block mb-7 mr-6"
+                            <a href="javascript:void(0)" class="text-primary d-inline-block mb-7 mr-6"
                                id="date-time-picker-1"
                                data-target-input="nearest">
                                 <div class="dt-avatar-wrapper" data-target="#date-time-picker-1"
@@ -277,7 +277,7 @@
                             <div class="dropdown mb-7">
                                 <!-- Dropdown Link -->
                                 <a href="#"
-                                   class="dropdown-toggle no-arrow dt-avatar-wrapper text-dark"
+                                   class="dropdown-toggle no-arrow dt-avatar-wrapper text-primary"
                                    data-toggle="dropdown" aria-haspopup="true"
                                    aria-expanded="false">
                                     <img class="dt-avatar size-35"
@@ -383,7 +383,7 @@
                                 <h5 class="text-light-gray mb-1">Reece Jacklin <span
                                         class="d-inline-block f-12 ml-2">17 June</span>
                                 </h5>
-                                <p class="mb-0 text-dark">Team is currently working on graphic
+                                <p class="mb-0 text-primary">Team is currently working on graphic
                                     design. One of the PSD is almost finalized.</p>
                             </div>
                             <!-- /media body -->
@@ -403,7 +403,7 @@
                             <div class="media-body">
                                 <h5 class="text-light-gray mb-1">Reece Jacklin <span
                                         class="d-inline-block f-12 ml-2">2 days ago</span></h5>
-                                <p class="mb-0 text-dark">Join is currently working on graphic
+                                <p class="mb-0 text-primary">Join is currently working on graphic
                                     design.</p>
                             </div>
                             <!-- /media body -->
@@ -423,7 +423,7 @@
                             <div class="media-body">
                                 <h5 class="text-light-gray mb-1">Reece Jacklin <span
                                         class="d-inline-block f-12 ml-2">2 days ago</span></h5>
-                                <p class="mb-0 text-dark">One of the PSD is almost finalized. Join
+                                <p class="mb-0 text-primary">One of the PSD is almost finalized. Join
                                     is currently.</p>
                             </div>
                             <!-- /media body -->

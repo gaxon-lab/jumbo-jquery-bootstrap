@@ -1149,7 +1149,7 @@
 								<div class="mb-3">
 									<a href="#" class="d-flex align-items-center">
 										<i class="icon icon-play-circle-o mr-2"></i>
-										<span class="text-dark f-12">How it works</span>
+										<span class="text-primary f-12">How it works</span>
 									</a>
 								</div>
 
@@ -1175,7 +1175,7 @@
 								<div class="mb-3">
 									<a href="#" class="d-flex align-items-center">
 										<i class="icon icon-play-circle-o mr-2"></i>
-										<span class="text-dark f-12">How it works</span>
+										<span class="text-primary f-12">How it works</span>
 									</a>
 								</div>
 
@@ -1202,7 +1202,7 @@
 								<div class="mb-3">
 									<a href="#" class="d-flex align-items-center">
 										<i class="icon icon-play-circle-o mr-2"></i>
-										<span class="text-dark f-12">How it works</span>
+										<span class="text-primary f-12">How it works</span>
 									</a>
 								</div>
 
@@ -1245,7 +1245,7 @@
 							</p>
 							<p class="card-text">Had a great time with family on beach this weekend. Now charged for the
 								next one!</p>
-							<button class="btn btn-default btn-sm text-dark">Read More</button>
+							<button class="btn btn-default btn-sm text-primary">Read More</button>
 						</div>
 						<!-- /grid item -->
 					</div>

@@ -24,7 +24,7 @@
 
 				<!-- Card Tools -->
 				<div class="dt-card__tools">
-					<a href="javascript:void(0)" class="badge badge-pill badge-light-success text-dark-green mr-2">
+					<a href="javascript:void(0)" class="badge badge-pill badge-light-success text-primary-green mr-2">
 						Monthly
 					</a>
 					<a href="javascript:void(0)" class="dt-card__more text-secondary">
@@ -3046,7 +3046,7 @@
 					<div class="dt-widget__item">
 
 						<!-- Widget Image -->
-						<div class="dt-widget__img text-dark-green">
+						<div class="dt-widget__img text-primary-green">
 							<!-- Avatar -->
 							<i class="icon icon-tag icon-2x"></i>
 							<!-- /avatar -->
@@ -3128,7 +3128,7 @@
 					<div class="dt-widget__item">
 
 						<!-- Widget Image -->
-						<div class="dt-widget__img text-dark-green">
+						<div class="dt-widget__img text-primary-green">
 							<!-- Avatar -->
 							<i class="icon icon-tag icon-2x"></i>
 							<!-- /avatar -->
@@ -4349,35 +4349,35 @@
 							<li class="dt-list__item py-3">
 								<div class="d-flex align-items-center">
 									<i class="flag-icon flag-icon-gb flag-icon-rounded flag-icon-lg mr-5"></i>
-									<span class="text-dark mr-1">United Kingdom</span>
+									<span class="text-primary mr-1">United Kingdom</span>
 									<span class="ml-auto">27</span>
 								</div>
 							</li>
 							<li class="dt-list__item py-3">
 								<div class="d-flex align-items-center">
 									<i class="flag-icon flag-icon-mq flag-icon-rounded flag-icon-lg mr-5"></i>
-									<span class="text-dark mr-1">France</span>
+									<span class="text-primary mr-1">France</span>
 									<span class="ml-auto">81</span>
 								</div>
 							</li>
 							<li class="dt-list__item py-3">
 								<div class="d-flex align-items-center">
 									<i class="flag-icon flag-icon-in flag-icon-rounded flag-icon-lg mr-5"></i>
-									<span class="text-dark mr-1">India</span>
+									<span class="text-primary mr-1">India</span>
 									<span class="ml-auto">89</span>
 								</div>
 							</li>
 							<li class="dt-list__item py-3">
 								<div class="d-flex align-items-center">
 									<i class="flag-icon flag-icon-de flag-icon-rounded flag-icon-lg mr-5"></i>
-									<span class="text-dark mr-1">Germany</span>
+									<span class="text-primary mr-1">Germany</span>
 									<span class="ml-auto">33</span>
 								</div>
 							</li>
 							<li class="dt-list__item py-3">
 								<div class="d-flex align-items-center">
 									<i class="flag-icon flag-icon-es flag-icon-rounded flag-icon-lg mr-5"></i>
-									<span class="text-dark mr-1">Spain</span>
+									<span class="text-primary mr-1">Spain</span>
 									<span class="ml-auto">79</span>
 								</div>
 							</li>
@@ -4593,13 +4593,13 @@
 					<li class="dt-list__item">
 						<div class="d-flex align-items-center">
 							<i class="icon icon-phone icon-fw icon-lg mr-3"></i>
-							<span class="text-dark mr-1">+01-992-856-8535</span>
+							<span class="text-primary mr-1">+01-992-856-8535</span>
 						</div>
 					</li>
 					<li class="dt-list__item">
 						<div class="d-flex align-items-center">
 							<i class="icon icon-mail icon-fw icon-lg mr-3"></i>
-							<span class="text-dark mr-1">bob.builder@jobportal.com</span>
+							<span class="text-primary mr-1">bob.builder@jobportal.com</span>
 						</div>
 					</li>
 				</ul>

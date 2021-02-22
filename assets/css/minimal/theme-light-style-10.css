@@ -12775,6 +12775,9 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .dt-customizer__header .close:focus {
       outline: none; }
 
+.theme-dark .dt-customizer__header {
+  background-color: #fff; }
+
 .dt-customizer__body {
   background-color: #f4f4f7;
   height: calc(100% - 72px);
@@ -12990,8 +12993,12 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     z-index: 1;
     height: 100%;
     width: 100%;
-    background: repeat-x #FFF;
+    background: repeat-x #fff;
     opacity: .9; }
+
+.theme-dark .dt-sidebar__background:after,
+.theme-semidark .dt-sidebar__background:after {
+  background: repeat-x #000; }
 
 .dt-sidebar[data-bg-color=pure-violet] .dt-sidebar__background:after {
   background-color: #6200EE; }
@@ -13202,6 +13209,12 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   .dt-sidebar__header {
     padding: 28px 16px 12px;
     border-bottom: 1px solid #EDEDED; }
+    .theme-dark .dt-sidebar__header,
+    .theme-semidark .dt-sidebar__header {
+      color: rgba(255, 255, 255, 0.3); }
+      .theme-dark .dt-sidebar__header .dt-avatar-name,
+      .theme-semidark .dt-sidebar__header .dt-avatar-name {
+        color: #fff; }
     .dt-sidebar__header .dt-avatar-name {
       color: rgba(0, 0, 0, 0.87); }
     .dt-sidebar__header-info {
@@ -14172,6 +14185,17 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .btn-default:hover, .btn-default:focus, .btn-default:active {
       background-color: #fcfcfc;
       color: rgba(0, 0, 0, 0.6); }
+  .theme-dark .btn-default {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.6); }
+    .theme-dark .btn-default:hover, .theme-dark .btn-default:focus, .theme-dark .btn-default:active {
+      background-color: rgba(255, 255, 255, 0.1); }
+  .theme-dark .btn-outline-default {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.87);
+    border: 1px solid rgba(255, 255, 255, 0.23); }
+    .theme-dark .btn-outline-default:hover, .theme-dark .btn-outline-default:focus, .theme-dark .btn-outline-default:active {
+      background-color: rgba(255, 255, 255, 0.1); }
   .btn-outline-default {
     background-color: #fff;
     color: rgba(0, 0, 0, 0.87);
@@ -14197,6 +14221,8 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 
 .dt-card {
   display: block; }
+  .theme-dark .dt-card.bg-white, .theme-dark .dt-card .bg-white {
+    background-color: #fff !important; }
   .dt-card__header {
     margin-bottom: 2.2rem;
     padding: 2rem 2.4rem 0;
@@ -14298,6 +14324,8 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 .card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
   margin-bottom: 2.4rem; }
+  .theme-dark .card.bg-white, .theme-dark .card .bg-white {
+    background-color: #fff !important; }
   .card .lead {
     font-size: 1.8rem; }
   .card .list-group-item {

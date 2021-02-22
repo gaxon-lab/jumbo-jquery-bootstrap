@@ -59,7 +59,7 @@
                     <button type="submit" class="btn btn-primary btn-sm" data-dismiss="compose">Submit</button>
 
                     <div class="action-area ml-auto">
-                        <a class="text-dark" href="javascript:void(0)" data-dismiss="compose">
+                        <a class="text-primary" href="javascript:void(0)" data-dismiss="compose">
                             <i class="icon icon-trash-filled mr-1"></i> <span
                                 class="f-12 text-uppercase align-middle">discard</span>
                         </a>

@@ -1439,7 +1439,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-gb flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">United Kingdom</span>
+											<span class="text-primary mr-1">United Kingdom</span>
 											<span class="ml-auto">
 												<span class="d-inline-block">12455</span>
 												<span class="dot-shape dot-shape-lg bg-danger ml-5"></span>
@@ -1449,7 +1449,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-mq flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">France</span>
+											<span class="text-primary mr-1">France</span>
 
 											<span class="ml-auto">
 												<span class="d-inline-block">455</span>
@@ -1460,7 +1460,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-in flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">India</span>
+											<span class="text-primary mr-1">India</span>
 
 											<span class="ml-auto">
 												<span class="d-inline-block">36855</span>
@@ -1471,7 +1471,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-de flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">Germany</span>
+											<span class="text-primary mr-1">Germany</span>
 
 											<span class="ml-auto">
 												<span class="d-inline-block">9877</span>
@@ -1482,7 +1482,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-es flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">Spain</span>
+											<span class="text-primary mr-1">Spain</span>
 
 											<span class="ml-auto">
 												<span class="d-inline-block">1755</span>
@@ -1500,7 +1500,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-gb flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">United Kingdom</span>
+											<span class="text-primary mr-1">United Kingdom</span>
 											<span class="ml-auto">
 												<span class="d-inline-block">12455</span>
 												<span class="dot-shape dot-shape-lg bg-danger ml-5"></span>
@@ -1510,7 +1510,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-mq flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">France</span>
+											<span class="text-primary mr-1">France</span>
 
 											<span class="ml-auto">
 												<span class="d-inline-block">455</span>
@@ -1521,7 +1521,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-in flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">India</span>
+											<span class="text-primary mr-1">India</span>
 
 											<span class="ml-auto">
 												<span class="d-inline-block">36855</span>
@@ -1532,7 +1532,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-de flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">Germany</span>
+											<span class="text-primary mr-1">Germany</span>
 
 											<span class="ml-auto">
 												<span class="d-inline-block">9877</span>
@@ -1543,7 +1543,7 @@
 									<li class="dt-list__item py-3">
 										<div class="d-flex align-items-center">
 											<i class="flag-icon flag-icon-es flag-icon-rounded flag-icon-lg mr-5"></i>
-											<span class="text-dark mr-1">Spain</span>
+											<span class="text-primary mr-1">Spain</span>
 
 											<span class="ml-auto">
 												<span class="d-inline-block">1755</span>

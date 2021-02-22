@@ -8,16 +8,17 @@
 <div class="row">
 
 	<!-- Grid Item -->
-	<div class="col-xl-3 col-sm-6 order-md-1">
+	<div class="col-xl-3 col-sm-6">
 
 		<!-- Card -->
-		<div class="dt-card dt-chart">
+		<div class="dt-card dt-chart"
+				 style="border-top: 4px solid #0062FF; background: linear-gradient(180deg, #E2EEFF 0%, #FFFFFF 100%);">
 
 			<!-- Card Body -->
-			<div class="dt-card__body pt-0">
+			<div class="dt-card__body">
 				<!-- Card Body -->
 				<div class="dt-chart__body">
-					<canvas height="155" id="chart-online-signups" data-shadow="yes"></canvas>
+					<canvas height="75" id="chart-online-signups" data-shadow="yes" data-type="line"></canvas>
 				</div>
 				<!-- /Chart Body -->
 
@@ -27,8 +28,125 @@
 						<h5 class="f-12">Online Signups</h5>
 					</div>
 					<span class="d-inline-flex text-success">
-							1.5%<i class="icon icon-profit icon-fw"></i>
+							1.5%<i class="material-icons">trending_up</i>
 					</span>
+				</div>
+
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card dt-chart"
+				 style="border-top: 4px solid #4200FF; background: linear-gradient(180deg, #E2E3FF 0%, #FFFFFF 100%);">
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+				<!-- Card Body -->
+				<div class="dt-chart__body">
+					<canvas height="75" id="chart-last-month-sale" data-shadow="yes" data-type="line"></canvas>
+				</div>
+				<!-- /Chart Body -->
+
+				<div class="d-flex align-items-center justify-content-between mb-2">
+					<div class="flex-1">
+						<h4 class="mb-1">$3,755</h4>
+						<h5 class="f-12">Last Month Sale</h5>
+					</div>
+					<span class="d-inline-flex text-success">
+							3.5%<i class="material-icons">trending_up</i>
+					</span>
+				</div>
+
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card dt-chart"
+				 style="border-top: 4px solid #29CF6B; background: linear-gradient(180deg, #E2FFE7 0%, #FFFFFF 100%);">
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+				<!-- Card Body -->
+				<div class="dt-chart__body">
+					<canvas height="75" id="chart-total-revenue" data-shadow="yes" data-type="line"></canvas>
+				</div>
+				<!-- /Chart Body -->
+
+				<div class="d-flex align-items-center justify-content-between mb-2">
+					<div class="flex-1">
+						<h4 class="mb-1">$15,366</h4>
+						<h5 class="f-12">Total Revenue this year</h5>
+					</div>
+					<span class="d-inline-flex text-danger">
+							1.5%<i class="material-icons">trending_down</i>
+					</span>
+				</div>
+
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card dt-chart"
+				 style="border-top: 4px solid #FFA601; background: linear-gradient(180deg, #FFF2E2 0%, #FFFFFF 100%);">
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+				<!-- Card Body -->
+				<div class="dt-chart__body">
+					<canvas height="75" id="chart-total-mail-sent"></canvas>
+				</div>
+				<!-- /Chart Body -->
+
+				<div class="d-flex align-items-center justify-content-between mb-2">
+					<div class="flex-1">
+						<h4 class="mb-1">2,355</h4>
+						<h5 class="f-12">Total Email Sent</h5>
+					</div>
+					<div>
+						<div class="d-flex align-items-center justify-content-end">
+							<span class="d-inline-flex text-success">
+									1.5%<i class="material-icons">trending_up</i>
+							</span>
+						</div>
+
+						<div class="d-flex align-items-center justify-content-center mt-4">
+							<div class="mr-2">
+								<span class="dot-shape" style="background-color: rgb(255, 168, 0);"></span>
+								<span>Sent</span>
+							</div>
+							<div>
+								<span class="dot-shape" style="background-color: rgb(243, 229, 207);"></span>
+								<span>Bounced</span>
+							</div>
+						</div>
+					</div>
 				</div>
 
 			</div>

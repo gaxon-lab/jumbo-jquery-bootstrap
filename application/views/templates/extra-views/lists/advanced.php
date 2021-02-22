@@ -73,8 +73,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -177,8 +177,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -283,10 +283,10 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div class="pr-3">Baths: <span class="text-dark">2</span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div class="pr-3">Baths: <span class="text-primary">2</span></div>
                         <div class="pr-3">Area: <span
-                                class="text-dark">1200 m<sup>2</sup></span>
+                                class="text-primary">1200 m<sup>2</sup></span>
                         </div>
                         <div><a class="text-light-gray text-decoration-underline"
                                 href="javascript:void(0)">+4 more</a>
@@ -393,8 +393,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -499,10 +499,10 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div class="pr-3">Baths: <span class="text-dark">2</span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div class="pr-3">Baths: <span class="text-primary">2</span></div>
                         <div class="pr-3">Area: <span
-                                class="text-dark">1200 m<sup>2</sup></span>
+                                class="text-primary">1200 m<sup>2</sup></span>
                         </div>
                         <div><a class="text-light-gray text-decoration-underline"
                                 href="javascript:void(0)">+4 more</a>
@@ -609,8 +609,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -713,8 +713,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -819,8 +819,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -925,8 +925,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -1029,8 +1029,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -1133,8 +1133,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 
@@ -1239,8 +1239,8 @@
                     <span class="min-w-150 d-inline-block border-top mb-2"></span>
 
                     <div class="d-flex flex-wrap mb-4">
-                        <div class="pr-3">Bedrooms: <span class="text-dark">3</span></div>
-                        <div>Area: <span class="text-dark">1200 m<sup>2</sup></span></div>
+                        <div class="pr-3">Bedrooms: <span class="text-primary">3</span></div>
+                        <div>Area: <span class="text-primary">1200 m<sup>2</sup></span></div>
                     </div>
                     <!-- /content area -->
 

@@ -8644,10 +8644,10 @@ a.text-danger:hover, a.text-danger:focus {
 a.text-light:hover, a.text-light:focus {
   color: #bfbfbf !important; }
 
-.text-dark {
+.text-primary {
   color: #212121 !important; }
 
-a.text-dark:hover, a.text-dark:focus {
+a.text-primary:hover, a.text-primary:focus {
   color: black !important; }
 
 .text-body {
@@ -11000,10 +11000,10 @@ a.text-light-primary:hover, a.text-light-primary:focus {
 a.text-light-green:hover, a.text-light-green:focus {
   color: #148b60 !important; }
 
-.text-dark-green {
+.text-primary-green {
   color: #3d6003 !important; }
 
-a.text-dark-green:hover, a.text-dark-green:focus {
+a.text-primary-green:hover, a.text-primary-green:focus {
   color: #0e1601 !important; }
 
 .text-light-blue {
@@ -11036,10 +11036,10 @@ a.text-light-teal:hover, a.text-light-teal:focus {
 a.text-indigo:hover, a.text-indigo:focus {
   color: #252c78 !important; }
 
-.text-dark-blue {
+.text-primary-blue {
   color: #0060ca !important; }
 
-a.text-dark-blue:hover, a.text-dark-blue:focus {
+a.text-primary-blue:hover, a.text-primary-blue:focus {
   color: #003c7e !important; }
 
 .text-orange {

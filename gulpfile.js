@@ -14,7 +14,7 @@ var scssDir = 'assets/scss/';
 var scssLayoutsDir = scssDir + 'layouts/';
 
 var layouts = [
-	/*{
+	{
 		path: 'default',
 		themes: [
 			{
@@ -84,7 +84,7 @@ var layouts = [
 				]
 			}
 		]
-	},*/
+	},
 	{
 		path: 'minimal',
 		themes: [

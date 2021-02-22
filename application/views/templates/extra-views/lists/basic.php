@@ -36,8 +36,8 @@
                             Catilina...</p>
                         <div class="d-flex flex-sm-row flex-column">
                             <div class="mb-4 mb-sm-0">
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$35.00</span>/hr</span>
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$170k+ </span>earned</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$35.00</span>/hr</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$170k+ </span>earned</span>
                             </div>
                             <div class="dt-indicator-item__info" data-fill="82" data-max="100"
                                  data-percent="true"
@@ -100,9 +100,9 @@
                             opponent Lucius Sergius Catilina...</p>
                         <div class="d-flex flex-sm-row flex-column">
                             <div class="mb-4 mb-sm-0">
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$13.00</span>/hr</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$13.00</span>/hr</span>
                                 <span class="mr-4 mr-md-6 text-nowrap"><span
-                                        class="text-dark">$78k+ </span>earned</span>
+                                        class="text-primary">$78k+ </span>earned</span>
                             </div>
                             <div class="dt-indicator-item__info" data-fill="86" data-max="100"
                                  data-percent="true"
@@ -166,9 +166,9 @@
                             Catilina...</p>
                         <div class="d-flex flex-sm-row flex-column">
                             <div class="mb-4 mb-sm-0">
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$25.00</span>/hr</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$25.00</span>/hr</span>
                                 <span class="mr-4 mr-md-6 text-nowrap"><span
-                                        class="text-dark">$50k+ </span>earned</span>
+                                        class="text-primary">$50k+ </span>earned</span>
                             </div>
                             <div class="dt-indicator-item__info" data-fill="91" data-max="100"
                                  data-percent="true"
@@ -232,8 +232,8 @@
                             Catilina...</p>
                         <div class="d-flex flex-sm-row flex-column">
                             <div class="mb-4 mb-sm-0">
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$20.00</span>/hr</span>
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$650k+ </span>earned</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$20.00</span>/hr</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$650k+ </span>earned</span>
                             </div>
                             <div class="dt-indicator-item__info" data-fill="97" data-max="100"
                                  data-percent="true"
@@ -297,9 +297,9 @@
                             Catilina...</p>
                         <div class="d-flex flex-sm-row flex-column">
                             <div class="mb-4 mb-sm-0">
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$23.00</span>/hr</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$23.00</span>/hr</span>
                                 <span class="mr-4 mr-md-6 text-nowrap"><span
-                                        class="text-dark">$65k+ </span>earned</span>
+                                        class="text-primary">$65k+ </span>earned</span>
                             </div>
                             <div class="dt-indicator-item__info" data-fill="87" data-max="100"
                                  data-percent="true"
@@ -363,9 +363,9 @@
                             Catilina...</p>
                         <div class="d-flex flex-sm-row flex-column">
                             <div class="mb-4 mb-sm-0">
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$35.00</span>/hr</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$35.00</span>/hr</span>
                                 <span class="mr-4 mr-md-6 text-nowrap"><span
-                                        class="text-dark">$75k+ </span>earned</span>
+                                        class="text-primary">$75k+ </span>earned</span>
                             </div>
                             <div class="dt-indicator-item__info" data-fill="79" data-max="100"
                                  data-percent="true"
@@ -428,9 +428,9 @@
                             opponent Lucius Sergius Catilina...</p>
                         <div class="d-flex flex-sm-row flex-column">
                             <div class="mb-4 mb-sm-0">
-                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-dark">$15.00</span>/hr</span>
+                                <span class="mr-4 mr-md-6 text-nowrap"><span class="text-primary">$15.00</span>/hr</span>
                                 <span class="mr-4 mr-md-6 text-nowrap"><span
-                                        class="text-dark">$70k+ </span>earned</span>
+                                        class="text-primary">$70k+ </span>earned</span>
                             </div>
                             <div class="dt-indicator-item__info" data-fill="94" data-max="100"
                                  data-percent="true"

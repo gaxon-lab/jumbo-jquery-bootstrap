@@ -374,7 +374,7 @@
 					<!-- Card Body -->
 					<div class="dt-card__body text-center py-6 px-4">
 						<!-- Media -->
-						<div class="media flex-column align-items-center text-dark">
+						<div class="media flex-column align-items-center text-primary">
 
 							<i class="icon icon-orders-new icon-7x mb-6"></i>
 
@@ -854,7 +854,7 @@
 			<!-- Card Body -->
 			<div class="dt-card__body p-5">
 				<div class="d-flex mb-5">
-					<span class="d-block text-dark font-weight-500 f-16">Income Last Year</span>
+					<span class="d-block text-primary font-weight-500 f-16">Income Last Year</span>
 
 					<div class="d-flex align-items-center ml-auto text-success">
 						<span class="mb-0 font-weight-500 mr-1">67%</span>
@@ -866,7 +866,7 @@
 
 					<!-- Grid Item -->
 					<div class="col-xl-5 pr-2">
-						<span class="text-dark display-3 font-weight-500 mr-1">$23,658</span>
+						<span class="text-primary display-3 font-weight-500 mr-1">$23,658</span>
 						<p class="mb-0 text-light-gray">Total income</p>
 					</div>
 					<!-- /grid item -->
@@ -904,7 +904,7 @@
 			<!-- Card Body -->
 			<div class="dt-card__body p-5">
 				<div class="d-flex mb-5">
-					<span class="d-block text-dark font-weight-500 f-16">Queries</span>
+					<span class="d-block text-primary font-weight-500 f-16">Queries</span>
 
 					<div class="d-flex align-items-center ml-auto text-success">
 						<span class="mb-0 font-weight-500 mr-1">67%</span>
@@ -916,7 +916,7 @@
 
 					<!-- Grid Item -->
 					<div class="col-xl-7 col-md-12 col-sm-7 pr-2">
-						<span class="text-dark display-3 font-weight-500 mr-1">43,856</span>
+						<span class="text-primary display-3 font-weight-500 mr-1">43,856</span>
 						<p class="mb-0 text-light-gray">Mail, Website and Call</p>
 					</div>
 					<!-- /grid item -->

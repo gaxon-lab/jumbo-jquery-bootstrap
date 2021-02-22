@@ -237,7 +237,7 @@
                     <!-- Title -->
 
                     <!-- Filter -->
-                    <a class="dt-module__filter text-dark" href="javascript:void(0)">
+                    <a class="dt-module__filter text-primary" href="javascript:void(0)">
                         <i class="icon icon-filter-new icon-xl"></i> </a>
                     <!-- /filter -->
 

@@ -42,6 +42,15 @@
 		padding: 28px 16px 12px;
 		border-bottom: 1px solid $sidebar-separator;
 
+		.theme-dark &,
+		.theme-semidark & {
+			color: rgba($white, 0.3);
+
+			& .#{$class-prefix}-avatar-name {
+				color: $white;
+			}
+		}
+
 		& .#{$class-prefix}-avatar-name {
 			color: $text-color-primary;
 		}

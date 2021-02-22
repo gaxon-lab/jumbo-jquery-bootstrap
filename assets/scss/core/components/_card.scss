@@ -7,6 +7,12 @@
   @extend %dt-card-style;
   display: block;
 
+	.theme-dark & {
+		&.bg-white, & .bg-white {
+			background-color: $card-bg !important;
+		}
+	}
+
   &__header {
 	margin-bottom: ($dt-card-padding-y - 0.2rem);
 	padding: ($dt-card-padding-y - 0.4rem) $dt-card-padding-x 0;
@@ -151,6 +157,12 @@
 .card {
   @include box-shadow($box-shadow);
   margin-bottom: $dt-card-margin;
+
+	.theme-dark & {
+		&.bg-white, & .bg-white {
+			background-color: $card-bg !important;
+		}
+	}
 
   & .lead {
 	font-size: 1.8rem;

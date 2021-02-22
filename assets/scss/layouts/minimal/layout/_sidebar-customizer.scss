@@ -64,6 +64,12 @@
 		}
 	}
 
+	.theme-dark & {
+		&__header {
+			background-color: $card-bg;
+		}
+	}
+
 	&__body {
 		background-color: $body-bg;
 		height: calc(100% - #{$header-height});

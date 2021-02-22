@@ -19,7 +19,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="Stella Johnson"
                          src="<?php echo assets_url('images/user-avatar/stella-johnson.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Stella Johnson
+                    <div class="col text-truncate font-weight-500 text-primary">Stella Johnson
                     </div>
                     <div class="col text-truncate px-1 d-none d-xl-block">
                         stella.johnson@example.com
@@ -68,7 +68,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="garry sobars"
                          src="<?php echo assets_url('images/user-avatar/garry-sobars.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Garry Sobars</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Garry Sobars</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">
                         garry.sobars@example.com
                     </div>
@@ -116,7 +116,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="alex dolgove"
                          src="<?php echo assets_url('images/user-avatar/alex-dolgove.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Alex Dolgove</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Alex Dolgove</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">
                         alex.dolgove@example.com
                     </div>
@@ -164,7 +164,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="domnic brown"
                          src="<?php echo assets_url('images/user-avatar/domnic-brown.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Domnic Brown</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Domnic Brown</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">
                         domnic.brown@example.com
                     </div>
@@ -212,7 +212,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="kadir m"
                          src="<?php echo assets_url('images/user-avatar/kadir-m.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Kadir M</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Kadir M</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">
                         kadir.m@example.com
                     </div>
@@ -260,7 +260,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="john smith"
                          src="<?php echo assets_url('images/user-avatar/amay.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">John Smith</div>
+                    <div class="col text-truncate font-weight-500 text-primary">John Smith</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">john.smith@example.com
                     </div>
                     <div class="col text-truncate px-1 d-none d-md-block">+1-215-876-8596</div>
@@ -307,7 +307,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="domnic harris"
                          src="<?php echo assets_url('images/user-avatar/domnic-harris.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Domnic Harris</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Domnic Harris</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">
                         domnic.harris@example.com
                     </div>
@@ -357,7 +357,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="Stella Johnson"
                          src="<?php echo assets_url('images/user-avatar/jimmy-jo.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Jimmy Jo</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Jimmy Jo</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">jimmy.jo@example.com
                     </div>
                     <div class="col text-truncate px-1 d-none d-md-block">+1-215-456-5863</div>
@@ -404,7 +404,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="man"
                          src="<?php echo assets_url('images/user-avatar/man-3.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Robert Johnson
+                    <div class="col text-truncate font-weight-500 text-primary">Robert Johnson
                     </div>
                     <div class="col text-truncate px-1 d-none d-xl-block">
                         Robert.johnson@example.com
@@ -453,7 +453,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="Stella Johnson"
                          src="<?php echo assets_url('images/user-avatar/stella-johnson.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Jimmy Jon</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Jimmy Jon</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">jimmy.jon@example.com
                     </div>
                     <div class="col text-truncate px-1 d-none d-md-block">+1-215-278-4558</div>
@@ -500,7 +500,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="jeson born"
                          src="<?php echo assets_url('images/user-avatar/jeson-born.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Jeson Born</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Jeson Born</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">jeson.born@example.com
                     </div>
                     <div class="col text-truncate px-1 d-none d-md-block">+1-215-286-7551</div>
@@ -547,7 +547,7 @@
                     <i class="icon icon-menu icon-2x draggable-icon"></i>
                     <img class="rounded-circle size-40 mx-4" alt="Steve smith"
                          src="<?php echo assets_url('images/user-avatar/steve-smith.jpg');?>">
-                    <div class="col text-truncate font-weight-500 text-dark">Steve Smith</div>
+                    <div class="col text-truncate font-weight-500 text-primary">Steve Smith</div>
                     <div class="col text-truncate px-1 d-none d-xl-block">
                         steve.smith@example.com
                     </div>

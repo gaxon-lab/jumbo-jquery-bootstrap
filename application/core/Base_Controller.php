@@ -8,7 +8,7 @@ class Base_Controller extends CI_Controller {
 
     var $files = array('css_header' => '', 'css_footer' => '', 'js_header' => '', 'js_footer' => '');
     var $body_classes = array();
-    var $data = array('layout' => 'default', 'theme' => 'minimal', 'rtl_enable' => false, 'export_version' => 'development', 'classic_version' => false);
+    var $data = array('layout' => 'default', 'theme' => 'default', 'rtl_enable' => false, 'export_version' => 'development', 'classic_version' => false);
 
     public function __construct() {
         parent::__construct();
@@ -109,6 +109,7 @@ class Base_Controller extends CI_Controller {
         } elseif($this->data['theme'] == 'modern') {
             $this->body_classes[] = 'dt-sidebar--fixed';
         } elseif($this->data['theme'] == 'minimal') {
+					$this->body_classes[] = 'dt-header--fixed';
 					$this->body_classes[] = 'dt-sidebar--fixed';
 					$this->body_classes[] = 'dt-sidebar--folded';
 				} elseif($this->data['theme'] == 'minimal-no-header') {

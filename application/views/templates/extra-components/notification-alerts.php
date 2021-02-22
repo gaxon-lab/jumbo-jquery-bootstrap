@@ -27,7 +27,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Info Toast</p>
+                <p class="text-primary f-16">Info Toast</p>
                 <a href="javascript:void(0)" class="btn btn-outline-info info-toast">Click
                     me</a>
             </div>
@@ -47,7 +47,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Success Toast</p>
+                <p class="text-primary f-16">Success Toast</p>
                 <a href="javascript:void(0)" class="btn btn-outline-success success-toast ">Click
                     me</a>
             </div>
@@ -67,7 +67,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Danger Toast</p>
+                <p class="text-primary f-16">Danger Toast</p>
                 <a href="javascript:void(0)" class="btn btn-outline-danger danger-toast">Click
                     me</a>
             </div>
@@ -87,7 +87,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Warning Toast</p>
+                <p class="text-primary f-16">Warning Toast</p>
                 <a href="javascript:void(0)" class="btn btn-outline-warning warning-toast">Click
                     me</a>
             </div>
@@ -125,7 +125,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Top Start</p>
+                <p class="text-primary f-16">Top Start</p>
                 <a href="javascript:void(0)" class="btn btn-outline-primary top-start-toast">Click
                     me</a>
             </div>
@@ -145,7 +145,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Top Center</p>
+                <p class="text-primary f-16">Top Center</p>
                 <a href="javascript:void(0)" class="btn btn-outline-primary top-center-toast">Click
                     me</a>
             </div>
@@ -165,7 +165,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Top End</p>
+                <p class="text-primary f-16">Top End</p>
                 <a href="javascript:void(0)" class="btn btn-outline-primary top-end-toast">Click
                     me</a>
             </div>
@@ -185,7 +185,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Middle Start</p>
+                <p class="text-primary f-16">Middle Start</p>
                 <a href="javascript:void(0)" class="btn btn-outline-primary middle-start-toast">Click
                     me</a>
             </div>
@@ -205,7 +205,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Middle Center</p>
+                <p class="text-primary f-16">Middle Center</p>
                 <a href="javascript:void(0)"
                    class="btn btn-outline-primary middle-center-toast">Click
                     me</a>
@@ -226,7 +226,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Middle End</p>
+                <p class="text-primary f-16">Middle End</p>
                 <a href="javascript:void(0)" class="btn btn-outline-primary middle-end-toast">Click
                     me</a>
             </div>
@@ -246,7 +246,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Bottom Start</p>
+                <p class="text-primary f-16">Bottom Start</p>
                 <a href="javascript:void(0)" class="btn btn-outline-primary bottom-start-toast">Click
                     me</a>
             </div>
@@ -266,7 +266,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Bottom Center</p>
+                <p class="text-primary f-16">Bottom Center</p>
                 <a href="javascript:void(0)"
                    class="btn btn-outline-primary bottom-center-toast">Click
                     me</a>
@@ -287,7 +287,7 @@
 
             <!-- Card Body -->
             <div class="dt-card__body text-center">
-                <p class="text-dark f-16">Bottom End</p>
+                <p class="text-primary f-16">Bottom End</p>
                 <a href="javascript:void(0)" class="btn btn-outline-primary bottom-end-toast">Click
                     me</a>
             </div>

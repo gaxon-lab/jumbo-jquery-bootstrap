@@ -65,6 +65,8 @@
 	// Online Signups
 	var optsOnlineSignups = $.extend({}, defaultOptions);
 	optsOnlineSignups.tooltips = {
+		mode: 'index',
+		intersect: false,
 		displayColors: false,
 		backgroundColor: '#0062FF',
 		yPadding: 10,
@@ -79,6 +81,12 @@
 			}
 		}
 	};
+
+	optsOnlineSignups.hover = {
+		mode: 'index',
+		intersect: false,
+	};
+
 	var ctxOnlineSignups = document.getElementById('chart-online-signups').getContext('2d');
 
 	new Chart(ctxOnlineSignups, {
@@ -104,6 +112,8 @@
 	// Last month sale
 	var optsLastMonthSale = $.extend({}, defaultOptions);
 	optsLastMonthSale.tooltips = {
+		mode: 'index',
+		intersect: false,
 		displayColors: false,
 		backgroundColor: '#4200FF',
 		yPadding: 10,
@@ -117,6 +127,11 @@
 				return lastMonthName + ' ' + tooltipItem.label + ': $' + tooltipItem.value;
 			}
 		}
+	};
+
+	optsLastMonthSale.hover = {
+		mode: 'index',
+		intersect: false,
 	};
 
 	var ctxLastMonthSale = document.getElementById('chart-last-month-sale').getContext('2d');
@@ -144,6 +159,8 @@
 	// Total Revenue
 	var optsTotalRevenue = $.extend({}, defaultOptions);
 	optsTotalRevenue.tooltips = {
+		mode: 'index',
+		intersect: false,
 		displayColors: false,
 		backgroundColor: '#29CF6B',
 		yPadding: 10,
@@ -158,6 +175,12 @@
 			}
 		}
 	};
+
+	optsTotalRevenue.hover = {
+		mode: 'index',
+		intersect: false,
+	};
+
 	var ctxTotalRevenue = document.getElementById('chart-total-revenue').getContext('2d');
 
 	new Chart(ctxTotalRevenue, {
@@ -184,6 +207,7 @@
 	var optsTotalEmailSent = $.extend({}, defaultOptions);
 	optsTotalEmailSent.tooltips = {
 		mode: 'index',
+		intersect: false,
 		displayColors: false,
 		backgroundColor: '#FFA601',
 		yPadding: 10,
@@ -192,18 +216,23 @@
 		callbacks: {
 			title: function (tooltipItems) {
 				var tooltipItem = tooltipItems[0];
-				return 'Month ' + tooltipItem.label ;
+				return 'Month ' + tooltipItem.label;
 			},
-			label: function(tooltipItem, data) {
+			label: function (tooltipItem, data) {
 				var label = data.datasets[tooltipItem.datasetIndex].label || '';
 
 				if (label) {
 					label += ' - ';
 				}
-				label += Math.round(tooltipItem.yLabel * 100) / 100;
+				label += tooltipItem.yLabel;
 				return label;
 			}
 		}
+	};
+
+	optsTotalEmailSent.hover = {
+		mode: 'index',
+		intersect: false,
 	};
 
 	var ctxTotalEmailSent = document.getElementById('chart-total-mail-sent').getContext('2d');
@@ -211,7 +240,7 @@
 	new Chart(ctxTotalEmailSent, {
 		type: 'line',
 		data: {
-			labels: ['Jan', 'Fab', 'Mar', 'Apr','May','Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			labels: ['Jan', 'Fab', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 			datasets: [
 				{
 					label: 'Sent',

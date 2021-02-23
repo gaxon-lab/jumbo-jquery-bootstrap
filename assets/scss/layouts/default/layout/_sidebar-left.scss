@@ -195,6 +195,34 @@
 		color: $sidebar-submenu-color;
 		padding-left: 50px;
 
+		& .icon,
+		& i {
+			@include transition(all 0.3s ease);
+			@include translateX(-100%);
+			opacity: 0;
+			visibility: hidden;
+			margin-right: 0;
+		}
+
+		& .#{$class-prefix}-side-nav__link {
+			@include transition(all 0.3s ease);
+			margin-left: -20px;
+		}
+
+		@include hover-focus {
+			& .icon,
+			& i {
+				@include translateX(0);
+				opacity: 1;
+				visibility: visible;
+				margin-right: 10px;
+			}
+
+			& .#{$class-prefix}-side-nav__link {
+				margin-left: 0;
+			}
+		}
+
 		&.active {
 			background-color: $sidebar-active-bg;
 			color: $sidebar-active-color;

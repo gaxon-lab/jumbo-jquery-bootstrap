@@ -193,7 +193,35 @@
 
 	& .#{$class-prefix}-side-nav__link {
 		color: $sidebar-submenu-color;
-		padding-left: 50px;
+		padding-left: 70px;
+
+		& .icon,
+		& i {
+			@include transition(all 0.3s ease);
+			@include translateX(-100%);
+			opacity: 0;
+			visibility: hidden;
+			margin-right: 0;
+		}
+
+		& .#{$class-prefix}-side-nav__text {
+			@include transition(all 0.3s ease);
+			margin-left: -20px;
+		}
+
+		@include hover-focus {
+			& .icon,
+			& i {
+				@include translateX(0);
+				opacity: 1;
+				visibility: visible;
+				margin-right: 10px;
+			}
+
+			& .#{$class-prefix}-side-nav__text {
+				margin-left: 0;
+			}
+		}
 
 		&.active {
 			background-color: $sidebar-active-bg;
@@ -201,6 +229,18 @@
 
 			@include hover {
 				color: $sidebar-active-color;
+			}
+
+			& .icon,
+			& i {
+				@include translateX(0);
+				opacity: 1;
+				visibility: visible;
+				margin-right: 10px;
+			}
+
+			& .#{$class-prefix}-side-nav__text {
+				margin-left: 0;
 			}
 		}
 

@@ -7,6 +7,12 @@
 <!-- Grid -->
 <div class="row">
 
+</div>
+<!-- /grid -->
+
+<!-- Grid -->
+<div class="row">
+
 	<!-- Grid Item -->
 	<div class="col-xl-3 col-sm-6">
 
@@ -157,6 +163,429 @@
 
 	</div>
 	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card bg-primary text-white">
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+				<div class="d-flex mb-5">
+					<span class="d-block font-weight-500 f-16"><i class="material-icons">group</i></span>
+				</div>
+				<!-- Grid -->
+				<div class="row no-gutters">
+
+					<!-- Grid Item -->
+					<div class="col-xl-7 col-md-12 col-sm-7 pr-2">
+						<span class="display-3 font-weight-500 mr-1">85K+</span>
+						<p class="mb-0">New Subscribers</p>
+					</div>
+					<!-- /grid item -->
+
+					<!-- Grid Item -->
+					<div class="col-xl-5 col-md-12 col-sm-5">
+
+						<!-- Chart Body -->
+						<div class="dt-chart__body">
+							<canvas id="chart-new-subscribers"></canvas>
+						</div>
+						<!-- /chart body -->
+
+					</div>
+					<!-- /grid item -->
+
+				</div>
+				<!-- /grid -->
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card bg-secondary text-white">
+
+			<!-- Card Body -->
+			<div class="card-body">
+				<div class="d-flex align-items-start justify-content-between mb-2">
+					<div class="flex-1">
+						<span class="display-3 font-weight-500 mr-1">526</span>
+						<p class="mb-0">News Articles</p>
+					</div>
+
+					<span class="d-block font-weight-500 f-16">
+						<i class="material-icons">bookmark</i>
+					</span>
+				</div>
+			</div>
+			<!-- /card body -->
+
+			<!-- Chart Body -->
+			<div class="dt-chart__body">
+				<canvas height="70" id="chart-news-articles"></canvas>
+			</div>
+			<!-- /chart body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card bg-danger text-white">
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+				<div class="d-flex mb-5">
+					<span class="d-block font-weight-500 f-16"><i class="material-icons">stars</i></span>
+				</div>
+				<!-- Grid -->
+				<div class="row no-gutters">
+
+					<!-- Grid Item -->
+					<div class="col-xl-7 col-md-12 col-sm-7 pr-2">
+						<span class="display-3 font-weight-500 mr-1">232</span>
+						<p class="mb-0">New Authors</p>
+					</div>
+					<!-- /grid item -->
+
+					<!-- Grid Item -->
+					<div class="col-xl-5 col-md-12 col-sm-5">
+
+						<!-- Chart Body -->
+						<div class="dt-chart__body">
+							<canvas id="chart-new-authors" data-fill="1800" height="112" width="112"></canvas>
+						</div>
+						<!-- /chart body -->
+
+					</div>
+					<!-- /grid item -->
+
+				</div>
+				<!-- /grid -->
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card bg-info text-white">
+
+			<!-- Card Body -->
+			<div class="card-body">
+				<div class="d-flex align-items-start justify-content-between mb-2">
+					<div class="flex-1">
+						<span class="display-3 font-weight-500 mr-1">756+</span>
+						<p class="mb-0">Avg Daily Traffic</p>
+					</div>
+
+					<span class="d-block font-weight-500 f-16">
+						<i class="material-icons">timeline</i>
+					</span>
+				</div>
+			</div>
+			<!-- /card body -->
+
+			<!-- Chart Body -->
+			<div class="dt-chart__body">
+				<canvas height="70" id="chart-avg-daily-traffic"></canvas>
+			</div>
+			<!-- /chart body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-8">
+
+		<!-- Card -->
+		<div class="dt-card">
+
+			<!-- Card Header -->
+			<div class="dt-card__header py-4 mb-0 border-bottom">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
+					<h3 class="dt-card__title">View</h3>
+				</div>
+				<!-- /card heading -->
+
+				<!-- Card Tools -->
+				<div class="dt-card__tools">
+					<a href="javascript:void(0)" class="badge badge-pill badge-light-success text-primary-green mr-2">
+						Monthly
+					</a>
+					<a href="javascript:void(0)" class="dt-card__more text-secondary">
+						<i class="material-icons">show_chart</i>
+					</a>
+				</div>
+				<!-- /card tools -->
+
+			</div>
+			<!-- /card header -->
+
+			<!-- Card Body -->
+			<div class="dt-card__body pt-6 text-center">
+				<div class="display-4 font-weight-700 text-primary mb-2">386,200</div>
+				<div>Total View <span class="text-danger">98% <i class="icon icon-loss"></i></span></div>
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-8">
+
+		<!-- Card -->
+		<div class="dt-card">
+
+			<!-- Card Header -->
+			<div class="dt-card__header py-4 mb-0 border-bottom">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
+					<h3 class="dt-card__title">Orders</h3>
+				</div>
+				<!-- /card heading -->
+
+				<!-- Card Tools -->
+				<div class="dt-card__tools">
+					<a href="javascript:void(0)" class="badge badge-pill badge-light-warning text-warning mr-2">
+						Annual
+					</a>
+					<a href="javascript:void(0)" class="dt-card__more text-secondary">
+						<i class="material-icons">show_chart</i>
+					</a>
+				</div>
+				<!-- /card tools -->
+
+			</div>
+			<!-- /card header -->
+
+			<!-- Card Body -->
+			<div class="dt-card__body pt-6 text-center">
+				<div class="display-4 font-weight-700 text-primary mb-2">80,800</div>
+				<div>New order <span class="text-success">28% <i class="icon icon-profit"></i></span></div>
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-6 col-sm-8">
+
+		<!-- Card -->
+		<div class="dt-card">
+
+			<!-- Card Header -->
+			<div class="dt-card__header py-4 mb-0 border-bottom">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
+					<h3 class="dt-card__title">Visited</h3>
+				</div>
+				<!-- /card heading -->
+
+				<!-- Card Tools -->
+				<div class="dt-card__tools">
+					<a href="javascript:void(0)" class="badge badge-pill badge-light-primary text-link mr-2">
+						Today
+					</a>
+					<a href="javascript:void(0)" class="dt-card__more text-secondary">
+						<i class="material-icons">show_chart</i>
+					</a>
+				</div>
+				<!-- /card tools -->
+
+			</div>
+			<!-- /card header -->
+
+			<!-- Card Body -->
+			<div class="dt-card__body pt-6 text-center">
+				<!-- List -->
+				<ul class="dt-list dt-list-col-6">
+					<li class="dt-list__item">
+						<div class="display-4 font-weight-700 text-primary mb-2">406,42</div>
+						<div>Rapid pace <span class="text-success">23% <i class="icon icon-profit"></i></span></div>
+					</li>
+
+					<li class="dt-list__item">
+						<div class="display-4 font-weight-700 text-primary mb-2">206,12</div>
+						<div>Slow pace <span class="text-danger">1.58% <i class="icon icon-loss"></i></span></div>
+					</li>
+				</ul>
+				<!-- /list -->
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="card dt-intro-card dt-intro-card-hover">
+
+			<!-- Card Image -->
+			<div class="card-image">
+				<div class="dt-avatar dt-avatar-animate bg-info text-white size-55">
+					<i class="material-icons">wb_sunny</i>
+				</div>
+			</div>
+			<!-- /card image -->
+
+			<!-- Card Stacked -->
+			<div class="card-stacked">
+
+				<!-- Card Body -->
+				<div class="card-body px-4">
+					<div class="h1 mb-1">23</div>
+					<div class="f-16">Ideas</div>
+				</div>
+				<!-- /card body -->
+
+			</div>
+			<!-- /card stacked -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item-->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="card dt-intro-card dt-intro-card-hover">
+
+			<!-- Card Image -->
+			<div class="card-image">
+				<div class="dt-avatar dt-avatar-animate bg-warning text-white size-55">
+					<i class="material-icons">folder_open</i>
+				</div>
+			</div>
+			<!-- /card image -->
+
+			<!-- Card Stacked -->
+			<div class="card-stacked">
+
+				<!-- Card Body -->
+				<div class="card-body px-4">
+					<div class="h1 mb-1">387</div>
+					<div class="f-16">Documents</div>
+				</div>
+				<!-- /card body -->
+
+			</div>
+			<!-- /card stacked -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item-->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="card dt-intro-card dt-intro-card-hover">
+
+			<!-- Card Image -->
+			<div class="card-image">
+				<div class="dt-avatar dt-avatar-animate bg-success text-white size-55">
+					<i class="material-icons">supervised_user_circle</i>
+				</div>
+			</div>
+			<!-- /card image -->
+
+			<!-- Card Stacked -->
+			<div class="card-stacked">
+
+				<!-- Card Body -->
+				<div class="card-body px-4">
+					<div class="h1 mb-1">New Customers</div>
+					<div class="f-16">543</div>
+				</div>
+				<!-- /card body -->
+
+			</div>
+			<!-- /card stacked -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item-->
+
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-sm-6">
+
+		<!-- Card -->
+		<div class="card dt-intro-card dt-intro-card-hover">
+
+			<!-- Card Image -->
+			<div class="card-image">
+				<div class="dt-avatar dt-avatar-animate bg-primary text-white size-55">
+					<i class="material-icons">star</i>
+				</div>
+			</div>
+			<!-- /card image -->
+
+			<!-- Card Stacked -->
+			<div class="card-stacked">
+
+				<!-- Card Body -->
+				<div class="card-body px-4">
+					<div class="h1 mb-1">Popular Products</div>
+					<div class="f-16">22 new products</div>
+				</div>
+				<!-- /card body -->
+
+			</div>
+			<!-- /card stacked -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item-->
 
 </div>
 <!-- /grid -->

@@ -28,7 +28,7 @@
 						Monthly
 					</a>
 					<a href="javascript:void(0)" class="dt-card__more text-secondary">
-						<i class="icon icon-chart-pie icon-xl"></i>
+						<i class="material-icons">show_chart</i>
 					</a>
 				</div>
 				<!-- /card tools -->
@@ -70,7 +70,7 @@
 						Annual
 					</a>
 					<a href="javascript:void(0)" class="dt-card__more text-secondary">
-						<i class="icon icon-chart-pie icon-xl"></i>
+						<i class="material-icons">show_chart</i>
 					</a>
 				</div>
 				<!-- /card tools -->
@@ -112,7 +112,7 @@
 						Today
 					</a>
 					<a href="javascript:void(0)" class="dt-card__more text-secondary">
-						<i class="icon icon-chart-pie icon-xl"></i>
+						<i class="material-icons">show_chart</i>
 					</a>
 				</div>
 				<!-- /card tools -->

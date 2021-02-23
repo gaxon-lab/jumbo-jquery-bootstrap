@@ -13328,7 +13328,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 
 .dt-side-nav__sub-menu .dt-side-nav__link {
   color: rgba(0, 0, 0, 0.6);
-  padding-left: 50px; }
+  padding-left: 70px; }
   .dt-side-nav__sub-menu .dt-side-nav__link .icon,
   .dt-side-nav__sub-menu .dt-side-nav__link i {
     transition: all 0.3s ease;
@@ -13341,11 +13341,11 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
       .dt-side-nav__sub-menu .dt-side-nav__link .icon,
       .dt-side-nav__sub-menu .dt-side-nav__link i {
         transition: none; } }
-  .dt-side-nav__sub-menu .dt-side-nav__link .dt-side-nav__link {
+  .dt-side-nav__sub-menu .dt-side-nav__link .dt-side-nav__text {
     transition: all 0.3s ease;
     margin-left: -20px; }
     @media (prefers-reduced-motion: reduce) {
-      .dt-side-nav__sub-menu .dt-side-nav__link .dt-side-nav__link {
+      .dt-side-nav__sub-menu .dt-side-nav__link .dt-side-nav__text {
         transition: none; } }
   .dt-side-nav__sub-menu .dt-side-nav__link:hover .icon,
   .dt-side-nav__sub-menu .dt-side-nav__link:hover i, .dt-side-nav__sub-menu .dt-side-nav__link:focus .icon,
@@ -13355,13 +13355,22 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     opacity: 1;
     visibility: visible;
     margin-right: 10px; }
-  .dt-side-nav__sub-menu .dt-side-nav__link:hover .dt-side-nav__link, .dt-side-nav__sub-menu .dt-side-nav__link:focus .dt-side-nav__link {
+  .dt-side-nav__sub-menu .dt-side-nav__link:hover .dt-side-nav__text, .dt-side-nav__sub-menu .dt-side-nav__link:focus .dt-side-nav__text {
     margin-left: 0; }
   .dt-side-nav__sub-menu .dt-side-nav__link.active {
     background-color: rgba(98, 0, 238, 0.1);
     color: #6200EE; }
     .dt-side-nav__sub-menu .dt-side-nav__link.active:hover {
       color: #6200EE; }
+    .dt-side-nav__sub-menu .dt-side-nav__link.active .icon,
+    .dt-side-nav__sub-menu .dt-side-nav__link.active i {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      margin-right: 10px; }
+    .dt-side-nav__sub-menu .dt-side-nav__link.active .dt-side-nav__text {
+      margin-left: 0; }
   .dt-side-nav__sub-menu .dt-side-nav__link:hover, .dt-side-nav__sub-menu .dt-side-nav__link:focus, .dt-side-nav__sub-menu .dt-side-nav__link:active {
     color: rgba(0, 0, 0, 0.87); }
 

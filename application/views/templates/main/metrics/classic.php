@@ -7,6 +7,99 @@
 <!-- Grid -->
 <div class="row">
 
+	<!-- Grid Item -->
+	<div class="col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card">
+
+			<!-- Card Header -->
+			<div class="dt-card__header">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
+					<h3 class="dt-card__title">This Year Sale Report</h3>
+				</div>
+				<!-- /card heading -->
+
+			</div>
+			<!-- /card header -->
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+				<!-- Grid -->
+				<div class="row no-gutters">
+
+					<!-- Grid Item -->
+					<div class="col-lg-5 col-md-12 col-sm-7 pr-2">
+						<div class="h1 mb-1">$685K+</div>
+						<div class="f-12">Post 9 month data</div>
+					</div>
+					<!-- /grid item -->
+
+					<!-- Grid Item -->
+					<div class="col-lg-7 col-md-12 col-sm-5">
+
+						<!-- Chart Body -->
+						<div class="dt-chart__body">
+							<canvas height="80" id="chart-year-sale-report" class="mt-lg-n5"></canvas>
+						</div>
+						<!-- /chart body -->
+
+					</div>
+					<!-- /grid item -->
+
+				</div>
+				<!-- /grid -->
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card">
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+
+				<div class="d-flex">
+					<!-- Chart Body -->
+					<div class="dt-chart__body">
+						<canvas height="80" id="chart-year-sale-report" class="mt-lg-n5"></canvas>
+					</div>
+					<!-- /chart body -->
+
+					<div class="flex-1">
+						<h4 class="mb-1">Google insight score</h4>
+						<h5 class="f-12">Las calculated 1 month ago</h5>
+						<button class="btn btn-primary">
+							<i class="material-icons mr-2">autorenew</i>
+							REFRESH
+						</button>
+					</div>
+
+					<div>
+						<img src="<?php echo assets_url('images/icons/icons-google.png'); ?>" alt="Google"/>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
 </div>
 <!-- /grid -->
 
@@ -170,27 +263,37 @@
 		<!-- Card -->
 		<div class="dt-card bg-primary text-white">
 
-			<!-- Card Body -->
-			<div class="dt-card__body">
-				<div class="d-flex mb-5">
+			<!-- Card Header -->
+			<div class="dt-card__header">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
 					<span class="d-block font-weight-500 f-16"><i class="material-icons">group</i></span>
 				</div>
+				<!-- /card heading -->
+
+			</div>
+			<!-- /card header -->
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+
 				<!-- Grid -->
 				<div class="row no-gutters">
 
 					<!-- Grid Item -->
-					<div class="col-xl-7 col-md-12 col-sm-7 pr-2">
+					<div class="col-lg-7 col-md-12 col-sm-7 pr-2">
 						<span class="display-3 font-weight-500 mr-1">85K+</span>
 						<p class="mb-0">New Subscribers</p>
 					</div>
 					<!-- /grid item -->
 
 					<!-- Grid Item -->
-					<div class="col-xl-5 col-md-12 col-sm-5">
+					<div class="col-lg-5 col-md-12 col-sm-5">
 
 						<!-- Chart Body -->
 						<div class="dt-chart__body">
-							<canvas id="chart-new-subscribers"></canvas>
+							<canvas id="chart-new-subscribers" class="mt-lg-n5"></canvas>
 						</div>
 						<!-- /chart body -->
 
@@ -199,6 +302,7 @@
 
 				</div>
 				<!-- /grid -->
+
 			</div>
 			<!-- /card body -->
 
@@ -247,27 +351,37 @@
 		<!-- Card -->
 		<div class="dt-card bg-danger text-white">
 
-			<!-- Card Body -->
-			<div class="dt-card__body">
-				<div class="d-flex mb-5">
+			<!-- Card Header -->
+			<div class="dt-card__header">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
 					<span class="d-block font-weight-500 f-16"><i class="material-icons">stars</i></span>
 				</div>
+				<!-- /card heading -->
+
+			</div>
+			<!-- /card header -->
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+
 				<!-- Grid -->
 				<div class="row no-gutters">
 
 					<!-- Grid Item -->
-					<div class="col-xl-7 col-md-12 col-sm-7 pr-2">
+					<div class="col-lg-7 col-md-12 col-sm-7 pr-2">
 						<span class="display-3 font-weight-500 mr-1">232</span>
 						<p class="mb-0">New Authors</p>
 					</div>
 					<!-- /grid item -->
 
 					<!-- Grid Item -->
-					<div class="col-xl-5 col-md-12 col-sm-5">
+					<div class="col-lg-5 col-md-12 col-sm-5">
 
 						<!-- Chart Body -->
 						<div class="dt-chart__body">
-							<canvas id="chart-new-authors" data-fill="1800" height="112" width="112"></canvas>
+							<canvas id="chart-new-authors" data-fill="1800" height="112" width="112" class="mt-lg-n5"></canvas>
 						</div>
 						<!-- /chart body -->
 
@@ -276,6 +390,7 @@
 
 				</div>
 				<!-- /grid -->
+
 			</div>
 			<!-- /card body -->
 
@@ -319,7 +434,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-3 col-sm-8">
+	<div class="col-xl-3 col-sm-6">
 
 		<!-- Card -->
 		<div class="dt-card">
@@ -361,7 +476,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-3 col-sm-8">
+	<div class="col-xl-3 col-sm-6">
 
 		<!-- Card -->
 		<div class="dt-card">
@@ -403,7 +518,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-6 col-sm-8">
+	<div class="col-xl-6 col-sm-12">
 
 		<!-- Card -->
 		<div class="dt-card">

@@ -318,7 +318,7 @@
 	// New Subscribers
 	if ($('#chart-new-subscribers').length) {
 		var optsNewSubscribers = $.extend({}, defaultOptions, {
-			aspectRatio: 1.55,
+			aspectRatio: 1.4,
 			tooltips: {
 				displayColors: false,
 				backgroundColor: '#fff',
@@ -551,6 +551,64 @@
 		});
 	}
 
+	// Year Sale Report
+	if ($('#chart-year-sale-report').length) {
+		var optsYearSaleReport = $.extend({}, defaultOptions, {
+			scales: {
+				xAxes: [{
+					display: true,
+					gridLines: {
+						display: false,
+					},
+					ticks: {
+						fontColor: "#6200EE", // this here
+					},
+					categoryPercentage: 1.0,
+					barPercentage: 0.4
+				}],
+				yAxes: [{
+					display: false,
+					ticks: {
+						beginAtZero: true,
+					}
+				}]
+			},
+			tooltips: {
+				displayColors: false,
+				backgroundColor: '#fff',
+				titleFontColor: '#000',
+				yPadding: 10,
+				xPadding: 8,
+				cornerRadius: 4,
+				callbacks: {
+					title: function (tooltipItems) {
+						var tooltipItem = tooltipItems[0];
+						return 'Month: ' + months[tooltipItem.index];
+					},
+					labelTextColor: function (tooltipItem, chart) {
+						return '#6200EE';
+					}
+				}
+			},
+		});
+
+		var ctxYearSaleReport = document.getElementById('chart-year-sale-report').getContext('2d');
+
+		new Chart(ctxYearSaleReport, {
+			type: 'bar',
+			data: {
+				labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+				datasets: [{
+					label: 'Amount',
+					data: [2700, 3700, 3000, 2600, 2700, 4200, 4300, 2600, 4300, 3900, 2600, 2600],
+					backgroundColor: '#6200EE',
+					hoverBackgroundColor: '#6200EE',
+					borderWidth: 0,
+				}]
+			},
+			options: optsYearSaleReport
+		});
+	}
 
 	// =================================================================================================== //
 	// Active users

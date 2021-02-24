@@ -48,21 +48,4 @@
       @include transition(all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0s);
     }
   }
-
-  &.#{$class-prefix}-sidebar {
-    width: calc(#{$sidebar-width + 50px});
-    background-color: $sidebar-bg;
-    
-    & .#{$class-prefix}-sidebar__container {
-      padding-right: 2rem;
-    }
-
-    & .#{$class-prefix}-side-nav__link {
-      padding-right: 0;
-    }
-
-    & + .#{$class-prefix}-content-wrapper {
-      margin-left: 0;
-    }
-  }
 }

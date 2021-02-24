@@ -2,247 +2,321 @@
 // This file contains all styles related to the Customizer of the site/application.
 // -----------------------------------------------------------------------------
 .#{$class-prefix}-customizer {
-  position: relative;
-  z-index: 1501;
-  width: ($sidebar-width + 66px);
-  background-color: $white;
+	position: relative;
+	z-index: 1501;
+	width: ($sidebar-width + 76px);
 
-  &-toggle {
-    position: fixed;
-    top: 130px;
-    right: 0;
-    z-index: 100;
+	&-toggle {
+		position: fixed;
+		top: 130px;
+		right: 0;
+		z-index: 100;
 
-    @include media-breakpoint-down(xs) {
-      top: 165px;
-    }
+		@include media-breakpoint-down(xs) {
+			top: 165px;
+		}
 
-    & a {
-      @include transition(all 0.5s ease);
-      @include border-left-radius(50px);
-      @include box-shadow($box-shadow);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 4rem;
-      width: 6rem;
-      font-size: 2.5rem;
-      @include gradient-directional($primary, $secondary, 135deg);
-      color: $white;
+		& a {
+			@include transition(all 0.5s ease);
+			@include border-left-radius(50px);
+			@include box-shadow($box-shadow);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 4rem;
+			width: 6rem;
+			font-size: 2.5rem;
+			@include gradient-directional($primary, $secondary, 135deg);
+			color: $white;
 
-      @include hover-focus {
-        @include gradient-directional($primary, $secondary, 90deg);
-      }
-    }
-  }
+			@include hover-focus {
+				@include gradient-directional($primary, $secondary, 90deg);
+			}
+		}
+	}
 
-  &__inner {
-    height: 100%;
-  }
+	&__inner {
+		height: 100%;
+	}
 }
 
 .#{$class-prefix}-customizer {
-  &__header {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 2rem;
-    min-height: 72px;
-    @include box-shadow(0 2px 2px 0 rgba($text-color, 0.1));
+	&__header {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 2rem;
+		background-color: $white;
+		min-height: $header-height;
+		@include box-shadow(0 4px 4px 0 rgba($black, 0.1));
 
-    & .close {
-      margin-left: auto;
-      font-size: 3.5rem;
-      font-weight: normal;
-      line-height: 0.8;
+		& .close {
+			margin-left: auto;
+			font-size: 3.5rem;
+			font-weight: normal;
+			line-height: 0.8;
 
-      &:focus {
-        outline: none;
-      }
-    }
-  }
+			&:focus {
+				outline: none;
+			}
+		}
+	}
 
-  &__body {
-    height: calc(100% - 72px);
-    overflow-y: auto;
+	.theme-dark & {
+		&__header {
+			background-color: $card-bg;
+		}
+	}
 
-    &-inner {
-      padding: 3rem 2rem;
-    }
+	&__body {
+		background-color: $body-bg;
+		height: calc(100% - #{$header-height});
+		overflow-y: auto;
 
-    & section {
-      margin-bottom: 3rem;
-    }
+		&-inner {
+			padding: 2.4rem 1.6rem;
+		}
 
-    & .#{$class-prefix}-list-sm {
-      margin-left: -5px;
-      margin-right: -5px;
+		& section {
+			margin-bottom: 2.4rem;
+		}
 
-      & > .#{$class-prefix}-list__item {
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-    }
-  }
+		& .#{$class-prefix}-list-sm {
+			margin-left: -5px;
+			margin-right: -5px;
+
+			& > .#{$class-prefix}-list__item {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		}
+	}
 }
 
 .#{$class-prefix}-customizer {
-  & .choose-option {
-    position: relative;
+	& .#{$class-prefix}-card {
+		&__header {
+			padding: 1rem 1.6rem 0;
+		}
 
-    &__icon {
-      display: block;
-      cursor: pointer;
-      position: relative;
-      z-index: 1;
+		&__body {
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
+		}
+	}
+}
 
-      &:not(:last-child) {
-        margin-bottom: 6px;
-      }
-    }
+.#{$class-prefix}-customizer {
+	& .choose-option {
+		position: relative;
 
-    &.active .choose-option__icon {
-      @include box-shadow(0 5px 10px 0 rgba(lighten($text-color, 20%), 0.28));
-      @include transition($transition-base);
+		&__icon {
+			display: block;
+			cursor: pointer;
+			position: relative;
+			z-index: 1;
 
-      &:after {
-        content: '';
-        position: absolute;
-        right: -3px;
-        top: -3px;
-        z-index: 2;
-        height: 14px;
-        width: 14px;
-        display: inline-block;
-        @include background-img('../../images/customizer/icon-check.png', center center);
-      }
-    }
+			&:not(:last-child) {
+				margin-bottom: 6px;
+			}
+		}
 
-    &__name {
-      font-size: 12px;
-      color: $text-color;
-      text-transform: capitalize;
-    }
-  }
+		&.active .choose-option__icon {
+			@include transition($transition-base);
 
-  & .#{$class-prefix}-color-option {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    width: 38px;
-    height: 38px;
-    @include border-radius($border-radius-circle);
-    border: 3px solid $white;
-    background-color: $gray-100;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				@include translate(-50%, -50%);
+				z-index: 2;
+				height: 20px;
+				width: 20px;
+				display: inline-block;
+				@include background-img('../../images/customizer/icon-check.png', center center);
+			}
+		}
 
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 17px;
-      height: 100%;
-      @include border-left-radius(17px);
-    }
+		&__name {
+			font-size: 12px;
+			color: $text-color-secondary;
+			text-transform: capitalize;
+		}
+	}
 
-    &.active {
-      border-color: lighten($text-color, 40%);
+	& .#{$class-prefix}-color-option,
+	& .#{$class-prefix}-color-option-circle {
+		position: relative;
+		display: block;
+		cursor: pointer;
+		background-color: $gray-100;
 
-      &:after {
-        content: '';
-        position: absolute;
-        right: -3px;
-        top: -3px;
-        z-index: 2;
-        height: 14px;
-        width: 14px;
-        display: inline-block;
-        @include background-img('../../images/customizer/icon-check.png', center center);
-      }
-    }
-  }
+		&.active:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			@include translate(-50%, -50%);
+			z-index: 2;
+			height: 20px;
+			width: 20px;
+			display: inline-block;
+			@include background-img('../../images/customizer/icon-check.png', center center);
+		}
+	}
 
-  & .#{$class-prefix}-color-options  {
-    & > li:nth-child(1) .#{$class-prefix}-color-option {
-      background-color: #FF4081;
+	& .#{$class-prefix}-color-option {
+		width: 50px;
+		height: 32px;
+		@include border-radius($border-radius);
 
-      &:before {
-        background-color: #512DA8;
-      }
-    }
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 25px;
+			height: 100%;
+			@include border-left-radius($border-radius);
+		}
+	}
 
-    & > li:nth-child(2) .#{$class-prefix}-color-option {
-      background-color: #189fde;
+	& .#{$class-prefix}-color-option-circle {
+		width: 40px;
+		height: 40px;
+		@include border-radius($border-radius-circle);
+	}
 
-      &:before {
-        background-color: #2ac174;
-      }
-    }
+	& .theme-color-options {
+		& > li:nth-child(1) .#{$class-prefix}-color-option {
+			background-color: #03DAC5;
 
-    & > li:nth-child(3) .#{$class-prefix}-color-option {
-      background-color: #0683e5;
+			&:before {
+				background-color: #6200EE;
+			}
+		}
 
-      &:before {
-        background-color: #f06f11;
-      }
-    }
+		& > li:nth-child(2) .#{$class-prefix}-color-option {
+			background-color: #E56B6F;
 
-    & > li:nth-child(4) .#{$class-prefix}-color-option {
-      background-color: #f7b528;
+			&:before {
+				background-color: #1C61CA;
+			}
+		}
 
-      &:before {
-        background-color: #d61f1f;
-      }
-    }
+		& > li:nth-child(3) .#{$class-prefix}-color-option {
+			background-color: #FF9F1C;
 
-    & > li:nth-child(5) .#{$class-prefix}-color-option {
-      background-color: #56b5d8;
+			&:before {
+				background-color: #2EC4B6;
+			}
+		}
 
-      &:before {
-        background-color: #7b18f6;
-      }
-    }
+		& > li:nth-child(4) .#{$class-prefix}-color-option {
+			background-color: #4F5D75;
 
-    & > li:nth-child(6) .#{$class-prefix}-color-option {
-      background-color: #cbb444;
+			&:before {
+				background-color: #EF8354;
+			}
+		}
 
-      &:before {
-        background-color: #2f46bc;
-      }
-    }
+		& > li:nth-child(5) .#{$class-prefix}-color-option {
+			background-color: #5AB77F;
 
-    & > li:nth-child(7) .#{$class-prefix}-color-option {
-      background-color: #36272d;
+			&:before {
+				background-color: #D71371;
+			}
+		}
 
-      &:before {
-        background-color: #e5281a;
-      }
-    }
+		& > li:nth-child(6) .#{$class-prefix}-color-option {
+			background-color: #FFC600;
 
-    & > li:nth-child(8) .#{$class-prefix}-color-option {
-      background-color: #eda722;
+			&:before {
+				background-color: #072AC8;
+			}
+		}
 
-      &:before {
-        background-color: #40528c;
-      }
-    }
+		& > li:nth-child(7) .#{$class-prefix}-color-option {
+			background-color: #369FFF;
 
-    & > li:nth-child(9) .#{$class-prefix}-color-option {
-      background-color: #f95738;
+			&:before {
+				background-color: #7530FF;
+			}
+		}
 
-      &:before {
-        background-color: #0857ad;
-      }
-    }
+		& > li:nth-child(8) .#{$class-prefix}-color-option {
+			background-color: #F9C80E;
 
-    & > li:nth-child(10) .#{$class-prefix}-color-option {
-      background-color: #72bef0;
+			&:before {
+				background-color: #F26419;
+			}
+		}
 
-      &:before {
-        background-color: #0085c1;
-      }
-    }
-  }
+		& > li:nth-child(9) .#{$class-prefix}-color-option {
+			background-color: #0A2E36;
+
+			&:before {
+				background-color: #2BA444;
+			}
+		}
+
+		& > li:nth-child(10) .#{$class-prefix}-color-option {
+			background-color: #55DDE0;
+
+			&:before {
+				background-color: #33658A;
+			}
+		}
+	}
+
+	& .flat-color-options {
+		& > li:nth-child(1) .#{$class-prefix}-color-option-circle {
+			background-color: #6200EE;
+		}
+		& > li:nth-child(2) .#{$class-prefix}-color-option-circle {
+			background-color: #CC701B;
+		}
+		& > li:nth-child(3) .#{$class-prefix}-color-option-circle {
+			background-color: #03DAC5;
+		}
+		& > li:nth-child(4) .#{$class-prefix}-color-option-circle {
+			background-color: #369FFF;
+		}
+		& > li:nth-child(5) .#{$class-prefix}-color-option-circle {
+			background-color: #2BA444;
+		}
+		& > li:nth-child(6) .#{$class-prefix}-color-option-circle {
+			background-color: #23036A;
+		}
+	}
+
+	& .gradient-color-options {
+		& > li:nth-child(1) .#{$class-prefix}-color-option-circle {
+			background-color: #8E2DE2;
+			@include gradient-y(#8E2DE2, #320097, 0%, 100%);
+		}
+		& > li:nth-child(2) .#{$class-prefix}-color-option-circle {
+			background-color: #03DAC5;
+			@include gradient-y(#03DAC5, #6200EE, 0%, 100%);
+		}
+		& > li:nth-child(3) .#{$class-prefix}-color-option-circle {
+			background-color: #EB4511;
+			@include gradient-y(#EB4511, #861C00, 0%, 100%);
+		}
+		& > li:nth-child(4) .#{$class-prefix}-color-option-circle {
+			background-color: #00619A;
+			@include gradient-y(#03CE97, #00619A, 0%, 100%);
+		}
+		& > li:nth-child(5) .#{$class-prefix}-color-option-circle {
+			background-color: #061161;
+			@include gradient-y(#061161, #C31432, 0%, 100%);
+		}
+		& > li:nth-child(6) .#{$class-prefix}-color-option-circle {
+			background-color: #C33764;
+			@include gradient-y(#C33764, #1D2671, 0%, 100%);
+		}
+	}
 }

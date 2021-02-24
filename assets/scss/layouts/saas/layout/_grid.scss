@@ -2,16 +2,16 @@
 // This file contains all styles related to the main content of the site/application.
 // -----------------------------------------------------------------------------
 .#{$class-prefix}-root {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
 }
 
 .#{$class-prefix}-container {
@@ -21,18 +21,13 @@
 }
 
 .#{$class-prefix}-main {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  -ms-flex: 1;
-
-  & > .#{$class-prefix}-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
+	display: flex;
+	flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
 }
 
 .#{$class-prefix}-content-wrapper {
+	position: relative;
   flex: 1 1 auto;
   width: 100%;
   display: flex;
@@ -41,64 +36,63 @@
 }
 
 .#{$class-prefix}-content {
-  padding: 4.4rem 3.2rem;
-
-  @include media-breakpoint-up(xl) {
-    .#{$class-prefix}-container & {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  @include media-breakpoint-down(lg) {
-    .#{$class-prefix}-container & {
-      padding-left: 1.6rem;
-      padding-right: 1.6rem;
-    }
-  }
+	padding: 3.2rem 1.6rem;
+	flex: 1 1 auto;
+	@include media-breakpoint-only(xl) {
+		padding-left: 8.8rem;
+		padding-right: 8.8rem;
+	}
+	@include media-breakpoint-only(lg) {
+		padding-left: 6.5rem;
+		padding-right: 6.5rem;
+	}
+	@include media-breakpoint-only(md) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
 }
 
 .#{$class-prefix}-page {
-  &__header {
-    position: relative;
-    margin-bottom: 4.4rem;
-  }
+	&__header {
+		position: relative;
+		margin-bottom: 3.2rem;
+	}
 
-  &__title {
-    font-weight: 400;
-  }
+	&__title {
+		font-weight: 700;
+	}
 }
 
 .#{$class-prefix}-entry {
 
-  &__header {
-    position: relative;
-    margin-bottom: 3rem;
-    padding-bottom: 1.6rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: $dt-border;
+	&__header {
+		position: relative;
+		margin-bottom: 3rem;
+		padding-bottom: 1.6rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: $dt-border;
 
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      height: 3px;
-      width: 45px;
-      background-color: $primary;
-      @include border-radius(10px);
-    }
-  }
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			height: 3px;
+			width: 45px;
+			background-color: $primary;
+			@include border-radius(10px);
+		}
+	}
 
-  &__title {
-    margin-bottom: 0;
-    font: {
-      size: 16px;
-    }
-    text-transform: capitalize;
-    color: $text-muted;
-  }
+	&__title {
+		margin-bottom: 0;
+		font: {
+			size: 18px;
+		}
+		text-transform: capitalize;
+		color: $text-color-primary;
+	}
 }

@@ -32,7 +32,8 @@
 
 				<div class="dt-card__tools">
 					<?php foreach ($applications as $application): ?>
-						<img class="ml-2" src="<?php echo assets_url($application); ?>" alt="<?php echo assets_url($application); ?>"/>
+						<img class="ml-2" src="<?php echo assets_url($application); ?>"
+								 alt="<?php echo assets_url($application); ?>"/>
 					<?php endforeach; ?>
 				</div>
 
@@ -74,11 +75,18 @@
 			<!-- /card header -->
 
 			<!-- Card Body -->
-			<div class="dt-card__body d-flex justify-content-center align-items-center">
+			<div class="dt-card__body">
 
-				<!-- Chart -->
-				<canvas id="chart-radar-orders" height="100" width="100"></canvas>
-				<!-- /chart -->
+				<div class="d-flex justify-content-center align-items-center">
+					<!-- Chart -->
+					<canvas id="chart-radar-orders" height="100" width="100"></canvas>
+					<!-- /chart -->
+				</div>
+
+				<div class="d-flex justify-content-center align-items-center">
+					<span class="mr-2"><span class="dot-shape mr-2" style="background-color:#7F39FB;"></span><span>Ordered</span></span>
+					<span><span class="dot-shape mr-2" style="background-color:#03DAC5;"></span><span>Pending</span></span>
+				</div>
 
 			</div>
 			<!-- /card body -->

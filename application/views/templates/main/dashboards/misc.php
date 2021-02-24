@@ -66,7 +66,7 @@
 					<!-- Card Image -->
 					<div class="card-image">
 						<div class="dt-avatar dt-avatar-animate bg-info text-white size-55">
-							<i class="icon icon-myplan icon-xl"></i>
+							<i class="material-icons">wb_sunny</i>
 						</div>
 					</div>
 					<!-- /card image -->
@@ -99,7 +99,7 @@
 					<!-- Card Image -->
 					<div class="card-image">
 						<div class="dt-avatar dt-avatar-animate bg-warning text-white size-55">
-							<i class="icon icon-folder-o icon-xl"></i>
+							<i class="material-icons">folder_open</i>
 						</div>
 					</div>
 					<!-- /card image -->

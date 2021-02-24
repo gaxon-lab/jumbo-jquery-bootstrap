@@ -512,17 +512,17 @@ function changeTheme($theme, $style, $themeStylesheet, $init) {
         $logo.attr('src', $mediaUrl + 'assets/images/logo.png');
         $body.find('.dt-login__content-inner .dt-brand__logo-img').attr('src', $mediaUrl + 'assets/images/logo.png');
         $body.removeClass('theme-dark').removeClass('theme-semidark');
-        $themeStylesheet.href = $baseUrl + 'assets/css/default/theme-' + $theme + stylePath + rtlString + '.min.css';
+        $themeStylesheet.href = $baseUrl + 'assets/css/modern/theme-' + $theme + stylePath + rtlString + '.min.css';
     } else if ($theme === 'dark') {
         $logo.attr('src', $mediaUrl + 'assets/images/logo-white.png');
         $body.removeClass('theme-semidark').addClass('theme-dark');
-        $themeStylesheet.href = $baseUrl + 'assets/css/default/theme-' + $theme + rtlString + '.min.css';
+        $themeStylesheet.href = $baseUrl + 'assets/css/modern/theme-' + $theme + rtlString + '.min.css';
         $('#theme-style-chooser').hide();
     } else if ($theme === 'semidark') {
         $logo.attr('src', $mediaUrl + 'assets/images/logo-white.png');
         $body.find('.dt-login__content-inner .dt-brand__logo-img').attr('src', $mediaUrl + 'assets/images/logo.png');
         $body.removeClass('theme-dark').addClass('theme-semidark');
-        $themeStylesheet.href = $baseUrl + 'assets/css/default/theme-' + $theme + stylePath + rtlString + '.min.css';
+        $themeStylesheet.href = $baseUrl + 'assets/css/modern/theme-' + $theme + stylePath + rtlString + '.min.css';
     }
 
     localStorage.setItem('dt-theme', $theme);
@@ -657,7 +657,7 @@ var $dtLayout = localStorage.getItem('dt-layout');
 var $dtStyle = localStorage.getItem('dt-style');
 var $currentTheme = ($dtTheme) ? $dtTheme : 'semidark';
 var $currentLayout = ($dtLayout) ? $dtLayout : 'full-width';
-var $currentThemeStyle = ($dtStyle) ? $dtStyle : 'style-1';
+var $currentThemeStyle = ($dtStyle) ? $dtStyle : '';
 
 (function ($) {
     $themeStylesheet = document.createElement('link');

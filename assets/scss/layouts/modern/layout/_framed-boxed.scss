@@ -5,17 +5,9 @@
 //Framed Layout style
 @include media-breakpoint-up(lg) {
   .#{$class-prefix}-layout--framed {
-    background-color: $primary;
+    background-color: darken($primary, 20%);
     padding: $framed-layout-base;
     overflow: hidden !important;
-
-    &.theme-dark {
-      background-color: darken($body-bg, 5%);
-    }
-
-    &.theme-semidark {
-      background-color: darken($primary, 20%);
-    }
 
     & .#{$class-prefix}-root {
       height: calc(100vh - 2 * #{$framed-layout-base});
@@ -34,56 +26,27 @@
       min-height: $header-height;
     }
 
-    & .#{$class-prefix}-header__toolbar {
-      background-color: transparent;
-    }
-
-    & .#{$class-prefix}-sidebar {
-      border-bottom-left-radius: $border-radius-xl;
+    & .#{$class-prefix}-sidebar-wrapper,
+    & .#{$class-prefix}-action-sidebar,
+    & .#{$class-prefix}-sidebar__background:after {
       border-top-left-radius: $border-radius-xl;
-
-      & .#{$class-prefix}-action-bar {
-        height: calc(100vh - 2 * #{$framed-layout-base});
-
-        & .#{$class-prefix}__header {
-          border-top-left-radius: $border-radius-xl;
-        }
-      }
-
-      & .#{$class-prefix}-action-bar__header,
-      &__header {
-        border-top-left-radius: $border-radius-xl;
-      }
-    }
-
-    &.#{$class-prefix}-header--fixed {
-      & .#{$class-prefix}-main {
-        overflow: auto;
-      }
-
-      & .#{$class-prefix}-header {
-        width: calc(100% - 2 * #{$framed-layout-base});
-        @include border-top-radius($border-radius-xl);
-      }
+      border-bottom-left-radius: $border-radius-xl;
     }
 
     &.#{$class-prefix}-sidebar--fixed {
-      & .#{$class-prefix}-sidebar {
-        height: calc(100% - 2 * #{$framed-layout-base});
-
-        & .#{$class-prefix}-sidebar__container {
-          height: calc(100vh - (#{$header-height} + 2 * #{$framed-layout-base}));
-        }
+      & .#{$class-prefix}-sidebar-wrapper {
+        height: calc(100vh - (2 * #{$framed-layout-base}));
       }
     }
 
-    & .#{$class-prefix}-brand {
-      border-top-left-radius: $border-radius-xl;
-    }
-
-    & .#{$class-prefix}-header__toolbar {
-      border-top-right-radius: $border-radius-xl;
-    }
+		&.#{$class-prefix}-header--fixed {
+			& .#{$class-prefix}-header {
+				width: 100% !important;
+				position: sticky;
+				left: 0 !important;
+				top: 0;
+			}
+		}
 
     & .compose-mail-box,
     & .#{$class-prefix}-customizer-toggle {
@@ -116,20 +79,12 @@
 @media (min-width: map-get($dt-boxed-breakpoints, xl)) {
   .#{$class-prefix}-layout--boxed {
     position: relative;
-    background-color: $primary;
+		background-color: darken($primary, 20%);
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     @include box-shadow($box-shadow);
     overflow: hidden !important;
-
-    &.theme-dark {
-      background-color: darken($body-bg, 5%);
-    }
-
-    &.theme-semidark {
-      background-color: darken($primary, 20%);
-    }
 
     & .#{$class-prefix}-root {
       overflow: hidden;
@@ -147,11 +102,10 @@
 
     &.#{$class-prefix}-header--fixed {
       & .#{$class-prefix}-header {
-        position: absolute;
-      }
-
-      & .#{$class-prefix}-main {
-        overflow: auto;
+				width: 100% !important;
+        position: sticky;
+				left: 0 !important;
+				top: 0;
       }
     }
 

@@ -873,7 +873,6 @@ $menus = array(
 
 		</div>
 		<!-- /sidebar container -->
-
 	</div>
 	<!-- /sidebar container -->
 </aside>

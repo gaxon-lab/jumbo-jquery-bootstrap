@@ -13328,12 +13328,49 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 
 .dt-side-nav__sub-menu .dt-side-nav__link {
   color: rgba(255, 255, 255, 0.3);
-  padding-left: 50px; }
+  padding-left: 70px; }
+  .dt-side-nav__sub-menu .dt-side-nav__link .icon,
+  .dt-side-nav__sub-menu .dt-side-nav__link i {
+    transition: all 0.3s ease;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    margin-right: 0; }
+    @media (prefers-reduced-motion: reduce) {
+      .dt-side-nav__sub-menu .dt-side-nav__link .icon,
+      .dt-side-nav__sub-menu .dt-side-nav__link i {
+        transition: none; } }
+  .dt-side-nav__sub-menu .dt-side-nav__link .dt-side-nav__text {
+    transition: all 0.3s ease;
+    margin-left: -20px; }
+    @media (prefers-reduced-motion: reduce) {
+      .dt-side-nav__sub-menu .dt-side-nav__link .dt-side-nav__text {
+        transition: none; } }
+  .dt-side-nav__sub-menu .dt-side-nav__link:hover .icon,
+  .dt-side-nav__sub-menu .dt-side-nav__link:hover i, .dt-side-nav__sub-menu .dt-side-nav__link:focus .icon,
+  .dt-side-nav__sub-menu .dt-side-nav__link:focus i {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    margin-right: 10px; }
+  .dt-side-nav__sub-menu .dt-side-nav__link:hover .dt-side-nav__text, .dt-side-nav__sub-menu .dt-side-nav__link:focus .dt-side-nav__text {
+    margin-left: 0; }
   .dt-side-nav__sub-menu .dt-side-nav__link.active {
     background-color: #33658A;
     color: #fff; }
     .dt-side-nav__sub-menu .dt-side-nav__link.active:hover {
       color: #fff; }
+    .dt-side-nav__sub-menu .dt-side-nav__link.active .icon,
+    .dt-side-nav__sub-menu .dt-side-nav__link.active i {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      margin-right: 10px; }
+    .dt-side-nav__sub-menu .dt-side-nav__link.active .dt-side-nav__text {
+      margin-left: 0; }
   .dt-side-nav__sub-menu .dt-side-nav__link:hover, .dt-side-nav__sub-menu .dt-side-nav__link:focus, .dt-side-nav__sub-menu .dt-side-nav__link:active {
     color: #fff; }
 

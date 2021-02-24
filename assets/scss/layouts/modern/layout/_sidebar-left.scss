@@ -1,292 +1,336 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the sidebar of the site/application.
 // -----------------------------------------------------------------------------
-.#{$class-prefix}-sidebar {
-  position: relative;
-  width: $sidebar-width;
-  display: flex;
-  flex-direction: column;
-  background-color: $sidebar-bg;
-  @include transition(all 0.2s ease);
 
-  @media screen and (min-width: 1367px) {
-    width: calc(#{$sidebar-width + 40px});
-  }
+// Sidebar
+.#{$class-prefix}-sidebar-wrapper {
+	position: relative;
+	width: calc(#{$sidebar-width} + #{$action-sidebar-width});
+	display: flex;
+	@include transition(all 0.2s ease);
 
-  & .#{$class-prefix}-action-bar__header,
-  &__header {
-    min-height: $header-height;
-    max-height: $header-height;
-    background-color: darken($sidebar-bg, 2%);
-  }
+	.sidebar-sm & {
+		width: calc(#{$sidebar-width-sm} + #{$action-sidebar-width});
+	}
 
-  &__header {
+	.sidebar-lg & {
+		width: calc(#{$sidebar-width-lg} + #{$action-sidebar-width});
+	}
 
-    & .#{$class-prefix}-brand {
-      min-height: $header-height;
-      max-height: $header-height;
-    }
+	.sidebar-sm:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) & {
+		& + .#{$class-prefix}-content-wrapper {
+			width: calc(100% - #{$sidebar-width-sm});
+		}
+	}
 
-    & .#{$class-prefix}-brand__logo-symbol {
-      display: none;
-    }
-  }
+	.sidebar-lg:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) & {
+		& + .#{$class-prefix}-content-wrapper {
+			width: calc(100% - #{$sidebar-width-lg});
+		}
+	}
 
-  &__container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 2rem 2rem 2rem 0;
-  }
-
-  &__notification {
-    padding-left: 2rem;
-
-    & .#{$class-prefix}-list {
-      margin-left: 0;
-
-      &__item {
-        margin-bottom: 0;
-      }
-
-      &__link {
-        color: $sidebar-color;
-
-        @include hover-focus-active {
-          color: $sidebar-color-hover;
-        }
-      }
-    }
-  }
-
-  &--fixed & {
-    position: fixed;
-    z-index: 1000;
-    height: 100%;
-
-    & .#{$class-prefix}-sidebar__container {
-      height: calc(100vh - #{$header-height});
-      overflow-y: auto;
-
-      & .#{$class-prefix}-side-nav {
-        padding-bottom: 2rem;
-      }
-    }
-
-    & + .#{$class-prefix}-content-wrapper {
-      @include transition(all 0.2s ease);
-      margin-left: $sidebar-width;
-
-      @media screen and (min-width: 1367px) {
-        margin-left: calc(#{$sidebar-width + 40px});
-      }
-    }
-  }
+	.#{$class-prefix}-sidebar--fixed & {
+		position: fixed;
+		z-index: 1001;
+		height: 100vh;
+	}
 }
 
 .#{$class-prefix}-sidebar {
-  &__children {
-    display: flex;
-    flex-wrap: wrap;
-  }
+	position: relative;
+	width: $sidebar-width;
+	display: flex;
+	flex-direction: column;
+	background-color: $sidebar-bg;
+	@include box-shadow($sidebar-shadow);
+	@include transition(all 0.2s ease);
 
-  &__content {
-    position: relative;
-    max-width: calc(100% - 6rem);
-    flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
+	.sidebar-sm & {
+		width: $sidebar-width-sm;
+	}
 
-  & .#{$class-prefix}-action {
-    &-nav {
-      @extend %list-style-none;
+	.sidebar-lg & {
+		width: $sidebar-width-lg;
+	}
 
-      &__item {
-        @include transition(all 0.4s ease);
+	&__header {
+		padding: 15px 20px;
+		height: $header-height;
 
-        &.active .#{$class-prefix}-action-nav__link {
-          background-color: transparent;
-          color: $sidebar-active-color;
-          @include border-right-radius(0);
-        }
+		.theme-dark &,
+		.theme-semidark & {
+			color: rgba($white, 0.3);
 
-        & > [data-toggle="main-sidebar"] {
-          display: none;
-        }
-      }
+			& .#{$class-prefix}-avatar-name {
+				color: $white;
+			}
+		}
 
-      &__link {
-        padding-left: 2rem;
-        color: $sidebar-color;
+		& .#{$class-prefix}-avatar-name {
+			color: $text-color-primary;
+		}
 
-        @include hover-focus-active {
-          color: $sidebar-color-hover;
-        }
-      }
+		&-info {
+			width: 100%;
+			animation: show-hide 0.2s;
+		}
 
-      & + .#{$class-prefix}-action-nav:last-child {
-        margin-top: auto;
-      }
-    }
+		& .#{$class-prefix}-avatar + &-info {
+			padding-top: 24px;
+		}
+	}
 
-    &-bar {
-      height: 100vh;
-    }
+	&__container {
+		position: relative;
+		z-index: 4;
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 0;
+	}
 
-    &-bar__header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+	&__navigation {
+		position: relative;
+		flex: 1 1 0;
+		padding: 10px 16px 24px 0;
+	}
+}
 
-    &-bar__header + .#{$class-prefix}-action-nav {
-      padding-top: 2.8rem;
-    }
-  }
+//Action Sidebar
+.#{$class-prefix}-action {
+	&-sidebar {
+		width: $action-sidebar-width;
+		background-color: $action-sidebar-bg;
+		color: $action-sidebar-color;
+		display: flex;
+		align-items: center;
+		padding: 10px 24px 10px 15px;
+
+		@include media-breakpoint-up(lg) {
+			flex-direction: column;
+			padding: 0 5px;
+		}
+
+		&__header {
+			height: $header-height;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			flex: 1 1 0;
+		}
+	}
+
+
+
+	&-nav {
+		@extend %list-style-none;
+
+		&__item {
+			@include transition(all 0.4s ease);
+
+			&.active .#{$class-prefix}-action-nav__link {
+				background-color: transparent;
+				color: $sidebar-active-color;
+				@include border-right-radius(0);
+			}
+
+			& > [data-toggle="main-sidebar"] {
+				display: none;
+			}
+		}
+
+		&__link {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			line-height: 1;
+			white-space: nowrap;
+			padding: 1.2rem;
+			color: $action-sidebar-color;
+
+			@include hover-focus-active {
+				color: $action-sidebar-color-hover;
+			}
+		}
+
+		& + .#{$class-prefix}-action-nav:last-child {
+			margin-top: auto;
+		}
+	}
+}
+
+// Sidebar Nav
+.#{$class-prefix}-side-nav {
+	@extend %list-style-none;
+
+	&__header {
+		position: relative;
+		text-transform: uppercase;
+		padding: 15px 16px;
+		line-height: 1.2;
+		color: $sidebar-header-color;
+		font-size: 10px;
+		letter-spacing: 1.5px;
+
+		&:not(:first-child) {
+			padding-top: 20px;
+		}
+
+		&:not(:first-child):before {
+			content: '';
+			display: block;
+			height: 1px;
+			width: calc(100% + 48px);
+			background-color: $sidebar-separator;
+			margin: 0 -16px 24px;
+		}
+	}
+
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+		white-space: nowrap;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		flex: 1;
+		-ms-flex: 1;
+	}
 }
 
 .#{$class-prefix}-side-nav {
-  @extend %list-style-none;
 
-  &__header {
-    position: relative;
-    text-transform: capitalize;
-    padding: 15px 0 15px 20px;
-    line-height: 1.2;
-    color: $sidebar-header-color;
-    font-size: 1.4rem;
+	& > &__item {
+		&.selected > .#{$class-prefix}-side-nav__link,
+		&.open > .#{$class-prefix}-side-nav__link {
+			color: $sidebar-color-hover;
 
-    &:not(:first-child) {
-      padding-top: 20px;
-    }
+			&.active {
+				background-color: $sidebar-active-bg;
+				color: $sidebar-active-color;
+			}
 
-    &:not(:first-child):before {
-      content: '';
-      display: block;
-      height: 1px;
-      width: 100%;
-      background-color: $sidebar-separator;
-      margin-bottom: 30px;
-    }
-  }
+			& .icon,
+			& i {
+				color: $sidebar-active-color;
+			}
+		}
 
-  &__text {
-    display: inline-block;
-    vertical-align: middle;
-    white-space: nowrap;
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    flex: 1;
-    -ms-flex: 1;
-  }
-}
+		& > .#{$class-prefix}-side-nav__sub-menu {
+			display: none;
+		}
 
-.#{$class-prefix}-side-nav {
+		&.open > .#{$class-prefix}-side-nav__sub-menu {
+			display: block;
+		}
+	}
 
-  & > &__item {
-    &.selected > a,
-    &.open > a {
-      color: $sidebar-color;
+	&__link {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 10px 10px 10px 32px;
+		@include border-right-radius(50px);
+		line-height: 1.2;
+		text-transform: capitalize;
+		white-space: nowrap;
+		color: $sidebar-color;
+		font-size: 14px;
+		letter-spacing: 0.25px;
+		transition: all 0.3s ease;
 
-      &:not(.#{$class-prefix}-side-nav__arrow).active {
-        color: $sidebar-active-color;
-        padding-right: 28px;
+		& .icon,
+		& i {
+			font-size: 20px;
+			margin-right: 16px;
+		}
 
-        &:after {
-          content: '';
-          position: absolute;
-          top: 50%;
-          right: 1.8rem;
-          @include translateY(-50%);
-          @include border-radius($border-radius-circle);
-          display: inline-block;
-          height: 6px;
-          width: 6px;
-          background-color: $sidebar-active-color;
-        }
-      }
-    }
+		@include hover-focus-active {
+			background-color: $sidebar-menu-hover-bg;
+			color: $sidebar-color-hover;
+			text-decoration: none;
+		}
+	}
 
-    & > .#{$class-prefix}-side-nav__sub-menu {
-      display: none;
-    }
+	&__arrow:before {
+		content: '\30';
+		font-family: 'gaxondrift';
+		font-size: 14px;
+		color: inherit;
+		@include transition(all 100ms ease);
+		position: absolute;
+		left: 10px;
+	}
 
-    &.open > .#{$class-prefix}-side-nav__sub-menu {
-      display: block;
-    }
-  }
-
-  &__link {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 10px 10px 10px 20px;
-    line-height: 1.2;
-    text-transform: capitalize;
-    white-space: nowrap;
-    color: $sidebar-color;
-    font-size: 14px;
-    transition: all 0.3s ease;
-
-    & .icon,
-    & i {
-      margin-right: 12px;
-    }
-
-    @include hover-focus-active {
-      color: $sidebar-color-hover;
-      text-decoration: none;
-    }
-  }
-
-  &__arrow:after {
-    content: '\32';
-    font-family: 'gaxondrift';
-    color: inherit;
-    @include transition(all 100ms ease);
-  }
-
-  &__item.selected {
-    background-color: $sidebar-active-bg;
-    @include border-radius($border-radius);
-  }
-
-  &__item.open &__arrow:after {
-    @include rotate(90deg);
-  }
+	&__item.open &__arrow:before {
+		@include rotate(180deg);
+	}
 }
 
 .#{$class-prefix}-side-nav__sub-menu {
-  @extend %list-style-none;
+	@extend %list-style-none;
 
-  & .#{$class-prefix}-side-nav__link {
-    color: $sidebar-submenu-color;
-    padding-left: 50px;
+	& .#{$class-prefix}-side-nav__link {
+		color: $sidebar-submenu-color;
+		padding-left: 70px;
 
-    &.active {
-      color: $sidebar-active-color;
-      @include border-right-radius(50px);
-      padding-right: 28px;
-    }
+		& .icon,
+		& i {
+			@include transition(all 0.3s ease);
+			@include translateX(-100%);
+			opacity: 0;
+			visibility: hidden;
+			margin-right: 0;
+		}
 
-    &.active:after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 1.8rem;
-      @include translateY(-50%);
-      @include border-radius($border-radius-circle);
-      display: inline-block;
-      height: 6px;
-      width: 6px;
-      background-color: $sidebar-active-color;
-    }
+		& .#{$class-prefix}-side-nav__text {
+			@include transition(all 0.3s ease);
+			margin-left: -20px;
+		}
 
-    @include hover-focus-active {
-      color: $sidebar-color-hover;
-    }
-  }
+		@include hover-focus {
+			& .icon,
+			& i {
+				@include translateX(0);
+				opacity: 1;
+				visibility: visible;
+				margin-right: 10px;
+			}
+
+			& .#{$class-prefix}-side-nav__text {
+				margin-left: 0;
+			}
+		}
+
+		&.active {
+			background-color: $sidebar-active-bg;
+			color: $sidebar-active-color;
+
+			@include hover {
+				color: $sidebar-active-color;
+			}
+
+			& .icon,
+			& i {
+				@include translateX(0);
+				opacity: 1;
+				visibility: visible;
+				margin-right: 10px;
+			}
+
+			& .#{$class-prefix}-side-nav__text {
+				margin-left: 0;
+			}
+		}
+
+		@include hover-focus-active {
+			color: $sidebar-color-hover;
+		}
+	}
 }

@@ -15,8 +15,8 @@
         $(document).trigger('loader-hide');
     }
 
-    if ($('#main-sidebar').length) {
-        var leftSideBarScroll = new PerfectScrollbar('#main-sidebar .dt-sidebar__container', {
+    if ($('#main-sidebar-navigation').length) {
+        var leftSideBarScroll = new PerfectScrollbar('#main-sidebar-navigation', {
           wheelPropagation: !$body.hasClass('dt-sidebar--fixed')
         });
         

@@ -227,7 +227,7 @@ var layouts = [
 			}
 		]
 	},*/
-	{
+	/*{
 		path: 'modern',
 		themes: [
 			{
@@ -297,6 +297,16 @@ var layouts = [
 				]
 			}
 		]
+	}*/,
+	{
+		path: 'saas',
+		themes: [
+			{
+				srcFileName: 'main',
+				destFileName: 'theme',
+				rtl: true
+			}
+		]
 	},
 	/*{
 		path: 'crm',
@@ -330,16 +340,6 @@ var layouts = [
 	},
 	{
 		path: 'intranet',
-		themes: [
-			{
-				srcFileName: 'main',
-				destFileName: 'theme',
-				rtl: true
-			}
-		]
-	},
-	{
-		path: 'saas',
 		themes: [
 			{
 				srcFileName: 'main',

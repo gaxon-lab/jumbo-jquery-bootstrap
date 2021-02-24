@@ -17,6 +17,7 @@
 		blue: '#5797fc',
 		skyBlue: '#33d4ff',
 		gray: '#cfcfcf',
+		cyan: '#03DAC5',
 	};
 
 	// creating chart shadow
@@ -609,6 +610,19 @@
 			options: optsYearSaleReport
 		});
 	}
+
+	// Google insight score
+	if ($.isFunction($.fn.circleProgress) && $('#circle-google-insight-score').length) {
+		$('#circle-google-insight-score').circleProgress({
+			value: 1,
+			size: 120,
+			thickness: 15,
+			lineCap: "round",
+			startAngle: -Math.PI / 4 * 2,
+			fill: {color: '#03DAC5'}
+		});
+	}
+
 
 	// =================================================================================================== //
 	// Active users

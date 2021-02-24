@@ -70,22 +70,26 @@
 			<div class="dt-card__body">
 
 				<div class="d-flex">
-					<!-- Chart Body -->
-					<div class="dt-chart__body">
-						<canvas height="80" id="chart-year-sale-report" class="mt-lg-n5"></canvas>
-					</div>
-					<!-- /chart body -->
 
-					<div class="flex-1">
-						<h4 class="mb-1">Google insight score</h4>
-						<h5 class="f-12">Las calculated 1 month ago</h5>
+					<div class="mx-5">
+
+						<!-- Circle Progress bar -->
+						<div id="circle-google-insight-score"></div>
+						<!-- /circle progress bar -->
+
+						<div><span>100%</span></div>
+					</div>
+
+					<div class="flex-1 ml-7">
+						<h4 class="mb-2">Google insight score</h4>
+						<h5 class="f-12 mb-5">Las calculated 1 month ago</h5>
 						<button class="btn btn-primary">
-							<i class="material-icons mr-2">autorenew</i>
+							<i class="material-icons mr-1">autorenew</i>
 							REFRESH
 						</button>
 					</div>
 
-					<div>
+					<div class="ml-2">
 						<img src="<?php echo assets_url('images/icons/icons-google.png'); ?>" alt="Google"/>
 					</div>
 

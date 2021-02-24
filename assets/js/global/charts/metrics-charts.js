@@ -564,8 +564,6 @@
 					ticks: {
 						fontColor: "#6200EE", // this here
 					},
-					categoryPercentage: 1.0,
-					barPercentage: 0.4
 				}],
 				yAxes: [{
 					display: false,
@@ -605,6 +603,8 @@
 					backgroundColor: '#6200EE',
 					hoverBackgroundColor: '#6200EE',
 					borderWidth: 0,
+					categoryPercentage: 1.0,
+					barPercentage: 0.4
 				}]
 			},
 			options: optsYearSaleReport
@@ -902,8 +902,6 @@
 			{
 				display: false,
 				stacked: true,
-				categoryPercentage: 1.0,
-				barPercentage: 0.6
 			}
 		],
 		yAxes: [
@@ -923,6 +921,8 @@
 				data: [400, 600, 800, 200, 1300, 1000, 1600, 600, 400, 700, 800, 1700],
 				backgroundColor: '#52c41a',
 				hoverBackgroundColor: '#52c41a',
+				categoryPercentage: 1.0,
+				barPercentage: 0.6
 			}]
 		},
 		options: optsSupportQueries

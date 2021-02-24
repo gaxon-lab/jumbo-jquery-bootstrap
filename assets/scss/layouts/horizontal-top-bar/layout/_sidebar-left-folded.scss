@@ -1,0 +1,121 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the sidebar of the site/application.
+// -----------------------------------------------------------------------------
+
+//Sidebar Folded style
+.#{$class-prefix}-sidebar--folded {
+	& .#{$class-prefix}-sidebar,
+	& .#{$class-prefix}-side-nav__text,
+	& .#{$class-prefix}-side-nav__link,
+	& .#{$class-prefix}-content-wrapper,
+	& .#{$class-prefix}-header {
+		@include transition(all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1));
+	}
+
+	&.sidebar-sm .#{$class-prefix}-sidebar + .#{$class-prefix}-content-wrapper {
+		width: calc(100% - #{$sidebar-width-sm});
+	}
+
+	&.sidebar-lg .#{$class-prefix}-sidebar + .#{$class-prefix}-content-wrapper {
+		width: calc(100% - #{$sidebar-width-lg});
+	}
+
+	&.#{$class-prefix}-sidebar--fixed {
+		& .#{$class-prefix}-sidebar + .#{$class-prefix}-content-wrapper {
+			margin-left: $folded-sidebar-width;
+		}
+	}
+
+	&.#{$class-prefix}-header--fixed {
+		& .#{$class-prefix}-header {
+			left: $folded-sidebar-width;
+			width: calc(100% - #{$folded-sidebar-width});
+		}
+
+		&.#{$class-prefix}-sidebar--expended {
+			&:not(.#{$class-prefix}-sidebar--fixed) {
+				& .#{$class-prefix}-header {
+					left: $sidebar-width;
+					width: calc(100% - #{$sidebar-width});
+				}
+			}
+			&.sidebar-sm:not(.#{$class-prefix}-sidebar--fixed) {
+				& .#{$class-prefix}-header {
+					left: $sidebar-width-sm;
+					width: calc(100% - #{$sidebar-width-sm});
+				}
+			}
+			&.sidebar-lg:not(.#{$class-prefix}-sidebar--fixed) {
+				& .#{$class-prefix}-header {
+					left: $sidebar-width-lg;
+					width: calc(100% - #{$sidebar-width-lg});
+				}
+			}
+		}
+	}
+
+	&:not(.#{$class-prefix}-sidebar--expended) {
+
+		& .#{$class-prefix}-sidebar + .#{$class-prefix}-content-wrapper {
+			width: calc(100% - #{$folded-sidebar-width});
+		}
+
+		& .#{$class-prefix}-sidebar__navigation {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
+		& .#{$class-prefix}-sidebar {
+			width: $folded-sidebar-width;
+
+			&__header-info {
+				display: none;
+				animation: show-hide 0.2s;
+			}
+		}
+
+		& .#{$class-prefix}-side-nav__link {
+			height: 40px;
+			width: 40px;
+			padding: 2px;
+			justify-content: center;
+			@include border-radius($border-radius-circle);
+
+			& .icon,
+			& i {
+				margin-right: 0;
+			}
+		}
+
+		& .#{$class-prefix}-side-nav__text,
+		& .#{$class-prefix}-side-nav__arrow::before {
+			opacity: 0;
+			visibility: hidden;
+			display: none;
+		}
+
+		& .#{$class-prefix}-side-nav__item {
+			&.open .#{$class-prefix}-side-nav__sub-menu {
+				display: none !important;
+			}
+		}
+
+		& .#{$class-prefix}-side-nav__header {
+			padding-left: 0;
+			padding-right: 0;
+
+			& .#{$class-prefix}-side-nav__text {
+				display: none;
+			}
+
+			&:first-child {
+				padding: 0;
+			}
+
+			&:not(:first-child):before {
+				width: calc(100% + 40px);
+				margin: 0 -20px 0;
+			}
+		}
+	}
+}

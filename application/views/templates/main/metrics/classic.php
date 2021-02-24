@@ -8,49 +8,44 @@
 <div class="row">
 
 	<!-- Grid Item -->
-	<div class="col-sm-6">
+	<div class="col-xl-3 col-md-5 col-sm-6 order-xl-5 order-md-6">
 
 		<!-- Card -->
-		<div class="dt-card">
+		<div class="dt-card dt-card__full-height">
 
 			<!-- Card Header -->
 			<div class="dt-card__header">
 
 				<!-- Card Heading -->
 				<div class="dt-card__heading">
-					<h3 class="dt-card__title">This Year Sale Report</h3>
+					<h3 class="dt-card__title">Application</h3>
 				</div>
 				<!-- /card heading -->
+
+				<?php
+				$applications = array(
+					'images/icons/window.png',
+					'images/icons/apple.png',
+					'images/icons/android.png'
+				);
+				?>
+
+				<div class="dt-card__tools">
+					<?php foreach ($applications as $application): ?>
+						<img class="ml-2" src="<?php echo assets_url($application); ?>" alt="<?php echo assets_url($application); ?>"/>
+					<?php endforeach; ?>
+				</div>
 
 			</div>
 			<!-- /card header -->
 
 			<!-- Card Body -->
-			<div class="dt-card__body">
-				<!-- Grid -->
-				<div class="row no-gutters">
+			<div class="dt-card__body d-flex justify-content-center align-items-center">
 
-					<!-- Grid Item -->
-					<div class="col-lg-5 col-md-12 col-sm-7 pr-2">
-						<div class="h1 mb-1">$685K+</div>
-						<div class="f-12">Post 9 month data</div>
-					</div>
-					<!-- /grid item -->
+				<!-- Chart -->
+				<canvas id="chart-application" height="215"></canvas>
+				<!-- /chart -->
 
-					<!-- Grid Item -->
-					<div class="col-lg-7 col-md-12 col-sm-5">
-
-						<!-- Chart Body -->
-						<div class="dt-chart__body">
-							<canvas height="80" id="chart-year-sale-report" class="mt-lg-n5"></canvas>
-						</div>
-						<!-- /chart body -->
-
-					</div>
-					<!-- /grid item -->
-
-				</div>
-				<!-- /grid -->
 			</div>
 			<!-- /card body -->
 
@@ -61,39 +56,29 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-sm-6">
+	<div class="col-xl-3 col-md-5 col-sm-6 order-xl-5 order-md-6">
 
 		<!-- Card -->
-		<div class="dt-card">
+		<div class="dt-card dt-card__full-height">
+
+			<!-- Card Header -->
+			<div class="dt-card__header">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
+					<h3 class="dt-card__title">Orders</h3>
+				</div>
+				<!-- /card heading -->
+
+			</div>
+			<!-- /card header -->
 
 			<!-- Card Body -->
-			<div class="dt-card__body">
+			<div class="dt-card__body d-flex justify-content-center align-items-center">
 
-				<div class="d-flex">
-
-					<div class="mx-5">
-
-						<!-- Circle Progress bar -->
-						<div id="circle-google-insight-score"></div>
-						<!-- /circle progress bar -->
-
-						<div><span>100%</span></div>
-					</div>
-
-					<div class="flex-1 ml-7">
-						<h4 class="mb-2">Google insight score</h4>
-						<h5 class="f-12 mb-5">Las calculated 1 month ago</h5>
-						<button class="btn btn-primary">
-							<i class="material-icons mr-1">autorenew</i>
-							REFRESH
-						</button>
-					</div>
-
-					<div class="ml-2">
-						<img src="<?php echo assets_url('images/icons/icons-google.png'); ?>" alt="Google"/>
-					</div>
-
-				</div>
+				<!-- Chart -->
+				<canvas id="chart-radar-orders" height="100" width="100"></canvas>
+				<!-- /chart -->
 
 			</div>
 			<!-- /card body -->
@@ -565,6 +550,103 @@
 					</li>
 				</ul>
 				<!-- /list -->
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card">
+
+			<!-- Card Header -->
+			<div class="dt-card__header">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
+					<h3 class="dt-card__title">This Year Sale Report</h3>
+				</div>
+				<!-- /card heading -->
+
+			</div>
+			<!-- /card header -->
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+				<!-- Grid -->
+				<div class="row no-gutters">
+
+					<!-- Grid Item -->
+					<div class="col-lg-5 col-md-12 col-sm-7 pr-2">
+						<div class="h1 mb-1">$685K+</div>
+						<div class="f-12">Post 9 month data</div>
+					</div>
+					<!-- /grid item -->
+
+					<!-- Grid Item -->
+					<div class="col-lg-7 col-md-12 col-sm-5">
+
+						<!-- Chart Body -->
+						<div class="dt-chart__body">
+							<canvas height="80" id="chart-year-sale-report" class="mt-lg-n5"></canvas>
+						</div>
+						<!-- /chart body -->
+
+					</div>
+					<!-- /grid item -->
+
+				</div>
+				<!-- /grid -->
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
+	<!-- Grid Item -->
+	<div class="col-sm-6">
+
+		<!-- Card -->
+		<div class="dt-card">
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+
+				<div class="d-flex">
+
+					<div class="mx-5">
+
+						<!-- Circle Progress bar -->
+						<div id="circle-google-insight-score"></div>
+						<!-- /circle progress bar -->
+
+						<div><span>100%</span></div>
+					</div>
+
+					<div class="flex-1 ml-7">
+						<h4 class="mb-2">Google insight score</h4>
+						<h5 class="f-12 mb-5">Las calculated 1 month ago</h5>
+						<button class="btn btn-primary">
+							<i class="material-icons mr-1">autorenew</i>
+							REFRESH
+						</button>
+					</div>
+
+					<div class="ml-2">
+						<img src="<?php echo assets_url('images/icons/icons-google.png'); ?>" alt="Google"/>
+					</div>
+
+				</div>
+
 			</div>
 			<!-- /card body -->
 

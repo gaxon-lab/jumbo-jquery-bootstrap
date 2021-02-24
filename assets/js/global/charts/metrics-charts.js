@@ -623,6 +623,178 @@
 		});
 	}
 
+	// Application
+	if ($('#chart-application').length) {
+		var ctxApplication = document.getElementById('chart-application').getContext('2d');
+		var optsApplication = $.extend({}, defaultOptions, {
+			tooltips: {
+				displayColors: false,
+				backgroundColor: '#fff',
+				yPadding: 10,
+				xPadding: 8,
+				cornerRadius: 4,
+				bodyFontSize: 16,
+				callbacks: {
+					label: function (tooltipItem, data) {
+						var dataset = data.datasets[0];
+						var label = data.labels[tooltipItem.index] || '';
+
+						if (label) {
+							label += ': ';
+						}
+						label += dataset.data[tooltipItem.index] + '%';
+
+						return label;
+					},
+					labelTextColor: function (tooltipItem, chart) {
+						return '#000';
+					}
+				}
+			},
+		});
+
+		new Chart(ctxApplication, {
+			type: 'pie',
+			data: {
+				labels: ['Windows', 'Android', 'Apple'],
+				datasets: [
+					{
+						data: [25.85, 25.91, 50.85],
+						backgroundColor: ['#0795F4', '#23036A', '#8DCD03']
+					}
+				]
+			},
+			options: optsApplication
+		});
+	}
+
+	// Orders
+	if ($('#chart-radar-orders').length) {
+		var ctxRadarOrders = document.getElementById('chart-radar-orders').getContext('2d');
+		var optsRadarOrders = $.extend({}, defaultOptions, {
+			chartType: 'customRadar',
+			borderColor: 'red',
+			legend: {
+				display: false,
+				labels: {
+					fontColor: '#AAAEB3',
+				},
+			},
+			scale: {
+				gridLines: {
+					color: ['#AAAEB3', '#AAAEB3', '#AAAEB3', '#AAAEB3', '#AAAEB3', '#AAAEB3', '#AAAEB3'],
+				},
+			},
+		});
+
+		var gradientBlue = ctxRadarOrders.createLinearGradient(0, 0, 0, 150);
+		gradientBlue.addColorStop(0, 'rgba(127, 57, 251, 0.9)');
+		gradientBlue.addColorStop(1, 'rgba(151, 135, 255, 0.8)');
+
+		var gradientHoverBlue = ctxRadarOrders.createLinearGradient(0, 0, 0, 150);
+		gradientHoverBlue.addColorStop(0, 'rgba(65, 65, 255, 1)');
+		gradientHoverBlue.addColorStop(1, 'rgba(131, 125, 255, 1)');
+
+		var gradientRed = ctxRadarOrders.createLinearGradient(0, 0, 0, 150);
+		gradientRed.addColorStop(0, 'rgba(3, 218, 197, 0.9)');
+		gradientRed.addColorStop(1, 'rgba(3, 218, 197, 0.8)');
+
+		var gradientHoverRed = ctxRadarOrders.createLinearGradient(0, 0, 0, 150);
+		gradientHoverRed.addColorStop(0, 'rgba(255, 65, 164, 1)');
+		gradientHoverRed.addColorStop(1, 'rgba(255, 115, 115, 1)');
+
+		Chart.plugins.register({
+			afterEvent: function (chart, e) {
+				const datasets = chart.config.data.datasets;
+				const canvas = chart.canvas;
+
+				if (chart.options.chartType === 'customRadar') {
+					chart.ctx.beginPath();
+					chart.ctx.moveTo(91, 69);
+					chart.ctx.lineTo(152, 80);
+					chart.ctx.lineTo(192, 75);
+					chart.ctx.lineTo(213, 138);
+					chart.ctx.lineTo(148, 168);
+					chart.ctx.lineTo(105, 126);
+					chart.ctx.fill();
+					chart.ctx.closePath();
+
+					if (chart.ctx.isPointInPath(e.x, e.y)) {
+						let dataset = datasets[0];
+						dataset.backgroundColor = gradientHoverBlue;
+						chart.update();
+						canvas.style.cursor = 'pointer';
+					} else {
+						let dataset = datasets[0];
+						dataset.backgroundColor = gradientBlue;
+						chart.update();
+						canvas.style.cursor = 'default';
+					}
+
+					// Blue chart
+					chart.ctx.beginPath();
+					chart.ctx.moveTo(85, 61);
+					chart.ctx.lineTo(149, 66);
+					chart.ctx.lineTo(224, 63);
+					chart.ctx.lineTo(179, 112);
+					chart.ctx.lineTo(152, 177);
+					chart.ctx.lineTo(121, 117);
+					chart.ctx.fill();
+					chart.ctx.closePath();
+
+					if (chart.ctx.isPointInPath(e.x, e.y)) {
+						let dataset = datasets[1];
+						dataset.backgroundColor = gradientHoverRed;
+						chart.ctx.shadowColor = 'rgba(0, 0, 0, 0.10)';
+						chart.ctx.shadowBlur = 10;
+						chart.update();
+						canvas.style.cursor = 'pointer';
+					} else {
+						let dataset = datasets[1];
+						dataset.backgroundColor = gradientRed;
+						chart.ctx.shadowColor = 'rgba(0, 0, 0, 0)';
+						chart.ctx.shadowBlur = 0;
+						chart.update();
+						canvas.style.cursor = 'default';
+					}
+				}
+			},
+		});
+
+		new Chart(ctxRadarOrders, {
+			type: 'radar',
+			data: {
+				labels: ['', '', '', '', '', ''],
+				datasets: [
+					{
+						label: 'Donté Panlin',
+						data: [70, 85, 65, 65, 85, 82],
+						fill: true,
+						backgroundColor: gradientBlue,
+						borderColor: 'transparent',
+						pointBackgroundColor: 'transparent',
+						pointBorderColor: 'transparent',
+						pointHoverBackgroundColor: 'transparent',
+						pointHoverBorderColor: 'transparent',
+						pointHitRadius: 50,
+					},
+					{
+						label: 'Mireska Sunbreeze',
+						data: [80, 70, 80, 80, 75, 40],
+						fill: true,
+						backgroundColor: gradientRed,
+						borderColor: 'transparent',
+						pointBackgroundColor: 'transparent',
+						pointBorderColor: 'transparent',
+						pointHoverBackgroundColor: 'transparent',
+						pointHoverBorderColor: 'transparent',
+						pointHitRadius: 50,
+					}
+				]
+			},
+			options: optsRadarOrders
+		});
+	}
 
 	// =================================================================================================== //
 	// Active users

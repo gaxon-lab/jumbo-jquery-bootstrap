@@ -260,9 +260,12 @@
 	}
 
 	&__arrow:before {
-		content: '\30';
-		font-family: 'gaxondrift';
-		font-size: 14px;
+		content: '\e5cf';
+		font: {
+			size: 14px;
+			family: 'Material Icons'
+		};
+		line-height: 0.5;
 		color: inherit;
 		@include transition(all 100ms ease);
 		position: absolute;

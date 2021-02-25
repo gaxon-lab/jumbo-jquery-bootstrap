@@ -41,6 +41,7 @@
 }
 
 .#{$class-prefix}-customizer {
+	$header-height : 72px;
 	&__header {
 		position: relative;
 		z-index: 2;

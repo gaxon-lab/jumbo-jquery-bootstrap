@@ -1153,20 +1153,16 @@ $close-font-size: $font-size-base * 1.5;
 $header-height: auto !default;
 $header-shadow: $box-shadow-xl !default;
 $header-bg: $white !default;
-$header-color: fade-out($white, 0.62) !default;
-$header-color-hover: $white !default;
-$header-top-height: 100px !default;
-$header-top-bg: $white !default;
-$header-bottom-height: 58px !default;
-$header-bottom-bg: $primary !default;
+$header-color: $text-color-secondary !default;
+$header-color-hover: $text-color-primary !default;
 $dt-brand-bg: $header-bg !default;
-$dt-brand-color: $white !default;
+$dt-brand-color: $text-color-primary !default;
 
-//Topbar variables
-$dt-topbar-height: 34px !default;
-$dt-topbar-bg: $black !default;
-$dt-topbar-color: $white !default;
-
+//Header Navigation Variables
+$header-navigation-bg: $primary;
+$header-navigation-nav-color: rgba($white, 0.7) !default;
+$header-navigation-nav-color-hover: rgba($white, 1) !default;
+$header-navigation-nav-color-active: rgba($white, 1) !default;
 
 //Footer Variables
 $footer-height: 60px !default;

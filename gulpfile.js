@@ -227,7 +227,7 @@ var layouts = [
 			}
 		]
 	},*/
-	/*{
+	{
 		path: 'modern',
 		themes: [
 			{
@@ -297,8 +297,8 @@ var layouts = [
 				]
 			}
 		]
-	}*/,
-	{
+	},
+	/*{
 		path: 'horizontal',
 		themes: [
 			{
@@ -306,7 +306,7 @@ var layouts = [
 				destFileName: 'theme-dark',
 				rtl: false
 			},
-			/*{
+			{
 				srcFileName: 'main-dark',
 				destFileName: 'theme-dark-style',
 				rtl: false,
@@ -322,13 +322,13 @@ var layouts = [
 					{primary: '#2BA444', secondary: '#0A2E36'},
 					{primary: '#33658A', secondary: '#55DDE0'},
 				]
-			},*/
+			},
 			{
 				srcFileName: 'main-light',
 				destFileName: 'theme-light',
 				rtl: false
 			},
-			/*{
+			{
 				srcFileName: 'main-light',
 				destFileName: 'theme-light-style',
 				rtl: false,
@@ -344,13 +344,13 @@ var layouts = [
 					{primary: '#2BA444', secondary: '#0A2E36'},
 					{primary: '#33658A', secondary: '#55DDE0'},
 				]
-			},*/
+			},
 			{
 				srcFileName: 'main-semidark',
 				destFileName: 'theme-semidark',
 				rtl: false
 			},
-			/*{
+			{
 				srcFileName: 'main-semidark',
 				destFileName: 'theme-semidark-style',
 				rtl: true,
@@ -366,9 +366,9 @@ var layouts = [
 					{primary: '#2BA444', secondary: '#0A2E36'},
 					{primary: '#33658A', secondary: '#55DDE0'},
 				]
-			}*/
+			}
 		]
-	},
+	},*/
 	/*{
 		path: 'horizontal-dark-header',
 		themes: [

@@ -144,7 +144,8 @@ $menus = array(
 					<!-- Dropdown Link -->
 					<a href="#" class="dt-action-nav__link dropdown-toggle no-arrow"
 						 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="icon icon-settings icon-1x"></i> </a>
+						<i class="material-icons">settings</i>
+					</a>
 					<!-- /dropdown link -->
 
 					<!-- Dropdown Option -->

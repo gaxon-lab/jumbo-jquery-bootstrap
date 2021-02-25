@@ -2,50 +2,98 @@
 // This file contains all styles related to the sidebar of the site/application.
 // -----------------------------------------------------------------------------
 
-// Sidebar drawer style
+// Actionable drawer style
+.#{$class-prefix}-actionable-drawer {
+	display: flex;
+	flex-direction: column;
+	width: calc(#{$actionable-sidebar-width} + 557px);
 
-.#{$class-prefix}-drawer {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100% !important;
-  z-index: 1501 !important;
-  -ms-touch-action: manipulation;
-  -webkit-touch-callout: inherit;
-  touch-action: manipulation;
-  @include transition(all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0s);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  will-change: transform;
-  background-color: $dt-drawer-bg;
+	& .#{$class-prefix}-notification.fade:not(.show) {
+		display: none;
+	}
 
-  &.position-left {
-    @include transform(translate3d(-100%, 0, 0));
-    left: 0;
-    right: auto;
-  }
+	&__container {
+		display: flex;
+		flex: 1 1 0;
+	}
 
-  &.position-right {
-    @include transform(translate3d(100%, 0, 0));
-    left: auto;
-    right: 0;
-  }
+	&__sidebar {
+		width: $actionable-sidebar-width;
+		background-color: $actionable-sidebar-bg;
+		color: $actionable-sidebar-color;
+		border-right: 1px solid $actionable-sidebar-separator;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-  &.open {
-    @include transform(translate3d(0, 0, 0));
+		&-header {
+			padding: 10px;
+			height: $header-height;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-    & + .#{$class-prefix}-backdrop {
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      overflow: hidden;
-      z-index: 1500;
-      background: $dt-backdrop-bg;
-      @include transition(all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0s);
-    }
-  }
+		&-content {
+			padding: 5px 10px 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			flex: 1 1 0;
+		}
+	}
+
+	&__content-area {
+		padding: 3rem;
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+
+		& .#{$class-prefix}-action-content {
+			flex: 1 1 0;
+			min-height: 0;
+		}
+	}
+}
+
+//Actionable Sidebar Nav
+.#{$class-prefix}-actionable {
+	&-nav {
+		@extend %list-style-none;
+
+		&__item {
+			@include transition(all 0.4s ease);
+
+			&.active .#{$class-prefix}-actionable-nav__link {
+				background-color: $actionable-sidebar-menu-bg-active;
+				color: $actionable-sidebar-color-active;
+			}
+
+			& > [data-toggle="main-sidebar"] {
+				display: none;
+			}
+		}
+
+		&__link {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			line-height: 1;
+			white-space: nowrap;
+			padding: 1.2rem;
+			@include border-radius($border-radius-circle);
+			color: $actionable-sidebar-color;
+
+			@include hover-focus-active {
+				background-color: $actionable-sidebar-menu-bg-hover;
+				color: $actionable-sidebar-color-hover;
+			}
+		}
+
+		& + .#{$class-prefix}-action-nav:last-child {
+			margin-top: auto;
+		}
+	}
 }

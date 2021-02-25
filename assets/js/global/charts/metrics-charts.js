@@ -796,6 +796,39 @@
 		});
 	}
 
+	// Traffic Gauge
+	if ($('#canvas-gauge-traffic').length) {
+		var opts = {
+			angle: 0,
+			lineWidth: 0.25,
+			pointer: {
+				length: 0.35,
+				strokeWidth: 0.09,
+				color: 'rgba(0, 0, 0, 0.8)'
+			},
+			staticZones: [
+				{strokeStyle: "#E00930", min: 0, max: 250},
+				{strokeStyle: "#FF8C00", min: 250, max: 500},
+				{strokeStyle: "#FFCA41", min: 500, max: 750},
+				{strokeStyle: "#8DCD03", min: 750, max: 1000}
+			],
+			limitMax: false,
+			limitMin: false,
+			strokeColor: '#E0E0E0',
+			highDpiSupport: true,
+			fontSize: 16,
+		};
+		var target = document.getElementById('canvas-gauge-traffic'); // your canvas element
+		var gauge = new Gauge(target); // create sexy gauge!
+		gauge.setTextField(document.getElementById("preview-gauge-traffic"));
+		gauge.maxValue = 1000; // set max gauge value
+		gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+		gauge.animationSpeed = 20; // set animation speed (32 is default value)
+		gauge.setOptions(opts);
+		gauge.set(500); // set actual value
+	}
+
+
 	// =================================================================================================== //
 	// Active users
 	var optsActiveUsers = $.extend({}, defaultOptions);

@@ -210,6 +210,7 @@ class Main extends Base_Controller
 		$this->addjs(base_url("node_modules/echarts-liquidfill/dist/echarts-liquidfill.min.js"), TRUE);
 		$this->addjs(base_url("node_modules/jquery-circle-progress/dist/circle-progress.min.js"), TRUE);
 		$this->addjs(base_url("node_modules/owl.carousel/dist/owl.carousel.min.js"), TRUE);
+		$this->addjs(assets_url("js/global/gauge-js/gauge.min.js"), TRUE);
 		$this->addjs(assets_url("js/global/charts/metrics-charts.js"), TRUE);
 
 		$this->bulid_layout("templates/main/metrics/classic");

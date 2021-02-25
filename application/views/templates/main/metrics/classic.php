@@ -97,6 +97,48 @@
 	</div>
 	<!-- /grid item -->
 
+	<!-- Grid Item -->
+	<div class="col-xl-3 col-md-5 col-sm-6 order-xl-5 order-md-6">
+
+		<!-- Card -->
+		<div class="dt-card dt-card__full-height">
+
+			<!-- Card Header -->
+			<div class="dt-card__header">
+
+				<!-- Card Heading -->
+				<div class="dt-card__heading">
+					<h3 class="dt-card__title">Traffic</h3>
+				</div>
+				<!-- /card heading -->
+
+			</div>
+			<!-- /card header -->
+
+			<!-- Card Body -->
+			<div class="dt-card__body">
+
+				<div class="d-flex justify-content-center align-items-center">
+					<!-- Chart -->
+					<canvas id="canvas-gauge-traffic" height="130" width="260"></canvas>
+					<!-- /chart -->
+				</div>
+
+				<div class="d-flex justify-content-center align-items-center">
+					<div><span id="preview-gauge-traffic"></span>s User online</div>
+				</div>
+
+				<div class="d-flex justify-content-center align-items-center">Moderate Level</div>
+
+			</div>
+			<!-- /card body -->
+
+		</div>
+		<!-- /card -->
+
+	</div>
+	<!-- /grid item -->
+
 </div>
 <!-- /grid -->
 

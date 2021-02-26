@@ -1152,14 +1152,14 @@ $close-color: $text-color-primary;
 //Header Variables
 $header-height: auto !default;
 $header-shadow: $box-shadow-xl !default;
-$header-bg: $card-bg !default;
-$header-color: $text-color-secondary !default;
-$header-color-hover: $text-color-primary !default;
+$header-bg: linear-gradient(0deg, rgba($primary, 0.47), rgba($primary, 0.47)), url('../../images/bg-images/header-bg-pattern.jpg') no-repeat center center / cover !default;
+$header-color: rgba($white, 0.75) !default;
+$header-color-hover: rgba($white, 1) !default;
 $dt-brand-bg: $header-bg !default;
-$dt-brand-color: $text-color-primary !default;
+$dt-brand-color: $header-color !default;
 
 //Header Navigation Variables
-$header-navigation-bg: $primary;
+$header-navigation-bg: $card-bg;
 $header-navigation-nav-color: rgba($white, 0.7) !default;
 $header-navigation-nav-color-hover: rgba($white, 1) !default;
 $header-navigation-nav-color-active: rgba($white, 1) !default;

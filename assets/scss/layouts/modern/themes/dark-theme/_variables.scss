@@ -1190,6 +1190,16 @@ $action-sidebar-color-hover: rgba($white, 1) !default;
 $dt-drawer-bg: $card-bg !default;
 $dt-backdrop-bg: rgba($black, 0.8) !default;
 
+//Actionable Drawer Variables
+$actionable-sidebar-width: 65px !default;
+$actionable-sidebar-separator: $border-color-dark !default;
+$actionable-sidebar-bg: $card-bg !default;
+$actionable-sidebar-menu-bg-hover: rgba($primary, 0.08) !default;
+$actionable-sidebar-menu-bg-active: rgba($primary, 0.08) !default;
+$actionable-sidebar-color: rgba($white, 0.3) !default;
+$actionable-sidebar-color-hover: $primary !default;
+$actionable-sidebar-color-active: $primary !default;
+
 //Sweet Alert
 
 // BOX MODEL

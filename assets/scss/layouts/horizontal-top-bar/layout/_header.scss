@@ -43,6 +43,7 @@
 	width: 100%;
 	height: $header-height;
 	background: $header-bg;
+	background-blend-mode: screen, normal;
 	@include box-shadow($header-shadow);
 	@include transition(all 0.2s ease);
 
@@ -65,28 +66,35 @@
 
 		& .form-control {
 			box-shadow: none;
-			background-color: rgba($dark, 0.08);
-			border-color: rgba($dark, 0.08);
+			background-color: rgba($black, 0.38);
+			border-color: rgba($black, 0.38);
 			@include transition($transition-base);
-			color: $text-color-secondary;
+			color: rgba($white, 0.74);
 
 			&:focus {
-				background-color: rgba($dark, 0.12);
-				border-color: rgba($dark, 0.12);
+				background-color: rgba($black, 0.5);
+				border-color: rgba($black, 0.5);
 			}
 
 			&::placeholder,
 			&:-ms-input-placeholder {
-				color: $text-color-secondary;
+				color: rgba($white, 0.74);
 			}
 		}
 
 		& .search-icon {
-			color: $text-color-secondary;
+			color: rgba($white, 0.74);
+		}
+
+		& .btn-outline-default {
+			background-color: rgba($black, 0.38);
+			border-color: rgba($black, 0.38);
+			border-left-color: rgba($white, 0.38);
+			color: rgba($white, 0.74);
 		}
 	}
 
-	.theme-semidark &,
+	/*.theme-semidark &,
 	.theme-dark & {
 		& .search-box .form-control {
 			background-color: rgba($body-bg, 0.8);
@@ -97,7 +105,7 @@
 				border-color: rgba($body-bg, 1);
 			}
 		}
-	}
+	}*/
 
 	&__toolbar {
 		display: flex;
@@ -236,7 +244,7 @@
 						display: block;
 						height: 30px;
 						width: 1px;
-						background-color: $border-color-dark;
+						background-color: rgba($white, 0.2);
 						position: absolute;
 						top: 50%;
 						right: -15px;

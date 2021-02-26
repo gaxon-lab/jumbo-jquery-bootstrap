@@ -127,7 +127,7 @@
 		position: absolute;
 		top: 10rem;
 		left: 0;
-		z-index: 2;
+		z-index: 10;
 		background-color: $sidebar-bg;
 		@include transition(all 0.5s ease);
 		@include border-radius($border-radius);

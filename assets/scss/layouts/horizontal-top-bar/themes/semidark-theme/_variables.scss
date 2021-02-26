@@ -1152,14 +1152,14 @@ $close-font-size: $font-size-base * 1.5;
 //Header Variables
 $header-height: auto !default;
 $header-shadow: $box-shadow-xl !default;
-$header-bg: #363636 !default;
-$header-color: rgba($white, 0.6) !default;
-$header-color-hover: rgba($white, 0.87) !default;
+$header-bg: linear-gradient(0deg, rgba($primary, 0.47), rgba($primary, 0.47)), url('../../images/bg-images/header-bg-pattern.jpg') no-repeat center center / cover !default;
+$header-color: rgba($white, 0.75) !default;
+$header-color-hover: rgba($white, 1) !default;
 $dt-brand-bg: $header-bg !default;
-$dt-brand-color: $header-color-hover !default;
+$dt-brand-color: $header-color !default;
 
 //Header Navigation Variables
-$header-navigation-bg: $primary;
+$header-navigation-bg: #363636;
 $header-navigation-nav-color: rgba($white, 0.7) !default;
 $header-navigation-nav-color-hover: rgba($white, 1) !default;
 $header-navigation-nav-color-active: rgba($white, 1) !default;

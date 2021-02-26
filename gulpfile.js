@@ -14,7 +14,7 @@ var scssDir = 'assets/scss/';
 var scssLayoutsDir = scssDir + 'layouts/';
 
 var layouts = [
-	{
+	/*{
 		path: 'default',
 		themes: [
 			{
@@ -226,7 +226,7 @@ var layouts = [
 				]
 			}
 		]
-	},
+	},*/
 	/*{
 		path: 'modern',
 		themes: [
@@ -301,12 +301,12 @@ var layouts = [
 	{
 		path: 'horizontal',
 		themes: [
-			/*{
+			{
 				srcFileName: 'main-dark',
 				destFileName: 'theme-dark',
 				rtl: false
 			},
-			{
+			/*{
 				srcFileName: 'main-dark',
 				destFileName: 'theme-dark-style',
 				rtl: false,
@@ -345,12 +345,12 @@ var layouts = [
 					{primary: '#33658A', secondary: '#55DDE0'},
 				]
 			},*/
-			/*{
+			{
 				srcFileName: 'main-semidark',
 				destFileName: 'theme-semidark',
 				rtl: false
 			},
-			{
+			/*{
 				srcFileName: 'main-semidark',
 				destFileName: 'theme-semidark-style',
 				rtl: true,

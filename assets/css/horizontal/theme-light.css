@@ -12403,6 +12403,14 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
         color: rgba(0, 0, 0, 0.6); }
     .dt-header .search-box .search-icon {
       color: rgba(0, 0, 0, 0.6); }
+  .theme-semidark .dt-header .search-box .form-control,
+  .theme-dark .dt-header .search-box .form-control {
+    background-color: rgba(244, 244, 247, 0.8);
+    border-color: rgba(244, 244, 247, 0.8); }
+    .theme-semidark .dt-header .search-box .form-control:focus,
+    .theme-dark .dt-header .search-box .form-control:focus {
+      background-color: #f4f4f7;
+      border-color: #f4f4f7; }
   .dt-header__toolbar {
     display: -ms-flexbox;
     display: flex;

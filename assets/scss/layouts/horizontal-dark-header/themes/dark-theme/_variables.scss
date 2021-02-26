@@ -107,10 +107,10 @@ $theme-colors: map-merge((
 ), $theme-colors);
 
 //Custom Color system
-$text-color-primary: rgba(0, 0, 0, 0.87) !default;
-$text-color-secondary: rgba(0, 0, 0, 0.6) !default;
-$text-color-disabled: rgba(0, 0, 0, 0.38) !default;
-$text-color-hint: rgba(0, 0, 0, 0.3) !default;
+$text-color-primary: rgba(255, 255, 255, 0.87) !default;
+$text-color-secondary: rgba(255, 255, 255, 0.6) !default;
+$text-color-disabled: rgba(255, 255, 255, 0.38) !default;
+$text-color-hint: rgba(255, 255, 255, 0.3) !default;
 $light-green: #1dce8e !default;
 $dark-green: #5D9405 !default;
 $light-blue: #5797fc !default;
@@ -210,7 +210,7 @@ $spacers: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg: #f4f4f7;
+$body-bg: #2e2e2e;
 $body-color: $text-color-secondary;
 
 // Links
@@ -274,8 +274,8 @@ $line-height-lg: 1.43;
 $line-height-sm: 1.43;
 
 //$border-width:                1px !default;
-$border-color: rgba(0, 0, 0, 0.06);
-$border-color-dark: rgba(0, 0, 0, 0.12);
+$border-color: rgba(255, 255, 255, 0.06);
+$border-color-dark: rgba(255, 255, 255, 0.12);
 
 $border-radius: 0.4rem;
 $border-radius-lg: 0.6rem;
@@ -398,7 +398,7 @@ $table-cell-padding-sm: .5rem;
 
 $table-color: $body-color;
 //$table-bg:                    null !default;
-$table-accent-bg: #f8f8f8;
+$table-accent-bg:rgba(255, 255, 255, 0.08);
 $table-hover-color: $table-color;
 $table-hover-bg: darken($table-accent-bg, 2%);
 $table-active-bg: $table-hover-bg;
@@ -406,7 +406,7 @@ $table-active-bg: $table-hover-bg;
 //$table-border-width:          $border-width !default;
 $table-border-color: $border-color;
 
-$table-head-bg: #e9e9e9;
+$table-head-bg: $black;
 $table-head-color: $white;
 
 $table-dark-color: #c5c5c5;
@@ -510,11 +510,11 @@ $input-padding-x-lg: $input-btn-padding-x-lg;
 $input-font-size-lg: $input-btn-font-size-lg;
 $input-line-height-lg: $input-btn-line-height-lg;
 
-//$input-bg:                              $white !default;
+$input-bg:                              #2e2e2e;
 //$input-disabled-bg:                     $gray-200 !default;
 
 $input-color: $text-color-secondary;
-$input-border-color:                    #E0E0E0;
+$input-border-color:                    $border-color;
 //$input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow: inset 0 1px 1px rgba($black, .075);
 
@@ -522,9 +522,9 @@ $input-border-radius: $border-radius;
 $input-border-radius-lg: $border-radius-lg;
 $input-border-radius-sm: $border-radius;
 
-//$input-focus-bg:                        $input-bg !default;
+$input-focus-bg:                        $input-bg;
 $input-focus-border-color: lighten($component-active-bg, 25%);
-//$input-focus-color:                     $input-color !default;
+$input-focus-color:                     $input-color;
 $input-focus-width: $input-btn-focus-width;
 $input-focus-box-shadow: $input-btn-focus-box-shadow;
 
@@ -735,7 +735,7 @@ $nav-tabs-border-color: $white;
 $nav-tabs-border-radius: $border-radius;
 $nav-tabs-link-hover-border-color: transparent;
 $nav-tabs-link-active-color: $primary;
-//$nav-tabs-link-active-bg:           $body-bg !default;
+$nav-tabs-link-active-bg: $body-bg;
 $nav-tabs-link-active-border-color: transparent transparent $nav-tabs-link-active-bg;
 
 $nav-pills-border-radius: $border-radius;
@@ -791,7 +791,7 @@ $dropdown-min-width: 16rem;
 $dropdown-spacer: .5rem;
 $dropdown-font-size: $font-size-base;
 $dropdown-color: $body-color;
-$dropdown-bg: $white;
+$dropdown-bg: $body-bg;
 $dropdown-border-color: transparent;
 $dropdown-border-radius: $border-radius;
 $dropdown-border-width: 0;
@@ -848,7 +848,7 @@ $pagination-disabled-color: $gray-500;
 
 //$jumbotron-padding:                 2rem !default;
 //$jumbotron-color:                   null !default;
-//$jumbotron-bg:                      $gray-200 !default;
+$jumbotron-bg: $body-bg;
 
 // Cards
 
@@ -858,10 +858,10 @@ $card-border-width: 0px;
 $card-border-radius: $border-radius;
 $card-border-color: transparent;
 $card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width});
-$card-cap-bg: rgba($black, .05);
+$card-cap-bg: rgba($black, .15);
 $card-cap-color: $body-color;
 //$card-color:                        null !default;
-$card-bg: $white;
+$card-bg: #121212;
 
 $card-img-overlay-padding: $card-spacer-y;
 
@@ -908,14 +908,14 @@ $form-feedback-tooltip-border-radius: $tooltip-border-radius;
 // Popovers
 
 $popover-font-size: $font-size-sm;
-//$popover-bg:                        $white !default;
+$popover-bg:                        $body-bg;
 //$popover-max-width:                 276px !default;
 //$popover-border-width:              $border-width !default;
 //$popover-border-color:              rgba($black, .2) !default;
 //$popover-border-radius:             $border-radius-lg !default;
 //$popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
 
-//$popover-header-bg: darken($popover-bg, 3%) !default;
+$popover-header-bg: darken($popover-bg, 3%);
 $popover-header-color: $text-color-primary;
 $popover-header-padding-y: .8rem;
 $popover-header-padding-x: 1.2rem;
@@ -926,9 +926,9 @@ $popover-body-padding-x: $popover-header-padding-x;
 
 $popover-arrow-width: 1.6rem;
 $popover-arrow-height: .8rem;
-//$popover-arrow-color:               $popover-bg !default;
+$popover-arrow-color:               $popover-bg;
 
-//$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
+$popover-arrow-outer-color:         fade-in($popover-border-color, .05);
 
 // Toasts
 
@@ -974,7 +974,7 @@ $modal-dialog-margin-y-sm-up: 2.8rem;
 $modal-title-line-height: $line-height-base;
 
 //$modal-content-color:               null !default;
-//$modal-content-bg:                  $white !default;
+$modal-content-bg: $card-bg;
 //$modal-content-border-color:        rgba($black, .2) !default;
 //$modal-content-border-width:        $border-width !default;
 $modal-content-border-radius: $border-radius;
@@ -982,7 +982,7 @@ $modal-content-border-radius: $border-radius;
 //$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
 
 //$modal-backdrop-bg:                 $black !default;
-//$modal-backdrop-opacity:            .5 !default;
+$modal-backdrop-opacity: .8;
 $modal-header-border-color: $border-color;
 $modal-footer-border-color: $modal-header-border-color;
 //$modal-header-border-width:         $modal-content-border-width !default;
@@ -1030,7 +1030,7 @@ $progress-bar-bg: theme-color("primary");
 // List group
 
 //$list-group-color:                  null !default;
-//$list-group-bg:                     $white !default;
+$list-group-bg: $card-bg;
 //$list-group-border-color:           rgba($black, .125) !default;
 //$list-group-border-width:           $border-width !default;
 $list-group-border-radius: $border-radius;
@@ -1074,7 +1074,7 @@ $breadcrumb-item-padding: .8rem;
 
 //$breadcrumb-margin-bottom:          1rem !default;
 
-//$breadcrumb-bg:                     $gray-200 !default;
+$breadcrumb-bg:                     $body-bg;
 $breadcrumb-divider-color: $text-color-secondary;
 $breadcrumb-active-color: $text-color-secondary;
 //$breadcrumb-divider:                quote("/") !default;
@@ -1121,7 +1121,7 @@ $breadcrumb-border-radius: $border-radius;
 
 $close-font-size: $font-size-base * 1.5;
 //$close-font-weight:                 $font-weight-bold !default;
-//$close-color:                       $black !default;
+$close-color: $text-color-primary;
 //$close-text-shadow:                 0 1px 0 $white !default;
 
 // Code
@@ -1152,26 +1152,22 @@ $close-font-size: $font-size-base * 1.5;
 //Header Variables
 $header-height: auto !default;
 $header-shadow: $box-shadow-xl !default;
-$header-bg: $white !default;
-$header-color: fade-out($white, 0.62) !default;
-$header-color-hover: $white !default;
-$header-top-height: 100px !default;
-$header-top-bg: $white !default;
-$header-bottom-height: 58px !default;
-$header-bottom-bg: $primary !default;
+$header-bg: linear-gradient(0deg, rgba($primary, 0.47), rgba($primary, 0.47)), url('../../images/bg-images/header-bg-pattern.jpg') no-repeat center center / cover !default;
+$header-color: rgba($white, 0.75) !default;
+$header-color-hover: rgba($white, 1) !default;
 $dt-brand-bg: $header-bg !default;
-$dt-brand-color: $white !default;
+$dt-brand-color: $header-color !default;
 
-//Topbar variables
-$dt-topbar-height: 34px !default;
-$dt-topbar-bg: $black !default;
-$dt-topbar-color: $white !default;
-
+//Header Navigation Variables
+$header-navigation-bg: transparent;
+$header-navigation-nav-color: rgba($white, 0.7) !default;
+$header-navigation-nav-color-hover: rgba($white, 1) !default;
+$header-navigation-nav-color-active: rgba($white, 1) !default;
 
 //Footer Variables
 $footer-height: 60px !default;
 $footer-shadow: 0px 0px 5px rgba($black, 0.15) !default;
-$footer-bg: $white !default;
+$footer-bg: $card-bg !default;
 $footer-color: $text-color-disabled !default;
 
 //Sidebar Variables
@@ -1179,34 +1175,30 @@ $sidebar-width-sm: 280px !default;
 $sidebar-width: 304px !default;
 $sidebar-width-lg: 330px !default;
 $sidebar-shadow: 0px 3px 4px rgba($black, 0.14), 0px 3px 3px rgba($black, 0.12), 0px 1px 8px rgba($black, 0.2) !default;
-$sidebar-bg: $white !default;
-$sidebar-color: $text-color-secondary !default;
-$sidebar-color-hover: $text-color-primary !default;
-$sidebar-menu-hover-bg: #E5E5E5 !default;
-$sidebar-active-bg: $light-primary !default;
-$sidebar-active-color: $primary !default;
-$sidebar-submenu-color: $text-color-secondary !default;
-$sidebar-header-color: $text-color-disabled !default;
-$sidebar-separator: #EDEDED !default;
+$sidebar-bg: #363636 !default;
+$sidebar-color: rgba($white, 0.3) !default;
+$sidebar-color-hover: $white !default;
+$sidebar-menu-hover-bg: rgba(187, 134, 252, 0.08) !default;
+$sidebar-active-bg: $primary !default;
+$sidebar-active-color: $white !default;
+$sidebar-submenu-color: $sidebar-color !default;
+$sidebar-header-color: rgba($white, 0.3) !default;
+$sidebar-separator: rgba($white, 0.08) !default;
 $folded-sidebar-width: 80px !default;
 
 //Custom Drawer Variables
-$dt-drawer-bg: $white !default;
-$dt-backdrop-bg: rgba($black, 0.4) !default;
-
-// Navbar Variables
-$dt-navbar-nav-color: rgba($white, 0.7) !default;
-$dt-navbar-nav-active-color: rgba($white, 1) !default;
+$dt-drawer-bg: $card-bg !default;
+$dt-backdrop-bg: rgba($black, 0.8) !default;
 
 // Custom Container Variables
 $dt-container-max-widths: (
-  xl: 1140px,
-  xxl: 1420px
+	xl: 1140px,
+	xxl: 1420px
 ) !default;
 
 $dt-grid-breakpoints: (
-  xl: 1200px,
-  xxl: 1600px
+	xl: 1200px,
+	xxl: 1600px
 ) !default;
 
 //Sweet Alert
@@ -1296,7 +1288,7 @@ $min-sizes: map-merge((
 
 //Modules Variables
 $module-sidebar-width: 256px !default;
-$module-sidebar-bg: $white !default;
+$module-sidebar-bg: $card-bg !default;
 $module-sidebar-menu-bg-active: $sidebar-active-bg !default;
 $module-sidebar-menu-bg-hover: $sidebar-menu-hover-bg !default;
 $module-sidebar-color: $sidebar-color !default;

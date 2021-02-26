@@ -8,7 +8,7 @@ class Base_Controller extends CI_Controller {
 
     var $files = array('css_header' => '', 'css_footer' => '', 'js_header' => '', 'js_footer' => '');
     var $body_classes = array();
-    var $data = array('layout' => 'default', 'theme' => 'horizontal', 'rtl_enable' => false, 'export_version' => 'development', 'classic_version' => false);
+    var $data = array('layout' => 'default', 'theme' => 'horizontal-dark-header', 'rtl_enable' => false, 'export_version' => 'development', 'classic_version' => false);
 
     public function __construct() {
         parent::__construct();

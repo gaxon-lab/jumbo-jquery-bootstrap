@@ -1152,26 +1152,22 @@ $close-font-size: $font-size-base * 1.5;
 //Header Variables
 $header-height: auto !default;
 $header-shadow: $box-shadow-xl !default;
-$header-bg: $white !default;
-$header-color: fade-out($white, 0.62) !default;
-$header-color-hover: $white !default;
-$header-top-height: 100px !default;
-$header-top-bg: $white !default;
-$header-bottom-height: 58px !default;
-$header-bottom-bg: $primary !default;
+$header-bg: linear-gradient(0deg, rgba($primary, 0.47), rgba($primary, 0.47)), url('../../images/bg-images/header-bg-pattern.jpg') no-repeat center center / cover !default;
+$header-color: rgba($white, 0.75) !default;
+$header-color-hover: rgba($white, 1) !default;
 $dt-brand-bg: $header-bg !default;
-$dt-brand-color: $white !default;
+$dt-brand-color: $header-color !default;
 
-//Topbar variables
-$dt-topbar-height: 34px !default;
-$dt-topbar-bg: $black !default;
-$dt-topbar-color: $white !default;
-
+//Header Navigation Variables
+$header-navigation-bg: transparent;
+$header-navigation-nav-color: rgba($white, 0.7) !default;
+$header-navigation-nav-color-hover: rgba($white, 1) !default;
+$header-navigation-nav-color-active: rgba($white, 1) !default;
 
 //Footer Variables
 $footer-height: 60px !default;
 $footer-shadow: 0px 0px 5px rgba($black, 0.15) !default;
-$footer-bg: $white !default;
+$footer-bg: $card-bg !default;
 $footer-color: $text-color-disabled !default;
 
 //Sidebar Variables
@@ -1179,24 +1175,20 @@ $sidebar-width-sm: 280px !default;
 $sidebar-width: 304px !default;
 $sidebar-width-lg: 330px !default;
 $sidebar-shadow: 0px 3px 4px rgba($black, 0.14), 0px 3px 3px rgba($black, 0.12), 0px 1px 8px rgba($black, 0.2) !default;
-$sidebar-bg: $white !default;
-$sidebar-color: $text-color-secondary !default;
-$sidebar-color-hover: $text-color-primary !default;
-$sidebar-menu-hover-bg: #E5E5E5 !default;
-$sidebar-active-bg: $light-primary !default;
-$sidebar-active-color: $primary !default;
-$sidebar-submenu-color: $text-color-secondary !default;
-$sidebar-header-color: $text-color-disabled !default;
-$sidebar-separator: #EDEDED !default;
+$sidebar-bg: #363636 !default;
+$sidebar-color: rgba($white, 0.3) !default;
+$sidebar-color-hover: $white !default;
+$sidebar-menu-hover-bg: rgba(187, 134, 252, 0.08) !default;
+$sidebar-active-bg: $primary !default;
+$sidebar-active-color: $white !default;
+$sidebar-submenu-color: $sidebar-color !default;
+$sidebar-header-color: rgba($white, 0.3) !default;
+$sidebar-separator: rgba($white, 0.08) !default;
 $folded-sidebar-width: 80px !default;
 
 //Custom Drawer Variables
 $dt-drawer-bg: $white !default;
 $dt-backdrop-bg: rgba($black, 0.4) !default;
-
-// Navbar Variables
-$dt-navbar-nav-color: rgba($white, 0.7) !default;
-$dt-navbar-nav-active-color: rgba($white, 1) !default;
 
 // Custom Container Variables
 $dt-container-max-widths: (

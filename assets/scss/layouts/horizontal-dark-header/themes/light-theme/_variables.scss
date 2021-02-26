@@ -1152,21 +1152,17 @@ $close-font-size: $font-size-base * 1.5;
 //Header Variables
 $header-height: auto !default;
 $header-shadow: $box-shadow-xl !default;
-$header-bg: $white !default;
-$header-color: fade-out($white, 0.62) !default;
-$header-color-hover: $white !default;
-$header-top-height: 100px !default;
-$header-top-bg: $white !default;
-$header-bottom-height: 58px !default;
-$header-bottom-bg: $primary !default;
+$header-bg: linear-gradient(0deg, rgba($primary, 0.47), rgba($primary, 0.47)), url('../../images/bg-images/header-bg-pattern.jpg') no-repeat center center / cover !default;
+$header-color: rgba($white, 0.75) !default;
+$header-color-hover: rgba($white, 1) !default;
 $dt-brand-bg: $header-bg !default;
-$dt-brand-color: $white !default;
+$dt-brand-color: $header-color !default;
 
-//Topbar variables
-$dt-topbar-height: 34px !default;
-$dt-topbar-bg: $black !default;
-$dt-topbar-color: $white !default;
-
+//Header Navigation Variables
+$header-navigation-bg: transparent;
+$header-navigation-nav-color: rgba($white, 0.7) !default;
+$header-navigation-nav-color-hover: rgba($white, 1) !default;
+$header-navigation-nav-color-active: rgba($white, 1) !default;
 
 //Footer Variables
 $footer-height: 60px !default;
@@ -1193,10 +1189,6 @@ $folded-sidebar-width: 80px !default;
 //Custom Drawer Variables
 $dt-drawer-bg: $white !default;
 $dt-backdrop-bg: rgba($black, 0.4) !default;
-
-// Navbar Variables
-$dt-navbar-nav-color: rgba($white, 0.7) !default;
-$dt-navbar-nav-active-color: rgba($white, 1) !default;
 
 // Custom Container Variables
 $dt-container-max-widths: (

@@ -108,6 +108,7 @@
 			}
 
 			&.active {
+				background-color: transparent;
 				color: $header-navigation-nav-color-active;
 			}
 		}

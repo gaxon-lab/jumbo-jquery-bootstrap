@@ -2,108 +2,57 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-// Topbar style
-.#{$class-prefix}-topbar {
-	height: $dt-topbar-height;
-	background-color: $dt-topbar-bg;
-	color: $dt-topbar-color;
-	font: {
-		size: $font-size-sm;
+//Fx Header
+.#{$class-prefix}-header--fixed {
+	& .#{$class-prefix}-header {
+		position: fixed;
+		right: 0;
+		z-index: 1000;
 	}
 
-	@include media-breakpoint-down(xs) {
-		font-size: ($font-size-sm + 0.2rem);
+	&:not(.#{$class-prefix}-layout--framed):not(.#{$class-prefix}-layout--boxed) .#{$class-prefix}-header ~ .#{$class-prefix}-content {
+		@include transition(all 0.2s ease);
+		margin-top: $header-height;
 	}
 
-	&__inner,
-	& .#{$class-prefix}-container {
-		height: 100%;
-	}
-
-	&__inner {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		width: 100%;
-	}
-
-	& .#{$class-prefix}-list {
-		margin-left: auto;
-
-		@include media-breakpoint-down(xs) {
-			display: none;
+	&:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) {
+		& .#{$class-prefix}-header {
+			width: calc(100% - #{$sidebar-width});
+			left: $sidebar-width;
 		}
+	}
 
-		&__item {
-			margin-bottom: 0;
-			border-color: $dt-topbar-color;
+	&.sidebar-sm:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) {
+		& .#{$class-prefix}-header {
+			width: calc(100% - #{$sidebar-width-sm});
+			left: $sidebar-width-sm;
 		}
+	}
 
-		&__link {
-			color: $dt-topbar-color;
+	&.sidebar-lg:not(.#{$class-prefix}-sidebar--drawer):not(.#{$class-prefix}-sidebar--folded) {
+		& .#{$class-prefix}-header {
+			width: calc(100% - #{$sidebar-width-lg});
+			left: $sidebar-width-lg;
 		}
 	}
 }
 
-//Header
 .#{$class-prefix}-header {
 	position: relative;
 	z-index: 99;
+	width: 100%;
 	height: $header-height;
-	background-color: $header-bg;
+	background: $header-bg;
+	@include box-shadow($header-shadow);
 	@include transition(all 0.2s ease);
 
-	@include media-breakpoint-down(sm) {
-		@include box-shadow($header-shadow);
+	&__main {
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 
-	& .#{$class-prefix}-container {
-		display: flex;
-		flex-wrap: wrap;
-		height: 100%;
-	}
-
-	&__top {
-		height: $header-top-height;
-		background-color: $header-top-bg;
-
-		@include media-breakpoint-up(md) {
-			& .#{$class-prefix}-container {
-				align-items: center;
-			}
-		}
-
-		@include media-breakpoint-down(sm) {
-			height: 60px;
-
-			.#{$class-prefix}-avatar.size-50 {
-				width: 40px;
-				height: 40px;
-			}
-		}
-
-		@include media-breakpoint-down(xs) {
-			height: ($header-top-height / 2);
-
-			& .#{$class-prefix}-avatar.size-50 {
-				width: 30px;
-				height: 30px;
-			}
-		}
-	}
-
-	&__bottom {
-		height: $header-bottom-height;
-		background-color: $header-bottom-bg;
-		@include box-shadow(0 5px 12px 0 rgba($black, 0.28));
-
-		& .#{$class-prefix}-nav__link {
-			color: $dt-navbar-nav-color;
-
-			@include hover-focus-active {
-				color: $dt-navbar-nav-active-color;
-			}
-		}
+	&__navigation {
+		background-color: $header-navigation-bg;
 	}
 
 	&__container {
@@ -111,22 +60,104 @@
 		height: 100%;
 	}
 
+	& .search-box {
+		max-width: 450px;
+
+		& .form-control {
+			box-shadow: none;
+			background-color: rgba($dark, 0.08);
+			border-color: rgba($dark, 0.08);
+			@include transition($transition-base);
+			color: $text-color-secondary;
+
+			&:focus {
+				background-color: rgba($dark, 0.12);
+				border-color: rgba($dark, 0.12);
+			}
+
+			&::placeholder,
+			&:-ms-input-placeholder {
+				color: $text-color-secondary;
+			}
+		}
+
+		& .search-icon {
+			color: $text-color-secondary;
+		}
+	}
+
+	.theme-semidark &,
+	.theme-dark & {
+		& .search-box .form-control {
+			background-color: rgba($body-bg, 0.8);
+			border-color: rgba($body-bg, 0.8);
+
+			&:focus {
+				background-color: rgba($body-bg, 1);
+				border-color: rgba($body-bg, 1);
+			}
+		}
+	}
+
 	&__toolbar {
 		display: flex;
-		padding-left: 2rem;
-		margin-left: auto;
+		justify-content: space-between;
+		padding-left: 3.2rem;
+		flex: 1;
 
-		@include media-breakpoint-down(sm) {
-			& .dropdown-toggle::after {
-				display: none;
+		& .search-box {
+			margin-right: 4rem;
+			align-self: center;
+		}
+
+		& .#{$class-prefix}-nav__link > i {
+			font-size: 2.2rem;
+
+			&.icon-apps {
+				font-size: 1.8rem;
+			}
+
+			@include media-breakpoint-down(xs) {
+				font-size: 2.4rem;
+
+				&.icon-apps {
+					font-size: 2.2rem;
+				}
 			}
 		}
 	}
 }
 
-//Brand
+// Header Notification bar
+.#{$class-prefix}-header {
+	&__notification-bar {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+
+		&-inner {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		& .#{$class-prefix}-list {
+			&__item {
+				margin-bottom: 0;
+			}
+
+			&__link {
+				color: $header-color;
+				font-size: $btn-font-size;
+				font-weight: $btn-font-weight;
+			}
+		}
+	}
+}
+
+//Fx Brand
 
 .#{$class-prefix}-brand {
+	background-color: $dt-brand-bg;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
@@ -139,10 +170,6 @@
 	&__logo {
 		display: inline-block;
 
-		@include media-breakpoint-down(sm) {
-			margin-left: 2rem;
-		}
-
 		&-link,
 		&-symbol,
 		&-img {
@@ -150,10 +177,7 @@
 		}
 
 		&-img {
-			width: 85px;
-			@include media-breakpoint-up(md) {
-				width: 120px;
-			}
+			width: 140px;
 		}
 
 		&-symbol {
@@ -162,33 +186,32 @@
 	}
 }
 
-//Navigation
+// Navigation
 .#{$class-prefix}-nav-wrapper {
-	margin-left: auto;
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: auto;
 }
 
 .#{$class-prefix}-nav {
 	@extend %list-style-none;
-	margin: 0 -8px;
+	position: relative;
+	margin: 0 -1rem;
 	display: flex;
 	flex-wrap: wrap;
 
 	&__item {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 0 8px;
+		padding: 0 1rem;
 	}
 
 	&__link {
-		color: $text-color-secondary;
+		color: $header-color;
 		display: inline-block;
 
-		&:hover,
-		&:focus,
-		&:active {
-			color: $text-color-primary;
+		@include hover-focus-active {
+			color: $header-color-hover;
 			text-decoration: none;
 		}
 
@@ -205,7 +228,21 @@
 	@at-root {
 		.#{$class-prefix}-header__toolbar {
 			& .#{$class-prefix}-nav:not(:last-child) {
-				margin-right: 5.5rem;
+				margin-right: 4rem;
+
+				@include media-breakpoint-up(md) {
+					&:after {
+						content: '';
+						display: block;
+						height: 30px;
+						width: 1px;
+						background-color: $border-color-dark;
+						position: absolute;
+						top: 50%;
+						right: -15px;
+						@include translateY(-50%);
+					}
+				}
 
 				@media screen and (max-width: 1300px) {
 					margin-right: 3rem;
@@ -225,7 +262,6 @@
 }
 
 //Hamburger Icon
-
 .#{$class-prefix}-brand__tool {
 	position: relative;
 	display: -webkit-flex;
@@ -235,20 +271,28 @@
 	-webkit-justify-content: center;
 	justify-content: center;
 	cursor: pointer;
-	min-height: 20px;
-	min-width: 20px;
+	min-height: 22px;
+	min-width: 22px;
+
+	&:not(:last-child) {
+		margin-right: 2.4rem;
+
+		@include media-breakpoint-down(md) {
+			margin-right: 1rem;
+		}
+	}
 }
 
 .hamburger-inner,
 .hamburger-inner:after,
 .hamburger-inner:before {
 	position: absolute;
-	width: 16px;
-	height: 2px;
+	width: 22px;
+	height: 3px;
 	transition-timing-function: ease;
 	transition-duration: .15s;
 	transition-property: transform;
-	border-radius: 2px;
+	border-radius: 3px;
 	background-color: $dt-brand-color;
 }
 
@@ -256,6 +300,7 @@
 	top: 50%;
 	left: 0;
 	@include translateY(-50%);
+
 	&:after,
 	&:before {
 		display: block;
@@ -263,11 +308,11 @@
 	}
 
 	&:before {
-		top: -5px
+		top: -6px
 	}
 
 	&:after {
-		bottom: -5px
+		bottom: -6px
 	}
 
 	.#{$class-prefix}-brand__tool & {
@@ -316,10 +361,6 @@
 		width: 250px;
 		height: auto;
 
-		& .search-box {
-			width: auto;
-		}
-
 		@include media-breakpoint-down(xs) {
 			width: 200px;
 		}
@@ -327,6 +368,7 @@
 
 	.#{$class-prefix}-header__toolbar & .dropdown-menu {
 		width: 380px;
+
 		&-body {
 			height: 208px;
 			overflow-y: auto;
@@ -337,8 +379,18 @@
 		}
 	}
 
-	.#{$class-prefix}-module__container & .dropdown-menu {
+	.theme-dark .#{$class-prefix}-header__toolbar &-app .dropdown-menu,
+	.theme-dark .#{$class-prefix}-header__toolbar & .dropdown-menu {
+		background-color: darken($dt-card-bg, 2%);
+	}
+
+	.theme-dark .#{$class-prefix}-module__container & .dropdown-menu {
+		background-color: darken($dt-card-bg, 2%);
+	}
+
+	.#{$class-prefix}-module__header-toolbar & .dropdown-menu {
 		width: 300px;
+
 		&-body {
 			height: 180px;
 			overflow-y: auto;
@@ -352,6 +404,7 @@
 	& .media {
 		position: relative;
 		margin-bottom: 14px;
+
 		&:not(:last-child) {
 			padding-bottom: 14px;
 
@@ -440,6 +493,7 @@
 		@include hover-focus {
 			border-color: $gray-200;
 		}
+
 		& > img {
 			display: inline-block;
 		}

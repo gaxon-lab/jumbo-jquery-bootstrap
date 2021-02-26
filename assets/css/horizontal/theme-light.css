@@ -3506,7 +3506,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 1rem 1.6rem; }
+  padding: 1.5rem 1.6rem; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -3614,8 +3614,8 @@ input[type="button"].btn-block {
 
 .navbar-text {
   display: inline-block;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
 
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
@@ -12463,10 +12463,12 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-left: auto; }
 
 .dt-nav {
-  margin: 0 -1.2rem;
+  position: relative;
+  margin: 0 -1rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -12476,7 +12478,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0 1.2rem; }
+    padding: 0 1rem; }
   .dt-nav__link {
     color: rgba(0, 0, 0, 0.6);
     display: inline-block; }
@@ -12493,12 +12495,24 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
           display: none; } }
   .dt-header__toolbar .dt-nav:not(:last-child) {
     margin-right: 4rem; }
+    @media (min-width: 960px) {
+      .dt-header__toolbar .dt-nav:not(:last-child):after {
+        content: '';
+        display: block;
+        height: 30px;
+        width: 1px;
+        background-color: rgba(0, 0, 0, 0.12);
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); } }
     @media screen and (max-width: 1300px) {
       .dt-header__toolbar .dt-nav:not(:last-child) {
         margin-right: 3rem; } }
-    @media (max-width: 1919.98px) {
+    @media (max-width: 959.98px) {
       .dt-header__toolbar .dt-nav:not(:last-child) {
-        margin-right: 0.5rem; } }
+        margin-right: 1rem; } }
   .dt-header__toolbar .dt-nav__link {
     display: -ms-flexbox;
     display: flex;
@@ -12771,7 +12785,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .dt-navbar .nav-item .menu-heading {
       font-size: 1.8rem;
       font-weight: 500;
-      padding: 1rem 1.6rem;
+      padding: 1.5rem 1.6rem;
       margin-bottom: 0; }
   .dt-navbar .nav-link {
     position: relative;
@@ -12908,8 +12922,8 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     margin: 0 auto;
     left: 0;
     right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
   .dt-navbar .mega-menu > .sub-menu > .nav-item {
     width: calc(100% / 3); }
   .dt-navbar .mega-menu:hover > .sub-menu, .dt-navbar .mega-menu:focus > .sub-menu {
@@ -16200,8 +16214,8 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   .dt-icon-alert:after {
     position: absolute;
     content: "";
-    right: 4px;
-    top: 1px;
+    right: 2px;
+    top: 0;
     z-index: 10;
     width: 6px;
     height: 6px;

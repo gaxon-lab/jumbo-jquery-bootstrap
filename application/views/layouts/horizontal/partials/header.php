@@ -84,8 +84,8 @@
 					<!-- Header Menu Wrapper -->
 					<div class="dt-nav-wrapper">
 						<!-- Header Menu -->
-						<ul class="dt-nav d-lg-none">
-							<li class="dt-nav__item dt-notification-search dropdown">
+						<ul class="dt-nav">
+							<li class="dt-nav__item d-lg-none dt-notification-search dropdown">
 
 								<!-- Dropdown Link -->
 								<a href="#" class="dt-nav__link dropdown-toggle no-arrow" data-toggle="dropdown"
@@ -98,8 +98,7 @@
 
 									<!-- Search Box -->
 									<form class="search-box right-side-icon">
-										<input class="form-control form-control-lg" type="search"
-													 placeholder="Search in app...">
+										<input class="form-control" type="search" placeholder="Search in app...">
 										<button type="submit" class="search-icon">
 											<i class="material-icons">search</i>
 										</button>
@@ -110,11 +109,7 @@
 								<!-- /dropdown option -->
 
 							</li>
-						</ul>
-						<!-- /header menu -->
 
-						<!-- Header Menu -->
-						<ul class="dt-nav">
 							<li class="dt-nav__item dt-notification-app dropdown">
 
 								<!-- Dropdown Link -->

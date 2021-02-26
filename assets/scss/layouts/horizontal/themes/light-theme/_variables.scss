@@ -726,7 +726,7 @@ $zindex-tooltip: 1502;
 
 // Navs
 
-$nav-link-padding-y: 1rem;
+$nav-link-padding-y: 1.5rem;
 $nav-link-padding-x: 1.6rem;
 $nav-link-disabled-color: $gray-500;
 
@@ -1189,10 +1189,6 @@ $folded-sidebar-width: 80px !default;
 //Custom Drawer Variables
 $dt-drawer-bg: $white !default;
 $dt-backdrop-bg: rgba($black, 0.4) !default;
-
-// Navbar Variables
-$dt-navbar-nav-color: rgba($white, 0.7) !default;
-$dt-navbar-nav-active-color: rgba($white, 1) !default;
 
 // Custom Container Variables
 $dt-container-max-widths: (

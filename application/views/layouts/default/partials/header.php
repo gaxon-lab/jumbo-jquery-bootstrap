@@ -8,7 +8,7 @@
 		<div class="dt-brand">
 
 			<!-- Brand tool -->
-			<div class="dt-brand__tool d-lg-nones" data-toggle="main-sidebar">
+			<div class="dt-brand__tool d-lg-none" data-toggle="main-sidebar">
 				<div class="hamburger-inner"></div>
 			</div>
 			<!-- /brand tool -->
@@ -40,12 +40,13 @@
 			<!-- Header Menu Wrapper -->
 			<div class="dt-nav-wrapper">
 				<!-- Header Menu -->
-				<ul class="dt-nav d-lg-none">
-					<li class="dt-nav__item dt-notification-search dropdown">
+				<ul class="dt-nav">
+					<li class="dt-nav__item d-lg-none dt-notification-search dropdown">
 
 						<!-- Dropdown Link -->
 						<a href="#" class="dt-nav__link dropdown-toggle no-arrow" data-toggle="dropdown"
-						   aria-haspopup="true" aria-expanded="false"> <i class="icon icon-search icon-fw icon-lg"></i>
+							 aria-haspopup="true" aria-expanded="false">
+							<i class="material-icons">search</i>
 						</a>
 						<!-- /dropdown link -->
 
@@ -54,9 +55,9 @@
 
 							<!-- Search Box -->
 							<form class="search-box right-side-icon">
-								<input class="form-control form-control-lg" type="search"
-									   placeholder="Search in app...">
-								<button type="submit" class="search-icon"><i class="icon icon-search icon-lg"></i>
+								<input class="form-control" type="search" placeholder="Search in app...">
+								<button type="submit" class="search-icon">
+									<i class="material-icons">search</i>
 								</button>
 							</form>
 							<!-- /search box -->
@@ -65,17 +66,13 @@
 						<!-- /dropdown option -->
 
 					</li>
-				</ul>
-				<!-- /header menu -->
 
-				<!-- Header Menu -->
-				<ul class="dt-nav">
 					<li class="dt-nav__item dt-notification-app dropdown">
 
 						<!-- Dropdown Link -->
 						<a href="#" class="dt-nav__link dropdown-toggle no-arrow" data-toggle="dropdown"
 						   aria-haspopup="true" aria-expanded="false">
-							<i class="icon icon-apps icon-fw"></i>
+							<i class="material-icons">apps</i>
 						</a>
 						<!-- /dropdown link -->
 
@@ -182,7 +179,9 @@
 
 						<!-- Dropdown Link -->
 						<a href="#" class="dt-nav__link dropdown-toggle no-arrow" data-toggle="dropdown"
-						   aria-haspopup="true" aria-expanded="false"> <i class="icon icon-open-mail icon-fw"></i> </a>
+						   aria-haspopup="true" aria-expanded="false">
+							<i class="material-icons">message</i>
+						</a>
 						<!-- /dropdown link -->
 
 						<!-- Dropdown Option -->
@@ -337,8 +336,8 @@
 
 						<!-- Dropdown Link -->
 						<a href="#" class="dt-nav__link dropdown-toggle no-arrow" data-toggle="dropdown"
-						   aria-haspopup="true" aria-expanded="false"> <i
-									class="icon icon-notification2 icon-fw dt-icon-alert"></i>
+						   aria-haspopup="true" aria-expanded="false">
+							<i class="material-icons dt-icon-alert">notifications</i>
 						</a>
 						<!-- /dropdown link -->
 

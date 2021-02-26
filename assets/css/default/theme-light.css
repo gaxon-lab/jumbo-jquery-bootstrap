@@ -3506,7 +3506,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 1.5rem 1.6rem; }
+  padding: 1.2rem 1.6rem; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -3614,8 +3614,8 @@ input[type="button"].btn-block {
 
 .navbar-text {
   display: inline-block;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem; }
 
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;

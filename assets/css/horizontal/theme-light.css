@@ -3506,7 +3506,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 1.5rem 1.6rem; }
+  padding: 1.2rem 1.6rem; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -3614,8 +3614,8 @@ input[type="button"].btn-block {
 
 .navbar-text {
   display: inline-block;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem; }
 
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
@@ -12785,7 +12785,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .dt-navbar .nav-item .menu-heading {
       font-size: 1.8rem;
       font-weight: 500;
-      padding: 1.5rem 1.6rem;
+      padding: 1.2rem 1.6rem;
       margin-bottom: 0; }
   .dt-navbar .nav-link {
     position: relative;
@@ -12922,8 +12922,8 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     margin: 0 auto;
     left: 0;
     right: 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; }
+    padding-left: 1.2rem;
+    padding-right: 1.2rem; }
   .dt-navbar .mega-menu > .sub-menu > .nav-item {
     width: calc(100% / 3); }
   .dt-navbar .mega-menu:hover > .sub-menu, .dt-navbar .mega-menu:focus > .sub-menu {

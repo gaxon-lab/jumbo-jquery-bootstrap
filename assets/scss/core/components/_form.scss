@@ -308,3 +308,13 @@
 	cursor: pointer;
   }
 }
+
+// Input Group
+.input-group.rounded-pill {
+	& .form-control {
+		@include border-left-radius(50rem);
+	}
+	& .input-group-append .btn {
+		@include border-right-radius(50rem);
+	}
+}

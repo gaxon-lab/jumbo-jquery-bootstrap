@@ -12366,7 +12366,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   z-index: 99;
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background: #fff;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease; }
   @media (prefers-reduced-motion: reduce) {
@@ -12381,6 +12381,28 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     display: -ms-flexbox;
     display: flex;
     height: 100%; }
+  .dt-header .search-box {
+    max-width: 450px; }
+    .dt-header .search-box .form-control {
+      box-shadow: none;
+      background-color: rgba(33, 33, 33, 0.08);
+      border-color: rgba(33, 33, 33, 0.08);
+      transition: all 0.2s ease-in-out;
+      color: rgba(0, 0, 0, 0.6); }
+      @media (prefers-reduced-motion: reduce) {
+        .dt-header .search-box .form-control {
+          transition: none; } }
+      .dt-header .search-box .form-control:focus {
+        background-color: rgba(33, 33, 33, 0.12);
+        border-color: rgba(33, 33, 33, 0.12); }
+      .dt-header .search-box .form-control:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.6); }
+      .dt-header .search-box .form-control::-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.6); }
+      .dt-header .search-box .form-control::placeholder, .dt-header .search-box .form-control:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.6); }
+    .dt-header .search-box .search-icon {
+      color: rgba(0, 0, 0, 0.6); }
   .dt-header__toolbar {
     display: -ms-flexbox;
     display: flex;
@@ -12392,8 +12414,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .dt-header__toolbar .search-box {
       margin-right: 4rem;
       -ms-flex-item-align: center;
-      align-self: center;
-      max-width: 450px !important; }
+      align-self: center; }
     .dt-header__toolbar .dt-nav__link > i {
       font-size: 2.2rem; }
       .dt-header__toolbar .dt-nav__link > i.icon-apps {
@@ -16088,6 +16109,14 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     width: 100%;
     cursor: pointer; }
 
+.input-group.rounded-pill .form-control {
+  border-top-left-radius: 50rem;
+  border-bottom-left-radius: 50rem; }
+
+.input-group.rounded-pill .input-group-append .btn {
+  border-top-right-radius: 50rem;
+  border-bottom-right-radius: 50rem; }
+
 .flag-icon-lg {
   font-size: 1.8rem; }
 
@@ -16647,28 +16676,6 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   .search-box.right-side-icon .search-icon {
     left: auto;
     right: 15px; }
-  .dt-header .search-box {
-    max-width: 350px; }
-    .dt-header .search-box .form-control {
-      box-shadow: none;
-      background-color: rgba(0, 0, 0, 0.38);
-      border-color: rgba(0, 0, 0, 0.38);
-      transition: all 0.2s ease-in-out;
-      color: #fff; }
-      @media (prefers-reduced-motion: reduce) {
-        .dt-header .search-box .form-control {
-          transition: none; } }
-      .dt-header .search-box .form-control:focus {
-        background-color: rgba(0, 0, 0, 0.58);
-        color: #fff; }
-      .dt-header .search-box .form-control:-ms-input-placeholder {
-        color: #fff !important; }
-      .dt-header .search-box .form-control::-ms-input-placeholder {
-        color: #fff !important; }
-      .dt-header .search-box .form-control::placeholder, .dt-header .search-box .form-control:-ms-input-placeholder {
-        color: #fff !important; }
-    .dt-header .search-box .search-icon {
-      color: #fff; }
 
 .search-box-animated .search-icon {
   z-index: unset; }

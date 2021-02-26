@@ -63,7 +63,7 @@
 
 					<!-- Search box -->
 					<form class="search-box d-none d-lg-block">
-						<div class="input-group">
+						<div class="input-group rounded-pill">
 							<input type="search" class="form-control" placeholder="Search in app..." value="Search here...">
 							<span class="search-icon"><i class="material-icons">search</i></span>
 							<div class="input-group-append">

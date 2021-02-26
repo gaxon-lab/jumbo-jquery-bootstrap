@@ -42,7 +42,7 @@
 	z-index: 99;
 	width: 100%;
 	height: $header-height;
-	background-color: $header-bg;
+	background: $header-bg;
 	@include box-shadow($header-shadow);
 	@include transition(all 0.2s ease);
 
@@ -60,6 +60,32 @@
 		height: 100%;
 	}
 
+	& .search-box {
+		max-width: 450px;
+
+		& .form-control {
+			box-shadow: none;
+			background-color: rgba($dark, 0.08);
+			border-color: rgba($dark, 0.08);
+			@include transition($transition-base);
+			color: $text-color-secondary;
+
+			&:focus {
+				background-color: rgba($dark, 0.12);
+				border-color: rgba($dark, 0.12);
+			}
+
+			&::placeholder,
+			&:-ms-input-placeholder {
+				color: $text-color-secondary;
+			}
+		}
+
+		& .search-icon {
+			color: $text-color-secondary;
+		}
+	}
+
 	&__toolbar {
 		display: flex;
 		justify-content: space-between;
@@ -69,7 +95,6 @@
 		& .search-box {
 			margin-right: 4rem;
 			align-self: center;
-			max-width: 450px !important;
 		}
 
 		& .#{$class-prefix}-nav__link > i {

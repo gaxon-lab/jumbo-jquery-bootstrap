@@ -51,6 +51,32 @@
 		height: 100%;
 	}
 
+	& .search-box {
+		max-width: 350px;
+
+		& .form-control {
+			box-shadow: none;
+			background-color: fade-out($black, 0.62);
+			border-color: fade-out($black, 0.62);
+			@include transition($transition-base);
+			color: $white;
+
+			&:focus {
+				background-color: fade-out($black, 0.42);
+				color: $white;
+			}
+
+			&::placeholder,
+			&:-ms-input-placeholder {
+				color: $white !important;
+			}
+		}
+
+		& .search-icon {
+			color: $white;
+		}
+	}
+
 	&__toolbar {
 		display: flex;
 		justify-content: flex-end;

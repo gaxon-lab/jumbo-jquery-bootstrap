@@ -14,6 +14,77 @@ var scssDir = 'assets/scss/';
 var scssLayoutsDir = scssDir + 'layouts/';
 
 var layouts = [
+	{
+		path: 'horizontal-minimal',
+		themes: [
+			{
+				srcFileName: 'main-dark',
+				destFileName: 'theme-dark',
+				rtl: true
+			},
+			{
+				srcFileName: 'main-dark',
+				destFileName: 'theme-dark-style',
+				rtl: true,
+				colors: [
+					{primary: '#6200EE', secondary: '#03DAC5'},
+					{primary: '#1C61CA', secondary: '#E56B6F'},
+					{primary: '#2EC4B6', secondary: '#FF9F1C'},
+					{primary: '#EF8354', secondary: '#4F5D75'},
+					{primary: '#D71371', secondary: '#5AB77F'},
+					{primary: '#072AC8', secondary: '#FFC600'},
+					{primary: '#7530FF', secondary: '#369FFF'},
+					{primary: '#F26419', secondary: '#F9C80E'},
+					{primary: '#2BA444', secondary: '#0A2E36'},
+					{primary: '#33658A', secondary: '#55DDE0'},
+				]
+			},
+			{
+				srcFileName: 'main-light',
+				destFileName: 'theme-light',
+				rtl: true
+			},
+			{
+				srcFileName: 'main-light',
+				destFileName: 'theme-light-style',
+				rtl: true,
+				colors: [
+					{primary: '#6200EE', secondary: '#03DAC5'},
+					{primary: '#1C61CA', secondary: '#E56B6F'},
+					{primary: '#2EC4B6', secondary: '#FF9F1C'},
+					{primary: '#EF8354', secondary: '#4F5D75'},
+					{primary: '#D71371', secondary: '#5AB77F'},
+					{primary: '#072AC8', secondary: '#FFC600'},
+					{primary: '#7530FF', secondary: '#369FFF'},
+					{primary: '#F26419', secondary: '#F9C80E'},
+					{primary: '#2BA444', secondary: '#0A2E36'},
+					{primary: '#33658A', secondary: '#55DDE0'},
+				]
+			},
+			{
+				srcFileName: 'main-semidark',
+				destFileName: 'theme-semidark',
+				rtl: true
+			},
+			{
+				srcFileName: 'main-semidark',
+				destFileName: 'theme-semidark-style',
+				rtl: true,
+				colors: [
+					{primary: '#6200EE', secondary: '#03DAC5'},
+					{primary: '#1C61CA', secondary: '#E56B6F'},
+					{primary: '#2EC4B6', secondary: '#FF9F1C'},
+					{primary: '#EF8354', secondary: '#4F5D75'},
+					{primary: '#D71371', secondary: '#5AB77F'},
+					{primary: '#072AC8', secondary: '#FFC600'},
+					{primary: '#7530FF', secondary: '#369FFF'},
+					{primary: '#F26419', secondary: '#F9C80E'},
+					{primary: '#2BA444', secondary: '#0A2E36'},
+					{primary: '#33658A', secondary: '#55DDE0'},
+				]
+			}
+		]
+	},
 	/*{
 		path: 'default',
 		themes: [

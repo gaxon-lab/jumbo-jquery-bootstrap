@@ -150,7 +150,7 @@
 <div class="row">
 
 	<!-- Grid Item -->
-	<div class="col-xl-8 order-xl-4">
+	<div class="col-xl-8 col-12">
 		<!-- Grid -->
 		<div class="row">
 
@@ -517,7 +517,7 @@
 			<!-- /grid item -->
 
 			<!-- Grid Item -->
-			<div class="col-xl-6">
+			<div class="col-md-6 col-12">
 
 				<!-- Card -->
 				<div class="dt-card">
@@ -576,7 +576,7 @@
 			<!-- /grid item -->
 
 			<!-- Grid Item -->
-			<div class="col-xl-6">
+			<div class="col-md-6 col-12">
 
 				<!-- Card -->
 				<div class="dt-card">
@@ -641,7 +641,7 @@
 			<!-- /grid item -->
 
 			<!-- Grid Item -->
-			<div class="col-xl-12">
+			<div class="col-12">
 
 				<!-- Card -->
 				<div class="card">
@@ -769,8 +769,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$312,500</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$312,500</span>
 												<span class="d-inline-block f-12">$325/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -850,8 +850,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$670,500</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$670,500</span>
 												<span class="d-inline-block f-12">$587/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -937,8 +937,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$212,000</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$212,000</span>
 												<span class="d-inline-block f-12">$128/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1030,8 +1030,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$670,500</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$670,500</span>
 												<span class="d-inline-block f-12">$587/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1117,8 +1117,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$212,000</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$212,000</span>
 												<span class="d-inline-block f-12">$128/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1196,8 +1196,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$312,500</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$312,500</span>
 												<span class="d-inline-block f-12">$325/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1289,8 +1289,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$212,000</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$212,000</span>
 												<span class="d-inline-block f-12">$128/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1370,8 +1370,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$670,500</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$670,500</span>
 												<span class="d-inline-block f-12">$587/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1455,8 +1455,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$312,500</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$312,500</span>
 												<span class="d-inline-block f-12">$325/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1548,8 +1548,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$670,500</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$670,500</span>
 												<span class="d-inline-block f-12">$587/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1635,8 +1635,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$212,000</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$212,000</span>
 												<span class="d-inline-block f-12">$128/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1720,8 +1720,8 @@
 										<!-- Card Footer -->
 										<div class="card-footer d-flex flex-column justify-content-between">
 											<!-- Pricing -->
-											<div class="price text-right">
-												<span class="d-block h3 mb-2">$312,500</span>
+											<div class="price text-sm-right">
+												<span class="d-block h3 mb-2 text-link">$312,500</span>
 												<span class="d-inline-block f-12">$325/sqft</span>
 											</div>
 											<!-- /pricing -->
@@ -1756,7 +1756,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-4 order-xl-5">
+	<div class="col-xl-4 col-12">
 
 		<!-- Card -->
 		<div class="dt-card">

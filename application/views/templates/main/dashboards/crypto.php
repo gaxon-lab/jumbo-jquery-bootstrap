@@ -8,7 +8,7 @@
 <div class="row">
 
 	<!-- Grid Item -->
-	<div class="col-md-3 col-sm-6">
+	<div class="col-md-3 col-sm-6 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card">
@@ -45,7 +45,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-md-3 col-sm-6">
+	<div class="col-md-3 col-sm-6 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card">
@@ -82,7 +82,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-md-3 col-sm-6">
+	<div class="col-md-3 col-sm-6 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card">
@@ -119,7 +119,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-md-3 col-sm-6">
+	<div class="col-md-3 col-sm-6 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card">
@@ -156,7 +156,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-6">
+	<div class="col-lg-6 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card dt-card__full-height">
@@ -248,7 +248,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-6">
+	<div class="col-lg-6 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card">
@@ -302,7 +302,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-5 col-md-12">
+	<div class="col-xl-5 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card dt-card__full-height pb-4">
@@ -520,7 +520,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-3 col-md-6">
+	<div class="col-xl-3 col-md-6 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card dt-card__full-height bg-light-primary text-link">
@@ -552,7 +552,7 @@
 	<!-- /grid item -->
 
 	<!-- Grid Item -->
-	<div class="col-xl-4 col-md-6">
+	<div class="col-xl-4 col-md-6 col-xs-12">
 
 		<!-- Card -->
 		<div class="dt-card dt-card__full-height">
@@ -632,7 +632,7 @@
 		<!-- Grid -->
 		<div class="row">
 			<!-- Grid Item -->
-			<div class="col-xl-12 col-md-6">
+			<div class="col-xl-12">
 
 				<!-- Card -->
 				<div class="dt-card bg-gradient-primary-secondary text-white overflow-hidden">
@@ -672,7 +672,7 @@
 			<!-- /grid item -->
 
 			<!-- Grid Item -->
-			<div class="col-xl-12 col-md-6">
+			<div class="col-xl-12">
 
 				<!-- Card -->
 				<div class="dt-card">

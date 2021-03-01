@@ -4,7 +4,11 @@
 .#{$class-prefix}-customizer {
 	position: relative;
 	z-index: 1501;
-	width: ($sidebar-width + 76px);
+	width: 300px;
+
+	@include media-breakpoint-up(sm){
+		width: ($sidebar-width + 76px);
+	}
 
 	&-toggle {
 		position: fixed;

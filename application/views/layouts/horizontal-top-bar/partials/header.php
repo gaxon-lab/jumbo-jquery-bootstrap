@@ -951,7 +951,7 @@
 						<a class="dt-brand__logo-link" href="<?php echo site_url(); ?>">
 							<img class="dt-brand__logo-img d-none d-sm-inline-block"
 									 src="<?php echo assets_url('images/logo-white.png'); ?>" alt="Drift">
-							<img class="dt-brand__logo-symbol d-sm-none" src="<?php echo assets_url('images/logo-symbol.png'); ?>"
+							<img class="dt-brand__logo-symbol d-sm-none" src="<?php echo assets_url('images/logo-white-symbol.png'); ?>"
 									 alt="Drift">
 						</a>
 					</div>

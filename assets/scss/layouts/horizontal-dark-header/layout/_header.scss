@@ -189,7 +189,7 @@
 		}
 
 		&-symbol {
-			width: 24px;
+			width: 30px;
 		}
 	}
 }
@@ -284,10 +284,6 @@
 
 	&:not(:last-child) {
 		margin-right: 2.4rem;
-
-		@include media-breakpoint-down(md) {
-			margin-right: 1rem;
-		}
 	}
 }
 

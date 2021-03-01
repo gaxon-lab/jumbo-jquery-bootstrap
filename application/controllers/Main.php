@@ -218,7 +218,6 @@ class Main extends Base_Controller
 
 	function modern_metrics()
 	{
-
 		$this->addcss(base_url("node_modules/chartist/dist/chartist.min.css"));
 		$this->addjs(base_url("node_modules/chart.js/dist/Chart.min.js"), TRUE);
 		$this->addjs(base_url("node_modules/chartist/dist/chartist.min.js"), TRUE);

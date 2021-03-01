@@ -211,7 +211,7 @@
 							<li class="dt-indicator-item">
 								<p class="dt-indicator-title">BTC <span class="f-12 text-secondary">| 8.75</span></p>
 								<div class="dt-indicator-item__info" data-fill="78" data-max="100"
-									 data-percent="true">
+										 data-percent="true">
 									<div class="dt-indicator-item__fill bg-success"></div>
 									<span class="dt-indicator-item__count text-nowrap ml-3">0</span>
 								</div>
@@ -219,7 +219,7 @@
 							<li class="dt-indicator-item">
 								<p class="dt-indicator-title">RPL <span class="f-12 text-secondary">| 1.23</span></p>
 								<div class="dt-indicator-item__info" data-fill="45" data-max="100"
-									 data-percent="true">
+										 data-percent="true">
 									<div class="dt-indicator-item__fill bg-warning"></div>
 									<span class="dt-indicator-item__count text-nowrap ml-3">0</span>
 								</div>
@@ -227,7 +227,7 @@
 							<li class="dt-indicator-item">
 								<p class="dt-indicator-title">LTE <span class="f-12 text-secondary">| 0.71</span></p>
 								<div class="dt-indicator-item__info" data-fill="24" data-max="100"
-									 data-percent="true">
+										 data-percent="true">
 									<div class="dt-indicator-item__fill bg-danger"></div>
 									<span class="dt-indicator-item__count text-nowrap ml-3">0</span>
 								</div>
@@ -267,18 +267,15 @@
 
 					<!-- Dropdown -->
 					<div class="dropdown d-inline-block">
-						<a class="dropdown-toggle d-inline-block f-12 py-1 px-2 border rounded text-light-gray"
-						   href="#"
-						   data-toggle="dropdown"
-						   aria-haspopup="true" aria-expanded="false">
-							Last 30 days
+						<a class="d-inline-block f-12 py-1 px-2 text-light-gray"
+							 href="#">
+							Earning
 						</a>
 
-						<div class="dropdown-menu dropdown-menu-right">
-							<a class="dropdown-item" href="javascript:void(0)">Last week</a>
-							<a class="dropdown-item" href="javascript:void(0)">Last 6 month</a>
-							<a class="dropdown-item" href="javascript:void(0)">Last 1 year</a>
-						</div>
+						<a class="d-inline-block f-12 py-1 px-2 text-light-gray"
+							 href="#">
+							Expense
+						</a>
 					</div>
 					<!-- /dropdown -->
 
@@ -290,8 +287,7 @@
 
 			<!-- Chart Body -->
 			<div class="dt-chart__body">
-				<div id="ct-area-chart"
-					 class="chart-area-balance height-200 stroke-w-2 fill-opacity-1"></div>
+				<div id="chart-toggle-revenue-summary" class="chart-area-balance height-200 stroke-w-2 fill-opacity-1"></div>
 			</div>
 			<!-- /chart body -->
 
@@ -651,11 +647,11 @@
 							<div>
 								<a href="javascript:void(0)" class="d-inline-block mr-4">
 									<img src="<?php echo assets_url('images/dashboard/google-play-store.png'); ?>"
-										 alt="Play Store" class="img-fluid">
+											 alt="Play Store" class="img-fluid">
 								</a>
 								<a href="javascript:void(0)" class="d-inline-block">
 									<img src="<?php echo assets_url('images/dashboard/apple-app-store.png'); ?>"
-										 alt="App Store" class="img-fluid">
+											 alt="App Store" class="img-fluid">
 								</a>
 							</div>
 
@@ -693,8 +689,8 @@
 
 								<!-- Dropdown Button -->
 								<a href="#" class="dropdown-toggle no-arrow text-disabled"
-								   data-toggle="dropdown" aria-haspopup="true"
-								   aria-expanded="false">
+									 data-toggle="dropdown" aria-haspopup="true"
+									 aria-expanded="false">
 									<i class="icon icon-calendar icon-fw icon-xl"></i>
 								</a>
 								<!-- /dropdown button -->
@@ -794,30 +790,30 @@
 					<h3 class="dt-card__title">Latest News</h3>
 
 					<a href="javascript:void(0)" class="d-inline-block"><i
-								class="icon icon-circle-add-o mr-2"></i>Add New</a>
+							class="icon icon-circle-add-o mr-2"></i>Add New</a>
 				</div>
 				<ul class="card-header-tabs nav nav-tabs nav-tabs-sm nav-scroll mx-0"
-					role="tablist">
+						role="tablist">
 					<li class="nav-item">
 						<a class="nav-link active" data-toggle="tab" href="#all"
-						   role="tab"
-						   aria-controls="all"
-						   aria-selected="true">All</a>
+							 role="tab"
+							 aria-controls="all"
+							 aria-selected="true">All</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" data-toggle="tab" href="#bitcoin" role="tab"
-						   aria-controls="bitcoin"
-						   aria-selected="true">Bitcoin</a>
+							 aria-controls="bitcoin"
+							 aria-selected="true">Bitcoin</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" data-toggle="tab" href="#litecoin" role="tab"
-						   aria-controls="litecoin"
-						   aria-selected="true">Litecoin</a>
+							 aria-controls="litecoin"
+							 aria-selected="true">Litecoin</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" data-toggle="tab" href="#crypto" role="tab"
-						   aria-controls="crypto"
-						   aria-selected="true">Crypto</a>
+							 aria-controls="crypto"
+							 aria-selected="true">Crypto</a>
 					</li>
 				</ul>
 			</div>
@@ -840,8 +836,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-1.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-1.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -877,8 +873,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-2.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-2.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -914,8 +910,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-3.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-3.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -968,8 +964,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-1.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-1.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -1005,8 +1001,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-2.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-2.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -1042,8 +1038,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-3.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-3.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -1096,8 +1092,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-1.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-1.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -1133,8 +1129,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-2.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-2.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -1170,8 +1166,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-3.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-3.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -1224,8 +1220,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-1.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-1.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -1261,8 +1257,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-2.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-2.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 
@@ -1298,8 +1294,8 @@
 								<!-- Image -->
 								<div class="media-image mr-sm-6">
 									<img class="img-fluid rounded-xl"
-										 src="<?php echo assets_url('images/dashboard/bitcoin-3.jpg'); ?>"
-										 alt="Currency">
+											 src="<?php echo assets_url('images/dashboard/bitcoin-3.jpg'); ?>"
+											 alt="Currency">
 								</div>
 								<!-- /image -->
 

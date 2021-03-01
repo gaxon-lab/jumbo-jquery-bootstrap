@@ -431,6 +431,9 @@
 				'stop-opacity': '1',
 				'stop-color': 'rgba(255, 255, 255, 0)'
 			});
+
+			$('#chart-growth-revenue').find('.ct-series-a .ct-area').css('fill', 'url(#gradient-chart-growth-revenue)');
+			$('#chart-growth-revenue').find('.ct-series-a .ct-line').css('stroke', '#19A6D2');
 		});
 	}
 
@@ -478,6 +481,9 @@
 				'stop-opacity': '1',
 				'stop-color': 'rgba(238, 0, 0, 0)'
 			});
+
+			$('#chart-growth-traffic').find('.ct-series-a .ct-area').css('fill', 'url(#gradient-chart-growth-traffic)');
+			$('#chart-growth-traffic').find('.ct-series-a .ct-line').css('stroke', '#E00930');
 		});
 	}
 

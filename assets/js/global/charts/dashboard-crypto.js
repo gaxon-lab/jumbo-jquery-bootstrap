@@ -65,6 +65,7 @@
 		}
 	};
 
+	// delete this
 	if ($('#chart-active-users').length) {
 		var ctxActiveUsers = document.getElementById('chart-active-users').getContext('2d');
 		var gradientActiveUsers = ctxActiveUsers.createLinearGradient(0, 0, 230, 0);
@@ -226,6 +227,83 @@
 				}]
 			},
 			options: optsBalanceHistory
+		});
+	}
+
+	if ($('#ct-area-chart').length) {
+		var ctAreaChart = new Chartist.Line('#ct-area-chart', {
+			labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+			series: [
+				[51, 61, 62, 54, 41, 37, 40, 48, 64, 75, 78, 74, 65]
+			]
+		}, {
+			showArea: true,
+			showPoint: false,
+			fullWidth: true,
+			lineSmooth: Chartist.Interpolation.cardinal({
+				tension: 1
+			}),
+			chartPadding: 0,
+			axisX: {
+				showGrid: false,
+				showLabel: true
+			},
+			axisY: {
+				showGrid: false,
+				low: 20,
+				scaleMinSpace: 50,
+				showLabel: false,
+				offset: 0,
+			}
+		});
+
+		ctAreaChart.on('created', function (data) {
+			var defs = data.svg.elem('defs');
+			defs.elem('linearGradient', {
+				id: 'gradient2',
+				x1: 0,
+				y1: 1,
+				x2: 0,
+				y2: 0
+			}).elem('stop', {
+				offset: 0,
+				'stop-opacity': '0.5',
+				'stop-color': 'rgba(255, 255, 255, 1)'
+			}).parent().elem('stop', {
+				offset: 1,
+				'stop-opacity': '0.5',
+				'stop-color': 'rgba(226, 218, 255, 1)'
+			});
+
+			defs.elem('linearGradient', {
+				id: 'gradient3',
+				x1: 0,
+				y1: 1,
+				x2: 0,
+				y2: 0
+			}).elem('stop', {
+				offset: 0.3,
+				'stop-opacity': '0.4',
+				'stop-color': 'rgba(255, 255, 255, 1)'
+			}).parent().elem('stop', {
+				offset: 1,
+				'stop-opacity': '1',
+				'stop-color': 'rgba(255, 192, 214, 1)'
+			});
+		});
+
+		ctAreaChart.on('draw', function (data) {
+			var circleRadius = 4;
+			if (data.type === 'point') {
+
+				var circle = new Chartist.Svg('circle', {
+					cx: data.x,
+					cy: data.y,
+					r: circleRadius,
+					class: 'ct-point-circle'
+				});
+				data.element.replace(circle);
+			}
 		});
 	}
 
@@ -415,80 +493,77 @@
 	}
 	// Chart widget 4 Ends
 
-	if ($('#ct-area-chart').length) {
-		var ctAreaChart = new Chartist.Line('#ct-area-chart', {
-			labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-			series: [
-				[51, 61, 62, 54, 41, 37, 40, 48, 64, 75, 78, 74, 65]
-			]
-		}, {
-			showArea: true,
-			showPoint: false,
-			fullWidth: true,
-			lineSmooth: Chartist.Interpolation.cardinal({
-				tension: 1
-			}),
-			chartPadding: 0,
-			axisX: {
-				showGrid: false,
-				showLabel: true
+	// Earning this year
+	if ($('#chart-toggle-revenue-summary').length) {
+		var optsEarningThisYear = $.extend({}, defaultOptions, {
+			elements: {
+				line: {
+					tension: 0, // disables bezier curves
+				}
 			},
-			axisY: {
-				showGrid: false,
-				low: 20,
-				scaleMinSpace: 50,
-				showLabel: false,
-				offset: 0,
+			scales: {
+				xAxes: [{
+					display: false
+				}],
+				yAxes: [{
+					display: false,
+					ticks: {
+						beginAtZero: true,
+						padding: 30,
+					}
+				}]
+			},
+			tooltips: {
+				mode: 'index',
+				intersect: false,
+				displayColors: false,
+				backgroundColor: '#0795F4',
+				borderWidth: 1,
+				borderColor: '#fff',
+				yPadding: 10,
+				xPadding: 8,
+				cornerRadius: 4,
+				callbacks: {
+					title: function (tooltipItems) {
+						return false;
+					},
+					label: function (tooltipItem, data) {
+						var label = tooltipItem.label || '';
+
+						if (label) {
+							label += ': ';
+						}
+						label += tooltipItem.yLabel;
+						return label;
+					},
+				}
+			},
+			hover: {
+				mode: 'index',
+				intersect: false,
 			}
 		});
 
-		ctAreaChart.on('created', function (data) {
-			var defs = data.svg.elem('defs');
-			defs.elem('linearGradient', {
-				id: 'gradient2',
-				x1: 0,
-				y1: 1,
-				x2: 0,
-				y2: 0
-			}).elem('stop', {
-				offset: 0,
-				'stop-opacity': '0.5',
-				'stop-color': 'rgba(255, 255, 255, 1)'
-			}).parent().elem('stop', {
-				offset: 1,
-				'stop-opacity': '0.5',
-				'stop-color': 'rgba(226, 218, 255, 1)'
-			});
+		var ctxEarningThisYear = document.getElementById('chart-toggle-revenue-summary').getContext('2d');
 
-			defs.elem('linearGradient', {
-				id: 'gradient3',
-				x1: 0,
-				y1: 1,
-				x2: 0,
-				y2: 0
-			}).elem('stop', {
-				offset: 0.3,
-				'stop-opacity': '0.4',
-				'stop-color': 'rgba(255, 255, 255, 1)'
-			}).parent().elem('stop', {
-				offset: 1,
-				'stop-opacity': '1',
-				'stop-color': 'rgba(255, 192, 214, 1)'
-			});
-		});
-
-		ctAreaChart.on('draw', function (data) {
-			var circleRadius = 4;
-			if (data.type === 'point') {
-
-				var circle = new Chartist.Svg('circle', {
-					cx: data.x,
-					cy: data.y,
-					r: circleRadius,
-					class: 'ct-point-circle'
-				});
-				data.element.replace(circle);
-			}
+		new Chart(ctxEarningThisYear, {
+			type: 'line',
+			data: {
+				labels: ['Mon', 'Tues', 'Wed', 'Thru', 'Fri', 'Sat', 'Sun'],
+				datasets: [{
+					label: 'Users',
+					data: [500, 1500, 1200, 1750, 1000, 1400, 1800],
+					backgroundColor: '#5F33C2',
+					borderColor: '#fff',
+					pointRadius: 1.5,
+					pointBorderWidth: 0,
+					pointHoverRadius: 5,
+					pointHoverBorderWidth: 2,
+					pointHoverBackgroundColor: '#5F33C2',
+					pointHoverBorderColor: '#fff'
+				}]
+			},
+			options: optsEarningThisYear
 		});
 	}
 })(jQuery);

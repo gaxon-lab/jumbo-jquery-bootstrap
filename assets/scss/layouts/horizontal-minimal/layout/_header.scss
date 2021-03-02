@@ -114,8 +114,12 @@
 		flex: 1;
 
 		& .search-box {
-			margin-right: 4rem;
+			margin-right: 1rem;
 			align-self: center;
+
+			@include media-breakpoint-up(lg) {
+				margin-right: 4rem;
+			}
 		}
 
 		& .#{$class-prefix}-nav__link > i {
@@ -149,6 +153,7 @@
 		}
 
 		& .#{$class-prefix}-list {
+			flex-wrap: nowrap;
 			&__item {
 				margin-bottom: 0;
 			}
@@ -157,6 +162,7 @@
 				color: $header-color;
 				font-size: $btn-font-size;
 				font-weight: $btn-font-weight;
+				white-space: nowrap;
 			}
 		}
 	}

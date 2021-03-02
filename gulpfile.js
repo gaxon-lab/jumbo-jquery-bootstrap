@@ -227,7 +227,7 @@ var layouts = [
 			}
 		]
 	},*/
-	{
+	/*{
 		path: 'modern',
 		themes: [
 			{
@@ -297,7 +297,7 @@ var layouts = [
 				]
 			}
 		]
-	},
+	},*/
 	/*{
 		path: 'horizontal',
 		themes: [

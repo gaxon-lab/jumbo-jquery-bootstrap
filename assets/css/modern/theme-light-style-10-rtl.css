@@ -12261,8 +12261,14 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 .dt-main {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   flex: 1 1 auto;
   -ms-flex: 1 1 auto; }
+  @media (min-width: 1280px) {
+    .dt-main {
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 
 .dt-content-wrapper {
   position: relative;
@@ -12439,7 +12445,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .dt-brand__logo-img {
       width: 140px; }
     .dt-brand__logo-symbol {
-      width: 24px; }
+      width: 30px; }
 
 .dt-nav-wrapper {
   display: -ms-flexbox;
@@ -12511,11 +12517,9 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   cursor: pointer;
   min-height: 22px;
   min-width: 22px; }
-  .dt-brand__tool:not(:last-child) {
-    margin-left: 2.4rem; }
-    @media (max-width: 1279.98px) {
-      .dt-brand__tool:not(:last-child) {
-        margin-left: 1rem; } }
+  @media (max-width: 1279.98px) {
+    .dt-brand__tool:not(:last-child) {
+      margin-left: 2.4rem; } }
 
 .hamburger-inner,
 .hamburger-inner:after,
@@ -12754,7 +12758,10 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 .dt-customizer {
   position: relative;
   z-index: 1501;
-  width: 380px; }
+  width: 300px; }
+  @media (min-width: 600px) {
+    .dt-customizer {
+      width: 380px; } }
   .dt-customizer-toggle {
     position: fixed;
     top: 130px;
@@ -13218,13 +13225,16 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 
 .dt-sidebar-wrapper {
   position: relative;
-  width: calc(304px + 72px);
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   transition: all 0.2s ease; }
   @media (prefers-reduced-motion: reduce) {
     .dt-sidebar-wrapper {
       transition: none; } }
+  @media (min-width: 1280px) {
+    .dt-sidebar-wrapper {
+      width: calc(304px + 72px); } }
   .sidebar-sm .dt-sidebar-wrapper {
     width: calc(280px + 72px); }
   .sidebar-lg .dt-sidebar-wrapper {
@@ -13288,68 +13298,85 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     padding: 10px 0 24px 16px; }
 
 .dt-action-sidebar {
-  width: 72px;
+  width: 100%;
   background-color: #2BA444;
   color: rgba(255, 255, 255, 0.9);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px 15px 10px 24px; }
+  padding: 5px 24px; }
   @media (min-width: 1280px) {
     .dt-action-sidebar {
+      width: 72px;
       -ms-flex-direction: column;
       flex-direction: column;
       padding: 0 5px; } }
   .dt-action-sidebar__header {
-    height: 72px;
-    width: 100%;
+    height: auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    @media (min-width: 1280px) {
+      .dt-action-sidebar__header {
+        height: 72px; } }
   .dt-action-sidebar__container {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex: 1 1 0px;
     flex: 1 1 0; }
+    @media (max-width: 1279.98px) {
+      .dt-action-sidebar__container {
+        -ms-flex-pack: end;
+        justify-content: flex-end; } }
+    @media (min-width: 1280px) {
+      .dt-action-sidebar__container {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center; } }
 
-.dt-action-nav__item {
-  transition: all 0.4s ease; }
-  @media (prefers-reduced-motion: reduce) {
-    .dt-action-nav__item {
-      transition: none; } }
-  .dt-action-nav__item.active .dt-action-nav__link {
-    background-color: transparent;
-    color: #2BA444;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
-  .dt-action-nav__item > [data-toggle="main-sidebar"] {
-    display: none; }
-
-.dt-action-nav__link {
-  position: relative;
+.dt-action-nav {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
   -ms-flex-align: center;
-  align-items: center;
-  line-height: 1;
-  white-space: nowrap;
-  padding: 1.2rem;
-  color: rgba(255, 255, 255, 0.9); }
-  .dt-action-nav__link:hover, .dt-action-nav__link:focus, .dt-action-nav__link:active {
-    color: white; }
-
-.dt-action-nav + .dt-action-nav:last-child {
-  margin-top: auto; }
+  align-items: center; }
+  @media (min-width: 1280px) {
+    .dt-action-nav {
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .dt-action-nav__item {
+    transition: all 0.4s ease; }
+    @media (prefers-reduced-motion: reduce) {
+      .dt-action-nav__item {
+        transition: none; } }
+    .dt-action-nav__item.active .dt-action-nav__link {
+      background-color: transparent;
+      color: #2BA444;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+    .dt-action-nav__item > [data-toggle="main-sidebar"] {
+      display: none; }
+  .dt-action-nav__link {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 1;
+    white-space: nowrap;
+    padding: 1.2rem;
+    color: rgba(255, 255, 255, 0.9); }
+    .dt-action-nav__link:hover, .dt-action-nav__link:focus, .dt-action-nav__link:active {
+      color: white; }
+  @media (min-width: 1280px) {
+    .dt-action-nav + .dt-action-nav:last-child {
+      margin-top: auto; } }
 
 .dt-side-nav__header {
   position: relative;
@@ -16947,6 +16974,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   flex-wrap: wrap; }
 
 .dt-page__sidebar {
+  display: none;
   width: 180px;
   position: -webkit-sticky;
   position: sticky;
@@ -16954,6 +16982,9 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   top: 100px;
   -ms-flex-negative: 0;
   flex-shrink: 0; }
+  @media (min-width: 600px) {
+    .dt-page__sidebar {
+      display: block; } }
   .dt-page__sidebar .dt-list {
     height: calc(100% - 35px);
     overflow-y: auto;

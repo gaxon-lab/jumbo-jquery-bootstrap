@@ -12439,7 +12439,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
     .dt-brand__logo-img {
       width: 140px; }
     .dt-brand__logo-symbol {
-      width: 24px; }
+      width: 30px; }
 
 .dt-nav-wrapper {
   display: -ms-flexbox;
@@ -12513,9 +12513,6 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   min-width: 22px; }
   .dt-brand__tool:not(:last-child) {
     margin-left: 2.4rem; }
-    @media (max-width: 1279.98px) {
-      .dt-brand__tool:not(:last-child) {
-        margin-left: 1rem; } }
 
 .hamburger-inner,
 .hamburger-inner:after,
@@ -12754,7 +12751,10 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
 .dt-customizer {
   position: relative;
   z-index: 1501;
-  width: 380px; }
+  width: 300px; }
+  @media (min-width: 600px) {
+    .dt-customizer {
+      width: 380px; } }
   .dt-customizer-toggle {
     position: fixed;
     top: 130px;
@@ -16771,6 +16771,7 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   flex-wrap: wrap; }
 
 .dt-page__sidebar {
+  display: none;
   width: 180px;
   position: -webkit-sticky;
   position: sticky;
@@ -16778,6 +16779,9 @@ a.text-transparent-50:hover, a.text-transparent-50:focus {
   top: 100px;
   -ms-flex-negative: 0;
   flex-shrink: 0; }
+  @media (min-width: 600px) {
+    .dt-page__sidebar {
+      display: block; } }
   .dt-page__sidebar .dt-list {
     height: calc(100% - 35px);
     overflow-y: auto;

@@ -62,7 +62,7 @@
 
 
 					<!-- Search box -->
-					<form class="search-box d-none d-lg-block">
+					<form class="search-box d-none d-md-block">
 						<div class="input-group rounded-pill">
 							<input type="search" class="form-control" placeholder="Search in app..." value="Search here...">
 							<span class="search-icon"><i class="material-icons">search</i></span>
@@ -85,7 +85,7 @@
 					<div class="dt-nav-wrapper">
 						<!-- Header Menu -->
 						<ul class="dt-nav">
-							<li class="dt-nav__item d-lg-none dt-notification-search dropdown">
+							<li class="dt-nav__item d-md-none dt-notification-search dropdown">
 
 								<!-- Dropdown Link -->
 								<a href="#" class="dt-nav__link dropdown-toggle no-arrow" data-toggle="dropdown"
@@ -603,13 +603,13 @@
 	<!-- /header top -->
 
 	<!-- Header Bottom -->
-	<div class="dt-header__navigation d-none d-md-block">
+	<div class="dt-header__navigation d-none d-lg-block">
 
 		<!-- Custom Container -->
 		<div class="dt-container">
 
 			<!-- Navbar -->
-			<ul class="navbar-nav navbar-expand-md dt-navbar">
+			<ul class="navbar-nav dt-navbar">
 				<!-- Nav Item -->
 				<li class="nav-item">
 					<a class="nav-link dt-side-nav__arrow" href="javascript:void(0)">

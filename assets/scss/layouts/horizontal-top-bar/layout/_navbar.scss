@@ -6,6 +6,8 @@
 .#{$class-prefix}-navbar {
 	margin-left: -1.2rem;
 	margin-right: -1.2rem;
+	display: flex;
+	flex-direction: row;
 
 	@include media-breakpoint-up(xl) {
 		margin-left: -1.8rem;

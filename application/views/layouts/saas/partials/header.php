@@ -479,7 +479,7 @@
         <div class="dt-container">
 
             <!-- Navbar -->
-            <ul class="navbar-nav navbar-expand-md dt-navbar">
+            <ul class="navbar-nav dt-navbar">
                 <!-- Nav Item -->
                 <li class="nav-item">
                     <a class="nav-link dt-side-nav__arrow" href="javascript:void(0)">

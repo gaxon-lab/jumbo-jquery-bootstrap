@@ -5,9 +5,13 @@
 // Sidebar
 .#{$class-prefix}-sidebar-wrapper {
 	position: relative;
-	width: calc(#{$sidebar-width} + #{$action-sidebar-width});
+	width: 100%;
 	display: flex;
 	@include transition(all 0.2s ease);
+
+	@include media-breakpoint-up(lg) {
+		width: calc(#{$sidebar-width} + #{$action-sidebar-width});
+	}
 
 	.sidebar-sm & {
 		width: calc(#{$sidebar-width-sm} + #{$action-sidebar-width});
@@ -98,38 +102,51 @@
 //Action Sidebar
 .#{$class-prefix}-action {
 	&-sidebar {
-		width: $action-sidebar-width;
+		width: 100%;
 		background-color: $action-sidebar-bg;
 		color: $action-sidebar-color;
 		display: flex;
 		align-items: center;
-		padding: 10px 24px 10px 15px;
+		padding: 5px 24px;
 
 		@include media-breakpoint-up(lg) {
+			width: $action-sidebar-width;
 			flex-direction: column;
 			padding: 0 5px;
 		}
 
 		&__header {
-			height: $header-height;
-			width: 100%;
+			height: auto;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+
+			@include media-breakpoint-up(lg) {
+				height: $header-height;
+			}
 		}
 
 		&__container {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
 			flex: 1 1 0;
+			@include media-breakpoint-down(md) {
+				justify-content: flex-end;
+			}
+
+			@include media-breakpoint-up(lg) {
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 	}
 
-
-
 	&-nav {
 		@extend %list-style-none;
+		display: flex;
+		align-items: center;
+		@include media-breakpoint-up(lg) {
+			flex-direction: column;
+		}
 
 		&__item {
 			@include transition(all 0.4s ease);
@@ -161,7 +178,9 @@
 		}
 
 		& + .#{$class-prefix}-action-nav:last-child {
-			margin-top: auto;
+			@include media-breakpoint-up(lg) {
+				margin-top: auto;
+			}
 		}
 	}
 }

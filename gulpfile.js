@@ -14,7 +14,7 @@ var scssDir = 'assets/scss/';
 var scssLayoutsDir = scssDir + 'layouts/';
 
 var layouts = [
-	{
+	/*{
 		path: 'default',
 		themes: [
 			{
@@ -84,7 +84,7 @@ var layouts = [
 				]
 			}
 		]
-	},
+	},*/
 	/*{
 		path: 'minimal',
 		themes: [
@@ -155,8 +155,8 @@ var layouts = [
 				]
 			}
 		]
-	},
-	{
+	},*/
+	/*{
 		path: 'minimal-no-header',
 		themes: [
 			{
@@ -226,7 +226,7 @@ var layouts = [
 				]
 			}
 		]
-	},
+	},*/
 	{
 		path: 'modern',
 		themes: [
@@ -298,7 +298,7 @@ var layouts = [
 			}
 		]
 	},
-	{
+	/*{
 		path: 'horizontal',
 		themes: [
 			{
@@ -368,8 +368,8 @@ var layouts = [
 				]
 			}
 		]
-	},
-	{
+	},*/
+	/*{
 		path: 'horizontal-dark-header',
 		themes: [
 			{
@@ -439,8 +439,8 @@ var layouts = [
 				]
 			}
 		]
-	},
-	{
+	},*/
+	/*{
 		path: 'horizontal-top-bar',
 		themes: [
 			{
@@ -510,8 +510,8 @@ var layouts = [
 				]
 			}
 		]
-	},
-	{
+	},*/
+	/*{
 		path: 'horizontal-minimal',
 		themes: [
 			{

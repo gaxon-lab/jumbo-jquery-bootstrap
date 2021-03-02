@@ -228,7 +228,9 @@
 	min-width: 22px;
 
 	&:not(:last-child) {
-		margin-right: 2.4rem;
+		@include media-breakpoint-down(md) {
+			margin-right: 2.4rem;
+		}
 	}
 }
 

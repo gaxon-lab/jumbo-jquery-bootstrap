@@ -35,7 +35,7 @@ var drift = {
 
             sidebar.window.resize(function () {
                 bodyWidth = sidebar.docBody.innerWidth();
-                if (bodyWidth < 992) {
+                if (bodyWidth < 1280) {
                     sidebar.initDrawer();
                 } else {
                     sidebar.destroy();

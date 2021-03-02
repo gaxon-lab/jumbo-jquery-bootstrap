@@ -92,6 +92,17 @@ $menus = array(
 				<div class="hamburger-inner"></div>
 			</div>
 			<!-- /brand tool -->
+
+			<!-- Brand logo -->
+			<div class="dt-brand__logo d-lg-none">
+				<a class="dt-brand__logo-link" href="<?php echo site_url(); ?>">
+					<img class="dt-brand__logo-img d-none d-sm-inline-block"
+							 src="<?php echo assets_url('images/logo-white.png'); ?>" alt="Drift">
+					<img class="dt-brand__logo-symbol d-sm-none" src="<?php echo assets_url('images/logo-white-symbol.png'); ?>"
+							 alt="Drift">
+				</a>
+			</div>
+			<!-- /brand logo -->
 		</div>
 		<!-- /action sidebar header -->
 
@@ -119,7 +130,8 @@ $menus = array(
 
 				<!-- Menu Item -->
 				<li class="dt-action-nav__item">
-					<a href="javascript:void(0)" class="dt-action-nav__link" data-toggle="drawer" data-target="#drawer-notifications">
+					<a href="javascript:void(0)" class="dt-action-nav__link" data-toggle="drawer"
+						 data-target="#drawer-notifications">
 						<i class="material-icons">notifications</i>
 					</a>
 				</li>
@@ -173,7 +185,7 @@ $menus = array(
 					<!-- /dropdown link -->
 
 					<!-- Dropdown Option -->
-					<div class="dropdown-menu">
+					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="javascript:void(0)">
 						<span class="d-flex align-items-center">
 							<i class="material-icons mr-2">person</i>

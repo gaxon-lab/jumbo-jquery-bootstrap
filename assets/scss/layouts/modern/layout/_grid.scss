@@ -16,8 +16,13 @@
 
 .#{$class-prefix}-main {
 	display: flex;
+	flex-direction: column;
 	flex: 1 1 auto;
 	-ms-flex: 1 1 auto;
+
+	@include media-breakpoint-up(lg) {
+		flex-direction: row;
+	}
 }
 
 .#{$class-prefix}-content-wrapper {
